@@ -1,0 +1,17 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ObjectDialogue.cs">
+    <Files>
+      <File FileName="Assets\Scripts\DialogueScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SceneChanger.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Portal.cs" Line="13" Column="76" />
+      <File FileName="Assets\Scripts\SoundManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ObjectDialogue.cs" Line="14" Column="77" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
