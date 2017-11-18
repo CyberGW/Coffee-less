@@ -3,34 +3,48 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class Fighter {
+public class Player : Character {
 
 	private string name;
+	private int level;
 	private int health;
 	private int attack;
 	private int defence;
 	private int magic;
 	private int luck;
 	private int speed;
+	private int exp;
+	private string item;
 
-	public Fighter (string name, int health, int attack, int defence, int magic, int luck, int speed)
+	public Player (string name, int level, int health, int attack, int defence, int magic, int luck, int speed, int exp, string item)
 	{
 		this.name = name;
+		this.level = level;
 		this.health = health;
 		this.attack = attack;
 		this.defence = defence;
 		this.magic = magic;
 		this.luck = luck;
 		this.speed = speed;
+		this.exp = exp;
+		this.item = item;
 	}
-
-
+	
 	public string Name {
 		get {
 			return this.name;
 		}
 		set {
 			name = value;
+		}
+	}
+
+	public int Level {
+		get {
+			return this.level;
+		}
+		set {
+			level = value;
 		}
 	}
 
@@ -85,6 +99,24 @@ public class Fighter {
 		}
 		set {
 			speed = value;
+		}
+	}
+
+	public int Exp {
+		get {
+			return this.exp;
+		}
+		set {
+			exp = value;
+		}
+	}
+
+	public string Item {
+		get {
+			return this.item;
+		}
+		set {
+			item = value;
 		}
 	}
 }

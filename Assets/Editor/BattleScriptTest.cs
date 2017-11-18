@@ -9,43 +9,64 @@ public class BattleScriptTest {
 	[TestFixture]
 	public class Tests {
 
-		Fighter player;
-		Fighter enemy;
+		Player playerObject;
+		Enemy enemyObject;
+		Player player;
+		Enemy enemy;
 		BattleManager manager;
-		
+
 		[OneTimeSetUp]
 		public void Init() {
-			this.player = new Fighter ("George", 100, 20, 10, 25, 5, 30);
-			this.enemy = new Fighter ("Ben", 100, 5, 15, 15, 10, 20);
-			this.manager = new BattleManager (player, enemy);
+			//Player(Name, Level, Health, Attack, Defence, Magic, Luck, Speed, Exp, Item)
+			this.playerObject = new Player ("Player", 10, 100, 10, 10, 10, 10, 10, 2000, "Hammer");
+			//Enemy(Name, Level, Health, Attack, Defence, Magic, Luck, Speed)
+			this.enemyObject = new Enemy ("Enemy", 10, 100, 5, 5, 5, 5, 5);
+			this.manager = new BattleManager (playerObject, enemyObject);
+			this.player = manager.Player;
+			this.enemy = manager.Enemy;
 		}
 
 		[Test]
 		public void Constructor() {
-			Assert.AreEqual (manager.Player, player);
-			Assert.AreEqual (manager.Enemy, enemy);
+			Assert.AreEqual (player, playerObject);
+			Assert.AreEqual (enemy, enemyObject);
 		}
 
 		[Test]
 		public void TurnOrder() {
 			//Initially
-			Assert.AreEqual (manager.TurnOrder, new Fighter[] { player, enemy } );
+			Assert.True (manager.PlayerFirst);
 			//Change
-			enemy.Speed = enemy.Speed * 2;
-			manager.Enemy = enemy;
-			Assert.AreEqual (manager.TurnOrder, new Fighter[] { enemy, player } );
+			enemy.Speed = enemy.Speed + 10;
+			manager.calculatePlayerFirst ();
+			Assert.False (manager.PlayerFirst);
 		}
 
+		[Test]
+		public void BasicAttack() {
+			//Damage Calculations
+			manager.attack (10, player, enemy); //Should do 20 damage
+			Assert.AreEqual (80, enemy.Health);
+			manager.attack (10, enemy, player); //Should do 5 damage
+			Assert.AreEqual (95, player.Health);
+			//Only Integer Healths
+			manager.attack (3, enemy, player); //Should do 1.5 = 2 damage
+			Assert.AreEqual (93, player.Health);
+			//No Negative Health
+			manager.attack(200, player, enemy); //Should do 400 damage
+			Assert.AreEqual(0, enemy.Health);
+		}
 	}
+
 	
 
 
-//	// A UnityTest behaves like a coroutine in PlayMode
-//	// and allows you to yield null to skip a frame in EditMode
-//	[UnityTest]
-//	public IEnumerator BattleScriptTestWithEnumeratorPasses() {
-//		// Use the Assert class to test conditions.
-//		// yield to skip a frame
-//		yield return null;
-//	}
+	// A UnityTest behaves like a coroutine in PlayMode
+	// and allows you to yield null to skip a frame in EditMode
+	[UnityTest]
+	public IEnumerator BattleScriptTestWithEnumeratorPasses() {
+		// Use the Assert class to test conditions.
+		// yield to skip a frame
+		yield return null;
+	}
 }

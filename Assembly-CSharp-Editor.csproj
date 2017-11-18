@@ -52,7 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Editor\BattleScriptTest.cs" />
-     <Compile Include="Assets\Editor\FighterTest.cs" />
+     <Compile Include="Assets\Editor\EnemyTest.cs" />
      <None Include="Assets\Exploration\Scripts\SceneFader\ReadMeFirst.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

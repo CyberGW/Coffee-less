@@ -5,54 +5,55 @@ using UnityEngine;
 [System.Serializable]
 public class BattleManager {
 
-	private Fighter player;
-	private Fighter enemy;
-	private Fighter[] turnOrder;
+	private Player player;
+	private Enemy enemy;
+	private bool playerFirst;
 
-	public BattleManager (Fighter player, Fighter enemy)
+	public BattleManager (Player player, Enemy enemy)
 	{
 		this.player = player;
 		this.enemy = enemy;
-		calculateTurnOrder ();
+		calculatePlayerFirst ();
 	}
 
-	public Fighter Player {
+	public Player Player {
 		get {
 			return this.player;
 		}
 		set {
 			player = value;
-			calculateTurnOrder();
 		}
 	}
 
-	public Fighter Enemy {
+	public Enemy Enemy {
 		get {
 			return this.enemy;
 		}
 		set {
 			enemy = value;
-			calculateTurnOrder();
 		}
 	}
 
-	public Fighter[] TurnOrder {
+	public bool PlayerFirst {
 		get {
-			return this.turnOrder;
-		}
-		set {
-			turnOrder = value;
+			return this.playerFirst;
 		}
 	}
 
-	public void calculateTurnOrder() {
-		int playerSpeed = player.Speed;
-		int enemySpeed = enemy.Speed;
-		Fighter[] turnOrder;
-		if (playerSpeed >= enemySpeed) {
-			this.turnOrder = new Fighter[] {player, enemy};
+	public void calculatePlayerFirst() {
+		if (player.Speed >= enemy.Speed) {
+			playerFirst = true;
 		} else {
-			this.turnOrder = new Fighter[] {enemy, player};
+			playerFirst = false;
+		}
+	}
+
+	public void attack(int power, Character user, Character target) {
+		int damage = (int) Mathf.Round(user.Attack * power * 1.0f / target.Defence);
+		if (damage < target.Health) {
+			target.Health = target.Health - damage;
+		} else {
+			target.Health = 0;
 		}
 	}
 
