@@ -19,10 +19,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 635
-  m_MinSize: {x: 406, y: 342}
-  m_MaxSize: {x: 12006, y: 8042}
+  m_MinSize: {x: 583, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 1
-  controlID: 118
+  controlID: 2445
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -119,10 +119,10 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 635
-  m_MinSize: {x: 406, y: 342}
-  m_MaxSize: {x: 12006, y: 8042}
+  m_MinSize: {x: 583, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 119
+  controlID: 2446
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,10 +143,10 @@ MonoBehaviour:
     y: 0
     width: 889
     height: 635
-  m_MinSize: {x: 306, y: 342}
-  m_MaxSize: {x: 8006, y: 8042}
+  m_MinSize: {x: 306, y: 492}
+  m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 75
+  controlID: 2411
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 306, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 14
+  controlID: 2412
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -224,9 +224,9 @@ MonoBehaviour:
     height: 343
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c4050000
-    m_LastClickedID: 0
-    m_ExpandedIDs: bebbffff76c1ffff56d1ffff82d5ffffdcd9ffffa2dfffff82e2ffff7ee5ffffe6e8fffff2f6ffff9efbffff00000000
+    m_SelectedIDs: 42c1ffff
+    m_LastClickedID: -16062
+    m_ExpandedIDs: 16c1ffff2cc1ffff3cc1ffff42c1ffffb8e6ffffb2e7ffffdae8ffff8eebffffeef3ffff18f9ffff00000000222c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -308,9 +308,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 226.56384, y: 122.56627, z: -0.125}
+    m_Target: {x: -6.785125, y: 5.9054008, z: -0.71875}
     speed: 2
-    m_Value: {x: 226.56384, y: 122.56627, z: -0.125}
+    m_Value: {x: -6.785125, y: 5.9054008, z: -0.71875}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -337,9 +337,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 436.21802
+    m_Target: 109.81919
     speed: 2
-    m_Value: 436.21802
+    m_Value: 109.81919
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -409,8 +409,12 @@ MonoBehaviour:
     m_ValueSerializationHelper:
     - {x: 462.8, y: 202.80002}
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 0}
-  m_BreadCrumbs: []
+  m_AnimatorController: {fileID: 9100000, guid: 63008fd8d5480a649aaeda05cbd643f3,
+    type: 2}
+  m_BreadCrumbs:
+  - m_Target: {fileID: 1107664555147047378, guid: 63008fd8d5480a649aaeda05cbd643f3,
+      type: 2}
+    m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
   blendTreeGraph: {fileID: 0}
@@ -439,14 +443,14 @@ MonoBehaviour:
     y: 364
     width: 889
     height: 271
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 14}
+  m_MinSize: {x: 232, y: 271}
+  m_MaxSize: {x: 10002, y: 10021}
+  m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
   - {fileID: 14}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -485,19 +489,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Editor
+    - Assets/Tiled2Unity/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Editor
+  - Assets/Tiled2Unity/Prefabs
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\CyberGW\Documents\Unity\SEPRPhase2
+  m_LastProjectPath: C:\Users\Chris\Google Drive\York Uni\2nd Year\SEPR\Coffee-less\Coffee-less
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: be270000
-    m_LastClickedID: 10174
-    m_ExpandedIDs: 00000000522700005827000060270000a6270000c627000032280000382800004229000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 151}
+    m_SelectedIDs: 2c2e0000
+    m_LastClickedID: 11820
+    m_ExpandedIDs: 00000000042900000a290000122900003229000044290000a0290000a6290000762a0000162e000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -525,7 +529,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000522700005827000060270000a6270000c6270000322800003828000042290000
+    m_ExpandedIDs: 00000000042900000a290000122900003229000044290000a0290000a6290000762a0000162e000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -550,9 +554,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: c4050000
-    m_LastClickedInstanceID: 1476
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: 42c1ffff
+    m_LastClickedInstanceID: -16062
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000ce280000682700007a2700005431000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -624,16 +628,16 @@ MonoBehaviour:
     y: 0
     width: 477
     height: 635
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 17}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
   - {fileID: 17}
   - {fileID: 18}
   - {fileID: 19}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -754,11 +758,11 @@ MonoBehaviour:
       ignoredOrSkipped: 0
       description: 
       isSuite: 1
-    - id: '[C:/Users/CyberGW/Documents/Unity/SEPRPhase2/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]'
+    - id: '[C:/Users/Chris/Google Drive/York Uni/2nd Year/SEPR/Coffee-less/Coffee-less/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]'
       name: Assembly-CSharp-Editor.dll
-      fullName: C:/Users/CyberGW/Documents/Unity/SEPRPhase2/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
-      resultStatus: 1
-      duration: 0.3960537
+      fullName: C:/Users/Chris/Google Drive/York Uni/2nd Year/SEPR/Coffee-less/Coffee-less/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+      resultStatus: 0
+      duration: 0
       messages: 
       output: 
       stacktrace: 
@@ -770,7 +774,7 @@ MonoBehaviour:
       name: BattleScriptTest
       fullName: BattleScriptTest
       resultStatus: 1
-      duration: 0.0864459
+      duration: 0.026007
       messages: 
       output: 
       stacktrace: 
@@ -782,7 +786,7 @@ MonoBehaviour:
       name: BattleScriptTestWithEnumeratorPasses
       fullName: BattleScriptTest.BattleScriptTestWithEnumeratorPasses
       resultStatus: 1
-      duration: 0.0322227
+      duration: 0.0094019
       messages: 
       output: 
       stacktrace: 
@@ -794,7 +798,7 @@ MonoBehaviour:
       name: BattleScriptTest+Tests
       fullName: BattleScriptTest+Tests
       resultStatus: 1
-      duration: 0.1388872
+      duration: 0.1137678
       messages: 
       output: 
       stacktrace: 
@@ -802,11 +806,11 @@ MonoBehaviour:
       ignoredOrSkipped: 0
       description: 
       isSuite: 1
-    - id: '[Assembly-CSharp-Editor][BattleScriptTest+Tests.BasicAttack]'
-      name: BasicAttack
-      fullName: BattleScriptTest+Tests.BasicAttack
+    - id: '[Assembly-CSharp-Editor][BattleScriptTest+Tests.ChangePlayer]'
+      name: ChangePlayer
+      fullName: BattleScriptTest+Tests.ChangePlayer
       resultStatus: 1
-      duration: 0.0276205
+      duration: 0.0126112
       messages: 
       output: 
       stacktrace: 
@@ -818,7 +822,31 @@ MonoBehaviour:
       name: Constructor
       fullName: BattleScriptTest+Tests.Constructor
       resultStatus: 1
-      duration: 0.0135842
+      duration: 0.0118583
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    - id: '[Assembly-CSharp-Editor][BattleScriptTest+Tests.HealthRestore]'
+      name: HealthRestore
+      fullName: BattleScriptTest+Tests.HealthRestore
+      resultStatus: 1
+      duration: 0.0092209
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    - id: '[Assembly-CSharp-Editor][BattleScriptTest+Tests.StandardAttack]'
+      name: StandardAttack
+      fullName: BattleScriptTest+Tests.StandardAttack
+      resultStatus: 1
+      duration: 0.0093892
       messages: 
       output: 
       stacktrace: 
@@ -830,7 +858,7 @@ MonoBehaviour:
       name: TurnOrder
       fullName: BattleScriptTest+Tests.TurnOrder
       resultStatus: 1
-      duration: 0.0168214
+      duration: 0.0105839
       messages: 
       output: 
       stacktrace: 
@@ -842,7 +870,7 @@ MonoBehaviour:
       name: FighterTest+Tests
       fullName: FighterTest+Tests
       resultStatus: 1
-      duration: 0.1135116
+      duration: 0.0400285
       messages: 
       output: 
       stacktrace: 
@@ -854,7 +882,7 @@ MonoBehaviour:
       name: Constructor
       fullName: FighterTest+Tests.Constructor
       resultStatus: 1
-      duration: 0.0051664
+      duration: 0.0044467
       messages: 
       output: 
       stacktrace: 
@@ -866,7 +894,7 @@ MonoBehaviour:
       name: Setters
       fullName: FighterTest+Tests.Setters
       resultStatus: 1
-      duration: 0.0161739
+      duration: 0.0045522
       messages: 
       output: 
       stacktrace: 
@@ -874,12 +902,48 @@ MonoBehaviour:
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
-    m_ResultText: BasicAttack (0.028s)
+    - id: '[Assembly-CSharp-Editor][SpecialMoveTest][suite]'
+      name: SpecialMoveTest
+      fullName: SpecialMoveTest
+      resultStatus: 1
+      duration: 0.042396
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+    - id: '[Assembly-CSharp-Editor][SpecialMoveTest.SpecialMoveTestSimplePasses]'
+      name: SpecialMoveTestSimplePasses
+      fullName: SpecialMoveTest.SpecialMoveTestSimplePasses
+      resultStatus: 1
+      duration: 0.0045936
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    - id: '[Assembly-CSharp-Editor][SpecialMoveTest.SpecialMoveTestWithEnumeratorPasses]'
+      name: SpecialMoveTestWithEnumeratorPasses
+      fullName: SpecialMoveTest.SpecialMoveTestWithEnumeratorPasses
+      resultStatus: 1
+      duration: 0.0094102
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    m_ResultText: HealthRestore (0.009s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 0569bd17
-      m_LastClickedID: 398289157
+      m_SelectedIDs: 897c0761
+      m_LastClickedID: 1627880585
       m_ExpandedIDs: d33c63859d8d08d7431375fbe888c91b101c9c4e0df8175bffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0

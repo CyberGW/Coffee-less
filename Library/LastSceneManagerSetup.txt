@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Battle/Battle.unity
+- path: Assets/Exploration/Scenes/TiledTesting.unity
   isLoaded: 1
   isActive: 1
