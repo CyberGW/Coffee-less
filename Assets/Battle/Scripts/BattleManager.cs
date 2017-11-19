@@ -5,6 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class BattleManager {
 
+	private Player[] playerArray;
 	private Player player;
 	private Enemy enemy;
 	private bool playerFirst;
@@ -13,6 +14,7 @@ public class BattleManager {
 	{
 		this.player = player;
 		this.enemy = enemy;
+		this.playerArray = playerArray;
 		calculatePlayerFirst ();
 	}
 
@@ -45,15 +47,6 @@ public class BattleManager {
 			playerFirst = true;
 		} else {
 			playerFirst = false;
-		}
-	}
-
-	public void attack(int power, Character user, Character target) {
-		int damage = (int) Mathf.Round(user.Attack * power * 1.0f / target.Defence);
-		if (damage < target.Health) {
-			target.Health = target.Health - damage;
-		} else {
-			target.Health = 0;
 		}
 	}
 

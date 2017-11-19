@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerDataScript : MonoBehaviour {
 
 	public Player[] playerArray;
+	public int alive;
 
 	// Use this for initialization
 	void Start () {
@@ -12,6 +13,7 @@ public class PlayerDataScript : MonoBehaviour {
 		for (int i = 0; i < 6; i++) {
 			playerArray [i] = new Player("Test",1,100,1,1,1,1,1,0,"None");
 		}
+		alive = 6;
 	}
 	
 	// Update is called once per frame

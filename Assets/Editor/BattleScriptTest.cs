@@ -14,8 +14,10 @@ public class BattleScriptTest {
 		Player player;
 		Enemy enemy;
 		BattleManager manager;
+		CharacterMove playerMove;
+		CharacterMove enemyMove;
 
-		[OneTimeSetUp]
+		[SetUp]
 		public void Init() {
 			//Player(Name, Level, Health, Attack, Defence, Magic, Luck, Speed, Exp, Item)
 			this.playerObject = new Player ("Player", 10, 100, 10, 10, 10, 10, 10, 2000, "Hammer");
@@ -43,23 +45,49 @@ public class BattleScriptTest {
 		}
 
 		[Test]
-		public void BasicAttack() {
+		public void StandardAttack() {
 			//Damage Calculations
-			manager.attack (10, player, enemy); //Should do 20 damage
+			playerMove = new StandardAttack(player, enemy, 10); //Should do 20 damage
+			playerMove.performMove ();
 			Assert.AreEqual (80, enemy.Health);
-			manager.attack (10, enemy, player); //Should do 5 damage
+			enemyMove = new StandardAttack (enemy, player, 10); //Should do 5 damage
+			enemyMove.performMove ();
 			Assert.AreEqual (95, player.Health);
+
 			//Only Integer Healths
-			manager.attack (3, enemy, player); //Should do 1.5 = 2 damage
+			enemyMove = new StandardAttack(enemy, player, 3); //Should do 1.5 = 2 damage
+			enemyMove.performMove ();
 			Assert.AreEqual (93, player.Health);
+
 			//No Negative Health
-			manager.attack(200, player, enemy); //Should do 400 damage
+			playerMove = new StandardAttack(player, enemy, 200); //Would lower enemy health below zero
+			playerMove.performMove ();
 			Assert.AreEqual(0, enemy.Health);
 		}
+
+		[Test]
+		public void ChangePlayer() {
+			Player newPlayer = new Player ("Second Player", 1, 1, 1, 1, 1, 1, 1, 1, "None");
+			manager.Player = newPlayer;
+			Assert.AreEqual (newPlayer, manager.Player);
+		}
+
+		[Test]
+		public void HealthRestore() {
+			//Damage Enemy so we have a target to heal
+			playerMove = new StandardAttack (player, enemy, 10); //Should do 20 damage
+			playerMove.performMove ();
+			playerMove = new HealingSpell (player, enemy, 15); //Should restore back up to 95
+			playerMove.performMove ();
+			Assert.AreEqual (95, enemy.Health);
+
+			//Check Health doesn't go beyond 100
+			playerMove.performMove (); //Should restore health to 105 = 100
+			Assert.AreEqual (100, enemy.Health);
+		}
+			
+
 	}
-
-	
-
 
 	// A UnityTest behaves like a coroutine in PlayMode
 	// and allows you to yield null to skip a frame in EditMode

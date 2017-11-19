@@ -54,6 +54,7 @@
      <Compile Include="Assets\Battle\Scripts\AttackButton.cs" />
      <Compile Include="Assets\Battle\Scripts\BattleManager.cs" />
      <Compile Include="Assets\Battle\Scripts\Character.cs" />
+     <Compile Include="Assets\Battle\Scripts\CharacterMoves.cs" />
      <Compile Include="Assets\Battle\Scripts\Enemy.cs" />
      <Compile Include="Assets\Battle\Scripts\MainBattle.cs" />
      <Compile Include="Assets\Battle\Scripts\Player.cs" />

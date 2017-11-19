@@ -24,14 +24,14 @@ public class MainBattle : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.Space)) {
 			if (playerFirst) {
-				manager.attack (10, currentPlayer, enemy);
+				//manager.attack (10, currentPlayer, enemy);
 				checkIfPlayerWon ();
-				manager.attack (10, enemy, currentPlayer);
+				//manager.attack (10, enemy, currentPlayer);
 				checkIfPlayerLost ();
 			} else {
-				manager.attack (10, enemy, currentPlayer);
+				//manager.attack (10, enemy, currentPlayer);
 				checkIfPlayerLost ();
-				manager.attack (10, currentPlayer, enemy);
+				//manager.attack (10, currentPlayer, enemy);
 				checkIfPlayerWon ();
 			}
 		}
