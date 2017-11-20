@@ -1475,3 +1475,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerArray: []
+  alive: 0

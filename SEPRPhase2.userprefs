@@ -5,14 +5,16 @@
       <File FileName="Assets\Battle\Scripts\Enemy.cs" Line="1" Column="1" />
       <File FileName="Assets\Battle\Scripts\Player.cs" Line="1" Column="1" />
       <File FileName="Assets\Battle\Scripts\BattleManager.cs" Line="13" Column="50" />
-      <File FileName="Assets\Editor\BattleScriptTest.cs" Line="85" Column="67" />
-      <File FileName="Assets\Battle\Scripts\CharacterMoves.cs" Line="24" Column="43" />
+      <File FileName="Assets\Editor\BattleScriptTest.cs" Line="1" Column="1" />
+      <File FileName="Assets\Battle\Scripts\CharacterMoves.cs" Line="1" Column="1" />
       <File FileName="Assets\Editor\EnemyTest.cs" Line="1" Column="1" />
-      <File FileName="Assets\Battle\Scripts\MainBattle.cs" Line="34" Column="7" />
-      <File FileName="Assets\Battle\Scripts\PlayerDataScript.cs" Line="15" Column="4" />
-      <File FileName="Assets\Battle\Scripts\SpecialMove.cs" Line="1" Column="1" />
-      <File FileName="Assets\Battle\Scripts\Character.cs" Line="7" Column="2" />
+      <File FileName="Assets\Battle\Scripts\MainBattle.cs" Line="1" Column="1" />
+      <File FileName="Assets\Battle\Scripts\PlayerDataScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Battle\Scripts\Character.cs" Line="1" Column="1" />
       <File FileName="Assets\Editor\SpecialMoveTest.cs" Line="1" Column="1" />
+      <File FileName="Assets\Battle\Scripts\AttackButton.cs" Line="27" Column="21" />
+      <File FileName="Assets\Exploration\Scripts\ObjectDialogue.cs" Line="1" Column="1" />
+      <File FileName="Assets\Exploration\Scripts\DialogueScript.cs" Line="28" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
