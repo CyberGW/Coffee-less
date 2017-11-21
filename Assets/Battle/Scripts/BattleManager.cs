@@ -9,6 +9,7 @@ public class BattleManager {
 	private Player player;
 	private Enemy enemy;
 	private bool playerFirst;
+	public string forceCriticalHits; //Used for testing
 
 	public BattleManager (Player player, Enemy enemy)
 	{
@@ -17,6 +18,7 @@ public class BattleManager {
 		this.playerArray = playerArray;
 		applyItem ();
 		calculatePlayerFirst ();
+		forceCriticalHits = "None";
 	}
 
 	public Player Player {
@@ -62,13 +64,36 @@ public class BattleManager {
 		calculatePlayerFirst ();
 	}
 
-	public bool isCriticalHit(Character user) {
-		float chance = 0.05f + (float) user.Luck / 1000;
-		float random = Random.value;
-		if (random < chance) {
+	public bool isCriticalHit(int luck) {
+		//Conditions for testing
+		switch (forceCriticalHits)
+		{
+		case "All":
 			return true;
-		} else {
+		case "None":
 			return false;
+		default:
+			//Usual code block
+			float chance = 0.05f + (float) luck / 1000;
+			float random = Random.value;
+			if (random < chance) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+	}
+
+	public int damageCalculation(Character user, Character target, int power) {
+		float fDamage = (float) user.Attack * power / target.Defence;
+		if (isCriticalHit (user.Luck)) {
+			fDamage *= 1.75f; //If critical hit increase damage by 75%
+		}
+		int damage = Mathf.RoundToInt (fDamage);
+		if (damage < target.Health) { //If not going to kill target
+			return damage;
+		} else {
+			return target.Health; //If going to kill, return health left so it doesn't go below zero
 		}
 	}
 

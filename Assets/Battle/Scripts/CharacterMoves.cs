@@ -10,27 +10,27 @@ public interface SpecialMove : CharacterMove {
 	void setUp(BattleManager manager);
 }
 
+
+
 [System.Serializable]
 public class StandardAttack : CharacterMove {
 
+	private BattleManager manager;
 	private Character user;
 	private Character target;
 	private int power;
 
-	public StandardAttack (Character user, Character target, int power)
+	public StandardAttack (BattleManager manager, Character user, Character target, int power)
 	{
+		this.manager = manager;
 		this.user = user;
 		this.target = target;
 		this.power = power;
 	}
 		
 	public void performMove () {
-		int damage = (int) Mathf.Round( (float) user.Attack * power / target.Defence);
-		if (damage < target.Health) {
-			target.Health = target.Health - damage;
-		} else {
-			target.Health = 0;
-		}
+		int damage = manager.damageCalculation (user, target, power);
+		target.Health -= damage;
 	}
 }
 

@@ -51,29 +51,29 @@ public class BattleScriptTest {
 			//Check Attack has increased accordingly
 			Assert.AreEqual (15, player.Attack);
 			//Check in Attack calculations
-			playerMove = new StandardAttack(player, enemy, 10); //Should now do 30 damage
+			playerMove = new StandardAttack (manager,player, enemy, 10); //Should now do 30 damage
 			playerMove.performMove();
 			Assert.AreEqual(70, enemy.Health);
 		}
 
 
 		[Test]
-		public void StandardAttack() {
+		public void StandardAttack () {
 			//Damage Calculations
-			playerMove = new StandardAttack(player, enemy, 10); //Should do 20 damage
+			playerMove = new StandardAttack (manager,player, enemy, 10); //Should do 20 damage
 			playerMove.performMove ();
 			Assert.AreEqual (80, enemy.Health);
-			enemyMove = new StandardAttack (enemy, player, 10); //Should do 5 damage
+			enemyMove = new StandardAttack (manager,enemy, player, 10); //Should do 5 damage
 			enemyMove.performMove ();
 			Assert.AreEqual (95, player.Health);
 
 			//Only Integer Healths
-			enemyMove = new StandardAttack(enemy, player, 3); //Should do 1.5 = 2 damage
+			enemyMove = new StandardAttack (manager,enemy, player, 3); //Should do 1.5 = 2 damage
 			enemyMove.performMove ();
 			Assert.AreEqual (93, player.Health);
 
 			//No Negative Health
-			playerMove = new StandardAttack(player, enemy, 200); //Would lower enemy health below zero
+			playerMove = new StandardAttack (manager,player, enemy, 200); //Would lower enemy health below zero
 			playerMove.performMove ();
 			Assert.AreEqual(0, enemy.Health);
 		}
@@ -90,7 +90,7 @@ public class BattleScriptTest {
 		[Test]
 		public void HealthRestore() {
 			//Damage Enemy so we have a target to heal
-			playerMove = new StandardAttack (player, enemy, 10); //Should do 20 damage
+			playerMove = new StandardAttack (manager,player, enemy, 10); //Should do 20 damage
 			playerMove.performMove ();
 			playerMove = new HealingSpell (player, enemy, 15); //Should restore back up to 95
 			playerMove.performMove ();
@@ -110,12 +110,28 @@ public class BattleScriptTest {
 		}
 
 		[Test]
-		public void Random() {
-			for (int i=0; i<100; i++) {
-				Debug.Log (manager.isCriticalHit (player));
+		[Ignore("Manual Probability Test")]
+		public void CriticalHitGeneration() {
+			//Player has 6% chance of generating a critical hit
+			int n = 0;
+			for (int i=0; i<1000; i++) {
+				if (manager.isCriticalHit (player.Luck)) {
+					n += 1;
+				}
 			}
+			Debug.Log (n);
 		}
-			
+
+		[Test]
+		public void CriticalHitCalculation() {
+			manager.forceCriticalHits = "All";
+			playerMove = new StandardAttack (manager,player, enemy, 10); //Should do 20 * 1.75 = 35 damage
+			playerMove.performMove ();
+			Assert.AreEqual (65, enemy.Health);
+			enemyMove = new StandardAttack (manager,enemy, player, 10); //Should do 5 * 1.75 = 8.75 = 9 damage
+			enemyMove.performMove ();
+			Assert.AreEqual (91, player.Health);
+		}
 
 	}
 
