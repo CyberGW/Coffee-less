@@ -20,7 +20,7 @@ public class BattleScriptTest {
 		[SetUp]
 		public void Init() {
 			//Player(Name, Level, Health, Attack, Defence, Magic, Luck, Speed, Exp, Item)
-			this.playerObject = new Player ("Player", 10, 100, 10, 10, 10, 10, 10, 2000, "Hammer");
+			this.playerObject = new Player ("Player", 10, 100, 10, 10, 10, 10, 10, 2000, null, new Fireball("Fireball", "Instant Kill"), null);
 			//Enemy(Name, Level, Health, Attack, Defence, Magic, Luck, Speed)
 			this.enemyObject = new Enemy ("Enemy", 10, 100, 5, 5, 5, 5, 5);
 			this.manager = new BattleManager (playerObject, enemyObject);
@@ -45,6 +45,19 @@ public class BattleScriptTest {
 		}
 
 		[Test]
+		public void Items() {
+			player.Item = new Hammer (player);
+			manager.applyItem ();
+			//Check Attack has increased accordingly
+			Assert.AreEqual (15, player.Attack);
+			//Check in Attack calculations
+			playerMove = new StandardAttack(player, enemy, 10); //Should now do 30 damage
+			playerMove.performMove();
+			Assert.AreEqual(70, enemy.Health);
+		}
+
+
+		[Test]
 		public void StandardAttack() {
 			//Damage Calculations
 			playerMove = new StandardAttack(player, enemy, 10); //Should do 20 damage
@@ -67,9 +80,11 @@ public class BattleScriptTest {
 
 		[Test]
 		public void ChangePlayer() {
-			Player newPlayer = new Player ("Second Player", 1, 1, 1, 1, 1, 1, 1, 1, "None");
-			manager.Player = newPlayer;
-			Assert.AreEqual (newPlayer, manager.Player);
+			Player newPlayer = new Player ("Second Player", 1, 1, 1, 1, 1, 1, 1, 1, null, null, null);
+			playerMove = new SwitchPlayers (player, newPlayer, manager);
+			playerMove.performMove ();
+			Assert.AreEqual (newPlayer, manager.Player); //Check player has been reassigned correctly
+			Assert.False (manager.PlayerFirst); //Check PlayerFirst has been updated
 		}
 
 		[Test]
@@ -84,6 +99,21 @@ public class BattleScriptTest {
 			//Check Health doesn't go beyond 100
 			playerMove.performMove (); //Should restore health to 105 = 100
 			Assert.AreEqual (100, enemy.Health);
+		}
+
+		[Test]
+		public void PlayerSpecialMove() {
+			player.Special1.setUp (manager);
+			playerMove = player.Special1;
+			playerMove.performMove ();
+			Assert.AreEqual (0, enemy.Health);
+		}
+
+		[Test]
+		public void Random() {
+			for (int i=0; i<100; i++) {
+				Debug.Log (manager.isCriticalHit (player));
+			}
 		}
 			
 

@@ -11,7 +11,7 @@ public class PlayerDataScript : MonoBehaviour {
 	void Start () {
 		playerArray = new Player[6];
 		for (int i = 0; i < 6; i++) {
-			playerArray [i] = new Player("Test",1,100,1,1,1,1,1,0,"None");
+			playerArray [i] = new Player("Test",1,100,1,1,1,1,1,0,null,null,null);
 		}
 		alive = 6;
 	}

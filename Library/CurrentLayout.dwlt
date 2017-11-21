@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 392}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 685
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -105,10 +105,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 635
-  m_MinSize: {x: 583, y: 492}
-  m_MaxSize: {x: 14004, y: 14042}
+  m_MinSize: {x: 406, y: 342}
+  m_MaxSize: {x: 12006, y: 8042}
   vertical: 1
-  controlID: 2122
+  controlID: 120
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -129,10 +129,10 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 635
-  m_MinSize: {x: 583, y: 492}
-  m_MaxSize: {x: 14004, y: 14042}
+  m_MinSize: {x: 406, y: 342}
+  m_MaxSize: {x: 12006, y: 8042}
   vertical: 0
-  controlID: 2123
+  controlID: 121
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -153,10 +153,10 @@ MonoBehaviour:
     y: 0
     width: 889
     height: 635
-  m_MinSize: {x: 306, y: 492}
-  m_MaxSize: {x: 10002, y: 14042}
+  m_MinSize: {x: 306, y: 342}
+  m_MaxSize: {x: 8006, y: 8042}
   vertical: 1
-  controlID: 2124
+  controlID: 75
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_MinSize: {x: 306, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 2125
+  controlID: 14
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -199,8 +199,8 @@ MonoBehaviour:
     y: 0
     width: 202
     height: 364
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -224,8 +224,8 @@ MonoBehaviour:
     y: 0
     width: 687
     height: 364
-  m_MinSize: {x: 104, y: 121}
-  m_MaxSize: {x: 4004, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -252,14 +252,14 @@ MonoBehaviour:
     y: 364
     width: 889
     height: 271
-  m_MinSize: {x: 232, y: 271}
-  m_MaxSize: {x: 10002, y: 10021}
-  m_ActualView: {fileID: 18}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -278,16 +278,16 @@ MonoBehaviour:
     y: 0
     width: 477
     height: 635
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 20}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 20}
   - {fileID: 21}
   - {fileID: 22}
   - {fileID: 23}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -322,10 +322,10 @@ MonoBehaviour:
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
-    m_HBaseRangeMin: -683
-    m_HBaseRangeMax: 683
-    m_VBaseRangeMin: -298.5
-    m_VBaseRangeMax: 298.5
+    m_HBaseRangeMin: -341.5
+    m_HBaseRangeMax: 341.5
+    m_VBaseRangeMin: -163
+    m_VBaseRangeMax: 163
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -342,25 +342,25 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
-      width: 1366
-      height: 597
+      width: 683
+      height: 326
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 683, y: 298.5}
+    m_Translation: {x: 341.5, y: 163}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -683
-      y: -298.5
-      width: 1366
-      height: 597
+      x: -341.5
+      y: -163
+      width: 683
+      height: 326
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 1366, y: 614}
+  m_LastWindowPixelSize: {x: 683, y: 343}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -392,9 +392,9 @@ MonoBehaviour:
     height: 343
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f42a0000
+    m_SelectedIDs: 242a0000
     m_LastClickedID: 0
-    m_ExpandedIDs: 48a8feff4ebffeff52bffeff60bffeffa882ffff6083ffff1eb0ffff5eedffff8af0ffff00000000a82f0000ac2f0000ce2f0000ea2f000004300000fe300000
+    m_ExpandedIDs: 1a8effff7891ffff3e96ffff969bffff22a2ffffa0a8ffffa4baffff1acaffff34daffff0ee1ffffa6fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -412,8 +412,7 @@ MonoBehaviour:
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 9}
     m_SearchString: 
-  m_ExpandedScenes:
-  - Battle
+  m_ExpandedScenes: []
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -600,19 +599,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Battle
+    - Assets/Editor
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Battle
+  - Assets/Editor
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\CyberGW\Documents\Unity\SEPRPhase2
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 44.86111}
-    m_SelectedIDs: f22a0000
-    m_LastClickedID: 10994
-    m_ExpandedIDs: 00000000f02a0000f22a0000f62a0000fc2a0000102b0000122b0000162b0000882c000000ca9a3bffffff7f
+    m_SelectedIDs: 3c280000
+    m_LastClickedID: 10300
+    m_ExpandedIDs: 000000009e270000a4270000be2700002028000044280000d2280000d8280000022a000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -640,7 +639,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f02a0000f22a0000f62a0000fc2a0000102b0000122b0000162b0000882c000000ca9a3bffffff7f
+    m_ExpandedIDs: 000000009e270000a4270000be2700002028000044280000d2280000d8280000022a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -665,8 +664,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 242a0000
+    m_LastClickedInstanceID: 10788
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000ce280000682700007a2700005431000000000000
     m_RenameOverlay:
@@ -845,7 +844,7 @@ MonoBehaviour:
       name: Assembly-CSharp-Editor.dll
       fullName: C:/Users/CyberGW/Documents/Unity/SEPRPhase2/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
       resultStatus: 1
-      duration: 0.6208259
+      duration: 0.987174
       messages: 
       output: 
       stacktrace: 
@@ -857,7 +856,7 @@ MonoBehaviour:
       name: BattleScriptTest
       fullName: BattleScriptTest
       resultStatus: 1
-      duration: 0.071348
+      duration: 0.0779072
       messages: 
       output: 
       stacktrace: 
@@ -869,7 +868,7 @@ MonoBehaviour:
       name: BattleScriptTestWithEnumeratorPasses
       fullName: BattleScriptTest.BattleScriptTestWithEnumeratorPasses
       resultStatus: 1
-      duration: 0.0167877
+      duration: 0.030328
       messages: 
       output: 
       stacktrace: 
@@ -881,7 +880,7 @@ MonoBehaviour:
       name: BattleScriptTest+Tests
       fullName: BattleScriptTest+Tests
       resultStatus: 1
-      duration: 0.2910544
+      duration: 0.6390223
       messages: 
       output: 
       stacktrace: 
@@ -893,7 +892,7 @@ MonoBehaviour:
       name: ChangePlayer
       fullName: BattleScriptTest+Tests.ChangePlayer
       resultStatus: 1
-      duration: 0.0395337
+      duration: 0.0310337
       messages: 
       output: 
       stacktrace: 
@@ -905,7 +904,7 @@ MonoBehaviour:
       name: Constructor
       fullName: BattleScriptTest+Tests.Constructor
       resultStatus: 1
-      duration: 0.0297574
+      duration: 0.0264455
       messages: 
       output: 
       stacktrace: 
@@ -917,9 +916,45 @@ MonoBehaviour:
       name: HealthRestore
       fullName: BattleScriptTest+Tests.HealthRestore
       resultStatus: 1
-      duration: 0.0245081
+      duration: 0.0311849
       messages: 
       output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    - id: '[Assembly-CSharp-Editor][BattleScriptTest+Tests.Items]'
+      name: Items
+      fullName: BattleScriptTest+Tests.Items
+      resultStatus: 1
+      duration: 0.0152703
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    - id: '[Assembly-CSharp-Editor][BattleScriptTest+Tests.PlayerSpecialMove]'
+      name: PlayerSpecialMove
+      fullName: BattleScriptTest+Tests.PlayerSpecialMove
+      resultStatus: 1
+      duration: 0.0276755
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    - id: '[Assembly-CSharp-Editor][BattleScriptTest+Tests.Random]'
+      name: Random
+      fullName: BattleScriptTest+Tests.Random
+      resultStatus: 1
+      duration: 0.2506462
+      messages: 
+      output: "0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nTrue\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nTrue\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nTrue\r\n0.06\r\nFalse\r\n0.06\r\nTrue\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nTrue\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nTrue\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n0.06\r\nFalse\r\n"
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -929,7 +964,7 @@ MonoBehaviour:
       name: StandardAttack
       fullName: BattleScriptTest+Tests.StandardAttack
       resultStatus: 1
-      duration: 0.0314648
+      duration: 0.0280158
       messages: 
       output: 
       stacktrace: 
@@ -941,7 +976,7 @@ MonoBehaviour:
       name: TurnOrder
       fullName: BattleScriptTest+Tests.TurnOrder
       resultStatus: 1
-      duration: 0.0336846
+      duration: 0.0309628
       messages: 
       output: 
       stacktrace: 
@@ -953,7 +988,7 @@ MonoBehaviour:
       name: FighterTest+Tests
       fullName: FighterTest+Tests
       resultStatus: 1
-      duration: 0.0718098
+      duration: 0.1238542
       messages: 
       output: 
       stacktrace: 
@@ -965,7 +1000,7 @@ MonoBehaviour:
       name: Constructor
       fullName: FighterTest+Tests.Constructor
       resultStatus: 1
-      duration: 0.0170792
+      duration: 0.0149509
       messages: 
       output: 
       stacktrace: 
@@ -977,7 +1012,7 @@ MonoBehaviour:
       name: Setters
       fullName: FighterTest+Tests.Setters
       resultStatus: 1
-      duration: 0.0051955
+      duration: 0.0157092
       messages: 
       output: 
       stacktrace: 
@@ -989,7 +1024,7 @@ MonoBehaviour:
       name: SpecialMoveTest
       fullName: SpecialMoveTest
       resultStatus: 1
-      duration: 0.1086327
+      duration: 0.0826557
       messages: 
       output: 
       stacktrace: 
@@ -1001,7 +1036,7 @@ MonoBehaviour:
       name: SpecialMoveTestSimplePasses
       fullName: SpecialMoveTest.SpecialMoveTestSimplePasses
       resultStatus: 1
-      duration: 0.0049643
+      duration: 0.0107863
       messages: 
       output: 
       stacktrace: 
@@ -1013,7 +1048,7 @@ MonoBehaviour:
       name: SpecialMoveTestWithEnumeratorPasses
       fullName: SpecialMoveTest.SpecialMoveTestWithEnumeratorPasses
       resultStatus: 1
-      duration: 0.0309615
+      duration: 0.0264176
       messages: 
       output: 
       stacktrace: 
@@ -1021,12 +1056,12 @@ MonoBehaviour:
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
-    m_ResultText: BattleScriptTest+Tests (0.291s)
+    m_ResultText: PlayerSpecialMove (0.028s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: d33c6385
-      m_LastClickedID: -2057093933
+      m_SelectedIDs: 728295b0
+      m_LastClickedID: -1332379022
       m_ExpandedIDs: d33c63857a729ab09d8d08d7431375fbe888c91b101c9c4e0df8175bffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0

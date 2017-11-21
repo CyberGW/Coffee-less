@@ -14,9 +14,11 @@ public class Player : Character {
 	private int luck;
 	private int speed;
 	private int exp;
-	private string item;
+	private Item item;
+	private SpecialMove special1;
+	private SpecialMove special2;
 
-	public Player (string name, int level, int health, int attack, int defence, int magic, int luck, int speed, int exp, string item)
+	public Player (string name, int level, int health, int attack, int defence, int magic, int luck, int speed, int exp, Item item, SpecialMove special1, SpecialMove special2)
 	{
 		this.name = name;
 		this.level = level;
@@ -28,7 +30,10 @@ public class Player : Character {
 		this.speed = speed;
 		this.exp = exp;
 		this.item = item;
+		this.special1 = special1;
+		this.special2 = special2;
 	}
+	
 	
 	public string Name {
 		get {
@@ -111,12 +116,30 @@ public class Player : Character {
 		}
 	}
 
-	public string Item {
+	public Item Item {
 		get {
 			return this.item;
 		}
 		set {
 			item = value;
+		}
+	}
+
+	public SpecialMove Special1 {
+		get {
+			return this.special1;
+		}
+		set {
+			special1 = value;
+		}
+	}
+
+	public SpecialMove Special2 {
+		get {
+			return this.special2;
+		}
+		set {
+			special2 = value;
 		}
 	}
 }

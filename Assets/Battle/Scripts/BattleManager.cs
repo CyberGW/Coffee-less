@@ -15,6 +15,7 @@ public class BattleManager {
 		this.player = player;
 		this.enemy = enemy;
 		this.playerArray = playerArray;
+		applyItem ();
 		calculatePlayerFirst ();
 	}
 
@@ -49,5 +50,27 @@ public class BattleManager {
 			playerFirst = false;
 		}
 	}
+
+	public void applyItem() {
+		if (Player.Item != null) {
+			Player.Item.applyBuffs();
+		}
+	}
+
+	public void switchPlayers(Player newPlayer) {
+		Player = newPlayer;
+		calculatePlayerFirst ();
+	}
+
+	public bool isCriticalHit(Character user) {
+		float chance = 0.05f + (float) user.Luck / 1000;
+		float random = Random.value;
+		if (random < chance) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
 
 }

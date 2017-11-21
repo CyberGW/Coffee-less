@@ -6,6 +6,10 @@ public interface CharacterMove {
 	void performMove (); 
 }
 
+public interface SpecialMove : CharacterMove {
+	void setUp(BattleManager manager);
+}
+
 [System.Serializable]
 public class StandardAttack : CharacterMove {
 
@@ -31,6 +35,25 @@ public class StandardAttack : CharacterMove {
 }
 
 [System.Serializable]
+public class SwitchPlayers : CharacterMove {
+
+	private Player currentPlayer;
+	private Player newPlayer;
+	private BattleManager manager;
+
+	public SwitchPlayers (Player currentPlayer, Player newPlayer, BattleManager manager)
+	{
+		this.currentPlayer = currentPlayer;
+		this.newPlayer = newPlayer;
+		this.manager = manager;
+	}
+
+	public void performMove () {
+		manager.switchPlayers (newPlayer);
+	}
+}
+
+[System.Serializable]
 public class HealingSpell : CharacterMove {
 
 	private Character user;
@@ -51,4 +74,26 @@ public class HealingSpell : CharacterMove {
 			target.Health = 100;
 		}
 	}
+}
+
+[System.Serializable]
+public class Fireball : SpecialMove {
+
+	private string name;
+	private string desc;
+	private Character target;
+
+	public Fireball (string name, string desc) {
+		this.name = name;
+		this.desc = desc;
+	}
+
+	public void setUp(BattleManager manager) {
+		this.target = manager.Enemy;
+	}
+
+	public void performMove() {
+		target.Health = 0;
+	}
+
 }
