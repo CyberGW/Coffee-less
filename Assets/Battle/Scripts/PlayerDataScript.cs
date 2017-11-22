@@ -11,8 +11,9 @@ public class PlayerDataScript : MonoBehaviour {
 	void Start () {
 		playerArray = new Player[6];
 		for (int i = 0; i < 6; i++) {
-			playerArray [i] = new Player("Test",1,100,1,1,1,1,1,0,null,null,null);
+			playerArray [i] = new Player("Test",1,100,5,5,5,5,5,0, null,null,null);
 		}
+		playerArray [0].Item = new Hammer (playerArray [0]);
 		alive = 6;
 	}
 	

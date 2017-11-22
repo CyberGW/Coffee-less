@@ -5,7 +5,6 @@ using UnityEngine;
 [System.Serializable]
 public class BattleManager {
 
-	private Player[] playerArray;
 	private Player player;
 	private Enemy enemy;
 	private bool playerFirst;
@@ -15,7 +14,6 @@ public class BattleManager {
 	{
 		this.player = player;
 		this.enemy = enemy;
-		this.playerArray = playerArray;
 		applyItem ();
 		calculatePlayerFirst ();
 		forceCriticalHits = "None";
