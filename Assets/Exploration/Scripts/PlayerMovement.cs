@@ -28,6 +28,11 @@ public class PlayerMovement : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 
+		if (Input.GetKeyDown (KeyCode.Return)) {
+			Initiate.Fade ("Battle", Color.black, 3f);
+			//UnityEngine.SceneManagement.SceneManager.LoadScene ("Battle");
+		}
+
 		if (canMove) {
 			Vector2 movement = Vector2.zero;
 

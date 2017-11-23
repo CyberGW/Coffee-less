@@ -21,11 +21,16 @@ public class MainBattle : MonoBehaviour {
 	private StatsScript enemyHealthBar;
 	private int playerPreviousHealth;
 	private int enemyPreviousHealth;
+	//Scene Management
+	private GameObject moveablePlayer;
+	private GameObject playerCamera;
 
 
 	// Use this for initialization
 	void Start () {
 		moveChosen = false;
+		moveablePlayer = GameObject.Find ("Player").gameObject;
+		moveablePlayer.SetActive (false);
 		//Let PlayerDataScript setup first before reading
 		Invoke ("initialSetup", 0.1f);
 	}
@@ -49,7 +54,7 @@ public class MainBattle : MonoBehaviour {
 	}
 
 	void initialSetup() {
-		data = GameObject.Find ("PlayerData").GetComponent<PlayerDataScript> ();
+		data = GameObject.Find ("GlobalData").GetComponent<PlayerDataScript> ();
 		playerHealthBar = GameObject.Find ("PlayerStats").GetComponent<StatsScript> ();
 		enemyHealthBar = GameObject.Find ("EnemyStats").GetComponent<StatsScript> ();
 		playerArray = data.playerArray;
@@ -81,6 +86,8 @@ public class MainBattle : MonoBehaviour {
 	public bool checkIfPlayerWon() {
 		if (enemy.Health <= 0) {
 			Debug.Log ("Won!");
+			moveablePlayer.SetActive (true);
+			Initiate.Fade ("Main", Color.black, 3f);
 			return true;
 		} else {
 			return false;

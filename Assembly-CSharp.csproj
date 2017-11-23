@@ -61,6 +61,7 @@
      <Compile Include="Assets\Battle\Scripts\Player.cs" />
      <Compile Include="Assets\Battle\Scripts\PlayerDataScript.cs" />
      <Compile Include="Assets\Battle\Scripts\StatsScript.cs" />
+     <Compile Include="Assets\Exploration\Scripts\CameraController.cs" />
      <Compile Include="Assets\Exploration\Scripts\CanvasScript.cs" />
      <Compile Include="Assets\Exploration\Scripts\DialogueScript.cs" />
      <Compile Include="Assets\Exploration\Scripts\ObjectDialogue.cs" />

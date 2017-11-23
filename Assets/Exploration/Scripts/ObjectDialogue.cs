@@ -17,7 +17,7 @@ public class ObjectDialogue : MonoBehaviour {
 	}	
 
 	void OnTriggerStay2D(Collider2D other) {
-		if (other.gameObject.name == "Player" && Input.GetKeyUp (KeyCode.Space) && !dManager.dialogueActive) {
+		if (other.gameObject.name == "Player" && Input.GetKeyDown (KeyCode.Space) && !dManager.dialogueActive) {
 			SoundManager.instance.playSingle (SFX);
 			dManager.showDialogue (dialogue);
 			movementScript.setCanMove (false);

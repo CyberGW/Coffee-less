@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Exploration/Scenes/Alternate.unity
     guid: 4793657b033918b42a49956f7c112329
+  - enabled: 1
+    path: Assets/Battle/Battle.unity
+    guid: 4ecfa394df50c7c46acec1e25e1219ca
