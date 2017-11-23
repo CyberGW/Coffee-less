@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/World Map/Scenes/Hes_East.unity
+- path: Assets/Battle/Battle.unity
   isLoaded: 1
   isActive: 1
