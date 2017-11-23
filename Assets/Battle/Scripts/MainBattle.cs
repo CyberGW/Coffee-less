@@ -16,6 +16,12 @@ public class MainBattle : MonoBehaviour {
 	private CharacterMove playerMove;
 	private CharacterMove enemyMove;
 	private bool moveChosen;
+	//UI
+	private StatsScript playerHealthBar;
+	private StatsScript enemyHealthBar;
+	private int playerPreviousHealth;
+	private int enemyPreviousHealth;
+
 
 	// Use this for initialization
 	void Start () {
@@ -28,8 +34,7 @@ public class MainBattle : MonoBehaviour {
 	void Update () {
 		if (moveChosen) {
 			if (playerFirst) {
-				playersTurn (playerMove);
-				enemysTurn (enemyMove);
+				StartCoroutine (playerThenEnemy ());
 			} else {
 				enemysTurn (enemyMove);
 				playersTurn (playerMove);
@@ -38,8 +43,15 @@ public class MainBattle : MonoBehaviour {
 		}
 	}
 
+	public IEnumerator playerThenEnemy () {
+		yield return StartCoroutine (playersTurn (playerMove));
+		yield return StartCoroutine (enemysTurn (enemyMove));
+	}
+
 	void initialSetup() {
 		data = GameObject.Find ("PlayerData").GetComponent<PlayerDataScript> ();
+		playerHealthBar = GameObject.Find ("PlayerStats").GetComponent<StatsScript> ();
+		enemyHealthBar = GameObject.Find ("EnemyStats").GetComponent<StatsScript> ();
 		playerArray = data.playerArray;
 		player = playerArray [0];
 		enemyObject = new Enemy ("Test", 5, 100, 15, 5, 5, 5, 5);
@@ -50,14 +62,18 @@ public class MainBattle : MonoBehaviour {
 		enemyMove = new StandardAttack (manager, enemy, player, 10);
 	}
 
-	public void playersTurn(CharacterMove playerMove) {
+	public IEnumerator playersTurn(CharacterMove playerMove) {
+		enemyPreviousHealth = enemy.Health;
 		playerMove.performMove ();
+		yield return StartCoroutine ( enemyHealthBar.updatePlayerHealth (enemyPreviousHealth, enemy.Health) );
 		Debug.Log ("Enemy Health: " + enemy.Health);
 		checkIfPlayerWon ();
 	}
 
-	public void enemysTurn(CharacterMove enemyMove) {
+	public IEnumerator enemysTurn(CharacterMove enemyMove) {
+		playerPreviousHealth = player.Health;
 		enemyMove.performMove ();
+		yield return StartCoroutine ( playerHealthBar.updatePlayerHealth (playerPreviousHealth, player.Health) );
 		Debug.Log ("Player Health: " + player.Health);
 		checkIfPlayerLost ();
 	}
@@ -84,4 +100,5 @@ public class MainBattle : MonoBehaviour {
 		playerMove = new StandardAttack (manager, player, enemy, 10);
 		moveChosen = true;
 	}
+
 }
