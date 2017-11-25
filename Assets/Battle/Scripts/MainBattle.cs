@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MainBattle : MonoBehaviour {
 
@@ -12,6 +13,7 @@ public class MainBattle : MonoBehaviour {
 	private BattleManager manager;
 	private Player player;
 	private Enemy enemy;
+	private Button attackButton;
 	//Local Variables
 	private bool battleWon;
 	private bool battleLost;
@@ -48,6 +50,7 @@ public class MainBattle : MonoBehaviour {
 		playerHealthBar = GameObject.Find ("PlayerStats").GetComponent<StatsScript> ();
 		enemyHealthBar = GameObject.Find ("EnemyStats").GetComponent<StatsScript> ();
 		sceneChanger = GameObject.Find("SceneChanger").GetComponent<SceneChanger> ();
+		attackButton = GameObject.Find ("AttackButton").GetComponent<Button> ();
 
 		//Setup Object references
 		playerArray = playerData.playerArray;
@@ -89,6 +92,7 @@ public class MainBattle : MonoBehaviour {
 		if (!battleWon) {
 			yield return StartCoroutine (enemysTurn (enemyMove));
 		}
+		attackButton.interactable = true;
 	}
 
 	private IEnumerator enemyThenPlayer() {
@@ -96,6 +100,7 @@ public class MainBattle : MonoBehaviour {
 		if (!battleLost) {
 			yield return StartCoroutine (playersTurn (playerMove));
 		}
+		attackButton.interactable = true;
 	}
 
 	private IEnumerator playersTurn(CharacterMove playerMove) {
@@ -135,9 +140,10 @@ public class MainBattle : MonoBehaviour {
 		}
 	}
 
-	private void attackButton() {
+	public void standardAttack() {
 		playerMove = new StandardAttack (manager, player, enemy, 10);
 		moveChosen = true;
+		attackButton.interactable = false;
 	}
 
 }
