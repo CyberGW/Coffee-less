@@ -18,6 +18,11 @@ public class StatsScript : MonoBehaviour {
 		
 	}
 
+	public void setUpDisplay (int health) {
+		rect.sizeDelta = new Vector2 (2 * health, 30);
+		textDisplay.text = "Health: " + health;
+	}
+
 	public IEnumerator updatePlayerHealth(int previousHealth, int newHealth) {
 		int frames = 60;
 		int difference = previousHealth - newHealth;

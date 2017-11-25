@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class Portal : MonoBehaviour {
 
-	private SceneChanger sceneManager;
+	public string newScene;
+	public Vector2 newPosition;
+	private SceneChanger sceneChanger;
 	private AudioClip SFX;
 
 	// Use this for initialization
 	void Start () {
-		sceneManager = GetComponent<SceneChanger> ();
+		sceneChanger = GameObject.Find("SceneChanger").GetComponent<SceneChanger> ();
 		SFX = Resources.Load("Audio/transition", typeof(AudioClip)) as AudioClip;
 	}
 	
@@ -21,7 +23,7 @@ public class Portal : MonoBehaviour {
 	void OnTriggerEnter2D (Collider2D other) {
 		if (other.gameObject.name == "Player") {
 			SoundManager.instance.playSingle (SFX);
-			sceneManager.loadLevel ();
+			sceneChanger.loadLevel (newScene, newPosition);
 		}
 	}
 }

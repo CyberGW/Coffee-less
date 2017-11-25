@@ -19,6 +19,11 @@ public class SoundManager : MonoBehaviour {
 		DontDestroyOnLoad (gameObject);
 	}
 
+	public void playBGM(AudioClip clip) {
+		BGMSource.clip = clip;
+		BGMSource.Play ();
+	}
+
 	public void playSingle(AudioClip clip) {
 		SFXSource.clip = clip;
 		SFXSource.Play ();

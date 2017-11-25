@@ -6,6 +6,7 @@ public class PlayerDataScript : MonoBehaviour {
 
 	public Player[] playerArray;
 	public int alive;
+	private static bool dataExists = false;
 
 	// Use this for initialization
 	void Start () {
@@ -15,7 +16,13 @@ public class PlayerDataScript : MonoBehaviour {
 		}
 		playerArray [0].Item = new Hammer (playerArray [0]);
 		alive = 6;
-		DontDestroyOnLoad (gameObject);
+
+		if (!dataExists) {
+			dataExists = true;
+			DontDestroyOnLoad (transform.gameObject);
+		} else {
+			Destroy (gameObject);
+		}
 	}
 	
 	// Update is called once per frame
