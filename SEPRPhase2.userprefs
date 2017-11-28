@@ -1,17 +1,19 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Battle\Scripts\BattleManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Exploration\Scripts\SoundManager.cs">
     <Files>
-      <File FileName="Assets\Battle\Scripts\PlayerDataScript.cs" Line="21" Column="8" />
-      <File FileName="Assets\Exploration\Scripts\PlayerMovement.cs" Line="84" Column="79" />
-      <File FileName="Assets\Battle\Scripts\MainBattle.cs" Line="60" Column="27" />
+      <File FileName="Assets\Battle\Scripts\PlayerDataScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Exploration\Scripts\PlayerMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Battle\Scripts\MainBattle.cs" Line="1" Column="1" />
       <File FileName="Assets\Exploration\Scripts\CameraController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Battle\Scripts\StatsScript.cs" Line="23" Column="42" />
-      <File FileName="Assets\Exploration\Scripts\GlobalVariables.cs" Line="9" Column="18" />
+      <File FileName="Assets\Battle\Scripts\StatsScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Exploration\Scripts\GlobalVariables.cs" Line="1" Column="1" />
       <File FileName="Assets\Exploration\Scripts\SceneChanger.cs" Line="1" Column="1" />
-      <File FileName="Assets\Exploration\Scripts\Portal.cs" Line="1" Column="1" />
-      <File FileName="Assets\Exploration\Scripts\SoundManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Battle\Scripts\BattleManager.cs" Line="9" Column="22" />
+      <File FileName="Assets\Exploration\Scripts\Portal.cs" Line="24" Column="47" />
+      <File FileName="Assets\Exploration\Scripts\SoundManager.cs" Line="34" Column="39" />
+      <File FileName="Assets\Battle\Scripts\BattleManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Exploration\Scripts\ObjectDialogue.cs" Line="20" Column="45" />
+      <File FileName="Assets\Exploration\Scripts\DialogueScript.cs" Line="28" Column="48" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

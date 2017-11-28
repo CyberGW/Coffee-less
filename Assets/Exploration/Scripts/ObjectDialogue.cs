@@ -4,21 +4,20 @@ using UnityEngine;
 
 public class ObjectDialogue : MonoBehaviour {
 
-	public string dialogue;
+	public string[] dialogue;
 	public static AudioClip SFX;
 	private DialogueScript dManager;
 	private PlayerMovement movementScript;
 
 	// Use this for initialization
 	void Start () {
-		SFX = Resources.Load("Audio/interact", typeof(AudioClip)) as AudioClip;
 		dManager = FindObjectOfType<DialogueScript> ();
 		movementScript = FindObjectOfType<PlayerMovement> ();
 	}	
 
 	void OnTriggerStay2D(Collider2D other) {
 		if (other.gameObject.name == "Player" && Input.GetKeyDown (KeyCode.Space) && !dManager.dialogueActive) {
-			SoundManager.instance.playSingle (SFX);
+			SoundManager.instance.playSFX ("interact");
 			dManager.showDialogue (dialogue);
 			movementScript.setCanMove (false);
 		}

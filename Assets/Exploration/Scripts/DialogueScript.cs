@@ -5,6 +5,8 @@ using UnityEngine;
 public class DialogueScript : MonoBehaviour {
 
 	public bool dialogueActive;
+	private string[] dialogueLines;
+	private int currentLineIndex;
 	private GameObject dialogueBox;
 	private UnityEngine.UI.Text dialogueText;
 	private PlayerMovement movementScript;
@@ -20,14 +22,26 @@ public class DialogueScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (dialogueActive && Input.GetKeyDown (KeyCode.Space)) {
-			StartCoroutine(delaySetInactive ());
+			if (currentLineIndex + 1 < dialogueLines.Length) {
+				currentLineIndex += 1;
+				showLine (dialogueLines [currentLineIndex]);
+				SoundManager.instance.playSFX ("interact");
+			} else {
+				StartCoroutine (delaySetInactive ());
+			}
 		}
 	}
 
-	public void showDialogue(string dialogue) {
+	public void showDialogue(string[] dialogue) {
 		dialogueBox.SetActive (true);
-		dialogueText.text = dialogue;
+		dialogueLines = dialogue;
+		currentLineIndex = 0;
+		showLine (dialogueLines [currentLineIndex]);
 		StartCoroutine (delaySetActive ());
+	}
+
+	private void showLine(string line) {
+		dialogueText.text = line;
 	}
 
 	private void setInactive() {

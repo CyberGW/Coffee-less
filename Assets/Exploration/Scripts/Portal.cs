@@ -12,7 +12,6 @@ public class Portal : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		sceneChanger = GameObject.Find("SceneChanger").GetComponent<SceneChanger> ();
-		SFX = Resources.Load("Audio/transition", typeof(AudioClip)) as AudioClip;
 	}
 	
 	// Update is called once per frame
@@ -22,7 +21,7 @@ public class Portal : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D other) {
 		if (other.gameObject.name == "Player") {
-			SoundManager.instance.playSingle (SFX);
+			SoundManager.instance.playSFX ("transition");
 			sceneChanger.loadLevel (newScene, newPosition);
 		}
 	}
