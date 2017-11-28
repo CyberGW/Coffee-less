@@ -82,6 +82,15 @@ public class BattleManager {
 		}
 	}
 
+	public bool ranAway(int playerSpeed, int enemySpeed) {
+		float chance = 0.5f + (playerSpeed - enemySpeed) * 2;
+		if (Random.value < chance) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
 	public int damageCalculation(Character user, Character target, int power) {
 		float fDamage = (float) user.Attack * power / target.Defence;
 		if (isCriticalHit (user.Luck)) {

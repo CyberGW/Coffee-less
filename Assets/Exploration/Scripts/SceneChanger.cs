@@ -7,17 +7,18 @@ public class SceneChanger : MonoBehaviour {
 
 	public static bool movePlayer;
 	public static Vector2 startPosition;
+	public static SceneChanger instance;
 	private GameObject player;
-	private static bool sceneChangerExists;
 
-	// Use this for initialization
-	void Start () {
-		if (!sceneChangerExists) {
-			sceneChangerExists = true;
-			DontDestroyOnLoad (transform.gameObject);
-		} else {
+
+	void Awake() {
+		if (instance == null) {
+			instance = this;
+		} else if (instance != this) {
 			Destroy (gameObject);
 		}
+
+		DontDestroyOnLoad (gameObject);
 		SceneManager.sceneLoaded += sceneChanged;
 	}
 

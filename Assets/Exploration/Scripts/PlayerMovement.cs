@@ -8,8 +8,6 @@ public class PlayerMovement : MonoBehaviour {
 	private string lastMove = "Idle";
 	private bool canMove = true;
 	private static bool playerExists = false;
-	private GlobalVariables globalVariables;
-	private SceneChanger sceneChanger;
 	private Transform player;
 	private Animator anim;
 
@@ -17,8 +15,6 @@ public class PlayerMovement : MonoBehaviour {
 	void Start () {
 		player = GameObject.Find ("Player").GetComponent<Transform>();
 		anim = GameObject.Find("Player").GetComponent<Animator> ();
-		globalVariables = GameObject.Find ("GlobalData").GetComponent<GlobalVariables> ();
-		sceneChanger = GameObject.Find("SceneChanger").GetComponent<SceneChanger> ();
 
 		if (!playerExists) {
 			playerExists = true;
@@ -33,7 +29,7 @@ public class PlayerMovement : MonoBehaviour {
 	void FixedUpdate () {
 
 		if (Input.GetKeyDown (KeyCode.Return)) {
-			startBattle (new Enemy ("Test", 5, 100, 15, 5, 5, 5, 5));
+			GlobalFunctions.instance.createBattle (new Enemy ("Test", 5, 100, 15, 5, 5, 5, 5), 50, null);
 		}
 
 		if (canMove) {
@@ -76,14 +72,6 @@ public class PlayerMovement : MonoBehaviour {
 			anim.SetTrigger ("Idle" + lastMove);
 			lastMove = "Idle";
 		}
-	}
-
-	private void startBattle (Enemy enemy) {
-		globalVariables.battleEnemy = enemy;
-		globalVariables.battleSceneToReturnTo = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
-		globalVariables.battleMusicToReturnTo = SoundManager.instance.BGMSource.clip;
-		sceneChanger.loadLevel ("Battle");
-		Initiate.Fade ("Battle", Color.black, 3f);
 	}
 
 	public void setCanMove(bool value) {

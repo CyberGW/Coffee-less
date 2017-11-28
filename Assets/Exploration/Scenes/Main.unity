@@ -1429,6 +1429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerArray: []
+  money: 0
   alive: 0
 --- !u!4 &1865146521
 Transform:
@@ -1451,11 +1452,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1865146519}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68b702c93b11d2642bb4b47e6705199d, type: 3}
+  m_Script: {fileID: 11500000, guid: 26ecb71766b5131459bddd25a035326a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  battleSceneToReturnTo: 
-  battleMusicToReturnTo: {fileID: 0}
 --- !u!1 &1874946396
 GameObject:
   m_ObjectHideFlags: 0

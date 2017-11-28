@@ -7,13 +7,14 @@ public class MainBattle : MonoBehaviour {
 
 	//Objects
 	private GameObject globalData;
-	private PlayerDataScript playerData;
-	private GlobalVariables globalVariables;
-	private Player[] playerArray;
 	private BattleManager manager;
+	private Player[] playerArray;
+	private Button attackButton;
+	//Battle Manager References
 	private Player player;
 	private Enemy enemy;
-	private Button attackButton;
+	private int moneyReward;
+	private Item itemReward;
 	//Local Variables
 	private bool battleWon;
 	private bool battleLost;
@@ -30,8 +31,6 @@ public class MainBattle : MonoBehaviour {
 	private int playerPreviousHealth;
 	private int enemyPreviousHealth;
 	//Scene Management
-	private SceneChanger sceneChanger;
-	private GameObject moveablePlayer;
 	private GameObject playerCamera;
 	//Music
 	private AudioClip BGM;
@@ -39,23 +38,18 @@ public class MainBattle : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//Deactive Player
-		moveablePlayer = GameObject.Find ("Player").gameObject;
-		moveablePlayer.SetActive (false);
-
+		
 		//Find Objects
-		globalData = GameObject.Find ("GlobalData");
-		playerData = globalData.GetComponent<PlayerDataScript> ();
-		globalVariables = globalData.GetComponent<GlobalVariables> ();
 		playerHealthBar = GameObject.Find ("PlayerStats").GetComponent<StatsScript> ();
 		enemyHealthBar = GameObject.Find ("EnemyStats").GetComponent<StatsScript> ();
-		sceneChanger = GameObject.Find("SceneChanger").GetComponent<SceneChanger> ();
 		attackButton = GameObject.Find ("AttackButton").GetComponent<Button> ();
 
 		//Setup Object references
-		playerArray = playerData.playerArray;
+		playerArray = PlayerData.instance.playerArray;
 		player = playerArray [0];
-		enemyObject = globalVariables.battleEnemy;
+		enemyObject = GlobalFunctions.instance.getEnemy ();
+		moneyReward = GlobalFunctions.instance.getMoney ();
+		itemReward = GlobalFunctions.instance.getItem ();
 		manager = new BattleManager (playerArray[0], enemyObject);
 		player = manager.Player;
 		enemy = manager.Enemy;
@@ -123,11 +117,10 @@ public class MainBattle : MonoBehaviour {
 		if (enemy.Health <= 0) {
 			battleWon = true;
 			playerArray [0] = player;
-			playerData.playerArray = playerArray;
-			moveablePlayer.SetActive (true);
-			SoundManager.instance.playBGM (globalVariables.battleMusicToReturnTo);
-			sceneChanger.loadLevel (globalVariables.battleSceneToReturnTo);
-			Initiate.Fade ("Main", Color.black, 3f);
+			PlayerData.instance.playerArray = playerArray;
+			PlayerData.instance.money += moneyReward;
+			Debug.Log ("Money: " + PlayerData.instance.money);
+			GlobalFunctions.instance.endBattle ();
 		}
 	}
 

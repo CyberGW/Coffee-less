@@ -59,13 +59,13 @@
      <Compile Include="Assets\Battle\Scripts\Item.cs" />
      <Compile Include="Assets\Battle\Scripts\MainBattle.cs" />
      <Compile Include="Assets\Battle\Scripts\Player.cs" />
-     <Compile Include="Assets\Battle\Scripts\PlayerDataScript.cs" />
      <Compile Include="Assets\Battle\Scripts\StatsScript.cs" />
      <Compile Include="Assets\Exploration\Scripts\CameraController.cs" />
      <Compile Include="Assets\Exploration\Scripts\CanvasScript.cs" />
      <Compile Include="Assets\Exploration\Scripts\DialogueScript.cs" />
-     <Compile Include="Assets\Exploration\Scripts\GlobalVariables.cs" />
+     <Compile Include="Assets\Exploration\Scripts\GlobalFunctions.cs" />
      <Compile Include="Assets\Exploration\Scripts\ObjectDialogue.cs" />
+     <Compile Include="Assets\Exploration\Scripts\PlayerData.cs" />
      <Compile Include="Assets\Exploration\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Exploration\Scripts\Portal.cs" />
      <Compile Include="Assets\Exploration\Scripts\SceneChanger.cs" />
