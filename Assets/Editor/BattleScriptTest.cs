@@ -20,7 +20,7 @@ public class BattleScriptTest {
 		[SetUp]
 		public void Init() {
 			//Player(Name, Level, Health, Attack, Defence, Magic, Luck, Speed, Exp, Item)
-			this.playerObject = new Player ("Player", 10, 100, 10, 10, 10, 10, 10, 10, 2000, null, new Fireball("Fireball", "Instant Kill"), null);
+			this.playerObject = new Player ("Player", 10, 100, 10, 10, 10, 10, 10, 10, 2000, null, new Fireball("Fireball", "Instant Kill", 5), null);
 			//Enemy(Name, Level, Health, Attack, Defence, Magic, Luck, Speed)
 			this.enemyObject = new Enemy ("Enemy", 10, 100, 5, 5, 5, 5, 5, 5, null, null);
 			this.manager = new BattleManager (playerObject, enemyObject);
@@ -103,10 +103,10 @@ public class BattleScriptTest {
 
 		[Test]
 		public void PlayerSpecialMove() {
-			player.Special1.setUp (manager);
+			player.Special1.setUp (manager, player, enemy);
 			playerMove = player.Special1;
 			playerMove.performMove ();
-			Assert.AreEqual (0, enemy.Health);
+			Assert.AreEqual (60, enemy.Health);
 		}
 
 		[Test]

@@ -104,5 +104,34 @@ public class BattleManager {
 		}
 	}
 
+	public CharacterMove enemyMove(Enemy enemy, Player player) {
+		double chance = 0.7 - 0.7 * (enemy.MaximumMagic - enemy.Magic) / (double) enemy.MaximumMagic;
+		float random = Random.value;
+		if (random < chance) { //try magic spell
+			Debug.Log("Special Move");
+			int move = Random.Range(0, 2);
+			//Setup moves
+			enemy.Special1.setUp(this, enemy, player);
+			enemy.Special2.setUp(this, enemy, player);
+			SpecialMove[] moveOrder = new SpecialMove[2];
+			if (move == 0) { //try special 1 first
+				moveOrder [0] = enemy.Special1;
+				moveOrder [1] = enemy.Special2;
+			} else { //try special 2 first
+				moveOrder [0] = enemy.Special2;
+				moveOrder [1] = enemy.Special1;
+			}
+			if (moveOrder [0].Magic < enemy.Magic) {
+				return moveOrder [0];
+			} else if (moveOrder [1].Magic < enemy.Magic) {
+				return moveOrder [1];
+			} else {
+				return new StandardAttack (this, enemy, player, 10);
+			}
+		} else {
+			return new StandardAttack (this, enemy, player, 10);
+		}
+	}
+
 
 }

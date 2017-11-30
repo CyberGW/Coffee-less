@@ -34,6 +34,8 @@ public class MainBattle : MonoBehaviour {
 	private StatsScript enemyMagicBar;
 	private int playerPreviousHealth;
 	private int enemyPreviousHealth;
+	private int playerPreviousMagic;
+	private int enemyPreviousMagic;
 	//Scene Management
 	private GameObject playerCamera;
 	//Music
@@ -49,6 +51,7 @@ public class MainBattle : MonoBehaviour {
 		playerHealthBar = playerStats.transform.Find("Health").GetComponent<StatsScript> ();
 		enemyHealthBar = enemyStats.transform.Find("Health").GetComponent<StatsScript> ();
 		playerMagicBar = playerStats.transform.Find ("Magic").GetComponent<StatsScript> ();
+		enemyMagicBar = enemyStats.transform.Find ("Magic").GetComponent<StatsScript> ();
 		attackButton = GameObject.Find ("AttackButton").GetComponent<Button> ();
 
 		//Setup Object references
@@ -61,10 +64,11 @@ public class MainBattle : MonoBehaviour {
 		player = manager.Player;
 		enemy = manager.Enemy;
 		playerFirst = manager.PlayerFirst;
-		enemyMove = new StandardAttack (manager, enemy, player, 10);
+		//enemyMove = new StandardAttack (manager, enemy, player, 10);
 		playerHealthBar.setUpDisplay (player.Health, 100);
 		enemyHealthBar.setUpDisplay (enemy.Health, 100);
 		playerMagicBar.setUpDisplay (player.Magic, player.MaximumMagic);
+		enemyMagicBar.setUpDisplay (enemy.Magic, enemy.MaximumMagic);
 
 		//Setup local variables
 		moveChosen = false;
@@ -105,19 +109,26 @@ public class MainBattle : MonoBehaviour {
 		attackButton.interactable = true;
 	}
 
+
 	private IEnumerator playersTurn(CharacterMove playerMove) {
 		enemyPreviousHealth = enemy.Health;
+		playerPreviousMagic = player.Magic;
 		playerMove.performMove ();
-		yield return StartCoroutine ( enemyHealthBar.updateDisplay (enemyPreviousHealth, enemy.Health) );
+		StartCoroutine ( enemyHealthBar.updateDisplay (enemyPreviousHealth, enemy.Health) );
+		yield return StartCoroutine ( playerMagicBar.updateDisplay (playerPreviousMagic, player.Magic) );
 		Debug.Log ("Enemy Health: " + enemy.Health);
 		checkIfPlayerWon ();
 	}
 
 	private IEnumerator enemysTurn(CharacterMove enemyMove) {
 		playerPreviousHealth = player.Health;
+		enemyPreviousMagic = enemy.Magic;
+		enemyMove = manager.enemyMove (enemy, player);
 		enemyMove.performMove ();
-		yield return StartCoroutine ( playerHealthBar.updateDisplay (playerPreviousHealth, player.Health) );
+		StartCoroutine ( playerHealthBar.updateDisplay (playerPreviousHealth, player.Health) );
+		yield return StartCoroutine ( enemyMagicBar.updateDisplay (enemyPreviousMagic, enemy.Magic) );
 		Debug.Log ("Player Health: " + player.Health);
+		Debug.Log ("Enemy Magic: " + enemy.Magic);
 		checkIfPlayerLost ();
 	}
 

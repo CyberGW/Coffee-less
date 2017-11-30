@@ -7,7 +7,11 @@ public interface CharacterMove {
 }
 
 public interface SpecialMove : CharacterMove {
-	void setUp(BattleManager manager);
+	int Magic {
+		get;
+	}
+	void setUp(BattleManager manager, Character user, Character target);
+	void decreaseMagic();
 }
 
 
@@ -81,19 +85,34 @@ public class Fireball : SpecialMove {
 
 	private string name;
 	private string desc;
+	private int magic;
+	private Character user;
 	private Character target;
 
-	public Fireball (string name, string desc) {
+	public Fireball (string name, string desc, int magic) {
 		this.name = name;
 		this.desc = desc;
+		this.magic = magic;
 	}
 
-	public void setUp(BattleManager manager) {
-		this.target = manager.Enemy;
+	public int Magic {
+		get {
+			return this.magic;
+		}
+	}
+
+	public void setUp(BattleManager manager, Character user, Character target) {
+		this.target = target;
+		this.user = user;
 	}
 
 	public void performMove() {
-		target.Health = 0;
+		target.Health -= 40;
+		decreaseMagic ();
+	}
+
+	public void decreaseMagic() {
+		user.Magic -= magic;
 	}
 
 }
