@@ -10,6 +10,7 @@ public class Player : Character {
 	private int health;
 	private int attack;
 	private int defence;
+	private int maximumMagic;
 	private int magic;
 	private int luck;
 	private int speed;
@@ -18,13 +19,14 @@ public class Player : Character {
 	private SpecialMove special1;
 	private SpecialMove special2;
 
-	public Player (string name, int level, int health, int attack, int defence, int magic, int luck, int speed, int exp, Item item, SpecialMove special1, SpecialMove special2)
+	public Player (string name, int level, int health, int attack, int defence, int maximumMagic, int magic, int luck, int speed, int exp, Item item, SpecialMove special1, SpecialMove special2)
 	{
 		this.name = name;
 		this.level = level;
 		this.health = health;
 		this.attack = attack;
 		this.defence = defence;
+		this.maximumMagic = maximumMagic;
 		this.magic = magic;
 		this.luck = luck;
 		this.speed = speed;
@@ -77,6 +79,15 @@ public class Player : Character {
 		}
 		set {
 			defence = value;
+		}
+	}
+
+	public int MaximumMagic {
+		get {
+			return this.maximumMagic;
+		}
+		set {
+			maximumMagic = value;
 		}
 	}
 

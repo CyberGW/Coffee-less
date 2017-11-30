@@ -20,6 +20,8 @@ public class SceneChanger : MonoBehaviour {
 
 		DontDestroyOnLoad (gameObject);
 		SceneManager.sceneLoaded += sceneChanged;
+
+		player = GameObject.Find ("Player");
 	}
 
 	void OnDisable() {
@@ -29,7 +31,6 @@ public class SceneChanger : MonoBehaviour {
 
 	private void sceneChanged(Scene scene, LoadSceneMode mode) {
 		if (movePlayer) {
-			player = GameObject.Find ("Player");
 			//Change the player position on load
 			changePosition (startPosition);
 		}
@@ -49,7 +50,7 @@ public class SceneChanger : MonoBehaviour {
 		//Set the static start position to the new position for when next scene loads
 		movePlayer = true;
 		startPosition = newPosition;
-		Initiate.Fade(newScene,Color.black,3f);
+		Initiate.Fade (newScene, Color.black, 3f);
 	}
 
 	public void changePosition(Vector2 position) {

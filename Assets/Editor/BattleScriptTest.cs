@@ -20,9 +20,9 @@ public class BattleScriptTest {
 		[SetUp]
 		public void Init() {
 			//Player(Name, Level, Health, Attack, Defence, Magic, Luck, Speed, Exp, Item)
-			this.playerObject = new Player ("Player", 10, 100, 10, 10, 10, 10, 10, 2000, null, new Fireball("Fireball", "Instant Kill"), null);
+			this.playerObject = new Player ("Player", 10, 100, 10, 10, 10, 10, 10, 10, 2000, null, new Fireball("Fireball", "Instant Kill"), null);
 			//Enemy(Name, Level, Health, Attack, Defence, Magic, Luck, Speed)
-			this.enemyObject = new Enemy ("Enemy", 10, 100, 5, 5, 5, 5, 5);
+			this.enemyObject = new Enemy ("Enemy", 10, 100, 5, 5, 5, 5, 5, 5, null, null);
 			this.manager = new BattleManager (playerObject, enemyObject);
 			this.player = manager.Player;
 			this.enemy = manager.Enemy;
@@ -80,7 +80,7 @@ public class BattleScriptTest {
 
 		[Test]
 		public void ChangePlayer() {
-			Player newPlayer = new Player ("Second Player", 1, 1, 1, 1, 1, 1, 1, 1, null, null, null);
+			Player newPlayer = new Player ("Second Player", 1, 1, 1, 1, 1, 1, 1, 1, 1, null, null, null);
 			playerMove = new SwitchPlayers (player, newPlayer, manager);
 			playerMove.performMove ();
 			Assert.AreEqual (newPlayer, manager.Player); //Check player has been reassigned correctly

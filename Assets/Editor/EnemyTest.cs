@@ -13,15 +13,16 @@ public class FighterTest {
 
 		[OneTimeSetUp]
 		public void Init() {
-			this.enemy = new Enemy ("George", 10, 100, 20, 10, 25, 5, 30);
+			this.enemy = new Enemy ("Enemy1", 10, 100, 20, 10, 30, 25, 5, 30, null, null);
 		}
 
 		[Test]
 		public void Constructor() {
-			Assert.AreEqual ("George", enemy.Name);
+			Assert.AreEqual ("Enemy1", enemy.Name);
 			Assert.AreEqual (100, enemy.Health);
 			Assert.AreEqual (20, enemy.Attack);
 			Assert.AreEqual (10, enemy.Defence);
+			Assert.AreEqual (30, enemy.MaximumMagic);
 			Assert.AreEqual (25, enemy.Magic);
 			Assert.AreEqual (5, enemy.Luck);
 			Assert.AreEqual (30, enemy.Speed);

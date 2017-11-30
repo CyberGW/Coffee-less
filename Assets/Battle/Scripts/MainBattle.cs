@@ -26,8 +26,12 @@ public class MainBattle : MonoBehaviour {
 	private CharacterMove enemyMove;
 	private bool moveChosen;
 	//UI
+	private GameObject playerStats;
+	private GameObject enemyStats;
 	private StatsScript playerHealthBar;
 	private StatsScript enemyHealthBar;
+	private StatsScript playerMagicBar;
+	private StatsScript enemyMagicBar;
 	private int playerPreviousHealth;
 	private int enemyPreviousHealth;
 	//Scene Management
@@ -40,8 +44,11 @@ public class MainBattle : MonoBehaviour {
 	void Start () {
 		
 		//Find Objects
-		playerHealthBar = GameObject.Find ("PlayerStats").GetComponent<StatsScript> ();
-		enemyHealthBar = GameObject.Find ("EnemyStats").GetComponent<StatsScript> ();
+		playerStats = GameObject.Find("PlayerStats");
+		enemyStats = GameObject.Find ("EnemyStats");
+		playerHealthBar = playerStats.transform.Find("Health").GetComponent<StatsScript> ();
+		enemyHealthBar = enemyStats.transform.Find("Health").GetComponent<StatsScript> ();
+		playerMagicBar = playerStats.transform.Find ("Magic").GetComponent<StatsScript> ();
 		attackButton = GameObject.Find ("AttackButton").GetComponent<Button> ();
 
 		//Setup Object references
@@ -55,8 +62,9 @@ public class MainBattle : MonoBehaviour {
 		enemy = manager.Enemy;
 		playerFirst = manager.PlayerFirst;
 		enemyMove = new StandardAttack (manager, enemy, player, 10);
-		playerHealthBar.setUpDisplay (player.Health);
-		enemyHealthBar.setUpDisplay (enemy.Health);
+		playerHealthBar.setUpDisplay (player.Health, 100);
+		enemyHealthBar.setUpDisplay (enemy.Health, 100);
+		playerMagicBar.setUpDisplay (player.Magic, player.MaximumMagic);
 
 		//Setup local variables
 		moveChosen = false;
@@ -100,7 +108,7 @@ public class MainBattle : MonoBehaviour {
 	private IEnumerator playersTurn(CharacterMove playerMove) {
 		enemyPreviousHealth = enemy.Health;
 		playerMove.performMove ();
-		yield return StartCoroutine ( enemyHealthBar.updatePlayerHealth (enemyPreviousHealth, enemy.Health) );
+		yield return StartCoroutine ( enemyHealthBar.updateDisplay (enemyPreviousHealth, enemy.Health) );
 		Debug.Log ("Enemy Health: " + enemy.Health);
 		checkIfPlayerWon ();
 	}
@@ -108,7 +116,7 @@ public class MainBattle : MonoBehaviour {
 	private IEnumerator enemysTurn(CharacterMove enemyMove) {
 		playerPreviousHealth = player.Health;
 		enemyMove.performMove ();
-		yield return StartCoroutine ( playerHealthBar.updatePlayerHealth (playerPreviousHealth, player.Health) );
+		yield return StartCoroutine ( playerHealthBar.updateDisplay (playerPreviousHealth, player.Health) );
 		Debug.Log ("Player Health: " + player.Health);
 		checkIfPlayerLost ();
 	}

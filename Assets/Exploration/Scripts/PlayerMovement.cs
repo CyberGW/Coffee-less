@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour {
 	void FixedUpdate () {
 
 		if (Input.GetKeyDown (KeyCode.Return)) {
-			GlobalFunctions.instance.createBattle (new Enemy ("Test", 5, 100, 15, 5, 5, 5, 5), 50, null);
+			GlobalFunctions.instance.createBattle (new Enemy ("Test", 5, 100, 15, 5, 5, 5, 5, 5, null, null), 50, null);
 		}
 
 		if (canMove) {

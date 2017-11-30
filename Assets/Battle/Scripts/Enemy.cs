@@ -10,20 +10,26 @@ public class Enemy : Character {
 	private int health;
 	private int attack;
 	private int defence;
+	private int maximumMagic;
 	private int magic;
 	private int luck;
 	private int speed;
+	private SpecialMove special1;
+	private SpecialMove special2;
 
-	public Enemy (string name, int level, int health, int attack, int defence, int magic, int luck, int speed)
+	public Enemy (string name, int level, int health, int attack, int defence, int maximumMagic, int magic, int luck, int speed, SpecialMove special1, SpecialMove special2)
 	{
 		this.name = name;
 		this.level = level;
 		this.health = health;
 		this.attack = attack;
 		this.defence = defence;
+		this.maximumMagic = maximumMagic;
 		this.magic = magic;
 		this.luck = luck;
 		this.speed = speed;
+		this.special1 = special1;
+		this.special2 = special2;
 	}
 
 	public string Name {
@@ -80,6 +86,15 @@ public class Enemy : Character {
 		}
 	}
 
+	public int MaximumMagic {
+		get {
+			return this.maximumMagic;
+		}
+		set {
+			maximumMagic = value;
+		}
+	}
+
 	public int Luck {
 		get {
 			return this.luck;
@@ -95,6 +110,24 @@ public class Enemy : Character {
 		}
 		set {
 			speed = value;
+		}
+	}
+
+	public SpecialMove Special1 {
+		get {
+			return this.special1;
+		}
+		set {
+			special1 = value;
+		}
+	}
+
+	public SpecialMove Special2 {
+		get {
+			return this.special2;
+		}
+		set {
+			special2 = value;
 		}
 	}
 }

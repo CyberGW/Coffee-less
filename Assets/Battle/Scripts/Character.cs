@@ -24,6 +24,11 @@ public interface Character {
 		set;
 	}
 
+	int MaximumMagic {
+		get;
+		set;
+	}
+
 	int Magic {
 		get;
 		set;
@@ -35,6 +40,16 @@ public interface Character {
 	}
 
 	int Speed {
+		get;
+		set;
+	}
+
+	SpecialMove Special1 {
+		get;
+		set;
+	}
+
+	SpecialMove Special2 {
 		get;
 		set;
 	}
