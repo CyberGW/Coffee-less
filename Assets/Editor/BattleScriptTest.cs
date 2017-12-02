@@ -22,7 +22,7 @@ public class BattleScriptTest {
 			//Player(Name, Level, Health, Attack, Defence, Magic, Luck, Speed, Exp, Item)
 			this.playerObject = new Player ("Player", 10, 100, 10, 10, 10, 10, 10, 10, 2000, null, new Fireball("Fireball", "Instant Kill", 5), null);
 			//Enemy(Name, Level, Health, Attack, Defence, Magic, Luck, Speed)
-			this.enemyObject = new Enemy ("Enemy", 10, 100, 5, 5, 5, 5, 5, 5, null, null);
+			this.enemyObject = new Enemy ("Enemy", 10, 100, 5, 5, 5, 5, 5, 5, new Fireball("Fireball", "Instant Kill", 5), new Fireball("Fireball", "Instant Kill", 10));
 			this.manager = new BattleManager (playerObject, enemyObject);
 			this.player = manager.Player;
 			this.enemy = manager.Enemy;
@@ -132,6 +132,15 @@ public class BattleScriptTest {
 			enemyMove.performMove ();
 			Assert.AreEqual (91, player.Health);
 		}
+
+		[Test]
+		public void EnemySpecialMoveAI() {
+			//try special 1
+			Assert.AreEqual (enemy.Special1, manager.enemySpecialMove (0));
+			//try special 2 but fail as not enough magic
+			Assert.IsInstanceOf(typeof(StandardAttack), manager.enemySpecialMove(1));
+		}
+
 
 	}
 

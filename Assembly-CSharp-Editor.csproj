@@ -53,6 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\Editor\BattleScriptTest.cs" />
      <Compile Include="Assets\Editor\EnemyTest.cs" />
+     <Compile Include="Assets\Editor\PlayerTest.cs" />
      <Compile Include="Assets\Editor\SpecialMoveTest.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Editor\CustomTiledImporterAttribute.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Editor\ICustomTiledImporter.cs" />

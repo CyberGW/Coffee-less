@@ -16,6 +16,7 @@ public class Enemy : Character {
 	private int speed;
 	private SpecialMove special1;
 	private SpecialMove special2;
+	private int expGiven;
 
 	public Enemy (string name, int level, int health, int attack, int defence, int maximumMagic, int magic, int luck, int speed, SpecialMove special1, SpecialMove special2)
 	{
@@ -30,6 +31,7 @@ public class Enemy : Character {
 		this.speed = speed;
 		this.special1 = special1;
 		this.special2 = special2;
+		this.expGiven = level * 100;
 	}
 
 	public string Name {
@@ -128,6 +130,15 @@ public class Enemy : Character {
 		}
 		set {
 			special2 = value;
+		}
+	}
+
+	public int ExpGiven {
+		get {
+			return this.expGiven;
+		}
+		set {
+			expGiven = value;
 		}
 	}
 }

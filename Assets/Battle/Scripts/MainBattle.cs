@@ -135,6 +135,7 @@ public class MainBattle : MonoBehaviour {
 	private void checkIfPlayerWon() {
 		if (enemy.Health <= 0) {
 			battleWon = true;
+			player.gainExp (enemy.ExpGiven);
 			playerArray [0] = player;
 			PlayerData.instance.playerArray = playerArray;
 			PlayerData.instance.money += moneyReward;

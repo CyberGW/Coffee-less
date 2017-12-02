@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 392}
+  m_MinSize: {x: 950, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 685
-  m_MinSize: {x: 950, y: 392}
+  m_MinSize: {x: 950, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -105,8 +105,8 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 635
-  m_MinSize: {x: 408, y: 342}
-  m_MaxSize: {x: 12008, y: 8042}
+  m_MinSize: {x: 404, y: 321}
+  m_MaxSize: {x: 12004, y: 8042}
   vertical: 1
   controlID: 94
 --- !u!114 &6
@@ -129,8 +129,8 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 635
-  m_MinSize: {x: 408, y: 342}
-  m_MaxSize: {x: 12008, y: 8042}
+  m_MinSize: {x: 404, y: 321}
+  m_MaxSize: {x: 12004, y: 8042}
   vertical: 0
   controlID: 95
 --- !u!114 &7
@@ -153,10 +153,10 @@ MonoBehaviour:
     y: 0
     width: 888
     height: 635
-  m_MinSize: {x: 306, y: 342}
-  m_MaxSize: {x: 8006, y: 8042}
+  m_MinSize: {x: 304, y: 321}
+  m_MaxSize: {x: 8004, y: 8042}
   vertical: 1
-  controlID: 61
+  controlID: 13
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -177,10 +177,10 @@ MonoBehaviour:
     y: 0
     width: 888
     height: 342
-  m_MinSize: {x: 306, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
+  m_MinSize: {x: 304, y: 200}
+  m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 36
+  controlID: 14
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -199,8 +199,8 @@ MonoBehaviour:
     y: 0
     width: 216
     height: 342
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -252,8 +252,8 @@ MonoBehaviour:
     y: 342
     width: 888
     height: 293
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 18}
@@ -278,8 +278,8 @@ MonoBehaviour:
     y: 0
     width: 478
     height: 635
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 20}
@@ -392,9 +392,9 @@ MonoBehaviour:
     height: 321
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 9c280000
+    m_SelectedIDs: 72070000
     m_LastClickedID: 0
-    m_ExpandedIDs: ea8bfeffa0c2feff36c6feffcee1feffdc64ffffa067ffffaa96ffffa6fbffff00000000924f0000b64f0000ea4f0000f44f00000a500000
+    m_ExpandedIDs: 5edeffffc0e6ffff60ebffff3af4ffffa6fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -599,19 +599,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Exploration/Scenes
+    - Assets/Editor
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Exploration/Scenes
+  - Assets/Editor
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\CyberGW\Documents\Unity\SEPRPhase2
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 60}
-    m_SelectedIDs: 94280000
-    m_LastClickedID: 10388
-    m_ExpandedIDs: 00000000a6270000ae270000e02700005828000088280000282900002e2900007e2a000000ca9a3bffffff7f
+    m_SelectedIDs: 82280000
+    m_LastClickedID: 10370
+    m_ExpandedIDs: 00000000a8270000b0270000e22700005a2800008a2800002a29000030290000802a000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -639,7 +639,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a6270000ae270000e02700005828000088280000282900002e2900007e2a0000
+    m_ExpandedIDs: 00000000a8270000b0270000e22700005a2800008a2800002a29000030290000802a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -664,8 +664,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 9c280000
-    m_LastClickedInstanceID: 10396
+    m_SelectedInstanceIDs: 72070000
+    m_LastClickedInstanceID: 1906
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000ce280000682700007a2700005431000000000000
     m_RenameOverlay:
@@ -844,7 +844,7 @@ MonoBehaviour:
       name: Assembly-CSharp-Editor.dll
       fullName: C:/Users/CyberGW/Documents/Unity/SEPRPhase2/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
       resultStatus: 1
-      duration: 0.362215
+      duration: 0.7278142
       messages: One or more child tests were ignored
       output: 
       stacktrace: 
@@ -856,7 +856,7 @@ MonoBehaviour:
       name: BattleScriptTest
       fullName: BattleScriptTest
       resultStatus: 1
-      duration: 0.0356512
+      duration: 0.0773174
       messages: 
       output: 
       stacktrace: 
@@ -868,7 +868,7 @@ MonoBehaviour:
       name: BattleScriptTestWithEnumeratorPasses
       fullName: BattleScriptTest.BattleScriptTestWithEnumeratorPasses
       resultStatus: 1
-      duration: 0.01331
+      duration: 0.0324334
       messages: 
       output: 
       stacktrace: 
@@ -880,7 +880,7 @@ MonoBehaviour:
       name: BattleScriptTest+Tests
       fullName: BattleScriptTest+Tests
       resultStatus: 1
-      duration: 0.194976
+      duration: 0.2974851
       messages: One or more child tests were ignored
       output: 
       stacktrace: 
@@ -892,7 +892,7 @@ MonoBehaviour:
       name: ChangePlayer
       fullName: BattleScriptTest+Tests.ChangePlayer
       resultStatus: 1
-      duration: 0.0214113
+      duration: 0.040157
       messages: 
       output: 
       stacktrace: 
@@ -904,7 +904,7 @@ MonoBehaviour:
       name: Constructor
       fullName: BattleScriptTest+Tests.Constructor
       resultStatus: 1
-      duration: 0.0097341
+      duration: 0.009283
       messages: 
       output: 
       stacktrace: 
@@ -916,7 +916,7 @@ MonoBehaviour:
       name: CriticalHitCalculation
       fullName: BattleScriptTest+Tests.CriticalHitCalculation
       resultStatus: 1
-      duration: 0.0123414
+      duration: 0.0140055
       messages: 
       output: 
       stacktrace: 
@@ -936,11 +936,23 @@ MonoBehaviour:
       ignoredOrSkipped: 1
       description: 
       isSuite: 0
+    - id: '[Assembly-CSharp-Editor][BattleScriptTest+Tests.EnemySpecialMoveAI]'
+      name: EnemySpecialMoveAI
+      fullName: BattleScriptTest+Tests.EnemySpecialMoveAI
+      resultStatus: 1
+      duration: 0.0314033
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
     - id: '[Assembly-CSharp-Editor][BattleScriptTest+Tests.HealthRestore]'
       name: HealthRestore
       fullName: BattleScriptTest+Tests.HealthRestore
       resultStatus: 1
-      duration: 0.0100285
+      duration: 0.0216704
       messages: 
       output: 
       stacktrace: 
@@ -952,7 +964,7 @@ MonoBehaviour:
       name: Items
       fullName: BattleScriptTest+Tests.Items
       resultStatus: 1
-      duration: 0.0099074
+      duration: 0.0099209
       messages: 
       output: 
       stacktrace: 
@@ -964,7 +976,7 @@ MonoBehaviour:
       name: PlayerSpecialMove
       fullName: BattleScriptTest+Tests.PlayerSpecialMove
       resultStatus: 1
-      duration: 0.0117889
+      duration: 0.0275868
       messages: 
       output: 
       stacktrace: 
@@ -976,7 +988,7 @@ MonoBehaviour:
       name: StandardAttack
       fullName: BattleScriptTest+Tests.StandardAttack
       resultStatus: 1
-      duration: 0.0105543
+      duration: 0.0097558
       messages: 
       output: 
       stacktrace: 
@@ -988,7 +1000,7 @@ MonoBehaviour:
       name: TurnOrder
       fullName: BattleScriptTest+Tests.TurnOrder
       resultStatus: 1
-      duration: 0.0100043
+      duration: 0.009778
       messages: 
       output: 
       stacktrace: 
@@ -1000,7 +1012,7 @@ MonoBehaviour:
       name: FighterTest+Tests
       fullName: FighterTest+Tests
       resultStatus: 1
-      duration: 0.0435772
+      duration: 0.0840631
       messages: 
       output: 
       stacktrace: 
@@ -1012,7 +1024,7 @@ MonoBehaviour:
       name: Constructor
       fullName: FighterTest+Tests.Constructor
       resultStatus: 1
-      duration: 0.0053404
+      duration: 0.0144508
       messages: 
       output: 
       stacktrace: 
@@ -1024,9 +1036,57 @@ MonoBehaviour:
       name: Setters
       fullName: FighterTest+Tests.Setters
       resultStatus: 1
-      duration: 0.0063503
+      duration: 0.0048613
       messages: 
       output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    - id: '[Assembly-CSharp-Editor][PlayerTest+Tests][suite]'
+      name: PlayerTest+Tests
+      fullName: PlayerTest+Tests
+      resultStatus: 1
+      duration: 0.1212436
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+    - id: '[Assembly-CSharp-Editor][PlayerTest+Tests.expToNextLevel]'
+      name: expToNextLevel
+      fullName: PlayerTest+Tests.expToNextLevel
+      resultStatus: 1
+      duration: 0.0308199
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    - id: '[Assembly-CSharp-Editor][PlayerTest+Tests.gainExp]'
+      name: gainExp
+      fullName: PlayerTest+Tests.gainExp
+      resultStatus: 1
+      duration: 0.0214877
+      messages: 
+      output: "Levelled Up!\r\nLevelled Up!\r\nLevelled Up!\r\nLevelled Up!\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    - id: '[Assembly-CSharp-Editor][PlayerTest+Tests.levelUp]'
+      name: levelUp
+      fullName: PlayerTest+Tests.levelUp
+      resultStatus: 1
+      duration: 0.0119354
+      messages: 
+      output: "Levelled Up!\r\n"
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -1036,7 +1096,7 @@ MonoBehaviour:
       name: SpecialMoveTest
       fullName: SpecialMoveTest
       resultStatus: 1
-      duration: 0.0435891
+      duration: 0.079896
       messages: 
       output: 
       stacktrace: 
@@ -1048,7 +1108,7 @@ MonoBehaviour:
       name: SpecialMoveTestSimplePasses
       fullName: SpecialMoveTest.SpecialMoveTestSimplePasses
       resultStatus: 1
-      duration: 0.0058515
+      duration: 0.0158045
       messages: 
       output: 
       stacktrace: 
@@ -1060,7 +1120,7 @@ MonoBehaviour:
       name: SpecialMoveTestWithEnumeratorPasses
       fullName: SpecialMoveTest.SpecialMoveTestWithEnumeratorPasses
       resultStatus: 1
-      duration: 0.0109555
+      duration: 0.010586
       messages: 
       output: 
       stacktrace: 
@@ -1068,13 +1128,17 @@ MonoBehaviour:
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
-    m_ResultText: FighterTest+Tests (0.044s)
+    m_ResultText: 'levelUp (0.012s)
+
+      ---
+
+      Levelled Up!'
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 431375fb
-      m_LastClickedID: -76213437
-      m_ExpandedIDs: d33c63857a729ab09d8d08d7431375fbe888c91b101c9c4e0df8175bffffff7f
+      m_SelectedIDs: 1e5ce034
+      m_LastClickedID: 887118878
+      m_ExpandedIDs: d33c638551a899a87a729ab09d8d08d7431375fbe888c91b101c9c4e0df8175bffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

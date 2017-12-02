@@ -106,29 +106,29 @@ public class BattleManager {
 
 	public CharacterMove enemyMove(Enemy enemy, Player player) {
 		double chance = 0.7 - 0.7 * (enemy.MaximumMagic - enemy.Magic) / (double) enemy.MaximumMagic;
-		float random = Random.value;
-		if (random < chance) { //try magic spell
+		if (Random.value < chance) { //try magic spell
 			Debug.Log("Special Move");
-			int move = Random.Range(0, 2);
-			//Setup moves
-			enemy.Special1.setUp(this, enemy, player);
-			enemy.Special2.setUp(this, enemy, player);
-			SpecialMove[] moveOrder = new SpecialMove[2];
-			if (move == 0) { //try special 1 first
-				moveOrder [0] = enemy.Special1;
-				moveOrder [1] = enemy.Special2;
-			} else { //try special 2 first
-				moveOrder [0] = enemy.Special2;
-				moveOrder [1] = enemy.Special1;
+			int random = Random.Range(0, 2);
+			return enemySpecialMove (random);
+		}
+		//if special move not picked
+		return new StandardAttack (this, enemy, player, 10);
+	}
+
+	public CharacterMove enemySpecialMove(float random) {
+		//Setup moves
+		enemy.Special1.setUp (this, enemy, player);
+		enemy.Special2.setUp (this, enemy, player);
+		SpecialMove[] moveOrder = new SpecialMove[2];
+		if (random == 0) { //if special 1 has been randomly picked
+			if (enemy.Special1.Magic <= enemy.Magic) {
+				return enemy.Special1;
 			}
-			if (moveOrder [0].Magic < enemy.Magic) {
-				return moveOrder [0];
-			} else if (moveOrder [1].Magic < enemy.Magic) {
-				return moveOrder [1];
-			} else {
-				return new StandardAttack (this, enemy, player, 10);
-			}
-		} else {
+		}
+		//if special 2 randomly picked OR not enough magic for special 1
+		if (enemy.Special2.Magic <= enemy.Magic) {
+			return enemy.Special2;
+		} else { //resort back to standard attack if not enough damage for either
 			return new StandardAttack (this, enemy, player, 10);
 		}
 	}

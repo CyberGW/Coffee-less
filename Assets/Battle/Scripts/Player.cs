@@ -15,6 +15,7 @@ public class Player : Character {
 	private int luck;
 	private int speed;
 	private int exp;
+	private int expToNextLevel;
 	private Item item;
 	private SpecialMove special1;
 	private SpecialMove special2;
@@ -31,6 +32,7 @@ public class Player : Character {
 		this.luck = luck;
 		this.speed = speed;
 		this.exp = exp;
+		setExpToNextLevel ();
 		this.item = item;
 		this.special1 = special1;
 		this.special2 = special2;
@@ -153,4 +155,37 @@ public class Player : Character {
 			special2 = value;
 		}
 	}
+
+	public int ExpToNextLevel {
+		get {
+			return this.expToNextLevel;
+		}
+	}
+
+	public void gainExp(int gainedExp) {
+		int difference = expToNextLevel - exp;
+		if (difference <= gainedExp) {
+			levelUp ();
+			gainExp (gainedExp - difference);
+		} else {
+			exp += gainedExp;
+		}
+	}
+
+	public void levelUp() {
+		Debug.Log ("Levelled Up!");
+		level += 1;
+		attack += 2;
+		defence += 2;
+		maximumMagic += 2;
+		luck += 2;
+		speed += 2;
+		exp = 0;
+		setExpToNextLevel ();
+	}
+
+	private void setExpToNextLevel() {
+		expToNextLevel = level * 200;
+	}
+
 }
