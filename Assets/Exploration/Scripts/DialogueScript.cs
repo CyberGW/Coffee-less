@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogueScript : MonoBehaviour {
 
@@ -8,14 +9,14 @@ public class DialogueScript : MonoBehaviour {
 	private string[] dialogueLines;
 	private int currentLineIndex;
 	private GameObject dialogueBox;
-	private UnityEngine.UI.Text dialogueText;
+	private Text dialogueText;
 	private PlayerMovement movementScript;
 
 	// Use this for initialization
 	void Start () {
 		movementScript = FindObjectOfType<PlayerMovement> ();
 		dialogueBox = gameObject.transform.Find ("DialogueBox").gameObject;
-		dialogueText = dialogueBox.transform.Find ("DialogueText").GetComponent<UnityEngine.UI.Text> ();
+		dialogueText = dialogueBox.transform.Find ("DialogueText").GetComponent<Text> ();
 		setInactive ();
 	}
 	

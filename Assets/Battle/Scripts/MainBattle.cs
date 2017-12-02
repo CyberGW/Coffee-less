@@ -10,6 +10,7 @@ public class MainBattle : MonoBehaviour {
 	private BattleManager manager;
 	private Player[] playerArray;
 	private Button attackButton;
+	private Text textBox;
 	//Battle Manager References
 	private Player player;
 	private Enemy enemy;
@@ -18,6 +19,7 @@ public class MainBattle : MonoBehaviour {
 	//Local Variables
 	private bool battleWon;
 	private bool battleLost;
+	private string text;
 	//Test Enemy
 	private Enemy enemyObject;
 	private bool playerFirst;
@@ -28,6 +30,8 @@ public class MainBattle : MonoBehaviour {
 	//UI
 	private GameObject playerStats;
 	private GameObject enemyStats;
+	private IDictionary<Character, StatsScript> healthBar;
+	private IDictionary<Character, StatsScript> magicBar;
 	private StatsScript playerHealthBar;
 	private StatsScript enemyHealthBar;
 	private StatsScript playerMagicBar;
@@ -36,6 +40,9 @@ public class MainBattle : MonoBehaviour {
 	private int enemyPreviousHealth;
 	private int playerPreviousMagic;
 	private int enemyPreviousMagic;
+	//Generics
+	private int previousHealth;
+	private int previousMagic;
 	//Scene Management
 	private GameObject playerCamera;
 	//Music
@@ -48,11 +55,13 @@ public class MainBattle : MonoBehaviour {
 		//Find Objects
 		playerStats = GameObject.Find("PlayerStats");
 		enemyStats = GameObject.Find ("EnemyStats");
-		playerHealthBar = playerStats.transform.Find("Health").GetComponent<StatsScript> ();
-		enemyHealthBar = enemyStats.transform.Find("Health").GetComponent<StatsScript> ();
-		playerMagicBar = playerStats.transform.Find ("Magic").GetComponent<StatsScript> ();
-		enemyMagicBar = enemyStats.transform.Find ("Magic").GetComponent<StatsScript> ();
+//		playerHealthBar = playerStats.transform.Find("Health").GetComponent<StatsScript> ();
+//		enemyHealthBar = enemyStats.transform.Find("Health").GetComponent<StatsScript> ();
+//		playerMagicBar = playerStats.transform.Find ("Magic").GetComponent<StatsScript> ();
+//		enemyMagicBar = enemyStats.transform.Find ("Magic").GetComponent<StatsScript> ();
 		attackButton = GameObject.Find ("AttackButton").GetComponent<Button> ();
+		textBox = GameObject.Find ("TextBox").transform.Find ("Text").GetComponent<Text> ();
+
 
 		//Setup Object references
 		playerArray = PlayerData.instance.playerArray;
@@ -65,10 +74,19 @@ public class MainBattle : MonoBehaviour {
 		enemy = manager.Enemy;
 		playerFirst = manager.PlayerFirst;
 		//enemyMove = new StandardAttack (manager, enemy, player, 10);
-		playerHealthBar.setUpDisplay (player.Health, 100);
-		enemyHealthBar.setUpDisplay (enemy.Health, 100);
-		playerMagicBar.setUpDisplay (player.Magic, player.MaximumMagic);
-		enemyMagicBar.setUpDisplay (enemy.Magic, enemy.MaximumMagic);
+
+		//Bars
+		healthBar = new Dictionary<Character, StatsScript>();
+		healthBar[player] = playerStats.transform.Find("Health").GetComponent<StatsScript> ();
+		healthBar[enemy] = enemyStats.transform.Find("Health").GetComponent<StatsScript> ();
+		magicBar = new Dictionary<Character, StatsScript>();
+		magicBar[player] = playerStats.transform.Find ("Magic").GetComponent<StatsScript> ();
+		magicBar[enemy] = enemyStats.transform.Find ("Magic").GetComponent<StatsScript> ();
+
+		healthBar[player].setUpDisplay (player.Health, 100);
+		healthBar[enemy].setUpDisplay (enemy.Health, 100);
+		magicBar[player].setUpDisplay (player.Magic, player.MaximumMagic);
+		magicBar[enemy].setUpDisplay (enemy.Magic, enemy.MaximumMagic);
 
 		//Setup local variables
 		moveChosen = false;
@@ -94,42 +112,36 @@ public class MainBattle : MonoBehaviour {
 	}		
 
 	private IEnumerator playerThenEnemy () {
-		yield return StartCoroutine (playersTurn (playerMove));
+		yield return StartCoroutine (performTurn(playerMove));
 		if (!battleWon) {
-			yield return StartCoroutine (enemysTurn (enemyMove));
+			yield return StartCoroutine (performTurn(enemyMove));
 		}
 		attackButton.interactable = true;
 	}
 
 	private IEnumerator enemyThenPlayer() {
-		yield return StartCoroutine (enemysTurn (enemyMove));
+		yield return StartCoroutine (performTurn(enemyMove));
 		if (!battleLost) {
-			yield return StartCoroutine (playersTurn (playerMove));
+			yield return StartCoroutine (performTurn(playerMove));
 		}
 		attackButton.interactable = true;
 	}
 
-
-	private IEnumerator playersTurn(CharacterMove playerMove) {
-		enemyPreviousHealth = enemy.Health;
-		playerPreviousMagic = player.Magic;
-		playerMove.performMove ();
-		StartCoroutine ( enemyHealthBar.updateDisplay (enemyPreviousHealth, enemy.Health) );
-		yield return StartCoroutine ( playerMagicBar.updateDisplay (playerPreviousMagic, player.Magic) );
-		Debug.Log ("Enemy Health: " + enemy.Health);
-		checkIfPlayerWon ();
-	}
-
-	private IEnumerator enemysTurn(CharacterMove enemyMove) {
-		playerPreviousHealth = player.Health;
-		enemyPreviousMagic = enemy.Magic;
-		enemyMove = manager.enemyMove (enemy, player);
-		enemyMove.performMove ();
-		StartCoroutine ( playerHealthBar.updateDisplay (playerPreviousHealth, player.Health) );
-		yield return StartCoroutine ( enemyMagicBar.updateDisplay (enemyPreviousMagic, enemy.Magic) );
-		Debug.Log ("Player Health: " + player.Health);
-		Debug.Log ("Enemy Magic: " + enemy.Magic);
-		checkIfPlayerLost ();
+	private IEnumerator performTurn(CharacterMove move) {
+		previousHealth = move.Target.Health;
+		previousMagic = move.User.Magic;
+		move.performMove ();
+		textBox.text = move.User.Name + " " + move.Text + " " + move.Target.Name;
+		if (manager.WasCriticalHit) {
+			textBox.text += "\nCritical Hit!";
+		}
+		StartCoroutine (healthBar [move.Target].updateDisplay (previousHealth, move.Target.Health));
+		yield return StartCoroutine (magicBar [move.User].updateDisplay (previousMagic, move.User.Magic));
+		if (move.Target is Enemy) {
+			checkIfPlayerWon ();
+		} else {
+			checkIfPlayerLost ();
+		}
 	}
 
 	private void checkIfPlayerWon() {
@@ -155,6 +167,7 @@ public class MainBattle : MonoBehaviour {
 
 	public void standardAttack() {
 		playerMove = new StandardAttack (manager, player, enemy, 10);
+		enemyMove = manager.enemyMove (enemy, player);
 		moveChosen = true;
 		attackButton.interactable = false;
 	}

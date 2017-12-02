@@ -177,6 +177,7 @@ public class Player : Character {
 		level += 1;
 		attack += 2;
 		defence += 2;
+		magic += 2;
 		maximumMagic += 2;
 		luck += 2;
 		speed += 2;
