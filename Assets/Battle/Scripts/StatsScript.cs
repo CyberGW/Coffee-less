@@ -24,9 +24,9 @@ public class StatsScript : MonoBehaviour {
 
 	public void setUpDisplay (int initalValue, int maximumValue) {
 		widthPerUnit = initialWidth / maximumValue;
-		rect.sizeDelta = new Vector2 (widthPerUnit * initalValue, 30);
+		rect.sizeDelta = new Vector2 (widthPerUnit * initalValue, rect.sizeDelta.y);
 		textDisplay.text = textHeader + initalValue;
-	}
+	}		
 
 	public IEnumerator updateDisplay(int previousValue, int newValue) {
 		int frames = 60;

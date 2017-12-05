@@ -7,7 +7,6 @@ public class BattleManager {
 
 	private Player player;
 	private Enemy enemy;
-	private bool playerFirst;
 	public string forceCriticalHits; //Used for testing
 	private bool wasCriticalHit;
 
@@ -16,7 +15,6 @@ public class BattleManager {
 		this.player = player;
 		this.enemy = enemy;
 		applyItem ();
-		calculatePlayerFirst ();
 		forceCriticalHits = "";
 	}
 
@@ -38,23 +36,17 @@ public class BattleManager {
 		}
 	}
 
-	public bool PlayerFirst {
-		get {
-			return this.playerFirst;
-		}
-	}
-
 	public bool WasCriticalHit {
 		get {
 			return this.wasCriticalHit;
 		}
 	}
 
-	public void calculatePlayerFirst() {
+	public bool playerFirst() {
 		if (player.Speed >= enemy.Speed) {
-			playerFirst = true;
+			return true;
 		} else {
-			playerFirst = false;
+			return false;
 		}
 	}
 
@@ -66,7 +58,6 @@ public class BattleManager {
 
 	public void switchPlayers(Player newPlayer) {
 		Player = newPlayer;
-		calculatePlayerFirst ();
 	}
 
 	public bool isCriticalHit(int luck) {
@@ -129,7 +120,6 @@ public class BattleManager {
 		//Setup moves
 		enemy.Special1.setUp (this, enemy, player);
 		enemy.Special2.setUp (this, enemy, player);
-		SpecialMove[] moveOrder = new SpecialMove[2];
 		if (random == 0) { //if special 1 has been randomly picked
 			if (enemy.Special1.Magic <= enemy.Magic) {
 				return enemy.Special1;
@@ -141,6 +131,22 @@ public class BattleManager {
 		} else { //resort back to standard attack if not enough damage for either
 			return new StandardAttack (this, enemy, player, 10);
 		}
+	}
+
+	private bool characterFainted(Character character) {
+		if (character.Health <= 0) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public bool battleWon() {
+		return characterFainted (enemy);
+	}
+
+	public bool playerFainted() {
+		return characterFainted (player);
 	}
 
 
