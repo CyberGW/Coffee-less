@@ -14,3 +14,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Battle/Battle.unity
     guid: 4ecfa394df50c7c46acec1e25e1219ca
+  - enabled: 1
+    path: Assets/MainMenu/TEMP1.unity
+    guid: 6da054c5814dc4175bf9f2e6a61bf2b5

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Exploration/Scenes/Main.unity
+- path: Assets/MainMenu/mainmenu1.unity
   isLoaded: 1
   isActive: 1
