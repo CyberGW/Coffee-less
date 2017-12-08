@@ -14,19 +14,17 @@ public interface Item {
 		set;
 	}
 
-	void applyBuffs();
+	void applyBuffs(Player player);
 }
 
 [System.Serializable]
 public class Hammer : Item {
-
-	private Player player;
+	
 	private string name;
 	private string desc;
 
-	public Hammer (Player player)
+	public Hammer ()
 	{
-		this.player = player;
 		this.name = "Hammer";
 		this.desc = "Increases user's attack power by 5";
 	}
@@ -50,7 +48,7 @@ public class Hammer : Item {
 	}
 
 	//Increase user's attack by 5
-	public void applyBuffs() {
+	public void applyBuffs(Player player) {
 		player.Attack += 5;
 	}
 

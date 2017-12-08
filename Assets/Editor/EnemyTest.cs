@@ -4,45 +4,37 @@ using UnityEngine.TestTools;
 using NUnit.Framework;
 using System.Collections;
 
-public class FighterTest {
+[TestFixture]
+public class EnemyTest {
 
-	[TestFixture]
-	public class Tests {
+	Enemy enemy;
 
-		Enemy enemy;
-
-		[OneTimeSetUp]
-		public void Init() {
-			this.enemy = new Enemy ("Enemy1", 10, 100, 20, 10, 30, 25, 5, 30, null, null);
-		}
-
-		[Test]
-		public void Constructor() {
-			Assert.AreEqual ("Enemy1", enemy.Name);
-			Assert.AreEqual (100, enemy.Health);
-			Assert.AreEqual (20, enemy.Attack);
-			Assert.AreEqual (10, enemy.Defence);
-			Assert.AreEqual (30, enemy.MaximumMagic);
-			Assert.AreEqual (25, enemy.Magic);
-			Assert.AreEqual (5, enemy.Luck);
-			Assert.AreEqual (30, enemy.Speed);
-		}
-
-		[Test]
-		public void Setters() {
-			enemy.Attack = enemy.Attack + 2;
-			enemy.Defence = enemy.Defence / 2;
-			Assert.AreEqual (22, enemy.Attack);
-			Assert.AreEqual (5, enemy.Defence);
-		}
+	[OneTimeSetUp]
+	public void Init() {
+		this.enemy = new Enemy ("Enemy1", 10, 100, 20, 10, 30, 25, 5, 30, null, null);
 	}
 
-//	// A UnityTest behaves like a coroutine in PlayMode
-//	// and allows you to yield null to skip a frame in EditMode
-//	[UnityTest]
-//	public IEnumerator FighterTestWithEnumeratorPasses() {
-//		// Use the Assert class to test conditions.
-//		// yield to skip a frame
-//		yield return null;
-//	}
+	[Test]
+	public void Attributes() {
+		Assert.AreEqual ("Enemy1", enemy.Name);
+		Assert.AreEqual (10, enemy.Level);
+		Assert.AreEqual (100, enemy.Health);
+		Assert.AreEqual (20, enemy.Attack);
+		Assert.AreEqual (10, enemy.Defence);
+		Assert.AreEqual (30, enemy.MaximumMagic);
+		Assert.AreEqual (25, enemy.Magic);
+		Assert.AreEqual (5, enemy.Luck);
+		Assert.AreEqual (30, enemy.Speed);
+		Assert.AreEqual (null, enemy.Special1);
+		Assert.AreEqual (null, enemy.Special2);
+		Assert.AreEqual (1000, enemy.ExpGiven);
+	}
+
+	[Test]
+	public void Setters() {
+		enemy.Attack = enemy.Attack + 2;
+		enemy.Defence = enemy.Defence / 2;
+		Assert.AreEqual (22, enemy.Attack);
+		Assert.AreEqual (5, enemy.Defence);
+	}
 }

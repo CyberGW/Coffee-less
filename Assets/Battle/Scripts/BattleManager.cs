@@ -51,13 +51,13 @@ public class BattleManager {
 	}
 
 	public void applyItem() {
-		if (Player.Item != null) {
-			Player.Item.applyBuffs();
+		if (player.Item != null) {
+			player.Item.applyBuffs(player);
 		}
 	}
 
 	public void switchPlayers(Player newPlayer) {
-		Player = newPlayer;
+		player = newPlayer;
 	}
 
 	public bool isCriticalHit(int luck) {

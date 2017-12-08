@@ -24,6 +24,7 @@ public class BattleScriptTest {
 		this.manager = new BattleManager (playerObject, enemyObject);
 		this.player = manager.Player;
 		this.enemy = manager.Enemy;
+		manager.forceCriticalHits = "None";
 	}
 
 	[Test]
@@ -43,7 +44,7 @@ public class BattleScriptTest {
 
 	[Test]
 	public void Items() {
-		player.Item = new Hammer (player);
+		player.Item = new Hammer ();
 		manager.applyItem ();
 		//Check Attack has increased accordingly
 		Assert.AreEqual (15, player.Attack);

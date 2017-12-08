@@ -17,8 +17,6 @@ public class MainBattle : MonoBehaviour {
 	private int moneyReward;
 	private Item itemReward;
 	//Local Variables
-	private bool battleWon;
-	private bool battleLost;
 	private string text;
 	//Test Enemy
 	private Enemy enemyObject;
@@ -32,10 +30,6 @@ public class MainBattle : MonoBehaviour {
 	private IDictionary<Character, StatsScript> healthBar;
 	private IDictionary<Character, StatsScript> magicBar;
 	private StatsScript expBar;
-	//Generics
-	private int previousHealth;
-	private int previousMagic;
-	private int previousExp;
 	//Scene Management
 	private GameObject playerCamera;
 	//Music
@@ -80,8 +74,6 @@ public class MainBattle : MonoBehaviour {
 
 		//Setup local variables
 		moveChosen = false;
-		battleWon = false;
-		battleLost = false;
 
 		//Change Music
 		BGM = Resources.Load("Audio/battle", typeof(AudioClip)) as AudioClip;
@@ -119,8 +111,8 @@ public class MainBattle : MonoBehaviour {
 	}
 
 	private IEnumerator performTurn(CharacterMove move) {
-		previousHealth = move.Target.Health;
-		previousMagic = move.User.Magic;
+		int previousHealth = move.Target.Health;
+		int previousMagic = move.User.Magic;
 		move.performMove ();
 		textBox.text = move.User.Name + " " + move.Text + " " + move.Target.Name;
 		if (manager.WasCriticalHit) {
@@ -137,9 +129,6 @@ public class MainBattle : MonoBehaviour {
 
 	private IEnumerator checkIfPlayerWon() {
 		if (manager.battleWon()) {
-			//battleWon = true;
-			//previousExp = player.Exp;
-			//player.gainExp (enemy.ExpGiven);
 			SoundManager.instance.playBGM(victory);
 			Debug.Log(enemy.ExpGiven);
 			yield return StartCoroutine (updateExp(enemy.ExpGiven));
