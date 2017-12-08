@@ -83,6 +83,7 @@
      <None Include="Assets\Tiled2Unity\Shaders\shaDefault-Instanced.shader" />
      <None Include="Assets\Exploration\Scripts\SceneFader\ReadMeFirst.txt" />
      <None Include="Assets\Tiled2Unity\Shaders\shaColorKey-Instanced.shader" />
+     <None Include="Assets\Tiled2Unity\Imported\WorldMap.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Shaders\shaColorKey.shader" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDepthColorKey.shader" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDepthColorKey-Instanced.shader" />
