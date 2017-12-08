@@ -1,0 +1,24 @@
+﻿# Tiled2Unity generated file. Do not modify by hand.
+# Wavefront file for 'WorldMap_mesh_0016.obj'
+
+# Vertices (Count = 4)
+v -28.8 -72.53334 0
+v -33.06667 -72.53334 0
+v -33.06667 -68.26667 0
+v -28.8 -68.26667 0
+
+# Texture cooridinates (Count = 4)
+vt 0 0
+vt 1 0
+vt 1 1
+vt 0 1
+
+# Normal
+vn 0 0 -1
+
+# Mesh description
+g WorldMap_mesh_0016
+
+# Faces
+f 1/1/1 2/2/1 3/3/1 4/4/1
+
