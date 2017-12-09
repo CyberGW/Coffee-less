@@ -13,8 +13,8 @@ public class PlayerMovement : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		player = GameObject.Find ("Player").GetComponent<Transform>();
-		anim = GameObject.Find("Player").GetComponent<Animator> ();
+		player = gameObject.GetComponentInParent<Transform> ();
+		anim = gameObject.GetComponentInParent<Animator> ();
 
 		if (!playerExists) {
 			playerExists = true;

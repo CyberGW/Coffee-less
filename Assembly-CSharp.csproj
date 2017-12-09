@@ -75,6 +75,7 @@
      <Compile Include="Assets\MainMenu\ButtonManager.cs" />
      <Compile Include="Assets\MainMenu\MenuScript.cs" />
      <Compile Include="Assets\MainMenu\Quit.cs" />
+     <Compile Include="Assets\PlayTests\Resources\ExplorationTest.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\CircleObject.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\GameObjectExtensions.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\GPUInstancing.cs" />

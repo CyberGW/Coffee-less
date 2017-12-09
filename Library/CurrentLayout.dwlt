@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 521}
+  m_MinSize: {x: 950, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -105,10 +105,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 635
-  m_MinSize: {x: 581, y: 471}
-  m_MaxSize: {x: 14004, y: 14042}
+  m_MinSize: {x: 406, y: 321}
+  m_MaxSize: {x: 12006, y: 8042}
   vertical: 1
-  controlID: 52
+  controlID: 11
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -129,10 +129,10 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 635
-  m_MinSize: {x: 581, y: 471}
-  m_MaxSize: {x: 14004, y: 14042}
+  m_MinSize: {x: 406, y: 321}
+  m_MaxSize: {x: 12006, y: 8042}
   vertical: 0
-  controlID: 53
+  controlID: 12
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -153,10 +153,10 @@ MonoBehaviour:
     y: 0
     width: 888
     height: 635
-  m_MinSize: {x: 304, y: 471}
-  m_MaxSize: {x: 10002, y: 14042}
+  m_MinSize: {x: 304, y: 321}
+  m_MaxSize: {x: 8004, y: 8042}
   vertical: 1
-  controlID: 54
+  controlID: 13
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_MinSize: {x: 304, y: 200}
   m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 55
+  controlID: 14
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -252,14 +252,14 @@ MonoBehaviour:
     y: 342
     width: 888
     height: 293
-  m_MinSize: {x: 232, y: 271}
-  m_MaxSize: {x: 10002, y: 10021}
-  m_ActualView: {fileID: 18}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -278,16 +278,16 @@ MonoBehaviour:
     y: 0
     width: 478
     height: 635
-  m_MinSize: {x: 277, y: 71}
+  m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 20}
+  m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 20}
   - {fileID: 21}
   - {fileID: 22}
   - {fileID: 23}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -392,9 +392,9 @@ MonoBehaviour:
     height: 321
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 542f0000
+    m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 4632ffff8ebcffff00000000
+    m_ExpandedIDs: 2ad0feff46d0fefff6d2feff8ad5feffa6d5feff4cd8fefff6dafeff12dbfefffaddfeffd0e0fefff8e0feffd4e3feff5ceafeff84eafeff70edfeff7cf0feffa4f0feff3ef3feff56f8feff7ef8feff86fbfefff404ffff1805ffff3e08ffffc00effffe80effff3412ffff7c16ffffa416ffff2c1affff821dffffaa1dffff8e21ffff0025ffff2825ffff5828ffff662bffff8e2bffffcc2effff0633ffff2e33ffff5236fffff639ffff1e3affff5e3dffff1246ffff3a46ffff7049ffffca4dfffff24dffff4c51ffff2e54ffff5654ffff5857ffff3e5fffff665fffffa662ffff166bffff3e6bffff0c6effff3e74ffff5a74ffff6877ffffc67fffff9089ffffb889ffff0a8dffffe09effff089ffffff2a1ffff30adffff58adffff68b0ffff32baffff6cbfffff94bfffff54c2ffff2eddffffe8e5ffff10e6fffffce8ffffa6fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -449,9 +449,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -47.112106, y: -5.6243653, z: -0.024439624}
+    m_Target: {x: -46.627846, y: -5.421914, z: -0.03132758}
     speed: 2
-    m_Value: {x: -47.112106, y: -5.6243653, z: -0.024439624}
+    m_Value: {x: -46.627846, y: -5.421914, z: -0.03132758}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -478,9 +478,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 4.872623
+    m_Target: 5.560472
     speed: 2
-    m_Value: 4.872623
+    m_Value: 5.560472
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -600,19 +600,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Exploration/Scenes
+    - Assets/Editor
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Exploration/Scenes
+  - Assets/Editor
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\CyberGW\Documents\Unity\SEPRPhase2
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 132.08415}
-    m_SelectedIDs: 502f0000
-    m_LastClickedID: 12112
-    m_ExpandedIDs: 000000003a2f00003c2f0000402f0000442f0000582f00005a2f00005e2f0000a42f0000603200007a33000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 117}
+    m_SelectedIDs: fc280000
+    m_LastClickedID: 10492
+    m_ExpandedIDs: 00000000b2270000c2270000d8270000fc270000b22800000a2900005c290000022a00000c2a0000622b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -640,7 +640,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003a2f00003c2f0000402f0000442f0000582f00005a2f00005e2f0000a42f0000603200007a330000
+    m_ExpandedIDs: 00000000b2270000c2270000d8270000fc27000002280000b22800000a290000022a00000c2a0000622b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -779,15 +779,15 @@ MonoBehaviour:
     y: 92
     width: 476
     height: 614
-  m_TestTypeToolbarIndex: 1
+  m_TestTypeToolbarIndex: 0
   m_PlayModeTestListGUI:
     m_Window: {fileID: 21}
     newResultList:
     - id: '[Test][suite]'
       name: Test
       fullName: Test
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 3.229043
       messages: 
       output: 
       stacktrace: 
@@ -795,13 +795,49 @@ MonoBehaviour:
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
-    m_ResultText: 
+    - id: '[C:/Users/CyberGW/Documents/Unity/SEPRPhase2/Library/ScriptAssemblies/Assembly-CSharp.dll][suite]'
+      name: Assembly-CSharp.dll
+      fullName: C:/Users/CyberGW/Documents/Unity/SEPRPhase2/Library/ScriptAssemblies/Assembly-CSharp.dll
+      resultStatus: 1
+      duration: 3.1546364
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+    - id: '[Assembly-CSharp][ExplorationTest][suite]'
+      name: ExplorationTest
+      fullName: ExplorationTest
+      resultStatus: 1
+      duration: 3.137329
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+    - id: '[Assembly-CSharp][ExplorationTest.CameraMovement]'
+      name: CameraMovement
+      fullName: ExplorationTest.CameraMovement
+      resultStatus: 1
+      duration: 3.1001232
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    m_ResultText: CameraMovement (3.100s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: ffffff7f
+      m_SelectedIDs: bf7e93ab
+      m_LastClickedID: -1416397121
+      m_ExpandedIDs: 67c6ec2c101c9c4ea46c015affffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1026,6 +1062,42 @@ MonoBehaviour:
       fullName: EnemyTest.Setters
       resultStatus: 1
       duration: 0.0083953
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    - id: '[Assembly-CSharp-Editor][ExplorationTest][suite]'
+      name: ExplorationTest
+      fullName: ExplorationTest
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+    - id: '[Assembly-CSharp-Editor][ExplorationTest.ExplorationTestSimplePasses]'
+      name: ExplorationTestSimplePasses
+      fullName: ExplorationTest.ExplorationTestSimplePasses
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    - id: '[Assembly-CSharp-Editor][ExplorationTest.ExplorationTestWithEnumeratorPasses]'
+      name: ExplorationTestWithEnumeratorPasses
+      fullName: ExplorationTest.ExplorationTestWithEnumeratorPasses
+      resultStatus: 0
+      duration: 0
       messages: 
       output: 
       stacktrace: 
