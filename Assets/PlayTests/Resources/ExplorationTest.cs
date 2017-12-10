@@ -2,6 +2,7 @@
 using UnityEngine.TestTools;
 using NUnit.Framework;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 [TestFixture]
 public class ExplorationTest {
@@ -9,17 +10,17 @@ public class ExplorationTest {
 	GameObject player;
 	GameObject camera;
 
-	// A UnityTest behaves like a coroutine in PlayMode
-	// and allows you to yield null to skip a frame in EditMode
-	[SetUp]
-	public void Setup() {
-		player = MonoBehaviour.Instantiate (Resources.Load<GameObject> ("Player"));
-		player.name = "Player";
-		camera = MonoBehaviour.Instantiate (Resources.Load<GameObject> ("PlayerCamera"));
+	public IEnumerator Setup() {
+		SceneManager.LoadScene ("ExplorationTest", LoadSceneMode.Single);
+		yield return null; //Wait for scene to load
+		player = GameObject.Find ("Player");
+		camera = GameObject.Find ("PlayerCamera");
 	}
 
 	[UnityTest]
 	public IEnumerator CameraMovement() {
+		yield return Setup ();
+		yield return new WaitForSeconds (3);
 		//Move Player
 		player.transform.position = new Vector2 (50, 50);
 		//Check Player has been moved

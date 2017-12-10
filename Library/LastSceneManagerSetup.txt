@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Exploration/Scenes/Main.unity
+- path: Assets/InitTestScene636485062452445705.unity
   isLoaded: 1
   isActive: 1

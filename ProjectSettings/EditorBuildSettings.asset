@@ -17,3 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MainMenu/TEMP1.unity
     guid: 6da054c5814dc4175bf9f2e6a61bf2b5
+  - enabled: 1
+    path: Assets/PlayTests/ExplorationTest.unity
+    guid: 8ec3efacddf42d5449fe47b2ceeab85c

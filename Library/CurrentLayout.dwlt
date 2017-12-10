@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 371}
+  m_MinSize: {x: 950, y: 521}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -105,10 +105,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 635
-  m_MinSize: {x: 406, y: 321}
-  m_MaxSize: {x: 12006, y: 8042}
+  m_MinSize: {x: 404, y: 471}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 1
-  controlID: 11
+  controlID: 49
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -129,10 +129,10 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 635
-  m_MinSize: {x: 406, y: 321}
-  m_MaxSize: {x: 12006, y: 8042}
+  m_MinSize: {x: 404, y: 471}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 12
+  controlID: 50
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -153,10 +153,10 @@ MonoBehaviour:
     y: 0
     width: 888
     height: 635
-  m_MinSize: {x: 304, y: 321}
-  m_MaxSize: {x: 8004, y: 8042}
+  m_MinSize: {x: 304, y: 471}
+  m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 13
+  controlID: 29
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_MinSize: {x: 304, y: 200}
   m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 14
+  controlID: 30
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -252,14 +252,14 @@ MonoBehaviour:
     y: 342
     width: 888
     height: 293
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 19}
+  m_MinSize: {x: 232, y: 271}
+  m_MaxSize: {x: 10002, y: 10021}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -278,8 +278,8 @@ MonoBehaviour:
     y: 0
     width: 478
     height: 635
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 20}
@@ -394,7 +394,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 2ad0feff46d0fefff6d2feff8ad5feffa6d5feff4cd8fefff6dafeff12dbfefffaddfeffd0e0fefff8e0feffd4e3feff5ceafeff84eafeff70edfeff7cf0feffa4f0feff3ef3feff56f8feff7ef8feff86fbfefff404ffff1805ffff3e08ffffc00effffe80effff3412ffff7c16ffffa416ffff2c1affff821dffffaa1dffff8e21ffff0025ffff2825ffff5828ffff662bffff8e2bffffcc2effff0633ffff2e33ffff5236fffff639ffff1e3affff5e3dffff1246ffff3a46ffff7049ffffca4dfffff24dffff4c51ffff2e54ffff5654ffff5857ffff3e5fffff665fffffa662ffff166bffff3e6bffff0c6effff3e74ffff5a74ffff6877ffffc67fffff9089ffffb889ffff0a8dffffe09effff089ffffff2a1ffff30adffff58adffff68b0ffff32baffff6cbfffff94bfffff54c2ffff2eddffffe8e5ffff10e6fffffce8ffffa6fbffff00000000
+    m_ExpandedIDs: 6e79ffff8879ffff107dffff0680ffff2080ffff9c83ffffa886ffffc286ffff4e8affff348dffff4e8dffffd690ffff7a93ffff9493ffffdc96ffff989bffff129dffff2c9dffff92a0ffffa4a3ffffc0a3ffff1ca7ffff56aaffff72aaffff44adffff10b1ffff2cb1ffffccb4ffffecb9ffff08baffff72bdffff32c0ffff4ec0ffff44c3ffffe8c6ffff04c7ffff1ccaffffcecdffffeacdffff28d1ffffa4d8ffffccd8ffffcedbffff36e0ffff5ee0ffff20e3ffff4ef4ffff9cfbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -413,7 +413,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 9}
     m_SearchString: 
   m_ExpandedScenes:
-  - Main
+  - InitTestScene636485062452445705
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -600,19 +600,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Editor
+    - Assets/PlayTests
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Editor
+  - Assets/PlayTests
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\CyberGW\Documents\Unity\SEPRPhase2
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 117}
-    m_SelectedIDs: fc280000
-    m_LastClickedID: 10492
-    m_ExpandedIDs: 00000000b2270000c2270000d8270000fc270000b22800000a2900005c290000022a00000c2a0000622b000000ca9a3bffffff7f
+    m_SelectedIDs: 76290000
+    m_LastClickedID: 10614
+    m_ExpandedIDs: 00000000ca270000da270000f227000016280000ca28000024290000762900001e2a0000282a00007c2b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -640,7 +640,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b2270000c2270000d8270000fc27000002280000b22800000a290000022a00000c2a0000622b0000
+    m_ExpandedIDs: 00000000ca270000da270000f227000016280000ca28000024290000762900001e2a0000282a00007c2b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -787,7 +787,7 @@ MonoBehaviour:
       name: Test
       fullName: Test
       resultStatus: 1
-      duration: 3.229043
+      duration: 6.304722
       messages: 
       output: 
       stacktrace: 
@@ -799,7 +799,7 @@ MonoBehaviour:
       name: Assembly-CSharp.dll
       fullName: C:/Users/CyberGW/Documents/Unity/SEPRPhase2/Library/ScriptAssemblies/Assembly-CSharp.dll
       resultStatus: 1
-      duration: 3.1546364
+      duration: 6.234474
       messages: 
       output: 
       stacktrace: 
@@ -811,7 +811,7 @@ MonoBehaviour:
       name: ExplorationTest
       fullName: ExplorationTest
       resultStatus: 1
-      duration: 3.137329
+      duration: 6.217346
       messages: 
       output: 
       stacktrace: 
@@ -823,7 +823,7 @@ MonoBehaviour:
       name: CameraMovement
       fullName: ExplorationTest.CameraMovement
       resultStatus: 1
-      duration: 3.1001232
+      duration: 6.179835
       messages: 
       output: 
       stacktrace: 
@@ -831,7 +831,7 @@ MonoBehaviour:
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
-    m_ResultText: CameraMovement (3.100s)
+    m_ResultText: CameraMovement (6.180s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}

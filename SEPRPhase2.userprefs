@@ -1,6 +1,6 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Exploration\Scripts\PlayerMovement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PlayTests\Resources\ExplorationTest.cs">
     <Files>
       <File FileName="Assets\Battle\Scripts\Player.cs" Line="1" Column="1" />
       <File FileName="Assets\Editor\ItemTest.cs" Line="1" Column="1" />
@@ -11,11 +11,11 @@
       <File FileName="Assets\Editor\SpecialMoveTest.cs" Line="1" Column="1" />
       <File FileName="Assets\Battle\Scripts\CharacterMoves.cs" Line="1" Column="1" />
       <File FileName="Assets\Battle\Scripts\MainBattle.cs" Line="1" Column="1" />
-      <File FileName="Assets\Exploration\Scripts\PlayerMovement.cs" Line="17" Column="33" />
-      <File FileName="Assets\Exploration\Scripts\Portal.cs" Line="13" Column="17" />
-      <File FileName="Assets\Exploration\Scripts\DialogueScript.cs" Line="17" Column="3" />
-      <File FileName="Assets\Exploration\Scripts\SceneChanger.cs" Line="56" Column="31" />
-      <File FileName="Assets\PlayTests\Resources\ExplorationTest.cs" Line="34" Column="3" />
+      <File FileName="Assets\Exploration\Scripts\PlayerMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Exploration\Scripts\Portal.cs" Line="1" Column="1" />
+      <File FileName="Assets\Exploration\Scripts\DialogueScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Exploration\Scripts\SceneChanger.cs" Line="1" Column="1" />
+      <File FileName="Assets\PlayTests\Resources\ExplorationTest.cs" Line="24" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
