@@ -36,28 +36,46 @@ public class PlayerMovement : MonoBehaviour {
 			Vector2 movement = Vector2.zero;
 
 			if (Input.GetKey (KeyCode.UpArrow)) {
-				walkAnimation ("Up");
-				movement = Vector2.up * speed;
+				move ("Up");
 			} else {
 				if (Input.GetKey (KeyCode.DownArrow)) {
-					walkAnimation ("Down");
-					movement = Vector2.down * speed;
+					move ("Down");
 				} else {
 					if (Input.GetKey (KeyCode.LeftArrow)) {
-						walkAnimation ("Left");
-						movement = Vector2.left * speed;
+						move ("Left");
 					} else {
 						if (Input.GetKey (KeyCode.RightArrow)) {
-							walkAnimation ("Right");
-							movement = Vector2.right * speed;
+							move ("Right");
 						} else {
 							setIdle ();
 						}
 					}
 				}
 			}
-			player.Translate (movement);
 		}
+	}
+
+	public void move(string direction) {
+		walkAnimation (direction);
+		Vector2 translation;
+		switch (direction) {
+		case "Up":
+			translation = Vector2.up;
+			break;
+		case "Down":
+			translation = Vector2.down;
+			break;
+		case "Left":
+			translation = Vector2.left;
+			break;
+		case "Right":
+			translation = Vector2.right;
+			break;
+		default:
+			translation = Vector2.zero;
+			break;
+		}
+		player.Translate (translation * speed);
 	}
 
 	private void walkAnimation(string direction) {

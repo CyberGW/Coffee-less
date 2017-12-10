@@ -6,6 +6,8 @@ public class ObjectDialogue : MonoBehaviour {
 
 	public string[] dialogue;
 	public static AudioClip SFX;
+	//For testing
+	public bool pseudoKeyPress;
 	private DialogueScript dManager;
 	private PlayerMovement movementScript;
 
@@ -16,10 +18,17 @@ public class ObjectDialogue : MonoBehaviour {
 	}	
 
 	void OnTriggerStay2D(Collider2D other) {
-		if (other.gameObject.name == "Player" && Input.GetKeyDown (KeyCode.Space) && !dManager.dialogueActive) {
+		if (other.gameObject.name == "Player" && keyPressed() && !dManager.dialogueActive) {
 			SoundManager.instance.playSFX ("interact");
 			dManager.showDialogue (dialogue);
 			movementScript.setCanMove (false);
 		}
 	}
+
+	public bool keyPressed() {
+		bool val = Input.GetKeyDown (KeyCode.Space) || pseudoKeyPress;
+		pseudoKeyPress = false;
+		return val;
+	}
+		
 }

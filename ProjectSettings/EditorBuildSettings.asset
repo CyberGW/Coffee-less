@@ -20,3 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/PlayTests/ExplorationTest.unity
     guid: 8ec3efacddf42d5449fe47b2ceeab85c
+  - enabled: 1
+    path: Assets/PlayTests/ExplorationTestScene.unity
+    guid: ebea0e8f39d99db46a1f573df476cba7

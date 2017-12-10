@@ -47,7 +47,7 @@ c63db43c730fa2cbb8ca07de15898cb6 UnityEngine.UI.dll:UnityEngine.UI.Toggle
 f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 86d36c43c53541d667100dc90b89cfba UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 1b8c02d0aa82fbf036a2b9b2d713eec3 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
-dbbf4df12d0cfb3675279fe9fb97d90c Assembly-CSharp.dll:.ObjectDialogue
+b4cd03625756eedfbba9fdff5bc699cc Assembly-CSharp.dll:.ObjectDialogue
 8ff8e4f2fdfb53cf0cef85f24f6f7740 Assembly-CSharp.dll:Tiled2Unity.GroupLayer
 329bcbf88b3c0197d230f5b9ceb88333 Assembly-CSharp.dll:Tiled2Unity.RectangleObject
 329bcbf88b3c0197d230f5b9ceb88333 Assembly-CSharp.dll:Tiled2Unity.PolylineObject
@@ -139,7 +139,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 3f32f08a64daf40b09ed864d96fe3840 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
-05879634466fb1116aecb4782e359aed Assembly-CSharp.dll:.DialogueScript
+4d3c7d40a3cf7bf7bd413d6eb67665b0 Assembly-CSharp.dll:.DialogueScript
 7b2d2c2a55e04afd5272f2579a88a0b9 Assembly-CSharp.dll:.Fader
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SceneChanger
 329bcbf88b3c0197d230f5b9ceb88333 Assembly-CSharp.dll:Tiled2Unity.PolygonObject

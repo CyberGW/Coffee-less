@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class DialogueScript : MonoBehaviour {
 
 	public bool dialogueActive;
+	public bool pseudoKeyPress;
 	private string[] dialogueLines;
 	private int currentLineIndex;
 	private GameObject dialogueBox;
@@ -22,7 +23,7 @@ public class DialogueScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (dialogueActive && Input.GetKeyDown (KeyCode.Space)) {
+		if (dialogueActive && keyPress()) {
 			if (currentLineIndex + 1 < dialogueLines.Length) {
 				currentLineIndex += 1;
 				showLine (dialogueLines [currentLineIndex]);
@@ -31,6 +32,12 @@ public class DialogueScript : MonoBehaviour {
 				StartCoroutine (delaySetInactive ());
 			}
 		}
+	}
+
+	private bool keyPress() {
+		bool val = Input.GetKeyDown (KeyCode.Space) || pseudoKeyPress;
+		pseudoKeyPress = false;
+		return val;
 	}
 
 	public void showDialogue(string[] dialogue) {
