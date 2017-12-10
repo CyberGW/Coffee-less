@@ -212,10 +212,10 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
-      <HintPath>C:/Users/Chris/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@1.0.1/UnityEngine.Analytics.dll</HintPath>
+      <HintPath>C:/Users/Joe/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@1.0.1/UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Purchasing">
-      <HintPath>C:/Users/Chris/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/UnityEngine.Purchasing.dll</HintPath>
+      <HintPath>C:/Users/Joe/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/UnityEngine.Purchasing.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -225,6 +225,7 @@
     <Compile Include="Assets\Battle\Scripts\CharacterMoves.cs" />
     <Compile Include="Assets\Battle\Scripts\Enemy.cs" />
     <Compile Include="Assets\Battle\Scripts\Item.cs" />
+    <Compile Include="Assets\Battle\Scripts\ItemButton.cs" />
     <Compile Include="Assets\Battle\Scripts\MainBattle.cs" />
     <Compile Include="Assets\Battle\Scripts\Player.cs" />
     <Compile Include="Assets\Battle\Scripts\StatsScript.cs" />
@@ -243,6 +244,7 @@
     <Compile Include="Assets\MainMenu\ButtonManager.cs" />
     <Compile Include="Assets\MainMenu\MenuScript.cs" />
     <Compile Include="Assets\MainMenu\Quit.cs" />
+    <Compile Include="Assets\PlayTests\Resources\ExplorationTest.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\CircleObject.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\GameObjectExtensions.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\GPUInstancing.cs" />

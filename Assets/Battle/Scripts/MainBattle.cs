@@ -182,4 +182,16 @@ public class MainBattle : MonoBehaviour {
 		attackButton.interactable = false;
 	}
 
-}
+    public void runAway()
+    {
+        if (manager.ranAway(player.Speed,enemy.Speed))
+        {
+            GlobalFunctions.instance.endBattle();
+            Debug.Log("success!!");
+        }
+        else
+        {
+            Debug.Log("run attempt failed!!");
+        }
+        }
+    }
