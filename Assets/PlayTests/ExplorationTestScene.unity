@@ -1005,11 +1005,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4990309323389122, guid: 938770f79d0941f4b8cd1c4415b9fd5b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -5.99
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4990309323389122, guid: 938770f79d0941f4b8cd1c4415b9fd5b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 10.73
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 4990309323389122, guid: 938770f79d0941f4b8cd1c4415b9fd5b, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1408,3 +1408,4 @@ MonoBehaviour:
   dialogue:
   - I am a triangle
   - Truley, I am
+  pseudoKeyPress: 0

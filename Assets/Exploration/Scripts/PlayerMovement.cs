@@ -31,24 +31,19 @@ public class PlayerMovement : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.Return)) {
 			GlobalFunctions.instance.createBattle (new Enemy ("Swinefoogle", 5, 100, 15, 5, 5, 5, 5, 5,  new Fireball("fireballed", "N/A", 3),  new Fireball("fireballed", "N/A", 5)), 50, null);
 		}
-
-		if (canMove) {
-			Vector2 movement = Vector2.zero;
-
-			if (Input.GetKey (KeyCode.UpArrow)) {
-				move ("Up");
+		if (Input.GetKey (KeyCode.UpArrow)) {
+			move ("Up");
+		} else {
+			if (Input.GetKey (KeyCode.DownArrow)) {
+				move ("Down");
 			} else {
-				if (Input.GetKey (KeyCode.DownArrow)) {
-					move ("Down");
+				if (Input.GetKey (KeyCode.LeftArrow)) {
+					move ("Left");
 				} else {
-					if (Input.GetKey (KeyCode.LeftArrow)) {
-						move ("Left");
+					if (Input.GetKey (KeyCode.RightArrow)) {
+						move ("Right");
 					} else {
-						if (Input.GetKey (KeyCode.RightArrow)) {
-							move ("Right");
-						} else {
-							setIdle ();
-						}
+						setIdle ();
 					}
 				}
 			}
@@ -56,26 +51,28 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	public void move(string direction) {
-		walkAnimation (direction);
-		Vector2 translation;
-		switch (direction) {
-		case "Up":
-			translation = Vector2.up;
-			break;
-		case "Down":
-			translation = Vector2.down;
-			break;
-		case "Left":
-			translation = Vector2.left;
-			break;
-		case "Right":
-			translation = Vector2.right;
-			break;
-		default:
-			translation = Vector2.zero;
-			break;
+		if (canMove) {
+			walkAnimation (direction);
+			Vector2 translation;
+			switch (direction) {
+			case "Up":
+				translation = Vector2.up;
+				break;
+			case "Down":
+				translation = Vector2.down;
+				break;
+			case "Left":
+				translation = Vector2.left;
+				break;
+			case "Right":
+				translation = Vector2.right;
+				break;
+			default:
+				translation = Vector2.zero;
+				break;
+			}
+			player.Translate (translation * speed);
 		}
-		player.Translate (translation * speed);
 	}
 
 	private void walkAnimation(string direction) {

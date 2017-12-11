@@ -8,17 +8,22 @@ using UnityEngine.SceneManagement;
 [TestFixture]
 public class ExplorationTest {
 
+	bool sceneLoaded = false;
 	GameObject player;
 	PlayerMovement playerScript;
 	GameObject camera;
 
 	public IEnumerator Setup() {
-		SceneManager.LoadScene ("ExplorationTestScene", LoadSceneMode.Single);
-		yield return null; //Wait for scene to load
-		player = GameObject.Find ("Player");
-		playerScript = player.GetComponent<PlayerMovement> ();
-		camera = GameObject.Find ("PlayerCamera");
+		if (!sceneLoaded) {
+			SceneManager.LoadScene ("ExplorationTestScene", LoadSceneMode.Single);
+			yield return null; //Wait for scene to load
+			player = GameObject.Find ("Player");
+			playerScript = player.GetComponent<PlayerMovement> ();
+			camera = GameObject.Find ("PlayerCamera");
+			sceneLoaded = true;
+		}
 		player.transform.position = new Vector2 (0, 0);
+		yield return null;
 	}
 
 	[UnityTest]
@@ -54,6 +59,42 @@ public class ExplorationTest {
 	}
 
 	[UnityTest]
+	public IEnumerator PlayerAnimation() {
+		//Reset
+		yield return Setup ();
+		//Get Animator object
+		Animator anim = player.GetComponent<Animator> ();
+
+		//Up
+		playerScript.move("Up");
+		yield return null; //Wait one frame to update to walking
+		Assert.AreEqual("UpWalk", getCurrentClipName(anim));
+		yield return WaitForFrames(2); //Wait two frames to reset back to idle
+		Assert.AreEqual("UpIdle", getCurrentClipName(anim));
+
+		//Down
+		playerScript.move("Down");
+		yield return null;
+		Assert.AreEqual("DownWalk", getCurrentClipName(anim));
+		yield return WaitForFrames(2);
+		Assert.AreEqual("DownIdle", getCurrentClipName(anim));
+
+		//Right
+		playerScript.move("Right");
+		yield return null;
+		Assert.AreEqual("RightWalk", getCurrentClipName(anim));
+		yield return WaitForFrames(2);
+		Assert.AreEqual("RightIdle", getCurrentClipName(anim));
+
+		//Up
+		playerScript.move("Up");
+		yield return null;
+		Assert.AreEqual("UpWalk", getCurrentClipName(anim));
+		yield return WaitForFrames(2);
+		Assert.AreEqual("UpIdle", getCurrentClipName(anim));
+	}
+
+	[UnityTest]
 	public IEnumerator ObjectCollision() {
 		//Reset
 		yield return Setup ();
@@ -76,24 +117,43 @@ public class ExplorationTest {
 		Assert.IsNull (GameObject.Find ("DialogueBox")); //Check DialogueBox cannot be found (is inactive)
 
 		//Check it can be triggered within range
-		player.transform.position = new Vector2(3, 3);
+		player.transform.position = new Vector2(2.5f, 3);
 		objectScript.pseudoKeyPress = true;
-		yield return WaitForFrames (2); //Wait 2 frames for player to move then trigger to be detected
+		yield return WaitForFrames (3); //Wait 3 frames for player to move then trigger to be detected and input processed
 		Assert.IsNotNull (GameObject.Find ("DialogueBox")); //Check DialogueBox can be found (is active)
-
+		//Get current text so we can check if it changes later
 		UnityEngine.UI.Text dialogueText = GameObject.Find ("DialogueBox").GetComponentInChildren<UnityEngine.UI.Text> ();
 		string firstText = dialogueText.text;
 
+		//Check can't move when dialogue box open
+		Vector3 originalPosition = player.transform.position;
+		yield return moveForFrames(60, "Right");
+		Assert.AreEqual (originalPosition, player.transform.position);
+
 		//Check multi-line dialogue advances
 		dialogueScript.pseudoKeyPress = true;
-		yield return WaitForFrames (2);
+		yield return WaitForFrames (3);
 		Assert.IsNotNull (GameObject.Find ("DialogueBox")); //Check DialogueBox is still active
 		Assert.AreNotEqual(firstText, dialogueText.text); //Check text has changed
 
 		//Check DialogueBox closes again
 		dialogueScript.pseudoKeyPress = true;
-		yield return WaitForFrames (2);
+		yield return WaitForFrames (3);
 		Assert.IsNull (GameObject.Find ("DialogueBox"));
+	}
+
+	[UnityTest]
+	public IEnumerator Portal() {
+		//Reset
+		yield return Setup ();
+		//Get Initial Scene
+		string originalScene = SceneManager.GetActiveScene().name;
+		//Move 4 units right = 4 / 0.1 = 40 frames
+		yield return moveForFrames(40, "Right");
+		//Move 3 units down = 3 / 0.1 = 30 frames
+		yield return moveForFrames(30, "Down");
+		yield return new WaitForSeconds (1); //Wait for transition animation
+		Assert.AreNotEqual (originalScene, SceneManager.GetActiveScene().name);
 	}
 
 	public IEnumerator moveForFrames(int frames, string direction) {
@@ -101,6 +161,11 @@ public class ExplorationTest {
 			playerScript.move (direction);
 			yield return new WaitForFixedUpdate();
 		}
+	}
+
+	public string getCurrentClipName(Animator anim) {
+		AnimatorClipInfo[] info = anim.GetCurrentAnimatorClipInfo (0);
+		return info[0].clip.name;
 	}
 
 		
