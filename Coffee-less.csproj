@@ -212,10 +212,10 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
-      <HintPath>C:/Users/Joe/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@1.0.1/UnityEngine.Analytics.dll</HintPath>
+      <HintPath>C:/Users/Chris/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@1.0.1/UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Purchasing">
-      <HintPath>C:/Users/Joe/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/UnityEngine.Purchasing.dll</HintPath>
+      <HintPath>C:/Users/Chris/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/UnityEngine.Purchasing.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -231,8 +231,10 @@
     <Compile Include="Assets\Battle\Scripts\StatsScript.cs" />
     <Compile Include="Assets\Exploration\Scripts\CameraController.cs" />
     <Compile Include="Assets\Exploration\Scripts\CanvasScript.cs" />
+    <Compile Include="Assets\Exploration\Scripts\ChestScript.cs" />
     <Compile Include="Assets\Exploration\Scripts\DialogueScript.cs" />
     <Compile Include="Assets\Exploration\Scripts\GlobalFunctions.cs" />
+    <Compile Include="Assets\Exploration\Scripts\ItemObjects.cs" />
     <Compile Include="Assets\Exploration\Scripts\ObjectDialogue.cs" />
     <Compile Include="Assets\Exploration\Scripts\PlayerData.cs" />
     <Compile Include="Assets\Exploration\Scripts\PlayerMovement.cs" />
@@ -266,6 +268,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Exploration\Scripts\SceneFader\ReadMeFirst.txt" />
+    <None Include="Assets\Tiled2Unity\Imported\CS-Floor1.tiled2unity.xml" />
+    <None Include="Assets\Tiled2Unity\Imported\CS-Jail.tiled2unity.xml" />
+    <None Include="Assets\Tiled2Unity\Imported\CS.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\Hes East.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\WorldMap.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\_ReadMe.txt" />

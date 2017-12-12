@@ -1,0 +1,24 @@
+﻿# Tiled2Unity generated file. Do not modify by hand.
+# Wavefront file for 'CS-Jail_mesh_0007.obj'
+
+# Vertices (Count = 4)
+v -126.9333 -112 0
+v -128 -112 0
+v -128 -110.9333 0
+v -126.9333 -110.9333 0
+
+# Texture cooridinates (Count = 4)
+vt 0.3512397 0.3878327
+vt 0.3677686 0.3878327
+vt 0.3677686 0.418251
+vt 0.3512397 0.418251
+
+# Normal
+vn 0 0 -1
+
+# Mesh description
+g CS-Jail_mesh_0007
+
+# Faces
+f 1/1/1 2/2/1 3/3/1 4/4/1
+
