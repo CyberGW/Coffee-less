@@ -8,6 +8,7 @@ public class ObjectDialogue : MonoBehaviour {
 	public static AudioClip SFX;
 	//For testing
 	public bool pseudoKeyPress;
+	public string treasure;
 	private DialogueScript dManager;
 	private PlayerMovement movementScript;
 
@@ -22,6 +23,11 @@ public class ObjectDialogue : MonoBehaviour {
 			SoundManager.instance.playSFX ("interact");
 			dManager.showDialogue (dialogue);
 			movementScript.setCanMove (false);
+			if (treasure != "") {
+				Dictionary<string, Item> items = GameObject.Find ("GlobalData").GetComponent<ItemObjects> ().items;
+				DataManager data= PlayerData.instance.data;
+				data.addItem (items [treasure]);
+			}
 		}
 	}
 

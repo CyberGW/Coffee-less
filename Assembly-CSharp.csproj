@@ -63,8 +63,10 @@
      <Compile Include="Assets\Battle\Scripts\StatsScript.cs" />
      <Compile Include="Assets\Exploration\Scripts\CameraController.cs" />
      <Compile Include="Assets\Exploration\Scripts\CanvasScript.cs" />
+     <Compile Include="Assets\Exploration\Scripts\ChestScript.cs" />
      <Compile Include="Assets\Exploration\Scripts\DialogueScript.cs" />
      <Compile Include="Assets\Exploration\Scripts\GlobalFunctions.cs" />
+     <Compile Include="Assets\Exploration\Scripts\ItemObjects.cs" />
      <Compile Include="Assets\Exploration\Scripts\ObjectDialogue.cs" />
      <Compile Include="Assets\Exploration\Scripts\PlayerData.cs" />
      <Compile Include="Assets\Exploration\Scripts\PlayerMovement.cs" />

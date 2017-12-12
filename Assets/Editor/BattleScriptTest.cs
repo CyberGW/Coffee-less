@@ -45,7 +45,7 @@ public class BattleScriptTest {
 	[Test]
 	public void Items() {
 		player.Item = new Hammer ();
-		manager.applyItem ();
+		//manager.applyItem ();
 		//Check Attack has increased accordingly
 		Assert.AreEqual (15, player.Attack);
 		//Check in Attack calculations
@@ -159,6 +159,5 @@ public class BattleScriptTest {
 		playerMove.performMove ();
 		Assert.True (manager.battleWon ());
 	}
-
 
 }

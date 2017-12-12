@@ -134,7 +134,11 @@ public class Player : Character {
 			return this.item;
 		}
 		set {
+			if (item != null) {
+				item.revertBuffs (this);
+			}
 			item = value;
+			value.applyBuffs (this);
 		}
 	}
 

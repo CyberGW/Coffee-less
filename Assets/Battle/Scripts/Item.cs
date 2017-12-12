@@ -15,6 +15,7 @@ public interface Item {
 	}
 
 	void applyBuffs(Player player);
+	void revertBuffs(Player player);
 }
 
 [System.Serializable]
@@ -50,6 +51,10 @@ public class Hammer : Item {
 	//Increase user's attack by 5
 	public void applyBuffs(Player player) {
 		player.Attack += 5;
+	}
+
+	public void revertBuffs(Player player) {
+		player.Attack -= 5;
 	}
 
 }

@@ -48,7 +48,7 @@ public class MainBattle : MonoBehaviour {
 
 
 		//Setup Object references
-		playerArray = PlayerData.instance.playerArray;
+		playerArray = PlayerData.instance.data.Players;
 		player = playerArray [0];
 		enemyObject = GlobalFunctions.instance.getEnemy ();
 		moneyReward = GlobalFunctions.instance.getMoney ();
@@ -133,9 +133,9 @@ public class MainBattle : MonoBehaviour {
 			Debug.Log(enemy.ExpGiven);
 			yield return StartCoroutine (updateExp(enemy.ExpGiven));
 			playerArray [0] = player;
-			PlayerData.instance.playerArray = playerArray;
-			PlayerData.instance.money += moneyReward;
-			Debug.Log ("Money: " + PlayerData.instance.money);
+			PlayerData.instance.data.Players = playerArray;
+			PlayerData.instance.data.Money += moneyReward;
+			Debug.Log ("Money: " + PlayerData.instance.data.Money);
 			GlobalFunctions.instance.endBattle ();
 		}
 	}

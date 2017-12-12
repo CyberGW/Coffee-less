@@ -14,7 +14,7 @@ public class BattleManager {
 	{
 		this.player = player;
 		this.enemy = enemy;
-		applyItem ();
+		//applyItem ();
 		forceCriticalHits = "";
 	}
 

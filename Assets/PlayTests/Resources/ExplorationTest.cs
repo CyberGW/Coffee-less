@@ -2,6 +2,7 @@
 using UnityEngine.TestTools;
 using NUnit.Framework;
 using System.Collections;
+using System.Collections.Generic;
 using System;
 using UnityEngine.SceneManagement;
 
@@ -140,6 +141,36 @@ public class ExplorationTest {
 		dialogueScript.pseudoKeyPress = true;
 		yield return WaitForFrames (3);
 		Assert.IsNull (GameObject.Find ("DialogueBox"));
+	}
+
+	[UnityTest]
+	public IEnumerator TreasureChest() {
+		//Setup
+		yield return Setup ();
+		ObjectDialogue objectScript = GameObject.Find ("TriangleChest").GetComponentInChildren<ObjectDialogue> ();
+		DialogueScript dialogueScript = GameObject.Find ("Dialogue Manager").GetComponent<DialogueScript> ();
+		DataManager data = GameObject.Find ("GlobalData").GetComponent<PlayerData> ().data;
+		List<Item> items;
+
+		//Initially no items
+		items = data.Items;
+		Assert.AreEqual (0, items.Count);
+
+		//Open dialogue
+		player.transform.position = new Vector2 (-2.75f, 3);
+		objectScript.pseudoKeyPress = true;
+		yield return WaitForFrames (3); //Wait 3 frames for player to move then trigger to be detected and input processed
+		Assert.IsNotNull (GameObject.Find ("DialogueBox")); //Check DialogueBox can be found (is active)
+
+		//Close dialogue
+		dialogueScript.pseudoKeyPress = true;
+		yield return WaitForFrames (3);
+		Assert.Null (GameObject.Find ("DialogueBox"));
+
+		//Check item has been added
+		items = data.Items;
+		Assert.AreEqual (1, items.Count); //Check item has been added
+		Assert.IsInstanceOf(typeof(Hammer), items[0]); //Check it's the correct hammer item
 	}
 
 	[UnityTest]
