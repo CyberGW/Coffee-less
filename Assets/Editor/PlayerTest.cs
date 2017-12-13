@@ -11,7 +11,7 @@ public class PlayerTest {
 
 	[SetUp]
 	public void Init() {
-		this.player= new Player ("Player", 10, 100, 10, 10, 10, 10, 10, 10, 0, null, new Fireball("Fireball", "Instant Kill", 5), null);
+		this.player= new Player ("Player", 10, 100, 10, 10, 10, 10, 10, 10, 0, null, new MagicAttack("fireballed", "Fireball", 30, 5), null);
 	}
 
 	[Test]
@@ -27,7 +27,7 @@ public class PlayerTest {
 		Assert.AreEqual (10, player.Speed);
 		Assert.AreEqual (0, player.Exp);
 		Assert.AreEqual (null, player.Item);
-		Assert.IsInstanceOf (typeof(Fireball), player.Special1);
+		Assert.IsInstanceOf (typeof(MagicAttack), player.Special1);
 		Assert.AreEqual (null, player.Special2);
 	}
 

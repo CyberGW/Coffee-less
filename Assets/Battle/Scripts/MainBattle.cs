@@ -176,7 +176,7 @@ public class MainBattle : MonoBehaviour {
 	}
 
 	public void standardAttack() {
-		playerMove = new StandardAttack (manager, player, enemy, 10);
+		playerMove = new StandardAttack (manager, player, enemy);
 		enemyMove = manager.enemyMove (enemy, player);
 		moveChosen = true;
 		attackButton.interactable = false;

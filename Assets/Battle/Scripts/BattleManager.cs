@@ -113,7 +113,7 @@ public class BattleManager {
 			return enemySpecialMove (random);
 		}
 		//if special move not picked
-		return new StandardAttack (this, enemy, player, 10);
+		return new StandardAttack (this, enemy, player);
 	}
 
 	public CharacterMove enemySpecialMove(float random) {
@@ -129,7 +129,7 @@ public class BattleManager {
 		if (enemy.Special2.Magic <= enemy.Magic) {
 			return enemy.Special2;
 		} else { //resort back to standard attack if not enough damage for either
-			return new StandardAttack (this, enemy, player, 10);
+			return new StandardAttack (this, enemy, player);
 		}
 	}
 

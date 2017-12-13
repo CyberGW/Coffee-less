@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour {
 	void FixedUpdate () {
 
 		if (Input.GetKeyDown (KeyCode.Return)) {
-			GlobalFunctions.instance.createBattle (new Enemy ("Swinefoogle", 5, 100, 15, 5, 5, 5, 5, 5,  new Fireball("fireballed", "N/A", 3),  new Fireball("fireballed", "N/A", 5)), 50, null);
+			GlobalFunctions.instance.createBattle (new Enemy ("Swinefoogle", 5, 100, 15, 5, 5, 5, 5, 5, new MagicAttack("fireballed", "Fireball", 30, 3),  new MagicAttack("fireballed", "Fireball", 30, 5)), 50, null);
 		}
 		if (Input.GetKey (KeyCode.UpArrow)) {
 			move ("Up");

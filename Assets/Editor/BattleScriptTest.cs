@@ -18,9 +18,9 @@ public class BattleScriptTest {
 	[SetUp]
 	public void Init() {
 		//Player(Name, Level, Health, Attack, Defence, Magic, Luck, Speed, Exp, Item)
-		this.playerObject = new Player ("Player", 10, 100, 10, 10, 10, 10, 10, 10, 2000, null, new Fireball("Fireball", "Instant Kill", 5), null);
+		this.playerObject = new Player ("Player", 10, 100, 10, 10, 10, 10, 10, 10, 2000, null, new MagicAttack("fireballed", "Fireball", 30, 5), null);
 		//Enemy(Name, Level, Health, Attack, Defence, Magic, Luck, Speed)
-		this.enemyObject = new Enemy ("Enemy", 10, 100, 5, 5, 5, 5, 5, 5, new Fireball("Fireball", "Instant Kill", 5), new Fireball("Fireball", "Instant Kill", 10));
+		this.enemyObject = new Enemy ("Enemy", 10, 100, 5, 5, 5, 5, 5, 5, new MagicAttack("fireballed", "Fireball", 30, 5), new MagicAttack("fireballed", "Fireball", 30, 10));
 		this.manager = new BattleManager (playerObject, enemyObject);
 		this.player = manager.Player;
 		this.enemy = manager.Enemy;
@@ -49,7 +49,7 @@ public class BattleScriptTest {
 		//Check Attack has increased accordingly
 		Assert.AreEqual (15, player.Attack);
 		//Check in Attack calculations
-		playerMove = new StandardAttack (manager, player, enemy, 10); //Should now do 30 damage
+		playerMove = new StandardAttack (manager, player, enemy); //Should now do 30 damage
 		playerMove.performMove();
 		Assert.AreEqual(70, enemy.Health);
 	}
@@ -58,20 +58,22 @@ public class BattleScriptTest {
 	[Test]
 	public void StandardAttack () {
 		//Damage Calculations
-		playerMove = new StandardAttack (manager,player, enemy, 10); //Should do 20 damage
+		playerMove = new StandardAttack (manager,player, enemy); //Should do 20 damage
 		playerMove.performMove ();
 		Assert.AreEqual (80, enemy.Health);
-		enemyMove = new StandardAttack (manager,enemy, player, 10); //Should do 5 damage
+		enemyMove = new StandardAttack (manager,enemy, player); //Should do 5 damage
 		enemyMove.performMove ();
 		Assert.AreEqual (95, player.Health);
 
 		//Only Integer Healths
-		enemyMove = new StandardAttack (manager,enemy, player, 3); //Should do 1.5 = 2 damage
+		player.Defence = 3;
+		enemyMove = new StandardAttack (manager, enemy, player); //Should do 16.66 = 17 damage
 		enemyMove.performMove ();
-		Assert.AreEqual (93, player.Health);
+		Assert.AreEqual (78, player.Health);
 
 		//No Negative Health
-		playerMove = new StandardAttack (manager,player, enemy, 200); //Would lower enemy health below zero
+		enemy.Health = 1;
+		playerMove = new StandardAttack (manager,player, enemy); //Would lower enemy health below zero
 		playerMove.performMove ();
 		Assert.AreEqual(0, enemy.Health);
 	}
@@ -79,7 +81,7 @@ public class BattleScriptTest {
 	[Test]
 	public void ChangePlayer() {
 		Player newPlayer = new Player ("Second Player", 1, 1, 1, 1, 1, 1, 1, 1, 1, null, null, null);
-		playerMove = new SwitchPlayers (player, newPlayer, manager);
+		playerMove = new SwitchPlayers (manager, player, newPlayer);
 		playerMove.performMove ();
 		Assert.AreEqual (newPlayer, manager.Player); //Check player has been reassigned correctly
 		Assert.False (manager.playerFirst()); //Check PlayerFirst has been updated
@@ -88,9 +90,9 @@ public class BattleScriptTest {
 	[Test]
 	public void HealthRestore() {
 		//Damage Enemy so we have a target to heal
-		playerMove = new StandardAttack (manager,player, enemy, 10); //Should do 20 damage
+		playerMove = new StandardAttack (manager,player, enemy); //Should do 20 damage
 		playerMove.performMove ();
-		playerMove = new HealingSpell (player, enemy, 15); //Should restore back up to 95
+		playerMove = new HealingSpell (manager, player, enemy, 15); //Should restore back up to 95
 		playerMove.performMove ();
 		Assert.AreEqual (95, enemy.Health);
 
@@ -104,7 +106,8 @@ public class BattleScriptTest {
 		player.Special1.setUp (manager, player, enemy);
 		playerMove = player.Special1;
 		playerMove.performMove ();
-		Assert.AreEqual (60, enemy.Health);
+		//Should do 30 * 10 / 5 = 60 damage
+		Assert.AreEqual (40, enemy.Health);
 	}
 
 	[Test]
@@ -123,10 +126,10 @@ public class BattleScriptTest {
 	[Test]
 	public void CriticalHitCalculation() {
 		manager.forceCriticalHits = "All";
-		playerMove = new StandardAttack (manager,player, enemy, 10); //Should do 20 * 1.75 = 35 damage
+		playerMove = new StandardAttack (manager,player, enemy); //Should do 20 * 1.75 = 35 damage
 		playerMove.performMove ();
 		Assert.AreEqual (65, enemy.Health);
-		enemyMove = new StandardAttack (manager,enemy, player, 10); //Should do 5 * 1.75 = 8.75 = 9 damage
+		enemyMove = new StandardAttack (manager,enemy, player); //Should do 5 * 1.75 = 8.75 = 9 damage
 		enemyMove.performMove ();
 		Assert.AreEqual (91, player.Health);
 	}
@@ -144,8 +147,7 @@ public class BattleScriptTest {
 		//Initially
 		Assert.False (manager.battleWon ());
 		//Standard Test above 0
-		playerMove = new StandardAttack (manager, player, enemy, 30); //Should do 60 damage, so not won
-		playerMove.performMove ();
+		enemy.Health = 40; //Should do 60 damage, so not won
 		Assert.False (manager.battleWon ());
 		//Boundary Test at 1
 		enemy.Health = 1;
@@ -155,7 +157,7 @@ public class BattleScriptTest {
 		Assert.True (manager.battleWon ());
 		//Standard Test below 0
 		enemy.Health = 10;
-		playerMove = new StandardAttack (manager, player, enemy, 10); //Should deal 20 damage, taking health to -10 = 0
+		playerMove = new StandardAttack (manager, player, enemy); //Should deal 20 damage, taking health to -10 = 0
 		playerMove.performMove ();
 		Assert.True (manager.battleWon ());
 	}

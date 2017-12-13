@@ -4,6 +4,7 @@ using UnityEngine;
 
 public abstract class CharacterMove {
 
+	protected BattleManager manager;
 	protected Character user;
 	protected Character target;
 	protected string text;
@@ -31,6 +32,7 @@ public abstract class CharacterMove {
 
 public abstract class SpecialMove : CharacterMove {
 
+	protected string desc;
 	protected int magic;
 
 	public int Magic {
@@ -39,7 +41,17 @@ public abstract class SpecialMove : CharacterMove {
 		}
 	}
 
-	public abstract void setUp(BattleManager manager, Character user, Character target);
+	public string Desc {
+		get {
+			return this.desc;
+		}
+	}
+
+	public void setUp (BattleManager manager, Character user, Character target) {
+		this.manager = manager;
+		this.user = user;
+		this.target = target;
+	}
 
 	public void decreaseMagic() {
 		user.Magic -= magic;
@@ -49,15 +61,13 @@ public abstract class SpecialMove : CharacterMove {
 [System.Serializable]
 public class StandardAttack : CharacterMove {
 
-	private BattleManager manager;
 	private int power;
 
-	public StandardAttack (BattleManager manager, Character user, Character target, int power)
-	{
+	public StandardAttack(BattleManager manager, Character user, Character target) {
 		this.manager = manager;
 		this.user = user;
 		this.target = target;
-		this.power = power;
+		this.power = 10;
 		this.text = "attacked";
 	}
 		
@@ -72,11 +82,11 @@ public class SwitchPlayers : CharacterMove {
 
 	private BattleManager manager;
 
-	public SwitchPlayers (Player currentPlayer, Player newPlayer, BattleManager manager)
+	public SwitchPlayers (BattleManager manager, Character user, Character target)
 	{
-		this.user = currentPlayer;
-		this.target = newPlayer;
 		this.manager = manager;
+		this.user = user;
+		this.target = target;
 		this.text = "switched with";
 	}
 
@@ -90,8 +100,9 @@ public class HealingSpell : CharacterMove {
 
 	private int healthRestore;
 
-	public HealingSpell (Character user, Character target, int healthRestore)
+	public HealingSpell (BattleManager manager, Character user, Character target, int healthRestore)
 	{
+		this.manager = manager;
 		this.user = user;
 		this.target = target;
 		this.healthRestore = healthRestore;
@@ -108,23 +119,39 @@ public class HealingSpell : CharacterMove {
 }
 
 [System.Serializable]
-public class Fireball : SpecialMove {
+public class MagicAttack : SpecialMove {
 
-	private string desc;
+	private int power;
 
-	public Fireball (string text, string desc, int magic) {
+	public MagicAttack (string text, string desc, int power, int magic) {
 		this.text = text;
 		this.desc = desc;
+		this.power = power;
 		this.magic = magic;
 	}
 
-	public override void setUp(BattleManager manager, Character user, Character target) {
-		this.target = target;
-		this.user = user;
+	public override void performMove() {
+		int damage = manager.damageCalculation (user, target, power);
+		target.Health -= damage;
+		decreaseMagic ();
+	}
+
+}
+
+[System.Serializable]
+public class LowerDefence : SpecialMove {
+
+	private float decrease;
+
+	public LowerDefence (string text, string desc, float decrease, int magic) {
+		this.text = text;
+		this.desc = desc;
+		this.decrease = decrease;
+		this.magic = magic;
 	}
 
 	public override void performMove() {
-		target.Health -= 40;
+		target.Defence = Mathf.RoundToInt (target.Defence * (1 - decrease));
 		decreaseMagic ();
 	}
 

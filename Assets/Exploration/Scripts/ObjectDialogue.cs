@@ -27,6 +27,7 @@ public class ObjectDialogue : MonoBehaviour {
 				Dictionary<string, Item> items = GameObject.Find ("GlobalData").GetComponent<ItemObjects> ().items;
 				DataManager data= PlayerData.instance.data;
 				data.addItem (items [treasure]);
+				Destroy (gameObject); //Remove trigger to stop player obtaining item again
 			}
 		}
 	}

@@ -144,7 +144,7 @@ public class ExplorationTest {
 	}
 
 	[UnityTest]
-	public IEnumerator TreasureChest() {
+	public IEnumerator ItemObtain() {
 		//Setup
 		yield return Setup ();
 		ObjectDialogue objectScript = GameObject.Find ("TriangleChest").GetComponentInChildren<ObjectDialogue> ();
@@ -171,6 +171,9 @@ public class ExplorationTest {
 		items = data.Items;
 		Assert.AreEqual (1, items.Count); //Check item has been added
 		Assert.IsInstanceOf(typeof(Hammer), items[0]); //Check it's the correct hammer item
+
+		//Check trigger has been destroyed
+		Assert.Null(GameObject.Find("TriangleChest").transform.Find("dialogueBox"));
 	}
 
 	[UnityTest]
