@@ -9,12 +9,13 @@ public class BattleManager {
 	private Enemy enemy;
 	public string forceCriticalHits; //Used for testing
 	private bool wasCriticalHit;
+	public int money;
 
-	public BattleManager (Player player, Enemy enemy)
+	public BattleManager (Player player, Enemy enemy, int money)
 	{
 		this.player = player;
 		this.enemy = enemy;
-		//applyItem ();
+		this.money = money;
 		forceCriticalHits = "";
 	}
 
@@ -42,6 +43,10 @@ public class BattleManager {
 		}
 	}
 
+	/// <summary>
+	/// Determines whether the player should go first or not by comparing their speed stat to the enemy's
+	/// </summary>
+	/// <returns><c>true</c>, if player should go first, <c>false</c> otherwise.</returns>
 	public bool playerFirst() {
 		if (player.Speed >= enemy.Speed) {
 			return true;
@@ -50,16 +55,20 @@ public class BattleManager {
 		}
 	}
 
-	public void applyItem() {
-		if (player.Item != null) {
-			player.Item.applyBuffs(player);
-		}
-	}
-
+	/// <summary>
+	/// Switches two players, called by a <see cref="CharacterMove"/> 
+	/// </summary>
+	/// <param name="newPlayer">The new player the current one should be switched with</param>
 	public void switchPlayers(Player newPlayer) {
 		player = newPlayer;
 	}
 
+	/// <summary>
+	/// Determines if a move is a critical hit, based upon luck stat and random element.
+	/// Can be forced by setting <see cref="forceCriticalHits"/> to All or None 
+	/// </summary>
+	/// <returns><c>true</c>, if critical hit, <c>false</c> otherwise.</returns>
+	/// <param name="luck">Luck.</param>
 	public bool isCriticalHit(int luck) {
 		//Conditions for testing
 		switch (forceCriticalHits)
@@ -80,6 +89,12 @@ public class BattleManager {
 		}
 	}
 
+	/// <summary>
+	/// Generate whether the player has run away or not, dependent upon speed stats and random element
+	/// </summary>
+	/// <returns><c>true</c>, if away is to run away, <c>false</c> otherwise.</returns>
+	/// <param name="playerSpeed">Player speed stat.</param>
+	/// <param name="enemySpeed">Enemy speed stat.</param>
 	public bool ranAway(int playerSpeed, int enemySpeed) {
 		float chance = 0.5f + (playerSpeed - enemySpeed) * 2;
 		if (Random.value < chance) {
@@ -89,6 +104,13 @@ public class BattleManager {
 		}
 	}
 
+	/// <summary>
+	/// Calculates the amount of damage and attack should inflict, ensuring not to take health to negative values
+	/// </summary>
+	/// <returns>The amount of damage inflicted</returns>
+	/// <param name="user">The user of the attack</param>
+	/// <param name="target">The target of the attack</param>
+	/// <param name="power">The power of the attack.</param>
 	public int damageCalculation(Character user, Character target, int power) {
 		float fDamage = (float) user.Attack * power / target.Defence;
 		if (isCriticalHit (user.Luck)) {
@@ -105,6 +127,12 @@ public class BattleManager {
 		}
 	}
 
+	/// <summary>
+	/// Decides upon whether to pick a special or standard attack move for the enemy
+	/// </summary>
+	/// <returns>The move for the enemy to perform</returns>
+	/// <param name="enemy">The enemy object to generate a move for</param>
+	/// <param name="player">The player object who is target of the move</param>
 	public CharacterMove enemyMove(Enemy enemy, Player player) {
 		double chance = 0.7 - 0.7 * (enemy.MaximumMagic - enemy.Magic) / (double) enemy.MaximumMagic;
 		if (Random.value < chance) { //try magic spell
@@ -116,7 +144,13 @@ public class BattleManager {
 		return new StandardAttack (this, enemy, player);
 	}
 
-	public CharacterMove enemySpecialMove(float random) {
+	/// <summary>
+	/// Called by <see cref="enemyMove"/> to determine which special move to pick, resorting back to a
+	/// standard attack if not enough magic 
+	/// </summary>
+	/// <returns>The special move to use</returns>
+	/// <param name="random">Random number 0 or 1 to choose <see cref="Enemy.Special1"/> or <see cref="Enemy.Special2"/> </param>  
+	public CharacterMove enemySpecialMove(int random) {
 		//Setup moves
 		enemy.Special1.setUp (this, enemy, player);
 		enemy.Special2.setUp (this, enemy, player);
@@ -133,6 +167,11 @@ public class BattleManager {
 		}
 	}
 
+	/// <summary>
+	/// Characters the fainted.
+	/// </summary>
+	/// <returns><c>true</c>, if fainted was charactered, <c>false</c> otherwise.</returns>
+	/// <param name="character">Character.</param>
 	private bool characterFainted(Character character) {
 		if (character.Health <= 0) {
 			return true;
@@ -141,10 +180,18 @@ public class BattleManager {
 		}
 	}
 
+	/// <summary>
+	/// Checks if battle has been won, dependent upon <see cref="characterFainted"/> 
+	/// </summary>
+	/// <returns><c>true</c>, if battle has been won, <c>false</c> otherwise.</returns>
 	public bool battleWon() {
 		return characterFainted (enemy);
 	}
 
+	/// <summary>
+	/// Checks if player current player fainted, dependent upon <see cref="characterFainted"/> 
+	/// </summary>
+	/// <returns><c>true</c>, if current player has fainted, <c>false</c> otherwise.</returns>
 	public bool playerFainted() {
 		return characterFainted (player);
 	}

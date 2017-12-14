@@ -18,10 +18,10 @@ public class BattleScriptTest {
 	[SetUp]
 	public void Init() {
 		//Player(Name, Level, Health, Attack, Defence, Magic, Luck, Speed, Exp, Item)
-		this.playerObject = new Player ("Player", 10, 100, 10, 10, 10, 10, 10, 10, 2000, null, new MagicAttack("fireballed", "Fireball", 30, 5), null);
+		this.playerObject = new Player ("Player", 10, 100, 10, 10, 10, 10, 10, 10, 2000, null, new MagicAttack("fireballed", "Fireball", 5, 30), null);
 		//Enemy(Name, Level, Health, Attack, Defence, Magic, Luck, Speed)
-		this.enemyObject = new Enemy ("Enemy", 10, 100, 5, 5, 5, 5, 5, 5, new MagicAttack("fireballed", "Fireball", 30, 5), new MagicAttack("fireballed", "Fireball", 30, 10));
-		this.manager = new BattleManager (playerObject, enemyObject);
+		this.enemyObject = new Enemy ("Enemy", 10, 100, 5, 5, 5, 5, 5, 5, new MagicAttack("fireballed", "Fireball", 5, 30), new MagicAttack("fireballed", "Fireball", 30, 10));
+		this.manager = new BattleManager (playerObject, enemyObject, 0);
 		this.player = manager.Player;
 		this.enemy = manager.Enemy;
 		manager.forceCriticalHits = "None";
@@ -85,20 +85,6 @@ public class BattleScriptTest {
 		playerMove.performMove ();
 		Assert.AreEqual (newPlayer, manager.Player); //Check player has been reassigned correctly
 		Assert.False (manager.playerFirst()); //Check PlayerFirst has been updated
-	}
-
-	[Test]
-	public void HealthRestore() {
-		//Damage Enemy so we have a target to heal
-		playerMove = new StandardAttack (manager,player, enemy); //Should do 20 damage
-		playerMove.performMove ();
-		playerMove = new HealingSpell (manager, player, enemy, 15); //Should restore back up to 95
-		playerMove.performMove ();
-		Assert.AreEqual (95, enemy.Health);
-
-		//Check Health doesn't go beyond 100
-		playerMove.performMove (); //Should restore health to 105 = 100
-		Assert.AreEqual (100, enemy.Health);
 	}
 
 	[Test]

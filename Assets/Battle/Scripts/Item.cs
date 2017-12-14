@@ -2,33 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface Item {
+public abstract class Item {
 
-	string Name {
-		get;
-		set;
-	}
-
-	string Desc {
-		get;
-		set;
-	}
-
-	void applyBuffs(Player player);
-	void revertBuffs(Player player);
-}
-
-[System.Serializable]
-public class Hammer : Item {
-	
-	private string name;
-	private string desc;
-
-	public Hammer ()
-	{
-		this.name = "Hammer";
-		this.desc = "Increases user's attack power by 5";
-	}
+	protected string name;
+	protected string desc;
 
 	public string Name {
 		get {
@@ -48,12 +25,25 @@ public class Hammer : Item {
 		}
 	}
 
+	abstract public void applyBuffs(Player player);
+	abstract public void revertBuffs(Player player);
+}
+
+[System.Serializable]
+public class Hammer : Item {
+
+	public Hammer ()
+	{
+		this.name = "Hammer";
+		this.desc = "Increases user's attack power by 5";
+	}
+
 	//Increase user's attack by 5
-	public void applyBuffs(Player player) {
+	public override void applyBuffs(Player player) {
 		player.Attack += 5;
 	}
 
-	public void revertBuffs(Player player) {
+	public override void revertBuffs(Player player) {
 		player.Attack -= 5;
 	}
 

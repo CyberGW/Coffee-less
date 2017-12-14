@@ -37,7 +37,10 @@ public class MainBattle : MonoBehaviour {
 	private AudioClip victory;
 
 
-	// Use this for initialization
+	/// <summary>
+	/// Start this instance.
+	/// Includes finding game objects, setting references and changing background music
+	/// </summary>
 	void Start () {
 		
 		//Find Objects
@@ -53,7 +56,7 @@ public class MainBattle : MonoBehaviour {
 		enemyObject = GlobalFunctions.instance.getEnemy ();
 		moneyReward = GlobalFunctions.instance.getMoney ();
 		itemReward = GlobalFunctions.instance.getItem ();
-		manager = new BattleManager (playerArray[0], enemyObject);
+		manager = new BattleManager (playerArray[0], enemyObject, moneyReward);
 		player = manager.Player;
 		enemy = manager.Enemy;
 
@@ -82,7 +85,11 @@ public class MainBattle : MonoBehaviour {
 
 	}
 	
-	// Update is called once per frame
+	/// <summary>
+	/// Update this instance.
+	/// If a move is chosen, then call <see cref="playerThenEnemy"/> or <see cref="enemyThenPlayer"/> dependent upon
+	/// <see cref="BattleManager.playerFirst()"/> 
+	/// </summary>
 	void Update () {
 		if (moveChosen) {
 			if (manager.playerFirst()) {
@@ -94,6 +101,11 @@ public class MainBattle : MonoBehaviour {
 		}
 	}		
 
+	/// <summary>
+	/// Performs the player's turn, then the enemy's\n
+	/// Re-enables attack button afterwards
+	/// </summary>
+	/// <returns>Coroutine functions to perform the turns</returns>
 	private IEnumerator playerThenEnemy () {
 		yield return StartCoroutine (performTurn(playerMove));
 		if (!manager.battleWon()) {
@@ -102,6 +114,11 @@ public class MainBattle : MonoBehaviour {
 		attackButton.interactable = true;
 	}
 
+	/// <summary>
+	/// Performs the enemy's turn, then the player's\n
+	/// Re-enables attack button afterwards
+	/// </summary>
+	/// <returns>Coroutine functions to perform the turns</returns>
 	private IEnumerator enemyThenPlayer() {
 		yield return StartCoroutine (performTurn(enemyMove));
 		if (!manager.playerFainted()) {
@@ -110,6 +127,12 @@ public class MainBattle : MonoBehaviour {
 		attackButton.interactable = true;
 	}
 
+	/// <summary>
+	/// Performs the turn, updating text display and health and magic bars.
+	/// Afterwards, checks to see whether the player has won or lost
+	/// </summary>
+	/// <returns>Coroutine functions</returns>
+	/// <param name="move">The move to  be performed</param>
 	private IEnumerator performTurn(CharacterMove move) {
 		int previousHealth = move.Target.Health;
 		int previousMagic = move.User.Magic;
@@ -127,6 +150,11 @@ public class MainBattle : MonoBehaviour {
 		}
 	}
 
+	/// <summary>
+	/// Checks if the player has won\n
+	/// If they have, exp is given and shown on screen, before saving player data, adding money and ending the battle
+	/// </summary>
+	/// <returns>Coroutine function to update exp bar</returns>
 	private IEnumerator checkIfPlayerWon() {
 		if (manager.battleWon()) {
 			SoundManager.instance.playBGM(victory);
@@ -134,12 +162,17 @@ public class MainBattle : MonoBehaviour {
 			yield return StartCoroutine (updateExp(enemy.ExpGiven));
 			playerArray [0] = player;
 			PlayerData.instance.data.Players = playerArray;
-			PlayerData.instance.data.Money += moneyReward;
+			PlayerData.instance.data.Money += manager.money;
 			Debug.Log ("Money: " + PlayerData.instance.data.Money);
 			GlobalFunctions.instance.endBattle ();
 		}
 	}
 
+	/// <summary>
+	/// Updates the saved and displayed exp
+	/// </summary>
+	/// <returns>Coroutine function to update exp bar</returns>
+	/// <param name="totalExp">The total exp the player has gained</param>
 	private IEnumerator updateExp(int totalExp) {
 		yield return new WaitForSeconds (1f);
 		int gainedExp;
@@ -156,6 +189,13 @@ public class MainBattle : MonoBehaviour {
 		}
 	}
 
+	/// <summary>
+	/// A helper function for <see cref="updateExp"/>  that performs an exp increase within a single level interval.
+	/// Updates text display if player levels up
+	/// </summary>
+	/// <returns>Coroutines to update exp display and add a delay before scene closes</returns>
+	/// <param name="gainedExp">Exp gained within this level interval</param>
+	/// <param name="levelledUp">If set to <c>true</c> indicates the player is about to level up.</param>
 	private IEnumerator updateExpHelper(int gainedExp, bool levelledUp) {
 		yield return StartCoroutine (expBar.updateDisplay (player.Exp, player.Exp + gainedExp));
 		player.gainExp (gainedExp);
@@ -166,6 +206,10 @@ public class MainBattle : MonoBehaviour {
 		yield return new WaitForSeconds (1.5f);
 	}
 
+	/// <summary>
+	/// Checks if player lost.
+	/// </summary>
+	/// <returns><c>true</c>, if player has fainted, <c>false</c> otherwise.</returns>
 	private bool checkIfPlayerLost() {
 		if (manager.playerFainted()) {
 			Debug.Log ("Lost!");
@@ -175,6 +219,9 @@ public class MainBattle : MonoBehaviour {
 		}
 	}
 
+	/// <summary>
+	/// Setup a standard attack move
+	/// </summary>
 	public void standardAttack() {
 		playerMove = new StandardAttack (manager, player, enemy);
 		enemyMove = manager.enemyMove (enemy, player);
@@ -182,6 +229,9 @@ public class MainBattle : MonoBehaviour {
 		attackButton.interactable = false;
 	}
 
+    /// <summary>
+	/// Run away from battle if <see cref="BattleManager.ranAway"/> returns true
+    /// </summary>
     public void runAway()
     {
         if (manager.ranAway(player.Speed,enemy.Speed))

@@ -9,6 +9,7 @@ public class ObjectDialogue : MonoBehaviour {
 	//For testing
 	public bool pseudoKeyPress;
 	public string treasure;
+	public Item item;
 	private DialogueScript dManager;
 	private PlayerMovement movementScript;
 
