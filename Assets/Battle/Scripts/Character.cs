@@ -2,55 +2,136 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface Character {
+/// <summary>
+/// Base abstract class for Enemy and Player to inherit from.
+/// Defines all shared variables, their constructor and their setters and getters
+/// </summary>
+public abstract class Character {
 
-	string Name {
-		get;
-		set;
+	protected string name;
+	protected int level;
+	protected int health;
+	protected int attack;
+	protected int defence;
+	protected int maximumMagic;
+	protected int magic;
+	protected int luck;
+	protected int speed;
+	protected SpecialMove special1;
+	protected SpecialMove special2;
+
+	protected Character (string name, int level, int health, int attack, int defence, int maximumMagic, int magic, int luck, int speed, SpecialMove special1, SpecialMove special2)
+	{
+		this.name = name;
+		this.level = level;
+		this.health = health;
+		this.attack = attack;
+		this.defence = defence;
+		this.maximumMagic = maximumMagic;
+		this.magic = magic;
+		this.luck = luck;
+		this.speed = speed;
+		this.special1 = special1;
+		this.special2 = special2;
+	}		
+
+	public string Name {
+		get {
+			return this.name;
+		}
+		set {
+			name = value;
+		}
 	}
 
-	int Health {
-		get;
-		set;
+	public int Level {
+		get {
+			return this.level;
+		}
+		set {
+			level = value;
+		}
 	}
 
-	int Attack {
-		get;
-		set;
+	public int Health {
+		get {
+			return this.health;
+		}
+		set {
+			health = value;
+		}
 	}
 
-	int Defence {
-		get;
-		set;
+	public int Attack {
+		get {
+			return this.attack;
+		}
+		set {
+			attack = value;
+		}
 	}
 
-	int MaximumMagic {
-		get;
-		set;
+	public int Defence {
+		get {
+			return this.defence;
+		}
+		set {
+			defence = value;
+		}
 	}
 
-	int Magic {
-		get;
-		set;
+	public int MaximumMagic {
+		get {
+			return this.maximumMagic;
+		}
+		set {
+			maximumMagic = value;
+		}
 	}
 
-	int Luck {
-		get;
-		set;
+	public int Magic {
+		get {
+			return this.magic;
+		}
+		set {
+			magic = value;
+		}
 	}
 
-	int Speed {
-		get;
-		set;
+	public int Luck {
+		get {
+			return this.luck;
+		}
+		set {
+			luck = value;
+		}
 	}
 
-	SpecialMove Special1 {
-		get;
-		set;
+	public int Speed {
+		get {
+			return this.speed;
+		}
+		set {
+			speed = value;
+		}
 	}
 
-	SpecialMove Special2 {
-		get;
-		set;
+	public SpecialMove Special1 {
+		get {
+			return this.special1;
+		}
+		set {
+			special1 = value;
+		}
 	}
+
+	public SpecialMove Special2 {
+		get {
+			return this.special2;
+		}
+		set {
+			special2 = value;
+		}
+	}
+
 }

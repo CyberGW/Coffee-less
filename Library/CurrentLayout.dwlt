@@ -108,7 +108,7 @@ MonoBehaviour:
   m_MinSize: {x: 408, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 1
-  controlID: 49
+  controlID: 162
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_MinSize: {x: 408, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 50
+  controlID: 163
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -156,7 +156,7 @@ MonoBehaviour:
   m_MinSize: {x: 306, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 13
+  controlID: 164
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_MinSize: {x: 306, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 14
+  controlID: 165
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -394,7 +394,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: defcfeff36fdfeffe603ffff2808ffff0825ffff162bffff7a4bffffa650ffffdc57ffffc25dffff2263ffff6e6bffff3c72ffff907effff1c86ffff648dffff8a97ffff0aa5ffff12a6ffff0eacffff12baffffd0caffffb6cdfffffad3ffff6adbffff52e7ffffa6fbffff00000000dc300000
+    m_ExpandedIDs: 98d6ffff20ddffffb6e6ffff74e8ffff0ce9ffff58f1ffffa6fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -412,8 +412,7 @@ MonoBehaviour:
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 9}
     m_SearchString: 
-  m_ExpandedScenes:
-  - Main
+  m_ExpandedScenes: []
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -779,7 +778,7 @@ MonoBehaviour:
     y: 92
     width: 476
     height: 614
-  m_TestTypeToolbarIndex: 0
+  m_TestTypeToolbarIndex: 1
   m_PlayModeTestListGUI:
     m_Window: {fileID: 21}
     newResultList:
@@ -787,7 +786,7 @@ MonoBehaviour:
       name: Test
       fullName: Test
       resultStatus: 1
-      duration: 12.698694
+      duration: 12.670479
       messages: 
       output: 
       stacktrace: 
@@ -799,7 +798,7 @@ MonoBehaviour:
       name: Assembly-CSharp.dll
       fullName: C:/Users/CyberGW/Documents/Unity/SEPRPhase2/Library/ScriptAssemblies/Assembly-CSharp.dll
       resultStatus: 1
-      duration: 12.618301
+      duration: 12.585668
       messages: 
       output: 
       stacktrace: 
@@ -811,7 +810,7 @@ MonoBehaviour:
       name: ExplorationTest
       fullName: ExplorationTest
       resultStatus: 1
-      duration: 12.598302
+      duration: 12.558261
       messages: 
       output: 
       stacktrace: 
@@ -823,7 +822,7 @@ MonoBehaviour:
       name: CameraMovement
       fullName: ExplorationTest.CameraMovement
       resultStatus: 1
-      duration: 0.7022155
+      duration: 0.6969235
       messages: 
       output: 
       stacktrace: 
@@ -835,7 +834,7 @@ MonoBehaviour:
       name: DialogueBox
       fullName: ExplorationTest.DialogueBox
       resultStatus: 1
-      duration: 1.4375824
+      duration: 1.4053117
       messages: 
       output: 
       stacktrace: 
@@ -847,7 +846,7 @@ MonoBehaviour:
       name: ItemObtain
       fullName: ExplorationTest.ItemObtain
       resultStatus: 1
-      duration: 0.1373572
+      duration: 0.1371417
       messages: 
       output: 
       stacktrace: 
@@ -859,7 +858,7 @@ MonoBehaviour:
       name: ObjectCollision
       fullName: ExplorationTest.ObjectCollision
       resultStatus: 1
-      duration: 2.4394667
+      duration: 2.4382012
       messages: 
       output: 
       stacktrace: 
@@ -871,7 +870,7 @@ MonoBehaviour:
       name: PlayerAnimation
       fullName: ExplorationTest.PlayerAnimation
       resultStatus: 1
-      duration: 0.2319794
+      duration: 0.2318557
       messages: 
       output: 
       stacktrace: 
@@ -883,7 +882,7 @@ MonoBehaviour:
       name: PlayerMovement
       fullName: ExplorationTest.PlayerMovement
       resultStatus: 1
-      duration: 4.820938
+      duration: 4.837072
       messages: 
       output: 
       stacktrace: 
@@ -895,7 +894,7 @@ MonoBehaviour:
       name: Portal
       fullName: ExplorationTest.Portal
       resultStatus: 1
-      duration: 2.6068244
+      duration: 2.5870998
       messages: 
       output: 
       stacktrace: 
@@ -953,7 +952,7 @@ MonoBehaviour:
       name: Assembly-CSharp-Editor.dll
       fullName: C:/Users/CyberGW/Documents/Unity/SEPRPhase2/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
       resultStatus: 1
-      duration: 1.6577905
+      duration: 1.7093586
       messages: One or more child tests were ignored
       output: 
       stacktrace: 
@@ -965,7 +964,7 @@ MonoBehaviour:
       name: BattleScriptTest
       fullName: BattleScriptTest
       resultStatus: 1
-      duration: 0.5208878
+      duration: 0.4691467
       messages: One or more child tests were ignored
       output: 
       stacktrace: 
@@ -977,7 +976,7 @@ MonoBehaviour:
       name: BattleWon
       fullName: BattleScriptTest.BattleWon
       resultStatus: 1
-      duration: 0.0358091
+      duration: 0.0365922
       messages: 
       output: 
       stacktrace: 
@@ -989,7 +988,7 @@ MonoBehaviour:
       name: ChangePlayer
       fullName: BattleScriptTest.ChangePlayer
       resultStatus: 1
-      duration: 0.0299281
+      duration: 0.0298748
       messages: 
       output: 
       stacktrace: 
@@ -1001,7 +1000,7 @@ MonoBehaviour:
       name: Constructor
       fullName: BattleScriptTest.Constructor
       resultStatus: 1
-      duration: 0.032097
+      duration: 0.0199823
       messages: 
       output: 
       stacktrace: 
@@ -1013,7 +1012,7 @@ MonoBehaviour:
       name: CriticalHitCalculation
       fullName: BattleScriptTest.CriticalHitCalculation
       resultStatus: 1
-      duration: 0.0340138
+      duration: 0.0293817
       messages: 
       output: 
       stacktrace: 
@@ -1025,7 +1024,7 @@ MonoBehaviour:
       name: CriticalHitGeneration
       fullName: BattleScriptTest.CriticalHitGeneration
       resultStatus: 4
-      duration: 0.0005456
+      duration: 0.0005899
       messages: Manual Probability Test
       output: 
       stacktrace: 
@@ -1037,7 +1036,7 @@ MonoBehaviour:
       name: EnemySpecialMoveAI
       fullName: BattleScriptTest.EnemySpecialMoveAI
       resultStatus: 1
-      duration: 0.0357082
+      duration: 0.036054
       messages: 
       output: 
       stacktrace: 
@@ -1049,7 +1048,7 @@ MonoBehaviour:
       name: Items
       fullName: BattleScriptTest.Items
       resultStatus: 1
-      duration: 0.0310986
+      duration: 0.0352288
       messages: 
       output: 
       stacktrace: 
@@ -1061,7 +1060,7 @@ MonoBehaviour:
       name: PlayerSpecialMove
       fullName: BattleScriptTest.PlayerSpecialMove
       resultStatus: 1
-      duration: 0.0234102
+      duration: 0.0211445
       messages: 
       output: 
       stacktrace: 
@@ -1073,7 +1072,7 @@ MonoBehaviour:
       name: StandardAttack
       fullName: BattleScriptTest.StandardAttack
       resultStatus: 1
-      duration: 0.0205668
+      duration: 0.0341002
       messages: 
       output: 
       stacktrace: 
@@ -1085,7 +1084,7 @@ MonoBehaviour:
       name: TurnOrder
       fullName: BattleScriptTest.TurnOrder
       resultStatus: 1
-      duration: 0.0312081
+      duration: 0.032623
       messages: 
       output: 
       stacktrace: 
@@ -1097,7 +1096,7 @@ MonoBehaviour:
       name: EnemyTest
       fullName: EnemyTest
       resultStatus: 1
-      duration: 0.1056864
+      duration: 0.1083446
       messages: 
       output: 
       stacktrace: 
@@ -1109,7 +1108,7 @@ MonoBehaviour:
       name: Attributes
       fullName: EnemyTest.Attributes
       resultStatus: 1
-      duration: 0.0162687
+      duration: 0.0158164
       messages: 
       output: 
       stacktrace: 
@@ -1121,7 +1120,7 @@ MonoBehaviour:
       name: Setters
       fullName: EnemyTest.Setters
       resultStatus: 1
-      duration: 0.0055054
+      duration: 0.0049688
       messages: 
       output: 
       stacktrace: 
@@ -1133,7 +1132,7 @@ MonoBehaviour:
       name: ItemTest
       fullName: ItemTest
       resultStatus: 1
-      duration: 0.1367489
+      duration: 0.1235431
       messages: 
       output: 
       stacktrace: 
@@ -1145,7 +1144,7 @@ MonoBehaviour:
       name: ApplyBuffs
       fullName: ItemTest.ApplyBuffs
       resultStatus: 1
-      duration: 0.0313502
+      duration: 0.0303703
       messages: 
       output: 
       stacktrace: 
@@ -1157,7 +1156,7 @@ MonoBehaviour:
       name: Attributes
       fullName: ItemTest.Attributes
       resultStatus: 1
-      duration: 0.0314093
+      duration: 0.0260825
       messages: 
       output: 
       stacktrace: 
@@ -1169,7 +1168,7 @@ MonoBehaviour:
       name: PlayerDataTest
       fullName: PlayerDataTest
       resultStatus: 1
-      duration: 0.2761395
+      duration: 0.2929807
       messages: 
       output: 
       stacktrace: 
@@ -1181,7 +1180,7 @@ MonoBehaviour:
       name: AddItem
       fullName: PlayerDataTest.AddItem
       resultStatus: 1
-      duration: 0.0156661
+      duration: 0.0321784
       messages: 
       output: 
       stacktrace: 
@@ -1193,7 +1192,7 @@ MonoBehaviour:
       name: AddPlayer
       fullName: PlayerDataTest.AddPlayer
       resultStatus: 1
-      duration: 0.0320523
+      duration: 0.0335718
       messages: 
       output: 
       stacktrace: 
@@ -1205,7 +1204,7 @@ MonoBehaviour:
       name: Constructor
       fullName: PlayerDataTest.Constructor
       resultStatus: 1
-      duration: 0.0154005
+      duration: 0.0311069
       messages: 
       output: 
       stacktrace: 
@@ -1217,7 +1216,7 @@ MonoBehaviour:
       name: GetFirstPlayer
       fullName: PlayerDataTest.GetFirstPlayer
       resultStatus: 1
-      duration: 0.0320559
+      duration: 0.0308347
       messages: 
       output: 
       stacktrace: 
@@ -1229,7 +1228,7 @@ MonoBehaviour:
       name: SwapPlayers
       fullName: PlayerDataTest.SwapPlayers
       resultStatus: 1
-      duration: 0.0264668
+      duration: 0.0313585
       messages: 
       output: 
       stacktrace: 
@@ -1241,7 +1240,7 @@ MonoBehaviour:
       name: PlayerTest
       fullName: PlayerTest
       resultStatus: 1
-      duration: 0.2466885
+      duration: 0.2057555
       messages: 
       output: 
       stacktrace: 
@@ -1253,7 +1252,7 @@ MonoBehaviour:
       name: Attributes
       fullName: PlayerTest.Attributes
       resultStatus: 1
-      duration: 0.031551
+      duration: 0.0158406
       messages: 
       output: 
       stacktrace: 
@@ -1265,7 +1264,7 @@ MonoBehaviour:
       name: expToNextLevel
       fullName: PlayerTest.expToNextLevel
       resultStatus: 1
-      duration: 0.030018
+      duration: 0.030973
       messages: 
       output: 
       stacktrace: 
@@ -1277,7 +1276,7 @@ MonoBehaviour:
       name: gainExp
       fullName: PlayerTest.gainExp
       resultStatus: 1
-      duration: 0.0365088
+      duration: 0.0418875
       messages: 
       output: "Levelled Up!\r\nLevelled Up!\r\nLevelled Up!\r\nLevelled Up!\r\n"
       stacktrace: 
@@ -1289,7 +1288,7 @@ MonoBehaviour:
       name: levelUp
       fullName: PlayerTest.levelUp
       resultStatus: 1
-      duration: 0.0322292
+      duration: 0.0164478
       messages: 
       output: "Levelled Up!\r\n"
       stacktrace: 
@@ -1301,7 +1300,7 @@ MonoBehaviour:
       name: SpecialMoveTest
       fullName: SpecialMoveTest
       resultStatus: 1
-      duration: 0.2639488
+      duration: 0.3815495
       messages: 
       output: 
       stacktrace: 
@@ -1313,7 +1312,7 @@ MonoBehaviour:
       name: HealingSpell
       fullName: SpecialMoveTest.HealingSpell
       resultStatus: 1
-      duration: 0.0313613
+      duration: 0.0280791
       messages: 
       output: 
       stacktrace: 
@@ -1325,7 +1324,7 @@ MonoBehaviour:
       name: LowerDefence
       fullName: SpecialMoveTest.LowerDefence
       resultStatus: 1
-      duration: 0.0266318
+      duration: 0.0317153
       messages: 
       output: 
       stacktrace: 
@@ -1337,7 +1336,7 @@ MonoBehaviour:
       name: LowerSpeed
       fullName: SpecialMoveTest.LowerSpeed
       resultStatus: 1
-      duration: 0.010106
+      duration: 0.0273618
       messages: 
       output: 
       stacktrace: 
@@ -1349,7 +1348,7 @@ MonoBehaviour:
       name: MagicAttack
       fullName: SpecialMoveTest.MagicAttack
       resultStatus: 1
-      duration: 0.0244891
+      duration: 0.030225
       messages: 
       output: 
       stacktrace: 
@@ -1361,7 +1360,7 @@ MonoBehaviour:
       name: MoneyIncrease
       fullName: SpecialMoveTest.MoneyIncrease
       resultStatus: 1
-      duration: 0.0105749
+      duration: 0.0309939
       messages: 
       output: 
       stacktrace: 
@@ -1373,7 +1372,7 @@ MonoBehaviour:
       name: RaiseAttack
       fullName: SpecialMoveTest.RaiseAttack
       resultStatus: 1
-      duration: 0.0138666
+      duration: 0.0234325
       messages: 
       output: 
       stacktrace: 
@@ -1385,7 +1384,7 @@ MonoBehaviour:
       name: RaiseDefence
       fullName: SpecialMoveTest.RaiseDefence
       resultStatus: 1
-      duration: 0.0152978
+      duration: 0.0322022
       messages: 
       output: 
       stacktrace: 
@@ -1393,7 +1392,7 @@ MonoBehaviour:
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
-    m_ResultText: RaiseDefence (0.015s)
+    m_ResultText: RaiseDefence (0.032s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}

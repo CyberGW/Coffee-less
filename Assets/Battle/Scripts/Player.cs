@@ -1,123 +1,24 @@
-﻿using System.Collections;
+﻿ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
+/// <summary>Defines a playable character for use in battle scenes</summary>
 public class Player : Character {
 
-	private string name;
-	private int level;
-	private int health;
-	private int attack;
-	private int defence;
-	private int maximumMagic;
-	private int magic;
-	private int luck;
-	private int speed;
+	/// <summary>The amount of exp points gained in current level</summary>
 	private int exp;
+	/// <summary>The number of exp points required to reach next level</summary>
 	private int expToNextLevel;
+	/// <summary>The item that the player has equipped</summary>
 	private Item item;
-	private SpecialMove special1;
-	private SpecialMove special2;
 
-	public Player (string name, int level, int health, int attack, int defence, int maximumMagic, int magic, int luck, int speed, int exp, Item item, SpecialMove special1, SpecialMove special2)
+	public Player (string name, int level, int health, int attack, int defence, int maximumMagic, int magic,
+				  	int luck, int speed, int exp, Item item, SpecialMove special1, SpecialMove special2)
+		   : base(name, level, health, attack, defence, maximumMagic, magic, luck, speed, special1, special2)
 	{
-		this.name = name;
-		this.level = level;
-		this.health = health;
-		this.attack = attack;
-		this.defence = defence;
-		this.maximumMagic = maximumMagic;
-		this.magic = magic;
-		this.luck = luck;
-		this.speed = speed;
 		this.exp = exp;
 		setExpToNextLevel ();
 		this.item = item;
-		this.special1 = special1;
-		this.special2 = special2;
-	}
-	
-	
-	public string Name {
-		get {
-			return this.name;
-		}
-		set {
-			name = value;
-		}
-	}
-
-	public int Level {
-		get {
-			return this.level;
-		}
-		set {
-			level = value;
-		}
-	}
-
-	public int Health {
-		get {
-			return this.health;
-		}
-		set {
-			health = value;
-		}
-	}
-
-	public int Attack {
-		get {
-			return this.attack;
-		}
-		set {
-			attack = value;
-		}
-	}
-
-	public int Defence {
-		get {
-			return this.defence;
-		}
-		set {
-			defence = value;
-		}
-	}
-
-	public int MaximumMagic {
-		get {
-			return this.maximumMagic;
-		}
-		set {
-			maximumMagic = value;
-		}
-	}
-
-	public int Magic {
-		get {
-			return this.magic;
-		}
-		set {
-			magic = value;
-		}
-	}
-
-	public int Luck {
-		get {
-			return this.luck;
-		}
-		set {
-			luck = value;
-		}
-	}
-
-	public int Speed {
-		get {
-			return this.speed;
-		}
-		set {
-			speed = value;
-		}
 	}
 
 	public int Exp {
@@ -142,30 +43,18 @@ public class Player : Character {
 		}
 	}
 
-	public SpecialMove Special1 {
-		get {
-			return this.special1;
-		}
-		set {
-			special1 = value;
-		}
-	}
-
-	public SpecialMove Special2 {
-		get {
-			return this.special2;
-		}
-		set {
-			special2 = value;
-		}
-	}
-
 	public int ExpToNextLevel {
 		get {
 			return this.expToNextLevel;
 		}
 	}
 
+	/// <summary>
+	/// Recursive function to gain experience points.
+	/// If enough exp to level up, call <see cref="levelUp"/> and recurse on remaining exp after this level up.
+	/// If not enough exp to level up, simply add this to <see cref="exp"/>   
+	/// </summary>
+	/// <param name="gainedExp">The remaining amount of exp to gain</param>
 	public void gainExp(int gainedExp) {
 		int difference = expToNextLevel - exp;
 		if (difference <= gainedExp) {
@@ -176,6 +65,9 @@ public class Player : Character {
 		}
 	}
 
+	/// <summary>
+	/// Increases all stats by 2, while increasing level by 1, recalculating <see cref="setExpToNextLevel"/> and setting current exp back to 0
+	/// </summary>
 	public void levelUp() {
 		Debug.Log ("Levelled Up!");
 		level += 1;
@@ -189,6 +81,7 @@ public class Player : Character {
 		setExpToNextLevel ();
 	}
 
+	/// <summary> Defines the exp points to the next level as current <see cref="level"/> * 200</summary>
 	private void setExpToNextLevel() {
 		expToNextLevel = level * 200;
 	}
