@@ -341,7 +341,7 @@ GameObject:
   - component: {fileID: 893006271}
   - component: {fileID: 893006270}
   m_Layer: 0
-  m_Name: Reference (3)
+  m_Name: ExitToWorldMap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

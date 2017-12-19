@@ -35,3 +35,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/WorldMap/Scenes/WorldMap.unity
     guid: daac6ab5008e1ea4295b513ad427c54a
+  - enabled: 1
+    path: Assets/Exploration/Scenes/TFTV-Ground.unity
+    guid: 26ed5f62c07d42342802c2622f191ded
