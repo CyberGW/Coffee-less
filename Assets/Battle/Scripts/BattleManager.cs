@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
+/// <summary>
+/// Holds current <see cref="Player"/> and <see cref="Enemy"/> objects in battle and provides functions for
+/// <see cref="MainBattle"/> and other objects to utilise   
+/// </summary>
 public class BattleManager {
 
 	private Player player;

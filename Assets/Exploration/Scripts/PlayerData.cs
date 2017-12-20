@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// A monobehaviour object to house an instance of <see cref="DataManager"/> so it can be called by other objects
+/// </summary>
 public class PlayerData : MonoBehaviour {
 
 	public DataManager data;
@@ -27,6 +30,9 @@ public class PlayerData : MonoBehaviour {
 
 }
 
+/// <summary>
+/// An object to store all player data including players, items and money and provide useful functions
+/// </summary>
 public class DataManager {
 
 	private Player[] players;
@@ -79,6 +85,10 @@ public class DataManager {
 		return players [0];
 	}
 
+	/// <summary>
+	/// Adds a new player to <see cref="players"/> if not-full, otherwise throwing an <c> InvalidOperationException</c>
+	/// </summary>
+	/// <param name="player">The player to add to the array</param>
 	public void addPlayer(Player player) {
 		bool added = false;
 		for (int i = 0; i < players.Length; i++) {
@@ -93,12 +103,19 @@ public class DataManager {
 		}
 	}
 
+	/// <summary>Swap two player's positions in <see cref="players"/></summary>
+	/// <param name="index1">The index of one player to swap</param>
+	/// <param name="index2">The index of the other player to swap</param>
 	public void swapPlayers(int index1, int index2) {
 		Player temp = players [index1];
 		players [index1] = players [index2];
 		players [index2] = temp;
 	}
 
+	/// <summary>
+	/// Add an item to <see cref="items"/> 
+	/// </summary>
+	/// <param name="item">The item to add</param>
 	public void addItem(Item item) {
 		items.Add (item);
 	}

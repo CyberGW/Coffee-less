@@ -1,19 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Battle\Scripts\Enemy.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Battle\Scripts\MainBattle.cs">
     <Files>
-      <File FileName="Assets\Battle\Scripts\BattleManager.cs" Line="97" Column="56" />
-      <File FileName="Assets\Battle\Scripts\MainBattle.cs" Line="1" Column="1" />
-      <File FileName="Assets\Exploration\Scripts\PlayerMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Editor\PlayerTest.cs" Line="1" Column="1" />
-      <File FileName="Assets\PlayTests\Resources\ExplorationTest.cs" Line="176" Column="79" />
-      <File FileName="Assets\Exploration\Scripts\ObjectDialogue.cs" Line="36" Column="2" />
-      <File FileName="Assets\Battle\Scripts\CharacterMoves.cs" Line="6" Column="43" />
-      <File FileName="Assets\Editor\SpecialMoveTest.cs" Line="62" Column="33" />
-      <File FileName="Assets\Editor\BattleScriptTest.cs" Line="88" Column="3" />
-      <File FileName="Assets\Battle\Scripts\Character.cs" Line="7" Column="82" />
-      <File FileName="Assets\Battle\Scripts\Enemy.cs" Line="10" Column="15" />
-      <File FileName="Assets\Battle\Scripts\Player.cs" Line="5" Column="67" />
+      <File FileName="Assets\Exploration\Scripts\PlayerData.cs" Line="6" Column="114" />
+      <File FileName="Assets\Exploration\Scripts\GlobalFunctions.cs" Line="41" Column="6" />
+      <File FileName="Assets\Exploration\Scripts\DialogueScript.cs" Line="91" Column="18" />
+      <File FileName="Assets\Battle\Scripts\MainBattle.cs" Line="8" Column="42" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

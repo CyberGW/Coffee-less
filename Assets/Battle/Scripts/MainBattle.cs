@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Script for handing a battle scene. Uses <see cref="BattleManager"/>, but handles turn order and execution as well
+/// as updating the display appropriately </summary>
 public class MainBattle : MonoBehaviour {
 
 	//Objects
