@@ -730,8 +730,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f17759d8c0e6704cbc0d9ff507a876c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newScene: 
-  newPosition: {x: 0, y: 0}
+  newScene: TFTV-Floor1
+  newPosition: {x: 113.04, y: -96.6}
 --- !u!61 &1498307943
 BoxCollider2D:
   m_ObjectHideFlags: 0

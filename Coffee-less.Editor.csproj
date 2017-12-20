@@ -302,6 +302,9 @@
     <None Include="Assets\Tiled2Unity\Imported\CS-Jail.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\CS.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\Hes East.tiled2unity.xml" />
+    <None Include="Assets\Tiled2Unity\Imported\TFTV-Floor1.tiled2unity.xml" />
+    <None Include="Assets\Tiled2Unity\Imported\TFTV-Floor2.tiled2unity.xml" />
+    <None Include="Assets\Tiled2Unity\Imported\TFTV-Floor3.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\TFTV.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\WorldMap.tiled2unity.xml" />
     <None Include="Assets\Tiled2Unity\Imported\_ReadMe.txt" />
