@@ -31,6 +31,10 @@ public class PlayerMovement : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.Return)) {
 			GlobalFunctions.instance.createBattle (new Enemy ("Swinefoogle", 5, 100, 15, 5, 5, 5, 5, 5, new MagicAttack("fireballed", "Fireball", 30, 3),  new MagicAttack("fireballed", "Fireball", 30, 5)), 50, null);
 		}
+		if (Input.GetKeyDown (KeyCode.Escape)) {
+			SceneChanger.instance.loadLevel ("ItemMenu");
+		}
+
 		if (Input.GetKey (KeyCode.UpArrow)) {
 			move ("Up");
 		} else {

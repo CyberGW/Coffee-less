@@ -15,11 +15,8 @@ EditorBuildSettings:
     path: Assets/Battle/Battle.unity
     guid: 4ecfa394df50c7c46acec1e25e1219ca
   - enabled: 1
-    path: Assets/MainMenu/TEMP1.unity
+    path: Assets/Menus/MainMenu/TEMP1.unity
     guid: 6da054c5814dc4175bf9f2e6a61bf2b5
-  - enabled: 1
-    path: Assets/PlayTests/ExplorationTest.unity
-    guid: 8ec3efacddf42d5449fe47b2ceeab85c
   - enabled: 1
     path: Assets/PlayTests/ExplorationTestScene.unity
     guid: ebea0e8f39d99db46a1f573df476cba7
@@ -47,3 +44,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Exploration/Scenes/TFTV-Floor3.unity
     guid: 7982107ce71252e4eb48fe8246561318
+  - enabled: 1
+    path: Assets/Menus/MainMenu/mainmenu1.unity
+    guid: 8d411f211734a45a98ebaeb652359071
+  - enabled: 1
+    path: Assets/Menus/ItemMenu/ItemMenu.unity
+    guid: 48505b1b792ae544992122802d6fd914

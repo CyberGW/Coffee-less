@@ -150,11 +150,11 @@ public class ExplorationTest {
 		ObjectDialogue objectScript = GameObject.Find ("TriangleChest").GetComponentInChildren<ObjectDialogue> ();
 		DialogueScript dialogueScript = GameObject.Find ("Dialogue Manager").GetComponent<DialogueScript> ();
 		DataManager data = GameObject.Find ("GlobalData").GetComponent<PlayerData> ().data;
-		List<Item> items;
+		Item[] items;
 
 		//Initially no items
 		items = data.Items;
-		Assert.AreEqual (0, items.Count);
+		Assert.AreEqual (0, data.countItems());
 
 		//Open dialogue
 		player.transform.position = new Vector2 (-2.75f, 3);
@@ -169,7 +169,7 @@ public class ExplorationTest {
 
 		//Check item has been added
 		items = data.Items;
-		Assert.AreEqual (1, items.Count); //Check item has been added
+		Assert.AreEqual (1, data.countItems()); //Check item has been added
 		Assert.IsInstanceOf(typeof(Hammer), items[0]); //Check it's the correct hammer item
 
 		//Check trigger has been destroyed

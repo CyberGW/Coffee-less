@@ -19,7 +19,7 @@ public class PlayerDataTest {
 	[Test]
 	public void Constructor() {
 		Assert.AreEqual (playerObject, data.Players [0]);
-		Assert.AreEqual (0, data.Items.Count);
+		Assert.AreEqual (0, data.countItems());
 		Assert.AreEqual (1, data.Alive);
 		Assert.AreEqual (0, data.Money);
 	}
@@ -57,7 +57,7 @@ public class PlayerDataTest {
 	public void AddItem() {
 		Item itemObject = new Hammer ();
 		data.addItem (itemObject);
-		Assert.AreEqual (1, data.Items.Count);
+		Assert.AreEqual (1, data.countItems());
 		Assert.AreEqual (itemObject, data.Items [0]);
 	}
 
