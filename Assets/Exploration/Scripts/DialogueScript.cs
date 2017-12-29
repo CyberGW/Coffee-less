@@ -15,6 +15,7 @@ public class DialogueScript : MonoBehaviour {
 	private GameObject dialogueBox;
 	private Text dialogueText;
 	private PlayerMovement movementScript;
+	private ObjectInteraction caller;
 
 	// Use this for initialization
 	void Start () {
@@ -51,7 +52,8 @@ public class DialogueScript : MonoBehaviour {
 	/// Shows the dialogue box and the first line of text by calling <see cref="showLine"/> 
 	/// </summary>
 	/// <param name="dialogue">A string array containing all the lines of dialogue</param>
-	public void showDialogue(string[] dialogue) {
+	public void showDialogue(string[] dialogue, ObjectInteraction caller) {
+		this.caller = caller;
 		dialogueBox.SetActive (true);
 		dialogueLines = dialogue;
 		currentLineIndex = 0;
@@ -69,11 +71,16 @@ public class DialogueScript : MonoBehaviour {
 
 	/// <summary>
 	/// Closes the dialogue box, whilst renabling player movement
+	/// Will also call <see cref="ObjectInteraction.endOfDialogue"/> afterwards to add an item or start a battle as appropiate 
 	/// </summary>
 	private void setInactive() {
 		dialogueBox.SetActive (false);
 		movementScript.setCanMove (true);
 		dialogueActive = false;
+		if (caller != null) {
+			caller.endOfDialogue ();
+		}
+
 	}
 
 	/// <summary>

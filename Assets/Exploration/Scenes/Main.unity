@@ -677,7 +677,8 @@ MonoBehaviour:
   dialogue:
   - You got a hammer!
   pseudoKeyPress: 0
-  treasure: Hammer
+  treasure: 1
+  createBattle: 0
 --- !u!58 &847365513
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1717,6 +1718,7 @@ GameObject:
   - component: {fileID: 1897718303}
   - component: {fileID: 1897718304}
   - component: {fileID: 1897718305}
+  - component: {fileID: 1897718306}
   m_Layer: 0
   m_Name: dialogueBox
   m_TagString: Untagged
@@ -1767,4 +1769,92 @@ MonoBehaviour:
   - I am a triangle
   - Truley, I am
   pseudoKeyPress: 0
-  treasure: 
+  treasure: 0
+  createBattle: 1
+--- !u!114 &1897718306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1897718302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f2ada571bbfb0448a34a040c72af284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Skyfoogle
+  level: 1
+  health: 100
+  attack: 2
+  defence: 2
+  maximumMagic: 2
+  luck: 2
+  speed: 2
+  special1: 0
+  special1Text: fireballed
+  special1Magic: 1
+  special1Value: 5
+  special2: 1
+  special2Text: weakend
+  special2Magic: 1
+  special2Value: 0.05
+  battleMoney: 10
+  battleItem: 0
+--- !u!1 &2038476224
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2038476226}
+  - component: {fileID: 2038476225}
+  m_Layer: 0
+  m_Name: RandomEncounter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2038476225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2038476224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f2ada571bbfb0448a34a040c72af284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Goose
+  level: 1
+  health: 100
+  attack: 2
+  defence: 2
+  maximumMagic: 2
+  luck: 2
+  speed: 2
+  special1: 0
+  special1Text: pecked
+  special1Magic: 1
+  special1Value: 11
+  special2: 0
+  special2Text: flapped at
+  special2Magic: 1
+  special2Value: 5
+  battleMoney: 10
+  battleItem: 0
+--- !u!4 &2038476226
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2038476224}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 304.21, y: 44.375, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

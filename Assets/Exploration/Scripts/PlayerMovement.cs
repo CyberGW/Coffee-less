@@ -8,17 +8,20 @@ public class PlayerMovement : MonoBehaviour {
 	private string lastMove = "Idle";
 	private bool canMove = true;
 	private static bool playerExists = false;
+	private Vector2 previousPosition;
 	private Transform player;
 	private Animator anim;
 
 	// Use this for initialization
 	void Start () {
-		player = gameObject.GetComponentInParent<Transform> ();
-		anim = gameObject.GetComponentInParent<Animator> ();
 
 		if (!playerExists) {
 			playerExists = true;
 			DontDestroyOnLoad (transform.gameObject);
+
+			player = gameObject.GetComponentInParent<Transform> ();
+			anim = gameObject.GetComponentInParent<Animator> ();
+			previousPosition = gameObject.transform.position;
 		} else {
 			Destroy (gameObject);
 		}
@@ -76,6 +79,14 @@ public class PlayerMovement : MonoBehaviour {
 				break;
 			}
 			player.Translate (translation * speed);
+			Vector2 newPosition = player.transform.position;
+//			if (Vector2.Distance (newPosition, previousPosition) > 3) {
+//				previousPosition = newPosition;
+//				if (Random.value < 0.05) {
+//					BattleDescriptor battle = GameObject.Find ("RandomEncounter").GetComponent<BattleDescriptor> ();
+//					battle.createBattle ();
+//				}
+//			}
 		}
 	}
 

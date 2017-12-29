@@ -157,7 +157,26 @@ MonoBehaviour:
   dialogue:
   - You got a hammer!
   pseudoKeyPress: 0
-  treasure: Hammer
+  treasure: 1
+  createBattle: 0
+  name: 
+  level: 0
+  health: 100
+  attack: 0
+  defence: 0
+  maximumMagic: 0
+  luck: 0
+  speed: 0
+  special1: 0
+  special1Text: 
+  special1Magic: 0
+  special1Value: 0
+  special2: 0
+  special2Text: 
+  special2Magic: 0
+  special2Value: 0
+  battleMoney: 0
+  battleItem: 0
 --- !u!58 &156291987
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1579,4 +1598,23 @@ MonoBehaviour:
   - I am a triangle
   - Truley, I am
   pseudoKeyPress: 0
-  treasure: 
+  treasure: 0
+  createBattle: 0
+  name: 
+  level: 0
+  health: 100
+  attack: 0
+  defence: 0
+  maximumMagic: 0
+  luck: 0
+  speed: 0
+  special1: 0
+  special1Text: 
+  special1Magic: 0
+  special1Value: 0
+  special2: 0
+  special2Text: 
+  special2Magic: 0
+  special2Value: 0
+  battleMoney: 0
+  battleItem: 0

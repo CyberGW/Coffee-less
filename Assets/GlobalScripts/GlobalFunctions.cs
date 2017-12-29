@@ -24,6 +24,11 @@ public class GlobalFunctions : MonoBehaviour {
 	/// <summary>Refers to the music playing before the battle was initiated so it can be resumed afterwards</summary>
 	private AudioClip previousBGM;
 
+	/// <summary>
+	/// An enum type representing items so that they can be selected from within the Unity Editor
+	/// </summary>
+	public enum ItemTypes { None, Hammer };
+
 	void Awake() {
 		if (instance == null) {
 			instance = this;
@@ -73,5 +78,23 @@ public class GlobalFunctions : MonoBehaviour {
 		SoundManager.instance.playBGM (GlobalFunctions.instance.previousBGM);
 		SceneChanger.instance.loadLevel (GlobalFunctions.instance.previousScene);
 		player.SetActive (true);
+	}
+
+	/// <summary>
+	/// Converts an enum type of <see cref="ItemTypes"/> to an <see cref="Item"/> instance </summary>
+	/// <returns>An item instance</returns>
+	/// <param name="itemType">The type of item to create</param>
+	public Item createItem (ItemTypes? itemType) {
+		Item item;
+		switch (itemType)
+		{
+		case ItemTypes.Hammer:
+			item = new Hammer();
+			break;
+		default:
+			item = null;
+			break;
+		}
+		return item;
 	}
 }

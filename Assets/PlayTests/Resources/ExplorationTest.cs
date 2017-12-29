@@ -109,7 +109,7 @@ public class ExplorationTest {
 	public IEnumerator DialogueBox() {
 		//Setup
 		yield return Setup ();
-		ObjectDialogue objectScript = GameObject.Find ("Triangle").GetComponentInChildren<ObjectDialogue> ();
+		ObjectInteraction objectScript = GameObject.Find ("Triangle").GetComponentInChildren<ObjectInteraction> ();
 		DialogueScript dialogueScript = GameObject.Find ("Dialogue Manager").GetComponent<DialogueScript> ();
 
 		//Check dialogue box can't be triggered when out of range
@@ -147,7 +147,7 @@ public class ExplorationTest {
 	public IEnumerator ItemObtain() {
 		//Setup
 		yield return Setup ();
-		ObjectDialogue objectScript = GameObject.Find ("TriangleChest").GetComponentInChildren<ObjectDialogue> ();
+		ObjectInteraction objectScript = GameObject.Find ("TriangleChest").GetComponentInChildren<ObjectInteraction> ();
 		DialogueScript dialogueScript = GameObject.Find ("Dialogue Manager").GetComponent<DialogueScript> ();
 		DataManager data = GameObject.Find ("GlobalData").GetComponent<PlayerData> ().data;
 		Item[] items;

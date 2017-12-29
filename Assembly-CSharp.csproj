@@ -61,9 +61,10 @@
      <Compile Include="Assets\Exploration\Scripts\CanvasScript.cs" />
      <Compile Include="Assets\Exploration\Scripts\DialogueScript.cs" />
      <Compile Include="Assets\Exploration\Scripts\ItemObjects.cs" />
-     <Compile Include="Assets\Exploration\Scripts\ObjectDialogue.cs" />
+     <Compile Include="Assets\Exploration\Scripts\ObjectInteraction.cs" />
      <Compile Include="Assets\Exploration\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Exploration\Scripts\Portal.cs" />
+     <Compile Include="Assets\GlobalScripts\BattleDescriptor.cs" />
      <Compile Include="Assets\GlobalScripts\Character.cs" />
      <Compile Include="Assets\GlobalScripts\Enemy.cs" />
      <Compile Include="Assets\GlobalScripts\GlobalFunctions.cs" />

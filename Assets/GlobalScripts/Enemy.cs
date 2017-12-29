@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary> Defines an AI controller enemy to fight in battle scenes</summary>
+[System.Serializable]
 public class Enemy : Character {
 
 	/// <summary>Defines how many experience points the player should gain from defeating this enemy.
