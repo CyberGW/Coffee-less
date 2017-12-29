@@ -23,15 +23,13 @@ public class SceneChanger : MonoBehaviour {
 	void Awake() {
 		if (instance == null) {
 			instance = this;
+			DontDestroyOnLoad (gameObject);
+			SceneManager.sceneLoaded += sceneChanged;
+			player = GameObject.Find ("Player");
+			movementScript = player.GetComponent<PlayerMovement> ();
 		} else if (instance != this) {
 			Destroy (gameObject);
 		}
-
-		DontDestroyOnLoad (gameObject);
-		SceneManager.sceneLoaded += sceneChanged;
-
-		player = GameObject.Find ("Player");
-		movementScript = player.GetComponent<PlayerMovement> ();
 	}
 
 	/// <summary>

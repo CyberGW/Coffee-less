@@ -23,6 +23,10 @@ public class GlobalFunctions : MonoBehaviour {
 	private string previousScene;
 	/// <summary>Refers to the music playing before the battle was initiated so it can be resumed afterwards</summary>
 	private AudioClip previousBGM;
+	/// <summary>
+	/// Stores an objects unique ID and whether they should be active or not, as to determine whether to display
+	/// it </summary>
+	public IDictionary<string, bool> objectsActive;
 
 	/// <summary>
 	/// An enum type representing items so that they can be selected from within the Unity Editor
@@ -33,6 +37,7 @@ public class GlobalFunctions : MonoBehaviour {
 		if (instance == null) {
 			instance = this;
 			DontDestroyOnLoad (gameObject);
+			objectsActive = new Dictionary <string, bool> ();
 		} else if (instance != this) {
 			Destroy (gameObject);
 		}

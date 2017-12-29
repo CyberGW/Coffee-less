@@ -11,9 +11,11 @@
       <File FileName="Assets\GlobalScripts\Enemy.cs" Line="1" Column="1" />
       <File FileName="Assets\Battle\Scripts\CharacterMoves.cs" Line="1" Column="1" />
       <File FileName="Assets\GlobalScripts\SimpleDragAndDrop\Scripts\DragAndDropCell.cs" Line="1" Column="1" />
-      <File FileName="Assets\Exploration\Scripts\ObjectInteraction.cs" Line="25" Column="122" />
-      <File FileName="Assets\GlobalScripts\GlobalFunctions.cs" Line="1" Column="1" />
-      <File FileName="Assets\GlobalScripts\BattleDescriptor.cs" Line="7" Column="79" />
+      <File FileName="Assets\Exploration\Scripts\ObjectInteraction.cs" Line="35" Column="95" />
+      <File FileName="Assets\GlobalScripts\GlobalFunctions.cs" Line="28" Column="9" />
+      <File FileName="Assets\GlobalScripts\BattleDescriptor.cs" Line="40" Column="64" />
+      <File FileName="Assets\Exploration\Scripts\Portal.cs" Line="1" Column="1" />
+      <File FileName="Assets\GlobalScripts\SceneChanger.cs" Line="20" Column="40" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

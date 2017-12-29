@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// A component to add to collider relating to an object that can interact with the player by pressing the space bar.
@@ -16,7 +17,6 @@ public class ObjectInteraction : MonoBehaviour {
 	[HideInInspector]
 	public bool pseudoKeyPress;
 	//Setup
-
 	/// <summary>
 	/// An item that will be given to the player at the end of all the dialogue
 	/// </summary>
@@ -31,13 +31,24 @@ public class ObjectInteraction : MonoBehaviour {
 	private DialogueScript dManager;
 	private PlayerMovement movementScript;
 
-
-
+	/// <summary>
+	/// An unique identifer of the object created by concatenating the scene name with the parent object name
+	/// </summary>
+	private string id;
 
 	// Use this for initialization
 	void Start () {
 		dManager = FindObjectOfType<DialogueScript> ();
 		movementScript = FindObjectOfType<PlayerMovement> ();
+		id = SceneManager.GetActiveScene().name + gameObject.transform.parent.gameObject.name;
+		if (createBattle) {
+			IDictionary<string, bool> active = GlobalFunctions.instance.objectsActive;
+			if (active.ContainsKey (id)) {
+				gameObject.transform.parent.gameObject.SetActive (active [id]);
+			} else {
+				GlobalFunctions.instance.objectsActive.Add (id, true);
+			}
+		}
 	}	
 
 	/// <summary>
@@ -67,16 +78,15 @@ public class ObjectInteraction : MonoBehaviour {
 	/// starting a battle as appropiate
 	/// </summary>
 	public void endOfDialogue() {
-		if (treasure != null) {
+		if (treasure != GlobalFunctions.ItemTypes.None) {
 			DataManager data= PlayerData.instance.data;
 			data.addItem ( GlobalFunctions.instance.createItem (treasure) );
 			Destroy (gameObject); //Remove trigger to stop player obtaining item again
 		}
 		if (createBattle) {
+			GlobalFunctions.instance.objectsActive [id] = false;
 			gameObject.GetComponent<BattleDescriptor> ().createBattle ();
 		}
 	}
-
-
-		
+			
 }
