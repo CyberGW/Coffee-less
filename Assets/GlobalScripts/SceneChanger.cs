@@ -49,6 +49,8 @@ public class SceneChanger : MonoBehaviour {
 		if (movePlayer) {
 			//Change the player position on load
 			changePosition (startPosition);
+		}
+		if (scene.name != "Battle") {
 			//Allow player to move again
 			movementScript.setCanMove (true);
 		}

@@ -52,7 +52,7 @@ public class DialogueScript : MonoBehaviour {
 	/// Shows the dialogue box and the first line of text by calling <see cref="showLine"/> 
 	/// </summary>
 	/// <param name="dialogue">A string array containing all the lines of dialogue</param>
-	public void showDialogue(string[] dialogue, ObjectInteraction caller) {
+	public void showDialogue(string[] dialogue, ObjectInteraction caller = null) {
 		this.caller = caller;
 		dialogueBox.SetActive (true);
 		dialogueLines = dialogue;
