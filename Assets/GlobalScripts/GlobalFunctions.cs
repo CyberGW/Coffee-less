@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 /// <summary>
 /// Provides functions and variables to be accessed by any game object to allow data to be passed between scenes
@@ -14,6 +15,7 @@ public class GlobalFunctions : MonoBehaviour {
 	/// <summary>Holds an enemy object for the battle scene to load from</summary>
 	private Enemy enemy;
 	/// <summary>Holds an amount of money for the battle scene to load from</summary>
+	public Texture2D sprite;
 	private int money;
 	/// <summary>Holds an item for the battle scene to load from</summary>
 	private Item item;
@@ -53,8 +55,9 @@ public class GlobalFunctions : MonoBehaviour {
 	/// <param name="enemy">The enemy object to battle against</param>
 	/// <param name="money">The monetary reward if the battle is won</param>
 	/// <param name="item">The item rewards if the battle is won, may be <c>null</c></param>
-	public void createBattle(Enemy enemy, int money, Item item) {
+	public void createBattle(Enemy enemy, Texture2D sprite, int money, Item item) {
 		this.enemy = enemy;
+		this.sprite = sprite;
 		this.money = money;
 		this.item = item;
 		previousScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;

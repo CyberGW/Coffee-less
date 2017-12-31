@@ -15,7 +15,7 @@ public class MainBattle : MonoBehaviour {
 	private Button attackButton;
 	private Text textBox;
 	//Battle Manager References
-	private Player player;
+	public Player player;
 	private Enemy enemy;
 	private int moneyReward;
 	private Item itemReward;
@@ -28,11 +28,13 @@ public class MainBattle : MonoBehaviour {
 	private CharacterMove enemyMove;
 	private bool moveChosen;
 	//UI
+	private GameObject attacksPanel;
 	private GameObject playerStats;
 	private GameObject enemyStats;
 	private IDictionary<Character, StatsScript> healthBar;
 	private IDictionary<Character, StatsScript> magicBar;
 	private StatsScript expBar;
+	private Image enemySprite;
 	//Scene Management
 	private GameObject playerCamera;
 	//Music
@@ -47,10 +49,14 @@ public class MainBattle : MonoBehaviour {
 	void Start () {
 		
 		//Find Objects
+		attacksPanel = GameObject.Find("BattleCanvas").transform.Find("AttacksPanel").gameObject;
 		playerStats = GameObject.Find("PlayerStats");
 		enemyStats = GameObject.Find ("EnemyStats");
 		attackButton = GameObject.Find ("AttackButton").GetComponent<Button> ();
 		textBox = GameObject.Find ("TextBox").transform.Find ("Text").GetComponent<Text> ();
+		enemySprite = GameObject.Find ("EnemyImage").GetComponent<Image> ();
+		Texture2D image = GlobalFunctions.instance.sprite;
+		enemySprite.sprite = Sprite.Create (image, new Rect (0.0f, 0.0f, image.width, image.height), new Vector2 (0.5f, 0.5f));
 
 
 		//Setup Object references
@@ -113,8 +119,8 @@ public class MainBattle : MonoBehaviour {
 		yield return StartCoroutine (performTurn(playerMove));
 		if (!manager.battleWon()) {
 			yield return StartCoroutine (performTurn(enemyMove));
+			attackButton.interactable = true;
 		}
-		attackButton.interactable = true;
 	}
 
 	/// <summary>
@@ -126,8 +132,8 @@ public class MainBattle : MonoBehaviour {
 		yield return StartCoroutine (performTurn(enemyMove));
 		if (!manager.playerFainted()) {
 			yield return StartCoroutine (performTurn(playerMove));
+			attackButton.interactable = true;
 		}
-		attackButton.interactable = true;
 	}
 
 	/// <summary>
@@ -161,6 +167,8 @@ public class MainBattle : MonoBehaviour {
 	private IEnumerator checkIfPlayerWon() {
 		if (manager.battleWon()) {
 			SoundManager.instance.playBGM(victory);
+			enemySprite.gameObject.SetActive (false);
+			attackButton.interactable = false;
 			Debug.Log(enemy.ExpGiven);
 			yield return StartCoroutine (updateExp(enemy.ExpGiven));
 			playerArray [0] = player;
@@ -227,16 +235,33 @@ public class MainBattle : MonoBehaviour {
 	/// </summary>
 	public void standardAttack() {
 		playerMove = new StandardAttack (manager, player, enemy);
+		prepareTurn ();
+	}
+
+	public void special1() {
+		player.Special1.setUp (manager, player, enemy);
+		playerMove = player.Special1;
+		prepareTurn ();
+	}
+
+	public void special2() {
+		player.Special2.setUp (manager, player, enemy);
+		playerMove = player.Special2;
+		prepareTurn ();
+	}
+
+	private void prepareTurn() {
 		enemyMove = manager.enemyMove (enemy, player);
 		moveChosen = true;
+		attacksPanel.SetActive (false);
 		attackButton.interactable = false;
 	}
+
 
     /// <summary>
 	/// Run away from battle if <see cref="BattleManager.ranAway"/> returns true
     /// </summary>
-    public void runAway()
-    {
+    public void runAway() {
         if (manager.ranAway(player.Speed,enemy.Speed))
         {
             GlobalFunctions.instance.endBattle();
@@ -246,5 +271,6 @@ public class MainBattle : MonoBehaviour {
         {
             Debug.Log("run attempt failed!!");
         }
-        }
     }
+
+}

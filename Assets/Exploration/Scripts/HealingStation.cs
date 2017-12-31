@@ -14,7 +14,7 @@ public class HealingStation : MonoBehaviour {
 		dManager = FindObjectOfType<DialogueScript> ();
 		movementScript = FindObjectOfType<PlayerMovement> ();
 		text = new string[1];
-		text [0] = "All teammates have been healed";
+		text [0] = "All teammates have been healed and magic restored";
 	}
 	
 	void OnTriggerStay2D(Collider2D other) {
@@ -38,6 +38,7 @@ public class HealingStation : MonoBehaviour {
 		foreach (Player player in playerArray) {
 			if (player != null) {
 				player.Health = 100;
+				player.Magic = player.MaximumMagic;
 			}
 		}
 	}

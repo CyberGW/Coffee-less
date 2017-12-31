@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 /// <summary>
 /// A component that be added to an object to describe the parameters of a battle from within the Unity Editor
@@ -10,6 +11,7 @@ public class BattleDescriptor : MonoBehaviour {
 
 	[Header("Battle Enemy Stats")]
 	public string name = "";
+	public Texture2D sprite;
 	public int level = 0;
 	public int health = 100;
 	public int attack = 0;
@@ -37,7 +39,7 @@ public class BattleDescriptor : MonoBehaviour {
 		GlobalFunctions.instance.createBattle (new Enemy (name, level, health, attack, defence, maximumMagic, maximumMagic,
 			luck, speed, createSpecialMove (special1, special1Text, special1Magic, special1Value),
 			createSpecialMove (special2, special2Text, special2Magic, special2Value)),
-			battleMoney, GlobalFunctions.instance.createItem(battleItem));
+			sprite, battleMoney, GlobalFunctions.instance.createItem(battleItem));
 	}
 
 

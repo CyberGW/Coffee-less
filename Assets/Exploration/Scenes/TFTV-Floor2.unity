@@ -480,6 +480,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Evil Lecturer
+  sprite: {fileID: 2800000, guid: f8d4123b9fd9f8544966c9fdffb1a4d4, type: 3}
   level: 5
   health: 100
   attack: 7

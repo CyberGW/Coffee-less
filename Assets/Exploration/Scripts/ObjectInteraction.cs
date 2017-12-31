@@ -41,7 +41,7 @@ public class ObjectInteraction : MonoBehaviour {
 		dManager = FindObjectOfType<DialogueScript> ();
 		movementScript = FindObjectOfType<PlayerMovement> ();
 		id = SceneManager.GetActiveScene().name + gameObject.transform.parent.gameObject.name;
-		if (createBattle) {
+		if (createBattle || treasure != GlobalFunctions.ItemTypes.None) {
 			IDictionary<string, bool> active = GlobalFunctions.instance.objectsActive;
 			if (active.ContainsKey (id)) {
 				gameObject.transform.parent.gameObject.SetActive (active [id]);
@@ -81,6 +81,7 @@ public class ObjectInteraction : MonoBehaviour {
 		if (treasure != GlobalFunctions.ItemTypes.None) {
 			DataManager data= PlayerData.instance.data;
 			data.addItem ( GlobalFunctions.instance.createItem (treasure) );
+			GlobalFunctions.instance.objectsActive [id] = false;
 			Destroy (gameObject); //Remove trigger to stop player obtaining item again
 		}
 		if (createBattle) {

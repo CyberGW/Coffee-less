@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour {
 	void FixedUpdate () {
 
 		if (Input.GetKeyDown (KeyCode.Return)) {
-			GlobalFunctions.instance.createBattle (new Enemy ("Swinefoogle", 5, 100, 15, 5, 5, 5, 5, 5, new MagicAttack("fireballed", "Fireball", 30, 3),  new MagicAttack("fireballed", "Fireball", 30, 5)), 50, null);
+			GlobalFunctions.instance.createBattle (new Enemy ("Swinefoogle", 5, 100, 15, 5, 5, 5, 5, 5, new MagicAttack("fireballed", "Fireball", 30, 3),  new MagicAttack("fireballed", "Fireball", 30, 5)), (Texture2D) Resources.Load("Little_Green_Enemy", typeof(Texture2D)), 50, null);
 		}
 		if (Input.GetKeyDown (KeyCode.Escape)) {
 			SceneChanger.instance.loadLevel ("ItemMenu");
@@ -79,7 +79,7 @@ public class PlayerMovement : MonoBehaviour {
 				break;
 			}
 			player.Translate (translation * speed);
-			Vector2 newPosition = player.transform.position;
+//			Vector2 newPosition = player.transform.position;
 //			if (Vector2.Distance (newPosition, previousPosition) > 3) {
 //				previousPosition = newPosition;
 //				if (Random.value < 0.05) {

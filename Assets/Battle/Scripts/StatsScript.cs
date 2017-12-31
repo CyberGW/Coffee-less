@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class StatsScript : MonoBehaviour {
 
-	public string textHeader;
+	[SerializeField]
+	private string textHeader;
+	private string textFooter;
 	private RectTransform rect;
 	private UnityEngine.UI.Text textDisplay;
 	private float initialWidth;
@@ -23,9 +25,10 @@ public class StatsScript : MonoBehaviour {
 	}
 
 	public void setUpDisplay (int initalValue, int maximumValue) {
+		textFooter = " / " + maximumValue;
 		widthPerUnit = initialWidth / maximumValue;
 		rect.sizeDelta = new Vector2 (widthPerUnit * initalValue, rect.sizeDelta.y);
-		textDisplay.text = textHeader + initalValue;
+		textDisplay.text = textHeader + initalValue + textFooter;
 	}		
 
 	public IEnumerator updateDisplay(int previousValue, int newValue) {
@@ -40,7 +43,7 @@ public class StatsScript : MonoBehaviour {
 			currentValue -= valuePerFrame;
 			if (Mathf.RoundToInt (currentValue) != lastUpdatedValue) {
 				lastUpdatedValue = Mathf.RoundToInt (currentValue);
-				textDisplay.text = textHeader + lastUpdatedValue;
+				textDisplay.text = textHeader + lastUpdatedValue + textFooter;
 			}
 			yield return new WaitForFixedUpdate ();
 		}

@@ -204,7 +204,7 @@ public class RaiseAttack : SpecialMove {
 
 	/// <summary>Increases the target's attack by the <see cref="increase"/> ratio and rounds to an integer</summary>
 	public override void performMove() {
-		target.Attack = Mathf.RoundToInt (target.Attack * (1 + increase));
+		user.Attack = Mathf.RoundToInt (user.Attack * (1 + increase));
 		decreaseMagic();
 	}
 
@@ -222,7 +222,7 @@ public class RaiseDefence : SpecialMove {
 
 	/// <summary>Increases the target's defence by the <see cref="increase"/> ratio and rounds to an integer</summary>
 	public override void performMove() {
-		target.Defence = Mathf.RoundToInt (target.Defence * (1 + increase));
+		user.Defence = Mathf.RoundToInt (user.Defence * (1 + increase));
 		decreaseMagic();
 	}
 

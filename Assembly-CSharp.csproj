@@ -62,6 +62,7 @@
      <Compile Include="Assets\Exploration\Scripts\DialogueScript.cs" />
      <Compile Include="Assets\Exploration\Scripts\HealingStation.cs" />
      <Compile Include="Assets\Exploration\Scripts\ItemObjects.cs" />
+     <Compile Include="Assets\Exploration\Scripts\LevelManager.cs" />
      <Compile Include="Assets\Exploration\Scripts\ObjectInteraction.cs" />
      <Compile Include="Assets\Exploration\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Exploration\Scripts\Portal.cs" />
