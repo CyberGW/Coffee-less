@@ -105,6 +105,7 @@
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\TileLayer.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\TileObject.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\TmxObject.cs" />
+     <Compile Include="Assets\WorldMap\WorldMapScript.cs" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDiffuseDepth-Instanced.shader" />
      <None Include="Assets\Tiled2Unity\Imported\TFTV-Floor1.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\TFTV-Floor3.tiled2unity.xml" />

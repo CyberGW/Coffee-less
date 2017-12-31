@@ -29,17 +29,20 @@ public class GlobalFunctions : MonoBehaviour {
 	/// Stores an objects unique ID and whether they should be active or not, as to determine whether to display
 	/// it </summary>
 	public IDictionary<string, bool> objectsActive;
+	public int currentLevel;
 
 	/// <summary>
 	/// An enum type representing items so that they can be selected from within the Unity Editor
 	/// </summary>
 	public enum ItemTypes { None, Hammer };
+	public string[] levelOrder = new string[] { "CS", "TFTV" };
 
 	void Awake() {
 		if (instance == null) {
 			instance = this;
 			DontDestroyOnLoad (gameObject);
 			objectsActive = new Dictionary <string, bool> ();
+			currentLevel = 1;
 		} else if (instance != this) {
 			Destroy (gameObject);
 		}

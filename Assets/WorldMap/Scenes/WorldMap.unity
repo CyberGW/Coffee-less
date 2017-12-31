@@ -746,6 +746,22 @@ Prefab:
       propertyPath: m_DynamicOccludee
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1180534745755654, guid: 482f958a8f2dc8941bb586cf88048ea9, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114090373030940, guid: 482f958a8f2dc8941bb586cf88048ea9, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1160694247317186, guid: 482f958a8f2dc8941bb586cf88048ea9, type: 2}
+      propertyPath: m_TagString
+      value: TFTV
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867676597089414, guid: 482f958a8f2dc8941bb586cf88048ea9, type: 2}
+      propertyPath: m_TagString
+      value: CS
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 482f958a8f2dc8941bb586cf88048ea9, type: 2}
   m_IsPrefabParent: 0
@@ -1270,6 +1286,46 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1631213721
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1631213723}
+  - component: {fileID: 1631213722}
+  m_Layer: 0
+  m_Name: WorldMapScript
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1631213722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1631213721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2595033dbc8e9804f89a907aba11fefb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1631213723
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1631213721}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -84.3, y: 72.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1855591657
 Prefab:
   m_ObjectHideFlags: 0
@@ -1428,6 +1484,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 0}
+  currentLevel: 0
+  levelOrder:
+  - CS
+  - TFTV
 --- !u!1 &1874946396
 GameObject:
   m_ObjectHideFlags: 0
