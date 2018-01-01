@@ -50,3 +50,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Menus/ItemMenu/ItemMenu.unity
     guid: 48505b1b792ae544992122802d6fd914
+  - enabled: 1
+    path: Assets/Exploration/Scenes/RCH.unity
+    guid: cc90fc47c6856b349bda99408b844df0
+  - enabled: 1
+    path: Assets/Exploration/Scenes/Library-Floor1.unity
+    guid: c030957e18864274d9d502951a132d23
+  - enabled: 1
+    path: Assets/Exploration/Scenes/Library-Ground.unity
+    guid: ea70f791fab0b334d8f49e42dfca49db
+  - enabled: 1
+    path: Assets/Exploration/Scenes/Physics.unity
+    guid: 576f330882a62a847b400d339d487796
