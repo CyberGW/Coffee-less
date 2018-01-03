@@ -1,0 +1,8 @@
+<map id="Character" name="Character">
+<area shape="rect" id="node5" href="$class_character_move.html" title="Astract base class for character moves " alt="" coords="447,1079,561,1185"/>
+<area shape="rect" id="node7" href="$class_enemy.html" title="Defines an AI controller enemy to fight in battle scenes" alt="" coords="450,571,539,649"/>
+<area shape="rect" id="node9" href="$class_player.html" title="Defines a playable character for use in battle scenes" alt="" coords="276,535,425,685"/>
+<area shape="rect" id="node4" href="$class_special_move.html" title="Special move abstract base class that expands upon CharacterMove, adding magic properties ..." alt="" coords="533,1235,664,1356"/>
+<area shape="rect" id="node6" href="$class_battle_manager.html" title="{BattleManager\n|+ Player\l+ Enemy\l+ WasCriticalHit\l|+ BattleManager()\l+ playerFirst()\l+ switchPlayers()\l+ isCriticalHit()\l+ ranAway()\l+ damageCalculation()\l+ enemyMove()\l+ enemySpecialMove()\l+ battleWon()\l+ playerFainted()\l&#45; characterFainted()\l}" alt="" coords="347,763,501,1016"/>
+<area shape="rect" id="node10" href="$class_item.html" title="{Item\n|+ Name\l+ Desc\l|+ applyBuffs()\l+ revertBuffs()\l}" alt="" coords="155,307,258,413"/>
+</map>

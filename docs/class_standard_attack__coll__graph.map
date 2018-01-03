@@ -1,0 +1,9 @@
+<map id="StandardAttack" name="StandardAttack">
+<area shape="rect" id="node2" href="$class_character_move.html" title="Astract base class for character moves " alt="" coords="144,160,259,267"/>
+<area shape="rect" id="node6" href="$class_special_move.html" title="Special move abstract base class that expands upon CharacterMove, adding magic properties ..." alt="" coords="260,421,391,543"/>
+<area shape="rect" id="node4" href="$class_character.html" title="Base abstract class for Enemy and Player to inherit from. Defines all shared variables, their constructor and their setters and getters " alt="" coords="430,620,557,844"/>
+<area shape="rect" id="node7" href="$class_battle_manager.html" title="{BattleManager\n|+ Player\l+ Enemy\l+ WasCriticalHit\l|+ BattleManager()\l+ playerFirst()\l+ switchPlayers()\l+ isCriticalHit()\l+ ranAway()\l+ damageCalculation()\l+ enemyMove()\l+ enemySpecialMove()\l+ battleWon()\l+ playerFainted()\l&#45; characterFainted()\l}" alt="" coords="677,1107,832,1360"/>
+<area shape="rect" id="node11" href="$class_item.html" title="{Item\n|+ Name\l+ Desc\l|+ applyBuffs()\l+ revertBuffs()\l}" alt="" coords="979,291,1082,397"/>
+<area shape="rect" id="node8" href="$class_enemy.html" title="Defines an AI controller enemy to fight in battle scenes" alt="" coords="646,930,735,1007"/>
+<area shape="rect" id="node10" href="$class_player.html" title="Defines a playable character for use in battle scenes" alt="" coords="760,893,909,1044"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="DragAndDropItem" name="DragAndDropItem">
+<area shape="rect" id="node2" href="$class_mono_behaviour.html" title="{MonoBehaviour\n||}" alt="" coords="5,5,116,83"/>
+<area shape="rect" id="node3" href="$class_i_begin_drag_handler.html" title="{IBeginDragHandler\n||}" alt="" coords="140,5,269,83"/>
+<area shape="rect" id="node4" href="$class_i_drag_handler.html" title="{IDragHandler\n||}" alt="" coords="294,5,390,83"/>
+<area shape="rect" id="node5" href="$class_i_end_drag_handler.html" title="{IEndDragHandler\n||}" alt="" coords="415,5,533,83"/>
+</map>

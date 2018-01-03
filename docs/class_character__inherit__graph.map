@@ -1,0 +1,4 @@
+<map id="Character" name="Character">
+<area shape="rect" id="node2" href="$class_enemy.html" title="Defines an AI controller enemy to fight in battle scenes" alt="" coords="5,490,95,582"/>
+<area shape="rect" id="node3" href="$class_player.html" title="Defines a playable character for use in battle scenes" alt="" coords="119,439,269,633"/>
+</map>

@@ -1,0 +1,3 @@
+<map id="Enemy" name="Enemy">
+<area shape="rect" id="node2" href="$class_character.html" title="Base abstract class for Enemy and Player to inherit from. Defines all shared variables, their constructor and their setters and getters " alt="" coords="5,5,132,391"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="ExplorationTest" name="ExplorationTest">
+<area shape="rect" id="node3" href="$class_player_movement.html" title="{PlayerMovement\n||+ move()\l+ setCanMove()\l&#45; Start()\l&#45; FixedUpdate()\l&#45; walkAnimation()\l&#45; setIdle()\l}" alt="" coords="249,160,371,311"/>
+<area shape="rect" id="node4" href="$class_mono_behaviour.html" title="{MonoBehaviour\n||}" alt="" coords="255,5,365,83"/>
+</map>

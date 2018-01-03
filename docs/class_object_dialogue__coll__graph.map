@@ -1,0 +1,6 @@
+<map id="ObjectDialogue" name="ObjectDialogue">
+<area shape="rect" id="node2" href="$class_mono_behaviour.html" title="{MonoBehaviour\n||}" alt="" coords="142,5,252,83"/>
+<area shape="rect" id="node6" href="$class_dialogue_script.html" title="{DialogueScript\n||+ showDialogue()\l&#45; Start()\l&#45; Update()\l&#45; keyPress()\l&#45; showLine()\l&#45; setInactive()\l&#45; delaySetInactive()\l&#45; delaySetActive()\l}" alt="" coords="346,465,478,645"/>
+<area shape="rect" id="node10" href="$class_player_movement.html" title="{PlayerMovement\n||+ move()\l+ setCanMove()\l&#45; Start()\l&#45; FixedUpdate()\l&#45; walkAnimation()\l&#45; setIdle()\l}" alt="" coords="537,160,660,311"/>
+<area shape="rect" id="node3" href="$class_item.html" title="{Item\n|+ Name\l+ Desc\l|+ applyBuffs()\l+ revertBuffs()\l}" alt="" coords="1092,335,1195,441"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="MainBattle" name="MainBattle">
+<area shape="rect" id="node2" href="$class_mono_behaviour.html" title="{MonoBehaviour\n||}" alt="" coords="1101,1417,1211,1495"/>
+<area shape="rect" id="node16" href="$class_stats_script.html" title="{StatsScript\n||+ setUpDisplay()\l+ updateDisplay()\l&#45; Start()\l&#45; Update()\l}" alt="" coords="1151,1645,1275,1767"/>
+<area shape="rect" id="node4" href="$class_item.html" title="{Item\n|+ Name\l+ Desc\l|+ applyBuffs()\l+ revertBuffs()\l}" alt="" coords="77,160,179,267"/>
+<area shape="rect" id="node15" href="$class_player.html" title="Defines a playable character for use in battle scenes" alt="" coords="311,344,460,495"/>
+<area shape="rect" id="node9" href="$class_character.html" title="Base abstract class for Enemy and Player to inherit from. Defines all shared variables, their constructor and their setters and getters " alt="" coords="598,1344,725,1568"/>
+<area shape="rect" id="node11" href="$class_special_move.html" title="Special move abstract base class that expands upon CharacterMove, adding magic properties ..." alt="" coords="553,1145,684,1267"/>
+<area shape="rect" id="node12" href="$class_character_move.html" title="Astract base class for character moves " alt="" coords="683,976,797,1083"/>
+<area shape="rect" id="node13" href="$class_battle_manager.html" title="{BattleManager\n|+ Player\l+ Enemy\l+ WasCriticalHit\l|+ BattleManager()\l+ playerFirst()\l+ switchPlayers()\l+ isCriticalHit()\l+ ranAway()\l+ damageCalculation()\l+ enemyMove()\l+ enemySpecialMove()\l+ battleWon()\l+ playerFainted()\l&#45; characterFainted()\l}" alt="" coords="899,557,1053,811"/>
+<area shape="rect" id="node8" href="$class_enemy.html" title="Defines an AI controller enemy to fight in battle scenes" alt="" coords="657,1667,746,1745"/>
+</map>

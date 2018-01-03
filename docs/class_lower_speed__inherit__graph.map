@@ -1,0 +1,4 @@
+<map id="LowerSpeed" name="LowerSpeed">
+<area shape="rect" id="node2" href="$class_special_move.html" title="Special move abstract base class that expands upon CharacterMove, adding magic properties ..." alt="" coords="5,219,136,369"/>
+<area shape="rect" id="node3" href="$class_character_move.html" title="Astract base class for character moves " alt="" coords="13,5,128,171"/>
+</map>

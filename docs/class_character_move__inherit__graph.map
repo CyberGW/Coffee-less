@@ -1,0 +1,12 @@
+<map id="CharacterMove" name="CharacterMove">
+<area shape="rect" id="node2" href="$class_special_move.html" title="Special move abstract base class that expands upon CharacterMove, adding magic properties ..." alt="" coords="437,219,568,369"/>
+<area shape="rect" id="node10" href="$class_standard_attack.html" title="Basic standard attack " alt="" coords="593,248,725,340"/>
+<area shape="rect" id="node11" href="$class_switch_players.html" title="Simple move to swap out the current player " alt="" coords="749,248,875,340"/>
+<area shape="rect" id="node3" href="$class_healing_spell.html" title="Heal a target by a set amount of health points" alt="" coords="5,417,120,509"/>
+<area shape="rect" id="node4" href="$class_increase_money.html" title="Increases the money reward of a battle" alt="" coords="144,417,275,509"/>
+<area shape="rect" id="node5" href="$class_lower_defence.html" title="Lower&#39;s the target&#39;s defence " alt="" coords="299,417,421,509"/>
+<area shape="rect" id="node6" href="$class_lower_speed.html" title="Lower&#39;s the target&#39;s speed " alt="" coords="445,417,560,509"/>
+<area shape="rect" id="node7" href="$class_magic_attack.html" title="An attack move that uses magic " alt="" coords="584,417,699,509"/>
+<area shape="rect" id="node8" href="$class_raise_attack.html" title="Raise the target&#39;s attack stat" alt="" coords="723,417,837,509"/>
+<area shape="rect" id="node9" href="$class_raise_defence.html" title="Raises the target&#39;s defence stat" alt="" coords="861,417,984,509"/>
+</map>

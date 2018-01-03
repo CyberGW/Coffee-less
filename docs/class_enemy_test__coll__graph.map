@@ -1,0 +1,9 @@
+<map id="EnemyTest" name="EnemyTest">
+<area shape="rect" id="node2" href="$class_enemy.html" title="Defines an AI controller enemy to fight in battle scenes" alt="" coords="113,145,202,223"/>
+<area shape="rect" id="node8" href="$class_battle_manager.html" title="{BattleManager\n|+ Player\l+ Enemy\l+ WasCriticalHit\l|+ BattleManager()\l+ playerFirst()\l+ switchPlayers()\l+ isCriticalHit()\l+ ranAway()\l+ damageCalculation()\l+ enemyMove()\l+ enemySpecialMove()\l+ battleWon()\l+ playerFainted()\l&#45; characterFainted()\l}" alt="" coords="231,300,385,553"/>
+<area shape="rect" id="node3" href="$class_character.html" title="Base abstract class for Enemy and Player to inherit from. Defines all shared variables, their constructor and their setters and getters " alt="" coords="513,1073,639,1297"/>
+<area shape="rect" id="node7" href="$class_character_move.html" title="Astract base class for character moves " alt="" coords="471,719,585,825"/>
+<area shape="rect" id="node10" href="$class_player.html" title="Defines a playable character for use in battle scenes" alt="" coords="735,1347,884,1497"/>
+<area shape="rect" id="node6" href="$class_special_move.html" title="Special move abstract base class that expands upon CharacterMove, adding magic properties ..." alt="" coords="579,875,709,996"/>
+<area shape="rect" id="node11" href="$class_item.html" title="{Item\n|+ Name\l+ Desc\l|+ applyBuffs()\l+ revertBuffs()\l}" alt="" coords="842,583,945,689"/>
+</map>
