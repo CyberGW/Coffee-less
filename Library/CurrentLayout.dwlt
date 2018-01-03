@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 685
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -105,10 +105,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 635
-  m_MinSize: {x: 408, y: 492}
+  m_MinSize: {x: 583, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 1
-  controlID: 229
+  controlID: 123
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -129,10 +129,10 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 635
-  m_MinSize: {x: 408, y: 492}
+  m_MinSize: {x: 583, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 230
+  controlID: 124
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -156,7 +156,7 @@ MonoBehaviour:
   m_MinSize: {x: 306, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 306
+  controlID: 30
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_MinSize: {x: 306, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 307
+  controlID: 80
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -199,8 +199,8 @@ MonoBehaviour:
     y: 0
     width: 328
     height: 342
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -278,16 +278,16 @@ MonoBehaviour:
     y: 0
     width: 478
     height: 635
-  m_MinSize: {x: 102, y: 121}
+  m_MinSize: {x: 277, y: 71}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 21}
+  m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
   - {fileID: 21}
   - {fileID: 22}
   - {fileID: 23}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -394,28 +394,28 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 0cfffbff96fffbffb605fcff9809fcff220afcff1410fcffe612fcff7013fcffb019fcff5a22fcffe622fcff0e29fcffd62efcff622ffcffbe35fcffbc4cfcff444dfcff5653fcffac55fcff3456fcff465cfcffa05ffcff2860fcff5066fcff5c7dfcff3883fcffae83fcffb889fcffa68efcff308ffcff5495fcff349bfcffbe9bfcffa0a1fcff50a5fcffdaa5fcff4caafcff82aefcffbab0fcff46b1fcffb4bafcff76e8fcff88e8fcffcafafcff0a02fdffd213fdff2624fdff3424fdff3824fdff023ffdffac44fdffbc4cfdff025ffdffb468fdffdc71fdff40a6fdfff2aefdfff6bffdffe8dcfdff40f7fdfff804feff7c11feffda15fefff82cfeff9830feffb833feffe435feff4a38feffb63afeff3a3dfeff6457feffa057feffd257feff206dfeffd682feff468efeffaea8feff1ab3feff56b3feff88b3feffc6b6feff8cebfeff48fafefff4ffffff00000000ea900000fe9000001c9100008094000000950000b0990000389a00006e9a00009e9a0000489f0000d09f000036a00000b8af000040b00000a6b00000a6c600002ec70000d6d400003ad5000096d500000cd600000edf000072df0000cedf000044e00000
+    m_SelectedIDs: 52850000
+    m_LastClickedID: 34130
+    m_ExpandedIDs: 3ab2feffd8befeff18bffeff2ec7feffbacffeff02d0feff50d7feff46dffeff86dffeff20e6feffa6f1fefff8f1feffc6f8feff8cfdfeffdefdfeffac04ffffca07ffff1c08ffff1e0fffff2413ffff7613ffff781afffff01effff421fffff5026ffff822cffffd42cffff9c35ffff043bffff443bffffa441ffff8846ffffc646ffffc24cffffe050ffff1e51ffff1c57ffff925fffffe25fffff9e66ffff7a6bfffff072ffff4273fffff279fffff481ffff4682fffff488ffff849fffffeca3ffff2aa4ffffb8a9ffffb2adfffff0adffffaab3ffff76c4ffffc6c4ffff08cbffff06d4ffff8ee1ffff02e4ffff58e4ffffe0eaffff9efbffff00000000d42f00003830000094300000fe3000000a3100001a36000088370000de370000f2370000464500005a4800006e4b0000de4b0000d04c0000e44c0000145100001e5100005c51000078610000326200003c62000068760000227700002c770000927a0000f67a0000527b00005c7b00009a7b0000c87b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: RunButton
-      m_OriginalName: RunButton
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 39534
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 9}
     m_SearchString: 
   m_ExpandedScenes:
-  - Battle
+  - Main
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -605,19 +605,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Battle
+    - Assets/Exploration/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Battle
+  - Assets/Exploration/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\CyberGW\Documents\Unity\SEPRPhase2
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d43e0000
-    m_LastClickedID: 16084
-    m_ExpandedIDs: 00000000d23e0000d43e0000f23e0000f63e0000203f0000483f0000703f0000763f00008e3f0000923f0000a03f0000ea490000784b00007a4b00007c4b00007e4b0000ffffff7f
+    m_SelectedIDs: fa2b0000
+    m_LastClickedID: 11258
+    m_ExpandedIDs: 00000000082800001c28000060280000a8280000782a0000962a0000a22b00001a2c0000ac2c0000ec2c0000ec2e00000a2f000070310000723100007431000076310000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -645,7 +645,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d23e0000d43e0000f23e0000f63e0000203f0000483f0000703f0000763f0000923f0000a03f0000ea490000784b00007a4b00007c4b00007e4b0000ffffff7f
+    m_ExpandedIDs: 00000000082800001c28000060280000a8280000782a0000962a0000a22b00001a2c0000ac2c0000ec2c0000ec2e00000a2f000070310000723100007431000076310000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -787,7 +787,7 @@ MonoBehaviour:
     width: 476
     height: 614
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_TestTypeToolbarIndex: 0
+  m_TestTypeToolbarIndex: 1
   m_PlayModeTestListGUI:
     m_Window: {fileID: 21}
     newResultList:
@@ -795,7 +795,7 @@ MonoBehaviour:
       name: Test
       fullName: Test
       resultStatus: 1
-      duration: 4.1160946
+      duration: 16.458805
       messages: 
       output: 
       stacktrace: 
@@ -807,7 +807,7 @@ MonoBehaviour:
       name: Assembly-CSharp.dll
       fullName: C:/Users/CyberGW/Documents/Unity/SEPRPhase2/Library/ScriptAssemblies/Assembly-CSharp.dll
       resultStatus: 1
-      duration: 4.0107408
+      duration: 16.373775
       messages: 
       output: 
       stacktrace: 
@@ -819,7 +819,7 @@ MonoBehaviour:
       name: BattleModeTest
       fullName: BattleModeTest
       resultStatus: 1
-      duration: 3.9865515
+      duration: 16.349857
       messages: 
       output: 
       stacktrace: 
@@ -831,7 +831,7 @@ MonoBehaviour:
       name: A1StartBattle
       fullName: BattleModeTest.A1StartBattle
       resultStatus: 1
-      duration: 3.803711
+      duration: 3.6381948
       messages: 
       output: 
       stacktrace: 
@@ -843,7 +843,7 @@ MonoBehaviour:
       name: A2AttackButton
       fullName: BattleModeTest.A2AttackButton
       resultStatus: 1
-      duration: 0.0499695
+      duration: 0.0499638
       messages: 
       output: 
       stacktrace: 
@@ -855,9 +855,45 @@ MonoBehaviour:
       name: A3AttackPanelDisplay
       fullName: BattleModeTest.A3AttackPanelDisplay
       resultStatus: 1
-      duration: 0.0334043
+      duration: 0.0333731
       messages: 
       output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    - id: '[Assembly-CSharp][BattleModeTest.A4AttackMove]'
+      name: A4AttackMove
+      fullName: BattleModeTest.A4AttackMove
+      resultStatus: 1
+      duration: 3.0482624
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    - id: '[Assembly-CSharp][BattleModeTest.A5MagicMove]'
+      name: A5MagicMove
+      fullName: BattleModeTest.A5MagicMove
+      resultStatus: 1
+      duration: 3.0484054
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    - id: '[Assembly-CSharp][BattleModeTest.A6WinBattle]'
+      name: A6WinBattle
+      fullName: BattleModeTest.A6WinBattle
+      resultStatus: 1
+      duration: 6.3370643
+      messages: 
+      output: "100\r\nMoney: 0\r\n"
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -960,7 +996,7 @@ MonoBehaviour:
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
-    m_ResultText: BattleModeTest (3.987s)
+    m_ResultText: BattleModeTest (16.350s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
@@ -1457,7 +1493,7 @@ MonoBehaviour:
       Manual Probability Test'
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 0}
+      scrollPos: {x: 0, y: 199}
       m_SelectedIDs: a5bc4262
       m_LastClickedID: 1648540837
       m_ExpandedIDs: d33c63859bef5c9018e98f9e51a899a87a729ab09d8d08d765d137e8431375fbe888c91b101c9c4e0df8175b0dd2fd5bffffff7f

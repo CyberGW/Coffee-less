@@ -9,21 +9,43 @@ using UnityEngine.UI;
 public class BattleModeTest {
 
 	bool sceneLoaded = false;
-	GameObject player;
+	GameObject playableCharacter;
 	PlayerMovement playerScript;
 	MainBattle mainBattle;
 	BattleManager battleManager;
+	Player player;
+	Enemy enemy;
+	GameObject enemyStats;
+	GameObject playerStats;
+	Text enemyHealthBar;
+	Text playerHealthBar;
+	Text enemyMagicBar;
+	Text playerMagicBar;
 
 	public IEnumerator Setup() {
 		if (!sceneLoaded) {
 			SceneManager.LoadScene ("BattleTestInitialScene", LoadSceneMode.Single);
 			yield return null; //Wait for scene to load
-			player = GameObject.Find ("Player");
-			playerScript = player.GetComponent<PlayerMovement> ();
+			playableCharacter = GameObject.Find ("Player");
+			playerScript = playableCharacter.GetComponent<PlayerMovement> ();
 			sceneLoaded = true;
 		}
-		player.transform.position = new Vector2 (0, 0);
+		playableCharacter.transform.position = new Vector2 (0, 0);
 		yield return null;
+	}
+
+	public void SetupReferences() {
+		mainBattle = GameObject.Find ("BattleCode").GetComponent<MainBattle> ();
+		battleManager = mainBattle.manager;
+		battleManager.forceCriticalHits = "None";
+		player = battleManager.Player;
+		enemy = battleManager.Enemy;
+		enemyStats = GameObject.Find ("EnemyStats");
+		playerStats = GameObject.Find ("PlayerStats");
+		enemyHealthBar = enemyStats.transform.Find ("Health/Text").GetComponent<Text>();
+		playerHealthBar = playerStats.transform.Find ("Health/Text").GetComponent<Text>();
+		enemyMagicBar = enemyStats.transform.Find ("Magic/Text").GetComponent<Text>();
+		playerMagicBar = playerStats.transform.Find ("Magic/Text").GetComponent<Text>();
 	}
 
 	[UnityTest]
@@ -39,13 +61,12 @@ public class BattleModeTest {
 		dialogueScript.pseudoKeyPress = true;
 		yield return new WaitForSeconds(2); //Wait 3 frames for player to move then trigger to be detected and input processed
 		Assert.AreEqual("Battle", SceneManager.GetActiveScene().name); //Check Battle scene has loaded
+		//Perofrm setup
+		SetupReferences();
 	}
 
 	[UnityTest]
 	public IEnumerator A2AttackButton() {
-		mainBattle = GameObject.Find ("BattleCode").GetComponent<MainBattle> ();
-		battleManager = mainBattle.manager;
-		battleManager.forceCriticalHits = "None";
 		AttackButton attackButton = GameObject.Find ("AttackButtonHandler").GetComponent<AttackButton> ();
 		attackButton.setPanelActive (); //Click attack button
 		yield return null;
@@ -70,6 +91,44 @@ public class BattleModeTest {
 		Assert.AreEqual(specialMove.Desc, desc.text);
 		Text magic = containerObject.transform.Find ("Magic").GetComponent<Text> ();
 		Assert.AreEqual ("Magic: " + specialMove.Magic, magic.text);
+	}
+
+	[UnityTest]
+	public IEnumerator A4AttackMove() {
+		battleManager.forceEnemyMove = new StandardAttack (battleManager, enemy, player); //Make sure enemy performs standard attack
+		mainBattle.standardAttack (); //Should do 30 * 10 / 5 = 60 damage
+		yield return new WaitForSeconds(3);
+		//Enemy Health Bar
+		Assert.AreEqual ("Health: 40 / 100", enemyHealthBar.text);
+		//Player Health Bar
+		Assert.AreEqual ("Health: 90 / 100", playerHealthBar.text);
+	}
+
+	[UnityTest]
+	public IEnumerator A5MagicMove() {
+		enemy.Special1.setUp (battleManager, enemy, player);
+		battleManager.forceEnemyMove = enemy.Special1; // Should do 15 * 5 / 6 = 12.5 = 12 damage (as defence is buffed first in turn)
+		mainBattle.special2();
+		yield return new WaitForSeconds(3);
+		//Check Player stat buff has been applied
+		Assert.AreEqual(6, player.Defence); //5 * 0.1 = 5.5 = 6
+		//Player Health Bar
+		Assert.AreEqual("Health: 78 / 100", playerHealthBar.text); 
+		//Enemy Magic Bar
+		Assert.AreEqual("Magic: 2 / 5", enemyMagicBar.text);
+		//Enemy Health Bar
+		Assert.AreEqual ("Health: 40 / 100", enemyHealthBar.text); //Stayed the same
+		//Player Magic Bar
+		Assert.AreEqual("Magic: 3 / 5", playerMagicBar.text);
+	}
+
+	[UnityTest]
+	public IEnumerator A6WinBattle() {
+		mainBattle.standardAttack();
+		yield return new WaitForSeconds(4.2f);
+		Assert.AreEqual ("Exp: 100 / 200", playerStats.transform.Find ("Exp/Text").GetComponent<Text> ().text);
+		yield return new WaitForSeconds (2);
+		Assert.AreEqual ("BattleTestInitialScene", SceneManager.GetActiveScene ().name);
 	}
 
 	public IEnumerator WaitForFrames(int frames) {

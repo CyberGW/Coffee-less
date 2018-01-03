@@ -12,6 +12,7 @@ public class BattleManager {
 	private Player player;
 	private Enemy enemy;
 	public string forceCriticalHits; //Used for testing
+	public CharacterMove forceEnemyMove = null; //Used for testing
 	private bool wasCriticalHit;
 	public int money;
 
@@ -138,14 +139,18 @@ public class BattleManager {
 	/// <param name="enemy">The enemy object to generate a move for</param>
 	/// <param name="player">The player object who is target of the move</param>
 	public CharacterMove enemyMove(Enemy enemy, Player player) {
-		double chance = 0.7 - 0.7 * (enemy.MaximumMagic - enemy.Magic) / (double) enemy.MaximumMagic;
-		if (Random.value < chance) { //try magic spell
-			Debug.Log("Special Move");
-			int random = Random.Range(0, 2);
-			return enemySpecialMove (random);
+		if (forceEnemyMove == null) {
+			double chance = 0.7 - 0.7 * (enemy.MaximumMagic - enemy.Magic) / (double)enemy.MaximumMagic;
+			if (Random.value < chance) { //try magic spell
+				Debug.Log ("Special Move");
+				int random = Random.Range (0, 2);
+				return enemySpecialMove (random);
+			}
+			//if special move not picked
+			return new StandardAttack (this, enemy, player);
+		} else {
+			return forceEnemyMove;
 		}
-		//if special move not picked
-		return new StandardAttack (this, enemy, player);
 	}
 
 	/// <summary>

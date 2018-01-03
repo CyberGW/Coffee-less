@@ -17,7 +17,7 @@ public class MainBattle : MonoBehaviour {
 	private Text textBox;
 	//Battle Manager References
 	public Player player;
-	private Enemy enemy;
+	public Enemy enemy;
 	private int moneyReward;
 	private Item itemReward;
 	//Local Variables
