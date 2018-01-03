@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour {
 	void FixedUpdate () {
 
 		if (Input.GetKeyDown (KeyCode.Return)) {
-			GlobalFunctions.instance.createBattle (new Enemy ("Swinefoogle", 5, 100, 15, 5, 5, 5, 5, 5, new MagicAttack("fireballed", "Fireball", 30, 3),  new MagicAttack("fireballed", "Fireball", 30, 5)), (Texture2D) Resources.Load("Little_Green_Enemy", typeof(Texture2D)), 50, null);
+			GlobalFunctions.instance.createBattle (new Enemy ("Swinefoogle", 5, 100, 15, 5, 5, 5, 5, 5, new MagicAttack("fireballed", "Fireball", 30, 3),  new MagicAttack("fireballed", "Fireball", 30, 5)), (Texture2D) Resources.Load("Little_Green_Enemy", typeof(Texture2D)), 50, null, false);
 		}
 		if (Input.GetKeyDown (KeyCode.Escape)) {
 			SceneChanger.instance.loadLevel ("ItemMenu");

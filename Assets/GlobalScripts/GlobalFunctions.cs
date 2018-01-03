@@ -15,6 +15,7 @@ public class GlobalFunctions : MonoBehaviour {
 	/// <summary>Holds an enemy object for the battle scene to load from</summary>
 	private Enemy enemy;
 	/// <summary>Holds an amount of money for the battle scene to load from</summary>
+	[System.NonSerialized]
 	public Texture2D sprite;
 	private int money;
 	/// <summary>Holds an item for the battle scene to load from</summary>
@@ -29,12 +30,16 @@ public class GlobalFunctions : MonoBehaviour {
 	/// Stores an objects unique ID and whether they should be active or not, as to determine whether to display
 	/// it </summary>
 	public IDictionary<string, bool> objectsActive;
+	[System.NonSerialized]
 	public int currentLevel;
+	[System.NonSerialized]
+	public bool canRunAway;
 
 	/// <summary>
 	/// An enum type representing items so that they can be selected from within the Unity Editor
 	/// </summary>
 	public enum ItemTypes { None, Hammer };
+	[System.NonSerialized]
 	public string[] levelOrder = new string[] { "CS", "TFTV" };
 
 	void Awake() {
@@ -58,11 +63,12 @@ public class GlobalFunctions : MonoBehaviour {
 	/// <param name="enemy">The enemy object to battle against</param>
 	/// <param name="money">The monetary reward if the battle is won</param>
 	/// <param name="item">The item rewards if the battle is won, may be <c>null</c></param>
-	public void createBattle(Enemy enemy, Texture2D sprite, int money, Item item) {
+	public void createBattle(Enemy enemy, Texture2D sprite, int money, Item item, bool canRunAway) {
 		this.enemy = enemy;
 		this.sprite = sprite;
 		this.money = money;
 		this.item = item;
+		this.canRunAway = canRunAway;
 		previousScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
 		previousBGM = SoundManager.instance.BGMSource.clip;
 		player.SetActive (false);

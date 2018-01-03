@@ -62,3 +62,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Exploration/Scenes/Physics.unity
     guid: 576f330882a62a847b400d339d487796
+  - enabled: 1
+    path: Assets/PlayTests/BattleTestInitialScene.unity
+    guid: 08ddc60e67946b54fb2418b5f0d05cd3

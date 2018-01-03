@@ -869,7 +869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newScene: Library-Ground
-  newPosition: {x: 126.4, y: -133.76}
+  newPosition: {x: 126.4, y: -133.17}
 --- !u!1 &1191828938
 GameObject:
   m_ObjectHideFlags: 0

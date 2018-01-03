@@ -10,9 +10,10 @@ public class MainBattle : MonoBehaviour {
 
 	//Objects
 	private GameObject globalData;
-	private BattleManager manager;
+	public BattleManager manager;
 	private Player[] playerArray;
 	private Button attackButton;
+	private Button runButton;
 	private Text textBox;
 	//Battle Manager References
 	public Player player;
@@ -53,6 +54,8 @@ public class MainBattle : MonoBehaviour {
 		playerStats = GameObject.Find("PlayerStats");
 		enemyStats = GameObject.Find ("EnemyStats");
 		attackButton = GameObject.Find ("AttackButton").GetComponent<Button> ();
+		runButton = GameObject.Find ("RunButton").GetComponent<Button> ();
+		runButton.interactable = GlobalFunctions.instance.canRunAway;
 		textBox = GameObject.Find ("TextBox").transform.Find ("Text").GetComponent<Text> ();
 		enemySprite = GameObject.Find ("EnemyImage").GetComponent<Image> ();
 		Texture2D image = GlobalFunctions.instance.sprite;
@@ -261,16 +264,20 @@ public class MainBattle : MonoBehaviour {
     /// <summary>
 	/// Run away from battle if <see cref="BattleManager.ranAway"/> returns true
     /// </summary>
-    public void runAway() {
-        if (manager.ranAway(player.Speed,enemy.Speed))
-        {
-            GlobalFunctions.instance.endBattle();
-            Debug.Log("success!!");
-        }
-        else
-        {
-            Debug.Log("run attempt failed!!");
+	public void ranAway() {
+        if (manager.ranAway(player.Speed,enemy.Speed)) {
+			textBox.text = "You ran from the battle";
+			attackButton.interactable = false;
+			StartCoroutine (runAway ());
+        } else {
+			textBox.text = "You failed to run away";
+			runButton.interactable = false;
         }
     }
+
+	private IEnumerator runAway() {
+		yield return new WaitForSeconds (2);
+		GlobalFunctions.instance.endBattle ();
+	}		
 
 }

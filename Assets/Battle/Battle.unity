@@ -2995,7 +2995,7 @@ GameObject:
   - component: {fileID: 1431015781}
   - component: {fileID: 1431015780}
   m_Layer: 0
-  m_Name: AttacksButton
+  m_Name: AttackButtonHandler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3366,7 +3366,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1797889368}
-        m_MethodName: runAway
+        m_MethodName: ranAway
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3875,6 +3875,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3537ffc6cd6f2e6499f924b87dcb19af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager:
+    forceCriticalHits: 
+    money: 0
 --- !u!1 &1800719177
 GameObject:
   m_ObjectHideFlags: 0

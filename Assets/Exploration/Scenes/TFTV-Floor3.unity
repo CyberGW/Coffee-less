@@ -140,6 +140,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 624e1d15444340a47a68c179a49beee2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bossObjectName: Boss
+  worldMapExitPosition: {x: -10.55, y: -1.46}
 --- !u!4 &170018196
 Transform:
   m_ObjectHideFlags: 0

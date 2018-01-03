@@ -9,6 +9,11 @@ using UnityEngine.UI;
 /// </summary>
 public class BattleDescriptor : MonoBehaviour {
 
+	[Header("Battle Variables")]
+	public int battleMoney = 0;
+	public GlobalFunctions.ItemTypes battleItem = GlobalFunctions.ItemTypes.None;
+	public bool canRunAway = false;
+
 	[Header("Battle Enemy Stats")]
 	public string name = "";
 	public Texture2D sprite;
@@ -32,14 +37,12 @@ public class BattleDescriptor : MonoBehaviour {
 	public string special2Text;
 	public int special2Magic;
 	public float special2Value;
-	public int battleMoney = 0;
-	public GlobalFunctions.ItemTypes battleItem;
 
 	public void createBattle() {
 		GlobalFunctions.instance.createBattle (new Enemy (name, level, health, attack, defence, maximumMagic, maximumMagic,
 			luck, speed, createSpecialMove (special1, special1Text, special1Magic, special1Value),
 			createSpecialMove (special2, special2Text, special2Magic, special2Value)),
-			sprite, battleMoney, GlobalFunctions.instance.createItem(battleItem));
+			sprite, battleMoney, GlobalFunctions.instance.createItem(battleItem), canRunAway);
 	}
 
 

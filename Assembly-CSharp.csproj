@@ -86,6 +86,7 @@
      <Compile Include="Assets\Menus\MainMenu\ButtonManager.cs" />
      <Compile Include="Assets\Menus\MainMenu\MenuScript.cs" />
      <Compile Include="Assets\Menus\MainMenu\Quit.cs" />
+     <Compile Include="Assets\PlayTests\Resources\BattleModeTest.cs" />
      <Compile Include="Assets\PlayTests\Resources\ExplorationTest.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\CircleObject.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\GameObjectExtensions.cs" />
@@ -116,6 +117,7 @@
      <None Include="Assets\Tiled2Unity\Tiled2Unity.export.txt" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDepth.shader" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDiffuseDepth.shader" />
+     <None Include="Assets\Tiled2Unity\Imported\Library-Floor1.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\CS.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\Hes East.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Materials\_ReadMe.txt" />
@@ -125,8 +127,11 @@
      <None Include="Assets\Tiled2Unity\Imported\CS-Jail.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDefault-Instanced.shader" />
      <None Include="Assets\GlobalScripts\SceneFader\ReadMeFirst.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\Library.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\Physics.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Shaders\shaColorKey-Instanced.shader" />
      <None Include="Assets\Tiled2Unity\Imported\WorldMap.tiled2unity.xml" />
+     <None Include="Assets\Tiled2Unity\Imported\RCH.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Shaders\shaColorKey.shader" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDepthColorKey.shader" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDepthColorKey-Instanced.shader" />

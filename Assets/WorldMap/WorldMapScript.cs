@@ -13,7 +13,6 @@ public class WorldMapScript : MonoBehaviour {
 		GameObject building;
 		GameObject image;
 		GameObject collider;
-		Debug.Log (currentLevel);
 		for (int i = 0; i < currentLevel; i++) { //For all levels already beat
 			building = GameObject.FindWithTag (levelOrder [i]); //Find building
 			image = building.transform.Find(levelOrder [i]).gameObject; //Get the image part
