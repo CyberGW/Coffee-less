@@ -111,8 +111,6 @@ public class StandardAttack : CharacterMove {
 /// </summary>
 public class SwitchPlayers : CharacterMove {
 
-	private BattleManager manager;
-
 	public SwitchPlayers (BattleManager manager, Character user, Character target)
 	{
 		this.manager = manager;

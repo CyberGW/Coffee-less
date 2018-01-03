@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>Added to a canvas holding the dialogue elements to ensure it's not destroyed when a new scene
+/// is created </summary>
 public class CanvasScript : MonoBehaviour {
 
-	// Use this for initialization
+	/// <summary>
+	/// Calls <c>DontDestroyOnLoad</c> here when the object is created
+	/// </summary>
 	void Start () {
 		DontDestroyOnLoad (gameObject);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 }

@@ -10,7 +10,6 @@ public class BattleModeTest {
 
 	bool sceneLoaded = false;
 	GameObject playableCharacter;
-	PlayerMovement playerScript;
 	MainBattle mainBattle;
 	BattleManager battleManager;
 	Player player;
@@ -27,7 +26,6 @@ public class BattleModeTest {
 			SceneManager.LoadScene ("BattleTestInitialScene", LoadSceneMode.Single);
 			yield return null; //Wait for scene to load
 			playableCharacter = GameObject.Find ("Player");
-			playerScript = playableCharacter.GetComponent<PlayerMovement> ();
 			sceneLoaded = true;
 		}
 		playableCharacter.transform.position = new Vector2 (0, 0);
@@ -95,7 +93,7 @@ public class BattleModeTest {
 
 	[UnityTest]
 	public IEnumerator A4AttackMove() {
-		battleManager.forceEnemyMove = new StandardAttack (battleManager, enemy, player); //Make sure enemy performs standard attack
+		battleManager.forceEnemyMove = "StandardAttack"; //Make sure enemy performs standard attack
 		mainBattle.standardAttack (); //Should do 30 * 10 / 5 = 60 damage
 		yield return new WaitForSeconds(3);
 		//Enemy Health Bar
@@ -107,7 +105,7 @@ public class BattleModeTest {
 	[UnityTest]
 	public IEnumerator A5MagicMove() {
 		enemy.Special1.setUp (battleManager, enemy, player);
-		battleManager.forceEnemyMove = enemy.Special1; // Should do 15 * 5 / 6 = 12.5 = 12 damage (as defence is buffed first in turn)
+		battleManager.forceEnemyMove = "Special1"; // Should do 15 * 5 / 6 = 12.5 = 12 damage (as defence is buffed first in turn)
 		mainBattle.special2();
 		yield return new WaitForSeconds(3);
 		//Check Player stat buff has been applied

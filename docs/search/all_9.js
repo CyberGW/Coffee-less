@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['levelmanager',['LevelManager',['../class_level_manager.html',1,'']]],
-  ['levelup',['levelUp',['../class_player.html#a00d472bd1111adabe2b54b66a21198f4',1,'Player']]],
-  ['loadlevel',['loadLevel',['../class_scene_changer.html#a47b11efe0991dd2a9c697efe25e609dc',1,'SceneChanger.loadLevel(string newScene)'],['../class_scene_changer.html#addc24361fb05a54354067986d83e783e',1,'SceneChanger.loadLevel(string newScene, Vector2 newPosition)']]],
-  ['lowerdefence',['LowerDefence',['../class_lower_defence.html',1,'']]],
-  ['lowerspeed',['LowerSpeed',['../class_lower_speed.html',1,'']]]
+  ['keypress',['keyPress',['../class_dialogue_script.html#a1c1d245e14e541517c892c52352ca0a9',1,'DialogueScript']]],
+  ['keypressed',['keyPressed',['../class_object_interaction.html#af849a0a8fdadf1bc381ab2c21a160c7e',1,'ObjectInteraction']]]
 ];

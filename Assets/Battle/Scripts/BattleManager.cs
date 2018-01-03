@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
 /// <summary>
 /// Holds current <see cref="Player"/> and <see cref="Enemy"/> objects in battle and provides functions for
 /// <see cref="MainBattle"/> and other objects to utilise   
@@ -11,8 +10,14 @@ public class BattleManager {
 
 	private Player player;
 	private Enemy enemy;
-	public string forceCriticalHits; //Used for testing
-	public CharacterMove forceEnemyMove = null; //Used for testing
+	/// <summary>
+	/// Can be set to "All" or "None" to make every attack or not attack a critical hit, for testing purposes
+	/// Any other value will enable them as per usual</summary>
+	public string forceCriticalHits = ""; //Used for testing
+	/// <summary>
+	/// Can be set to StandardAttack, Special1 or Special2 to choose the enemy's move for testing purposes
+	/// Any other value will use the AI as per usual</summary>
+	public string forceEnemyMove = ""; //Used for testing
 	private bool wasCriticalHit;
 	public int money;
 
@@ -21,7 +26,6 @@ public class BattleManager {
 		this.player = player;
 		this.enemy = enemy;
 		this.money = money;
-		forceCriticalHits = "";
 	}
 
 	public Player Player {
@@ -134,12 +138,22 @@ public class BattleManager {
 
 	/// <summary>
 	/// Decides upon whether to pick a special or standard attack move for the enemy
+	/// Can be forced for testing by setting <see cref="forceEnemyMove"/> 
 	/// </summary>
 	/// <returns>The move for the enemy to perform</returns>
 	/// <param name="enemy">The enemy object to generate a move for</param>
 	/// <param name="player">The player object who is target of the move</param>
 	public CharacterMove enemyMove(Enemy enemy, Player player) {
-		if (forceEnemyMove == null) {
+		switch (forceEnemyMove) {
+		case "StandardAttack":
+			return new StandardAttack (this, enemy, player);
+		case "Special1":
+			enemy.Special1.setUp (this, enemy, player);
+			return enemy.Special1;
+		case "Special2":
+			enemy.Special2.setUp (this, enemy, player);
+			return enemy.Special2;
+		default: 
 			double chance = 0.7 - 0.7 * (enemy.MaximumMagic - enemy.Magic) / (double)enemy.MaximumMagic;
 			if (Random.value < chance) { //try magic spell
 				Debug.Log ("Special Move");
@@ -148,8 +162,6 @@ public class BattleManager {
 			}
 			//if special move not picked
 			return new StandardAttack (this, enemy, player);
-		} else {
-			return forceEnemyMove;
 		}
 	}
 
@@ -204,6 +216,5 @@ public class BattleManager {
 	public bool playerFainted() {
 		return characterFainted (player);
 	}
-
 
 }

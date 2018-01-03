@@ -1,24 +1,31 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Exploration\Scripts\ObjectInteraction.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PlayTests\Resources\BattleModeTest.cs">
     <Files>
-      <File FileName="Assets\Battle\Scripts\MainBattle.cs" Line="20" Column="8" />
-      <File FileName="Assets\Battle\Scripts\CharacterMoves.cs" Line="1" Column="1" />
-      <File FileName="Assets\Editor\SpecialMoveTest.cs" Line="1" Column="1" />
+      <File FileName="Assets\Battle\Scripts\MainBattle.cs" Line="169" Column="110" />
+      <File FileName="Assets\Battle\Scripts\CharacterMoves.cs" Line="112" Column="45" />
       <File FileName="Assets\GlobalScripts\PlayerData.cs" Line="10" Column="26" />
-      <File FileName="Assets\Battle\Scripts\AttackButton.cs" Line="1" Column="1" />
-      <File FileName="Assets\Battle\Scripts\StatsScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\GlobalScripts\BattleDescriptor.cs" Line="1" Column="1" />
-      <File FileName="Assets\Exploration\Scripts\PlayerMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets\GlobalScripts\GlobalFunctions.cs" Line="1" Column="1" />
+      <File FileName="Assets\Battle\Scripts\AttackButton.cs" Line="48" Column="50" />
+      <File FileName="Assets\Battle\Scripts\StatsScript.cs" Line="44" Column="83" />
+      <File FileName="Assets\GlobalScripts\BattleDescriptor.cs" Line="18" Column="6" />
+      <File FileName="Assets\Exploration\Scripts\PlayerMovement.cs" Line="140" Column="96" />
+      <File FileName="Assets\GlobalScripts\GlobalFunctions.cs" Line="23" Column="2" />
       <File FileName="Assets\GlobalScripts\Player.cs" Line="1" Column="1" />
-      <File FileName="Assets\Exploration\Scripts\ObjectInteraction.cs" Line="44" Column="65" />
-      <File FileName="Assets\Exploration\Scripts\LevelManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\WorldMap\WorldMapScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Battle\Scripts\BattleManager.cs" Line="15" Column="22" />
-      <File FileName="Assets\PlayTests\Resources\BattleModeTest.cs" Line="125" Column="13" />
-      <File FileName="Assets\PlayTests\Resources\ExplorationTest.cs" Line="161" Column="38" />
+      <File FileName="Assets\Exploration\Scripts\ObjectInteraction.cs" Line="9" Column="1" />
+      <File FileName="Assets\Exploration\Scripts\LevelManager.cs" Line="24" Column="118" />
+      <File FileName="Assets\WorldMap\WorldMapScript.cs" Line="11" Column="124" />
+      <File FileName="Assets\Battle\Scripts\BattleManager.cs" Line="4" Column="1" />
       <File FileName="Assets\GlobalScripts\Enemy.cs" Line="1" Column="1" />
+      <File FileName="Assets\Exploration\Scripts\CameraController.cs" Line="1" Column="1" />
+      <File FileName="Assets\GlobalScripts\SoundManager.cs" Line="45" Column="96" />
+      <File FileName="Assets\Exploration\Scripts\Portal.cs" Line="27" Column="19" />
+      <File FileName="Assets\Menus\ItemMenu\ItemData.cs" Line="6" Column="99" />
+      <File FileName="Assets\GlobalScripts\Item.cs" Line="45" Column="1" />
+      <File FileName="Assets\Exploration\Scripts\HealingStation.cs" Line="58" Column="84" />
+      <File FileName="Assets\Menus\ItemMenu\ContainerData.cs" Line="1" Column="1" />
+      <File FileName="Assets\Exploration\Scripts\CanvasScript.cs" Line="15" Column="2" />
+      <File FileName="Assets\Menus\MainMenu\MenuScript.cs" Line="25" Column="2" />
+      <File FileName="Assets\PlayTests\Resources\BattleModeTest.cs" Line="28" Column="51" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

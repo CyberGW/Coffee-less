@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// A controler for the world map, stopping players from entering old or future levels, and
+/// colouring the departments approriately</summary>
 public class WorldMapScript : MonoBehaviour {
 
-	GameObject TFTV;
-
-	// Use this for initialization
+	/// <summary>
+	/// When World Map is loaded, set all beaten levels to red and stop them acting as portals and set the next level to green
+	/// </summary>
 	void Start () {
 		string[] levelOrder = GlobalFunctions.instance.levelOrder;
 		int currentLevel = GlobalFunctions.instance.currentLevel;
@@ -24,9 +27,5 @@ public class WorldMapScript : MonoBehaviour {
 		building = GameObject.FindWithTag (levelOrder [currentLevel]).transform.Find(levelOrder [currentLevel]).gameObject;
 		building.GetComponent<MeshRenderer> ().material.color = Color.green;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 }

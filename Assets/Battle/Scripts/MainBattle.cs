@@ -16,8 +16,11 @@ public class MainBattle : MonoBehaviour {
 	private Button runButton;
 	private Text textBox;
 	//Battle Manager References
+	/// <summary>
+	/// Set to public
+	/// </summary>
 	public Player player;
-	public Enemy enemy;
+	private Enemy enemy;
 	private int moneyReward;
 	private Item itemReward;
 	//Local Variables
@@ -44,7 +47,6 @@ public class MainBattle : MonoBehaviour {
 
 
 	/// <summary>
-	/// Start this instance.
 	/// Includes finding game objects, setting references and changing background music
 	/// </summary>
 	void Start () {
@@ -164,7 +166,7 @@ public class MainBattle : MonoBehaviour {
 
 	/// <summary>
 	/// Checks if the player has won\n
-	/// If they have, exp is given and shown on screen, before saving player data, adding money and ending the battle
+	/// If they have, exp is given and shown on screen, before saving player data, adding money, adding the item and ending the battle
 	/// </summary>
 	/// <returns>Coroutine function to update exp bar</returns>
 	private IEnumerator checkIfPlayerWon() {
@@ -177,6 +179,9 @@ public class MainBattle : MonoBehaviour {
 			playerArray [0] = player;
 			PlayerData.instance.data.Players = playerArray;
 			PlayerData.instance.data.Money += manager.money;
+			if (itemReward != null) {
+				PlayerData.instance.data.addItem (itemReward);
+			}
 			Debug.Log ("Money: " + PlayerData.instance.data.Money);
 			GlobalFunctions.instance.endBattle ();
 		}
@@ -234,25 +239,36 @@ public class MainBattle : MonoBehaviour {
 	}
 
 	/// <summary>
-	/// Setup a standard attack move
+	/// Setup a standard attack move for the player
 	/// </summary>
 	public void standardAttack() {
 		playerMove = new StandardAttack (manager, player, enemy);
 		prepareTurn ();
 	}
 
+	/// <summary>
+	/// Setup the first special move for the player
+	/// </summary>
 	public void special1() {
 		player.Special1.setUp (manager, player, enemy);
 		playerMove = player.Special1;
 		prepareTurn ();
 	}
 
+	/// <summary>
+	/// Setup the second special move for the player
+	/// </summary>
 	public void special2() {
 		player.Special2.setUp (manager, player, enemy);
 		playerMove = player.Special2;
 		prepareTurn ();
 	}
 
+	/// <summary>
+	/// Called by any of <see cref="standardAttack"/>, <see cref="special1"/> or <see cref="special2"/>
+	/// Uses <see cref="BattleManager.enemyMove"/> to decide on the enemy's move, and hides attack panel and makes
+	/// attack button unclickable    
+	/// </summary>
 	private void prepareTurn() {
 		enemyMove = manager.enemyMove (enemy, player);
 		moveChosen = true;
@@ -262,12 +278,11 @@ public class MainBattle : MonoBehaviour {
 
 
     /// <summary>
-	/// Run away from battle if <see cref="BattleManager.ranAway"/> returns true
+	/// Run away from battle if <see cref="BattleManager.ranAway"/> returns true.
+	/// Otherwise display appropriate text and make sure run cannot be selected again
     /// </summary>
 	public void ranAway() {
         if (manager.ranAway(player.Speed,enemy.Speed)) {
-			textBox.text = "You ran from the battle";
-			attackButton.interactable = false;
 			StartCoroutine (runAway ());
         } else {
 			textBox.text = "You failed to run away";
@@ -275,7 +290,14 @@ public class MainBattle : MonoBehaviour {
         }
     }
 
+	/// <summary>
+	/// If <see cref="ranAway"/> return true, then  display message, disable attack button and after 2 seconds
+	/// call <see cref="GlobalFunctions.endBattle"/> 
+	/// </summary>
+	/// <returns>The away.</returns>
 	private IEnumerator runAway() {
+		textBox.text = "You ran from the battle";
+		attackButton.interactable = false;
 		yield return new WaitForSeconds (2);
 		GlobalFunctions.instance.endBattle ();
 	}		

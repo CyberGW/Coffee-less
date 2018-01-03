@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Script to handle the main menu
+/// </summary>
 public class MenuScript : MonoBehaviour {
 
 	public Canvas quitMenu;
@@ -18,7 +21,7 @@ public class MenuScript : MonoBehaviour {
 		exitText = exitText.GetComponent<Button> ();
 		quitMenu.enabled = false;
 	}
-	
+
 	public void ExitPress(){
 		
 		quitMenu.enabled = true;

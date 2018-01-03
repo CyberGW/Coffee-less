@@ -2,14 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>A script to control the movement and animations of the player</summary>
 public class PlayerMovement : MonoBehaviour {
 
+	/// <summary>The distance to move each frame</summary>
 	private float speed = 0.1f;
+	/// <summary>
+	/// A string describing what the player's last move was so that the player faces the correct way when idle
+	/// </summary>
 	private string lastMove = "Idle";
 	private bool canMove = true;
+	/// <summary>
+	/// Used in case a scene duplicated the player
+	/// </summary>
 	private static bool playerExists = false;
 	private Vector2 previousPosition;
+	/// <summary>
+	/// The transform component of the player
+	/// </summary>
 	private Transform player;
+	/// <summary>
+	/// The animation controller of the player
+	/// </summary>
 	private Animator anim;
 
 	// Use this for initialization
@@ -28,7 +42,9 @@ public class PlayerMovement : MonoBehaviour {
 
 	}
 
-	// Update is called once per frame
+	/// <summary>
+	/// Called once per frame to check the user key presses
+	/// </summary>
 	void FixedUpdate () {
 
 		if (Input.GetKeyDown (KeyCode.Return)) {
@@ -79,17 +95,28 @@ public class PlayerMovement : MonoBehaviour {
 				break;
 			}
 			player.Translate (translation * speed);
-//			Vector2 newPosition = player.transform.position;
-//			if (Vector2.Distance (newPosition, previousPosition) > 3) {
-//				previousPosition = newPosition;
-//				if (Random.value < 0.05) {
-//					BattleDescriptor battle = GameObject.Find ("RandomEncounter").GetComponent<BattleDescriptor> ();
-//					battle.createBattle ();
-//				}
-//			}
+			//randomEncounter ();
 		}
 	}
 
+	/// <summary>
+	/// If the player has moved enough since last called, then 5% chance of creating a random encounter battle
+	/// </summary>
+	private void randomEncounter() {
+		Vector2 newPosition = player.transform.position;
+		if (Vector2.Distance (newPosition, previousPosition) > 3) {
+			previousPosition = newPosition;
+			if (Random.value < 0.05) {
+				BattleDescriptor battle = GameObject.Find ("RandomEncounter").GetComponent<BattleDescriptor> ();
+				battle.createBattle ();
+			}
+		}
+	}
+
+	/// <summary>
+	/// Set the trigger on the animation controller to update display appropriately
+	/// </summary>
+	/// <param name="direction">Direction.</param>
 	private void walkAnimation(string direction) {
 		if (lastMove != direction) {
 			anim.SetTrigger ("Walk" + direction);
@@ -97,6 +124,9 @@ public class PlayerMovement : MonoBehaviour {
 		}
 	}
 
+	/// <summary>
+	/// When the user isn't moving, set the appropriate idle animation based upon <see cref="lastMove"/> 
+	/// </summary>
 	private void setIdle () {
 		if (lastMove != "Idle") {
 			anim.SetTrigger ("Idle" + lastMove);
@@ -104,6 +134,10 @@ public class PlayerMovement : MonoBehaviour {
 		}
 	}
 
+	/// <summary>
+	/// Set whether the player should be able to move or not
+	/// </summary>
+	/// <param name="value">If <c>true</c> player can move, if <c>false</c> then player can't move.</param>
 	public void setCanMove(bool value) {
 		canMove = value;
 		if (!value) {

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['iscriticalhit',['isCriticalHit',['../class_battle_manager.html#a9be7d13f373867ff8997f28e07edbc23',1,'BattleManager']]]
+  ['gainexp',['gainExp',['../class_player.html#aea5a87e9456ca8c655300367517c269e',1,'Player']]]
 ];

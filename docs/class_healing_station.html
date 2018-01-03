@@ -69,17 +69,19 @@ $(function() {
 <div class="title">HealingStation Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A script describing a healing station, where all player's health and magic are restored  
+ <a href="class_healing_station.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for HealingStation:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_healing_station__inherit__graph.svg" width="148" height="302"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_healing_station__inherit__graph.svg" width="148" height="302"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3e49e0240798cd021ff2cc9b28d2654d"><td class="memItemLeft" align="right" valign="top"><a id="a3e49e0240798cd021ff2cc9b28d2654d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>healPlayers</b> ()</td></tr>
+<tr class="memitem:a3e49e0240798cd021ff2cc9b28d2654d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_healing_station.html#a3e49e0240798cd021ff2cc9b28d2654d">healPlayers</a> ()</td></tr>
+<tr class="memdesc:a3e49e0240798cd021ff2cc9b28d2654d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loops through DataManager.Players setting all instantiated player's health back to 100 and all magic stats back to the specified Players.MaximumMagic value  <a href="#a3e49e0240798cd021ff2cc9b28d2654d">More...</a><br /></td></tr>
 <tr class="separator:a3e49e0240798cd021ff2cc9b28d2654d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -87,11 +89,11 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a406cd00def2b907fb9534d1d63e99439"><td class="memItemLeft" align="right" valign="top"><a id="a406cd00def2b907fb9534d1d63e99439"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> ()</td></tr>
 <tr class="separator:a406cd00def2b907fb9534d1d63e99439"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c922b04c18d1e279b7d77445b06c196"><td class="memItemLeft" align="right" valign="top"><a id="a0c922b04c18d1e279b7d77445b06c196"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTriggerStay2D</b> (Collider2D other)</td></tr>
+<tr class="memitem:a0c922b04c18d1e279b7d77445b06c196"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_healing_station.html#a0c922b04c18d1e279b7d77445b06c196">OnTriggerStay2D</a> (Collider2D other)</td></tr>
+<tr class="memdesc:a0c922b04c18d1e279b7d77445b06c196"><td class="mdescLeft">&#160;</td><td class="mdescRight">When collides with the player and <a class="el" href="class_healing_station.html#a24f76fd931ab565ac0073ea8633d2e18" title="Holds whether the user is in range of the station, so that it is not continually triggered when the u...">inRange</a> is <code>false</code> , trigger functionality. This involves setting <a class="el" href="class_healing_station.html#a24f76fd931ab565ac0073ea8633d2e18" title="Holds whether the user is in range of the station, so that it is not continually triggered when the u...">inRange</a> to <code>true</code>, playing sound effect, displaying text and calling <a class="el" href="class_healing_station.html#a3e49e0240798cd021ff2cc9b28d2654d" title="Loops through DataManager.Players setting all instantiated player&#39;s health back to 100 and all magic ...">healPlayers</a>  <a href="#a0c922b04c18d1e279b7d77445b06c196">More...</a><br /></td></tr>
 <tr class="separator:a0c922b04c18d1e279b7d77445b06c196"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a900ec4f9a6b6546a541726b7102c3b99"><td class="memItemLeft" align="right" valign="top"><a id="a900ec4f9a6b6546a541726b7102c3b99"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTriggerExit2D</b> (Collider2D other)</td></tr>
+<tr class="memitem:a900ec4f9a6b6546a541726b7102c3b99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_healing_station.html#a900ec4f9a6b6546a541726b7102c3b99">OnTriggerExit2D</a> (Collider2D other)</td></tr>
+<tr class="memdesc:a900ec4f9a6b6546a541726b7102c3b99"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the player leaves the collider, set <a class="el" href="class_healing_station.html#a24f76fd931ab565ac0073ea8633d2e18" title="Holds whether the user is in range of the station, so that it is not continually triggered when the u...">inRange</a> to false so that the functionality can be triggered again when the player re-enters <a href="#a900ec4f9a6b6546a541726b7102c3b99">More...</a><br /></td></tr>
 <tr class="separator:a900ec4f9a6b6546a541726b7102c3b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -102,13 +104,160 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a7b6d2fb8cc8a5d50c8d47c46ee0c583d"><td class="memItemLeft" align="right" valign="top"><a id="a7b6d2fb8cc8a5d50c8d47c46ee0c583d"></a>
 <a class="el" href="class_player_movement.html">PlayerMovement</a>&#160;</td><td class="memItemRight" valign="bottom"><b>movementScript</b></td></tr>
 <tr class="separator:a7b6d2fb8cc8a5d50c8d47c46ee0c583d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc484b8da1cefce5313e91991de950b1"><td class="memItemLeft" align="right" valign="top"><a id="abc484b8da1cefce5313e91991de950b1"></a>
-string []&#160;</td><td class="memItemRight" valign="bottom"><b>text</b></td></tr>
+<tr class="memitem:abc484b8da1cefce5313e91991de950b1"><td class="memItemLeft" align="right" valign="top">string []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_healing_station.html#abc484b8da1cefce5313e91991de950b1">text</a></td></tr>
+<tr class="memdesc:abc484b8da1cefce5313e91991de950b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The text to display when interacted with  <a href="#abc484b8da1cefce5313e91991de950b1">More...</a><br /></td></tr>
 <tr class="separator:abc484b8da1cefce5313e91991de950b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24f76fd931ab565ac0073ea8633d2e18"><td class="memItemLeft" align="right" valign="top"><a id="a24f76fd931ab565ac0073ea8633d2e18"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>inRange</b> = false</td></tr>
+<tr class="memitem:a24f76fd931ab565ac0073ea8633d2e18"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_healing_station.html#a24f76fd931ab565ac0073ea8633d2e18">inRange</a> = false</td></tr>
+<tr class="memdesc:a24f76fd931ab565ac0073ea8633d2e18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds whether the user is in range of the station, so that it is not continually triggered when the user is within range  <a href="#a24f76fd931ab565ac0073ea8633d2e18">More...</a><br /></td></tr>
 <tr class="separator:a24f76fd931ab565ac0073ea8633d2e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A script describing a healing station, where all player's health and magic are restored </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3e49e0240798cd021ff2cc9b28d2654d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e49e0240798cd021ff2cc9b28d2654d">&#9670;&nbsp;</a></span>healPlayers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HealingStation.healPlayers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loops through DataManager.Players setting all instantiated player's health back to 100 and all magic stats back to the specified Players.MaximumMagic value </p>
+
+</div>
+</div>
+<a id="a900ec4f9a6b6546a541726b7102c3b99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a900ec4f9a6b6546a541726b7102c3b99">&#9670;&nbsp;</a></span>OnTriggerExit2D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HealingStation.OnTriggerExit2D </td>
+          <td>(</td>
+          <td class="paramtype">Collider2D&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>When the player leaves the collider, set <a class="el" href="class_healing_station.html#a24f76fd931ab565ac0073ea8633d2e18" title="Holds whether the user is in range of the station, so that it is not continually triggered when the u...">inRange</a> to false so that the functionality can be triggered again when the player re-enters</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The object this has collided with, triggering functionality when it's the player</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0c922b04c18d1e279b7d77445b06c196"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c922b04c18d1e279b7d77445b06c196">&#9670;&nbsp;</a></span>OnTriggerStay2D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HealingStation.OnTriggerStay2D </td>
+          <td>(</td>
+          <td class="paramtype">Collider2D&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>When collides with the player and <a class="el" href="class_healing_station.html#a24f76fd931ab565ac0073ea8633d2e18" title="Holds whether the user is in range of the station, so that it is not continually triggered when the u...">inRange</a> is <code>false</code> , trigger functionality. This involves setting <a class="el" href="class_healing_station.html#a24f76fd931ab565ac0073ea8633d2e18" title="Holds whether the user is in range of the station, so that it is not continually triggered when the u...">inRange</a> to <code>true</code>, playing sound effect, displaying text and calling <a class="el" href="class_healing_station.html#a3e49e0240798cd021ff2cc9b28d2654d" title="Loops through DataManager.Players setting all instantiated player&#39;s health back to 100 and all magic ...">healPlayers</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The object this has collided with, triggering functionality when it's the player</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a24f76fd931ab565ac0073ea8633d2e18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24f76fd931ab565ac0073ea8633d2e18">&#9670;&nbsp;</a></span>inRange</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HealingStation.inRange = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Holds whether the user is in range of the station, so that it is not continually triggered when the user is within range </p>
+
+</div>
+</div>
+<a id="abc484b8da1cefce5313e91991de950b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc484b8da1cefce5313e91991de950b1">&#9670;&nbsp;</a></span>text</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string [] HealingStation.text</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The text to display when interacted with </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Assets/Exploration/Scripts/HealingStation.cs</li>
 </ul>

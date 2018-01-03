@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_item.html" title="Item" alt="" coords="5,5,52,32"/>
-<area shape="rect" id="node2" href="$class_hammer.html" title="Hammer" alt="" coords="100,5,171,32"/>
+<area shape="rect" id="node1" href="$class_item.html" title="Abstract class for items that can be equipped to a player, increasing some of their stats ..." alt="" coords="5,5,52,32"/>
+<area shape="rect" id="node2" href="$class_hammer.html" title="An item that increases a player&#39;s attack stat by 5 " alt="" coords="100,5,171,32"/>
 </map>

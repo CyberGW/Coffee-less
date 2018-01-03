@@ -69,19 +69,23 @@ $(function() {
 <div class="title">Portal Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A component to add to an object, such as when the player touches it they are teleported to a new scene  
+ <a href="class_portal.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Portal:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_portal__inherit__graph.svg" width="152" height="287"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_portal__inherit__graph.svg" width="152" height="272"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aa4ebfed86d14a6826fccd180f4b2024c"><td class="memItemLeft" align="right" valign="top"><a id="aa4ebfed86d14a6826fccd180f4b2024c"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>newScene</b></td></tr>
+<tr class="memitem:aa4ebfed86d14a6826fccd180f4b2024c"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_portal.html#aa4ebfed86d14a6826fccd180f4b2024c">newScene</a></td></tr>
+<tr class="memdesc:aa4ebfed86d14a6826fccd180f4b2024c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the scene to load when the portal is activated <a href="#aa4ebfed86d14a6826fccd180f4b2024c">More...</a><br /></td></tr>
 <tr class="separator:aa4ebfed86d14a6826fccd180f4b2024c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afca55fcfdd648c7e32e7b6eace80503b"><td class="memItemLeft" align="right" valign="top"><a id="afca55fcfdd648c7e32e7b6eace80503b"></a>
-Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>newPosition</b></td></tr>
+<tr class="memitem:afca55fcfdd648c7e32e7b6eace80503b"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_portal.html#afca55fcfdd648c7e32e7b6eace80503b">newPosition</a></td></tr>
+<tr class="memdesc:afca55fcfdd648c7e32e7b6eace80503b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The position the player should be set to within the new scene <a href="#afca55fcfdd648c7e32e7b6eace80503b">More...</a><br /></td></tr>
 <tr class="separator:afca55fcfdd648c7e32e7b6eace80503b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -89,11 +93,8 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:aaf80bcf69d6cf1eb0908f4e195c7450d"><td class="memItemLeft" align="right" valign="top"><a id="aaf80bcf69d6cf1eb0908f4e195c7450d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> ()</td></tr>
 <tr class="separator:aaf80bcf69d6cf1eb0908f4e195c7450d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc781d4e488657e4e2ab7590285f35a7"><td class="memItemLeft" align="right" valign="top"><a id="adc781d4e488657e4e2ab7590285f35a7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> ()</td></tr>
-<tr class="separator:adc781d4e488657e4e2ab7590285f35a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a168c1b61f11d31c85c40f829104b39f5"><td class="memItemLeft" align="right" valign="top"><a id="a168c1b61f11d31c85c40f829104b39f5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTriggerEnter2D</b> (Collider2D other)</td></tr>
+<tr class="memitem:a168c1b61f11d31c85c40f829104b39f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_portal.html#a168c1b61f11d31c85c40f829104b39f5">OnTriggerEnter2D</a> (Collider2D other)</td></tr>
+<tr class="memdesc:a168c1b61f11d31c85c40f829104b39f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays the sound effect and loads the new scene when this object collides with the player  <a href="#a168c1b61f11d31c85c40f829104b39f5">More...</a><br /></td></tr>
 <tr class="separator:a168c1b61f11d31c85c40f829104b39f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -101,10 +102,104 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a556c5775499797d9cf453b43d2c3d0eb"><td class="memItemLeft" align="right" valign="top"><a id="a556c5775499797d9cf453b43d2c3d0eb"></a>
 <a class="el" href="class_scene_changer.html">SceneChanger</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sceneChanger</b></td></tr>
 <tr class="separator:a556c5775499797d9cf453b43d2c3d0eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0efcf007100d27590d755c8406e75822"><td class="memItemLeft" align="right" valign="top"><a id="a0efcf007100d27590d755c8406e75822"></a>
-AudioClip&#160;</td><td class="memItemRight" valign="bottom"><b>SFX</b></td></tr>
+<tr class="memitem:a0efcf007100d27590d755c8406e75822"><td class="memItemLeft" align="right" valign="top">AudioClip&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_portal.html#a0efcf007100d27590d755c8406e75822">SFX</a></td></tr>
+<tr class="memdesc:a0efcf007100d27590d755c8406e75822"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sound effect to play when transitioning <a href="#a0efcf007100d27590d755c8406e75822">More...</a><br /></td></tr>
 <tr class="separator:a0efcf007100d27590d755c8406e75822"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A component to add to an object, such as when the player touches it they are teleported to a new scene </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a168c1b61f11d31c85c40f829104b39f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a168c1b61f11d31c85c40f829104b39f5">&#9670;&nbsp;</a></span>OnTriggerEnter2D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Portal.OnTriggerEnter2D </td>
+          <td>(</td>
+          <td class="paramtype">Collider2D&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Plays the sound effect and loads the new scene when this object collides with the player </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The object this object has collided with. Functionality is activated when this is the player</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="afca55fcfdd648c7e32e7b6eace80503b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afca55fcfdd648c7e32e7b6eace80503b">&#9670;&nbsp;</a></span>newPosition</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector2 Portal.newPosition</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The position the player should be set to within the new scene</p>
+
+</div>
+</div>
+<a id="aa4ebfed86d14a6826fccd180f4b2024c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4ebfed86d14a6826fccd180f4b2024c">&#9670;&nbsp;</a></span>newScene</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Portal.newScene</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The name of the scene to load when the portal is activated</p>
+
+</div>
+</div>
+<a id="a0efcf007100d27590d755c8406e75822"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0efcf007100d27590d755c8406e75822">&#9670;&nbsp;</a></span>SFX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AudioClip Portal.SFX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sound effect to play when transitioning</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Assets/Exploration/Scripts/Portal.cs</li>
 </ul>

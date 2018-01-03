@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['enemy',['enemy',['../class_global_functions.html#aaad139a5c289660b499dd223cb031c2a',1,'GlobalFunctions']]],
-  ['exp',['exp',['../class_player.html#ab21c747363b226e9e0f4493cb9d70409',1,'Player']]],
-  ['expgiven',['expGiven',['../class_enemy.html#a593dc3bd5318ee30cebbd94de87b2209',1,'Enemy']]],
-  ['exptonextlevel',['expToNextLevel',['../class_player.html#a84746363be7e10b44f70b1e3f1584fe7',1,'Player']]]
+  ['canrunaway',['canRunAway',['../class_global_functions.html#a2a50bf2f76d72a0bc093270b16996de4',1,'GlobalFunctions']]],
+  ['createbattle',['createBattle',['../class_object_interaction.html#a8f2c5f5ebae5954a40361c1afcc1beec',1,'ObjectInteraction']]],
+  ['currentlevel',['currentLevel',['../class_global_functions.html#adc1d068e5df57486aedf7b29213ad606',1,'GlobalFunctions']]]
 ];

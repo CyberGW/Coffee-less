@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['ranaway',['ranAway',['../class_battle_manager.html#a802a257580e9cc0bdb17c90e5fd11355',1,'BattleManager.ranAway()'],['../class_main_battle.html#a7c8675673979fe7b0f2fcadc3b2fb3db',1,'MainBattle.ranAway()']]]
+  ['ondisable',['OnDisable',['../class_scene_changer.html#ad2b1cf127413965b7891a6cd6be4610a',1,'SceneChanger']]],
+  ['onitemplace',['OnItemPlace',['../class_items_menu_script.html#a90d12e639c4deea70d06fa22e73a9ff2',1,'ItemsMenuScript']]],
+  ['ontriggerenter2d',['OnTriggerEnter2D',['../class_portal.html#a168c1b61f11d31c85c40f829104b39f5',1,'Portal']]],
+  ['ontriggerexit2d',['OnTriggerExit2D',['../class_healing_station.html#a900ec4f9a6b6546a541726b7102c3b99',1,'HealingStation']]],
+  ['ontriggerstay2d',['OnTriggerStay2D',['../class_healing_station.html#a0c922b04c18d1e279b7d77445b06c196',1,'HealingStation.OnTriggerStay2D()'],['../class_object_interaction.html#acabe720844401c6491e28f102ae929fc',1,'ObjectInteraction.OnTriggerStay2D()']]]
 ];

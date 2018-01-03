@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['gainexp',['gainExp',['../class_player.html#aea5a87e9456ca8c655300367517c269e',1,'Player']]],
-  ['globalfunctions',['GlobalFunctions',['../class_global_functions.html',1,'']]]
+  ['fixedupdate',['FixedUpdate',['../class_player_movement.html#a0caaa871b9ef680c9f02bd0e22c77db1',1,'PlayerMovement']]],
+  ['forcecriticalhits',['forceCriticalHits',['../class_battle_manager.html#a74ecb4c8ca408a25bc445df54290fce8',1,'BattleManager']]],
+  ['forceenemymove',['forceEnemyMove',['../class_battle_manager.html#a32a17c388365b0f7f3e02dcd25821c43',1,'BattleManager']]]
 ];

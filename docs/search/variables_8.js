@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['text',['text',['../class_character_move.html#a256db7805687e5254354724ec41cbb72',1,'CharacterMove']]],
-  ['treasure',['treasure',['../class_object_interaction.html#aa7186f079220833a15f0f6e110d66753',1,'ObjectInteraction']]]
+  ['moveplayer',['movePlayer',['../class_scene_changer.html#a3b204c06327370f2f5289b5a97b73b23',1,'SceneChanger']]]
 ];

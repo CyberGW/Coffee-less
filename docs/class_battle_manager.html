@@ -87,7 +87,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a58ede6e934ea8982e65b8f34b665693f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switches two players, called by a <a class="el" href="class_character_move.html" title="Astract base class for character moves ">CharacterMove</a>  <a href="#a58ede6e934ea8982e65b8f34b665693f">More...</a><br /></td></tr>
 <tr class="separator:a58ede6e934ea8982e65b8f34b665693f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9be7d13f373867ff8997f28e07edbc23"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_battle_manager.html#a9be7d13f373867ff8997f28e07edbc23">isCriticalHit</a> (int luck)</td></tr>
-<tr class="memdesc:a9be7d13f373867ff8997f28e07edbc23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if a move is a critical hit, based upon luck stat and random element. Can be forced by setting forceCriticalHits to All or None  <a href="#a9be7d13f373867ff8997f28e07edbc23">More...</a><br /></td></tr>
+<tr class="memdesc:a9be7d13f373867ff8997f28e07edbc23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if a move is a critical hit, based upon luck stat and random element. Can be forced by setting <a class="el" href="class_battle_manager.html#a74ecb4c8ca408a25bc445df54290fce8" title="Can be set to &quot;All&quot; or &quot;None&quot; to make every attack or not attack a critical hit, for testing purposes...">forceCriticalHits</a> to All or None  <a href="#a9be7d13f373867ff8997f28e07edbc23">More...</a><br /></td></tr>
 <tr class="separator:a9be7d13f373867ff8997f28e07edbc23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a802a257580e9cc0bdb17c90e5fd11355"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_battle_manager.html#a802a257580e9cc0bdb17c90e5fd11355">ranAway</a> (int playerSpeed, int enemySpeed)</td></tr>
 <tr class="memdesc:a802a257580e9cc0bdb17c90e5fd11355"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate whether the player has run away or not, dependent upon speed stats and random element  <a href="#a802a257580e9cc0bdb17c90e5fd11355">More...</a><br /></td></tr>
@@ -96,10 +96,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a36fb1fb80ccaa15f04c184ba63ca89ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the amount of damage and attack should inflict, ensuring not to take health to negative values  <a href="#a36fb1fb80ccaa15f04c184ba63ca89ec">More...</a><br /></td></tr>
 <tr class="separator:a36fb1fb80ccaa15f04c184ba63ca89ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bf113085b2ee7a71308934ba769b1ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_character_move.html">CharacterMove</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_battle_manager.html#a6bf113085b2ee7a71308934ba769b1ce">enemyMove</a> (<a class="el" href="class_enemy.html">Enemy</a> enemy, <a class="el" href="class_player.html">Player</a> player)</td></tr>
-<tr class="memdesc:a6bf113085b2ee7a71308934ba769b1ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decides upon whether to pick a special or standard attack move for the enemy  <a href="#a6bf113085b2ee7a71308934ba769b1ce">More...</a><br /></td></tr>
+<tr class="memdesc:a6bf113085b2ee7a71308934ba769b1ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decides upon whether to pick a special or standard attack move for the enemy Can be forced for testing by setting <a class="el" href="class_battle_manager.html#a32a17c388365b0f7f3e02dcd25821c43" title="Can be set to StandardAttack, Special1 or Special2 to choose the enemy&#39;s move for testing purposes An...">forceEnemyMove</a>  <a href="#a6bf113085b2ee7a71308934ba769b1ce">More...</a><br /></td></tr>
 <tr class="separator:a6bf113085b2ee7a71308934ba769b1ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d5c0125787df78222ddf1511faefe59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_character_move.html">CharacterMove</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_battle_manager.html#a4d5c0125787df78222ddf1511faefe59">enemySpecialMove</a> (int random)</td></tr>
-<tr class="memdesc:a4d5c0125787df78222ddf1511faefe59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="class_battle_manager.html#a6bf113085b2ee7a71308934ba769b1ce" title="Decides upon whether to pick a special or standard attack move for the enemy ">enemyMove</a> to determine which special move to pick, resorting back to a standard attack if not enough magic  <a href="#a4d5c0125787df78222ddf1511faefe59">More...</a><br /></td></tr>
+<tr class="memdesc:a4d5c0125787df78222ddf1511faefe59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by <a class="el" href="class_battle_manager.html#a6bf113085b2ee7a71308934ba769b1ce" title="Decides upon whether to pick a special or standard attack move for the enemy Can be forced for testin...">enemyMove</a> to determine which special move to pick, resorting back to a standard attack if not enough magic  <a href="#a4d5c0125787df78222ddf1511faefe59">More...</a><br /></td></tr>
 <tr class="separator:a4d5c0125787df78222ddf1511faefe59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2404ec0642a5e4bc8fb97d34fcc352b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_battle_manager.html#a2404ec0642a5e4bc8fb97d34fcc352b1">battleWon</a> ()</td></tr>
 <tr class="memdesc:a2404ec0642a5e4bc8fb97d34fcc352b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if battle has been won, dependent upon <a class="el" href="class_battle_manager.html#aca54bf85b4945de9df1dc1af433bf480" title="Characters the fainted. ">characterFainted</a>  <a href="#a2404ec0642a5e4bc8fb97d34fcc352b1">More...</a><br /></td></tr>
@@ -110,12 +110,12 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a74ecb4c8ca408a25bc445df54290fce8"><td class="memItemLeft" align="right" valign="top"><a id="a74ecb4c8ca408a25bc445df54290fce8"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>forceCriticalHits</b></td></tr>
+<tr class="memitem:a74ecb4c8ca408a25bc445df54290fce8"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_battle_manager.html#a74ecb4c8ca408a25bc445df54290fce8">forceCriticalHits</a> = &quot;&quot;</td></tr>
+<tr class="memdesc:a74ecb4c8ca408a25bc445df54290fce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can be set to "All" or "None" to make every attack or not attack a critical hit, for testing purposes Any other value will enable them as per usual <a href="#a74ecb4c8ca408a25bc445df54290fce8">More...</a><br /></td></tr>
 <tr class="separator:a74ecb4c8ca408a25bc445df54290fce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dbaf57810a3ae3e1c03495d69a195bd"><td class="memItemLeft" align="right" valign="top"><a id="a0dbaf57810a3ae3e1c03495d69a195bd"></a>
-<a class="el" href="class_character_move.html">CharacterMove</a>&#160;</td><td class="memItemRight" valign="bottom"><b>forceEnemyMove</b> = null</td></tr>
-<tr class="separator:a0dbaf57810a3ae3e1c03495d69a195bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32a17c388365b0f7f3e02dcd25821c43"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_battle_manager.html#a32a17c388365b0f7f3e02dcd25821c43">forceEnemyMove</a> = &quot;&quot;</td></tr>
+<tr class="memdesc:a32a17c388365b0f7f3e02dcd25821c43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can be set to <a class="el" href="class_standard_attack.html" title="Basic standard attack ">StandardAttack</a>, Special1 or Special2 to choose the enemy's move for testing purposes Any other value will use the AI as per usual <a href="#a32a17c388365b0f7f3e02dcd25821c43">More...</a><br /></td></tr>
+<tr class="separator:a32a17c388365b0f7f3e02dcd25821c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaae6b5c399c6b49bd71b5e5373dfe6e"><td class="memItemLeft" align="right" valign="top"><a id="afaae6b5c399c6b49bd71b5e5373dfe6e"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>money</b></td></tr>
 <tr class="separator:afaae6b5c399c6b49bd71b5e5373dfe6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -303,7 +303,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>wasCriticalHit</b></t
 </table>
 </div><div class="memdoc">
 
-<p>Decides upon whether to pick a special or standard attack move for the enemy </p>
+<p>Decides upon whether to pick a special or standard attack move for the enemy Can be forced for testing by setting <a class="el" href="class_battle_manager.html#a32a17c388365b0f7f3e02dcd25821c43" title="Can be set to StandardAttack, Special1 or Special2 to choose the enemy&#39;s move for testing purposes An...">forceEnemyMove</a> </p>
 <dl class="section return"><dt>Returns</dt><dd>The move for the enemy to perform</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -339,7 +339,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>wasCriticalHit</b></t
 </table>
 </div><div class="memdoc">
 
-<p>Called by <a class="el" href="class_battle_manager.html#a6bf113085b2ee7a71308934ba769b1ce" title="Decides upon whether to pick a special or standard attack move for the enemy ">enemyMove</a> to determine which special move to pick, resorting back to a standard attack if not enough magic </p>
+<p>Called by <a class="el" href="class_battle_manager.html#a6bf113085b2ee7a71308934ba769b1ce" title="Decides upon whether to pick a special or standard attack move for the enemy Can be forced for testin...">enemyMove</a> to determine which special move to pick, resorting back to a standard attack if not enough magic </p>
 <dl class="section return"><dt>Returns</dt><dd>The special move to use</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -374,7 +374,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>wasCriticalHit</b></t
 </table>
 </div><div class="memdoc">
 
-<p>Determines if a move is a critical hit, based upon luck stat and random element. Can be forced by setting forceCriticalHits to All or None </p>
+<p>Determines if a move is a critical hit, based upon luck stat and random element. Can be forced by setting <a class="el" href="class_battle_manager.html#a74ecb4c8ca408a25bc445df54290fce8" title="Can be set to &quot;All&quot; or &quot;None&quot; to make every attack or not attack a critical hit, for testing purposes...">forceCriticalHits</a> to All or None </p>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code>, if critical hit, <code>false</code> otherwise.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -518,6 +518,39 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>wasCriticalHit</b></t
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a74ecb4c8ca408a25bc445df54290fce8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74ecb4c8ca408a25bc445df54290fce8">&#9670;&nbsp;</a></span>forceCriticalHits</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string BattleManager.forceCriticalHits = &quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Can be set to "All" or "None" to make every attack or not attack a critical hit, for testing purposes Any other value will enable them as per usual</p>
+
+</div>
+</div>
+<a id="a32a17c388365b0f7f3e02dcd25821c43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32a17c388365b0f7f3e02dcd25821c43">&#9670;&nbsp;</a></span>forceEnemyMove</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string BattleManager.forceEnemyMove = &quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Can be set to <a class="el" href="class_standard_attack.html" title="Basic standard attack ">StandardAttack</a>, Special1 or Special2 to choose the enemy's move for testing purposes Any other value will use the AI as per usual</p>
 
 </div>
 </div>

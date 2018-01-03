@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['moveplayer',['movePlayer',['../class_scene_changer.html#a3b204c06327370f2f5289b5a97b73b23',1,'SceneChanger']]]
+  ['enemy',['enemy',['../class_global_functions.html#aaad139a5c289660b499dd223cb031c2a',1,'GlobalFunctions']]],
+  ['exp',['exp',['../class_player.html#ab21c747363b226e9e0f4493cb9d70409',1,'Player']]],
+  ['expgiven',['expGiven',['../class_enemy.html#a593dc3bd5318ee30cebbd94de87b2209',1,'Enemy']]],
+  ['exptonextlevel',['expToNextLevel',['../class_player.html#a84746363be7e10b44f70b1e3f1584fe7',1,'Player']]]
 ];

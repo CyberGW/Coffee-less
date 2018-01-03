@@ -71,19 +71,23 @@ $(function() {
 <div class="title">SoundManager Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A script to manage all background music and sound effects in the game  
+ <a href="class_sound_manager.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for SoundManager:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_sound_manager__inherit__graph.svg" width="122" height="302"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_sound_manager__inherit__graph.svg" width="122" height="287"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0d20c291634df048c5493de184d22308"><td class="memItemLeft" align="right" valign="top"><a id="a0d20c291634df048c5493de184d22308"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>playBGM</b> (AudioClip clip)</td></tr>
+<tr class="memitem:a0d20c291634df048c5493de184d22308"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sound_manager.html#a0d20c291634df048c5493de184d22308">playBGM</a> (AudioClip clip)</td></tr>
+<tr class="memdesc:a0d20c291634df048c5493de184d22308"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays a background track  <a href="#a0d20c291634df048c5493de184d22308">More...</a><br /></td></tr>
 <tr class="separator:a0d20c291634df048c5493de184d22308"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44e3498e902544ad35886a987d2cae89"><td class="memItemLeft" align="right" valign="top"><a id="a44e3498e902544ad35886a987d2cae89"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>playSFX</b> (string SFX)</td></tr>
+<tr class="memitem:a44e3498e902544ad35886a987d2cae89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sound_manager.html#a44e3498e902544ad35886a987d2cae89">playSFX</a> (string SFX)</td></tr>
+<tr class="memdesc:a44e3498e902544ad35886a987d2cae89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play a sound effect  <a href="#a44e3498e902544ad35886a987d2cae89">More...</a><br /></td></tr>
 <tr class="separator:a44e3498e902544ad35886a987d2cae89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -103,12 +107,9 @@ static <a class="el" href="class_sound_manager.html">SoundManager</a>&#160;</td>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a06a8d04a0f9ce5d140b5308a4adb9073"><td class="memItemLeft" align="right" valign="top"><a id="a06a8d04a0f9ce5d140b5308a4adb9073"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Awake</b> ()</td></tr>
+<tr class="memitem:a06a8d04a0f9ce5d140b5308a4adb9073"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sound_manager.html#a06a8d04a0f9ce5d140b5308a4adb9073">Awake</a> ()</td></tr>
+<tr class="memdesc:a06a8d04a0f9ce5d140b5308a4adb9073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup object and load all sound effects into soundEffects dictionary  <a href="#a06a8d04a0f9ce5d140b5308a4adb9073">More...</a><br /></td></tr>
 <tr class="separator:a06a8d04a0f9ce5d140b5308a4adb9073"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba6cc29a03dfe5117ef532e875558ff3"><td class="memItemLeft" align="right" valign="top"><a id="aba6cc29a03dfe5117ef532e875558ff3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> ()</td></tr>
-<tr class="separator:aba6cc29a03dfe5117ef532e875558ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -116,6 +117,104 @@ Private Attributes</h2></td></tr>
 IDictionary&lt; string, AudioClip &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>soundEffects</b></td></tr>
 <tr class="separator:ac1fc423641748f82397be47dece0aa1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A script to manage all background music and sound effects in the game </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a06a8d04a0f9ce5d140b5308a4adb9073"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06a8d04a0f9ce5d140b5308a4adb9073">&#9670;&nbsp;</a></span>Awake()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SoundManager.Awake </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Setup object and load all sound effects into soundEffects dictionary </p>
+
+</div>
+</div>
+<a id="a0d20c291634df048c5493de184d22308"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d20c291634df048c5493de184d22308">&#9670;&nbsp;</a></span>playBGM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SoundManager.playBGM </td>
+          <td>(</td>
+          <td class="paramtype">AudioClip&#160;</td>
+          <td class="paramname"><em>clip</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Plays a background track </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clip</td><td>The background music to play</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a44e3498e902544ad35886a987d2cae89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44e3498e902544ad35886a987d2cae89">&#9670;&nbsp;</a></span>playSFX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SoundManager.playSFX </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>SFX</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Play a sound effect </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">SFX</td><td>The name of the sound effect to reference within soundEffects </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Assets/GlobalScripts/SoundManager.cs</li>
 </ul>

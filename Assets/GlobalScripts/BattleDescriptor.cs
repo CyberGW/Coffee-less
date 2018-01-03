@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 /// <summary>
-/// A component that be added to an object to describe the parameters of a battle from within the Unity Editor
+/// A component that be added to an object to describe the parameters of a battle from within the Unity Editor.
 /// Can be used for random encounters and through <see cref="ObjectInteraction"/> 
 /// </summary>
 public class BattleDescriptor : MonoBehaviour {
@@ -15,7 +15,7 @@ public class BattleDescriptor : MonoBehaviour {
 	public bool canRunAway = false;
 
 	[Header("Battle Enemy Stats")]
-	public string name = "";
+	new public string name = "";
 	public Texture2D sprite;
 	public int level = 0;
 	public int health = 100;
@@ -38,6 +38,9 @@ public class BattleDescriptor : MonoBehaviour {
 	public int special2Magic;
 	public float special2Value;
 
+	/// <summary>
+	/// Call <see cref="GlobalFunctions.createBattle"/> with all the variables set in this descriptor 
+	/// </summary>
 	public void createBattle() {
 		GlobalFunctions.instance.createBattle (new Enemy (name, level, health, attack, defence, maximumMagic, maximumMagic,
 			luck, speed, createSpecialMove (special1, special1Text, special1Magic, special1Value),

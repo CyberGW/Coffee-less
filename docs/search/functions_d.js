@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['update',['Update',['../class_main_battle.html#a8cca37af7eb0af1f136e0ddb5d265881',1,'MainBattle.Update()'],['../class_camera_controller.html#a7c4f486f4bcbd1d54a346fdce9707bd5',1,'CameraController.Update()']]],
-  ['updateexp',['updateExp',['../class_main_battle.html#aafecb33944f3ff97ba34e0ef6ae304a4',1,'MainBattle']]],
-  ['updateexphelper',['updateExpHelper',['../class_main_battle.html#a955f305966c8000cd511bc64ebbce315',1,'MainBattle']]]
+  ['ranaway',['ranAway',['../class_battle_manager.html#a802a257580e9cc0bdb17c90e5fd11355',1,'BattleManager.ranAway()'],['../class_main_battle.html#a7c8675673979fe7b0f2fcadc3b2fb3db',1,'MainBattle.ranAway()']]],
+  ['randomencounter',['randomEncounter',['../class_player_movement.html#a18f2ad7eb5c710c42e85eb517f3311b9',1,'PlayerMovement']]],
+  ['revertbuffs',['revertBuffs',['../class_item.html#a7bc703970d9a6dd3fbbc54f52a0f8d1d',1,'Item.revertBuffs()'],['../class_hammer.html#aee61cd7269a0529f34c7fade83a8d207',1,'Hammer.revertBuffs()']]],
+  ['runaway',['runAway',['../class_main_battle.html#ae52c6e2eb1d4fac5ae8b1a86f95e92b3',1,'MainBattle']]]
 ];

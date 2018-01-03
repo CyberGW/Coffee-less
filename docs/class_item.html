@@ -69,19 +69,23 @@ $(function() {
 <div class="title">Item Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Abstract class for items that can be equipped to a player, increasing some of their stats  
+ <a href="class_item.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Item:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_item__inherit__graph.svg" width="114" height="302"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_item__inherit__graph.svg" width="114" height="302"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a205eda904d05218a7e50e44f6dfb95b5"><td class="memItemLeft" align="right" valign="top"><a id="a205eda904d05218a7e50e44f6dfb95b5"></a>
-abstract void&#160;</td><td class="memItemRight" valign="bottom"><b>applyBuffs</b> (<a class="el" href="class_player.html">Player</a> player)</td></tr>
+<tr class="memitem:a205eda904d05218a7e50e44f6dfb95b5"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_item.html#a205eda904d05218a7e50e44f6dfb95b5">applyBuffs</a> (<a class="el" href="class_player.html">Player</a> player)</td></tr>
+<tr class="memdesc:a205eda904d05218a7e50e44f6dfb95b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function that applies to specific stat increases for this item  <a href="#a205eda904d05218a7e50e44f6dfb95b5">More...</a><br /></td></tr>
 <tr class="separator:a205eda904d05218a7e50e44f6dfb95b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bc703970d9a6dd3fbbc54f52a0f8d1d"><td class="memItemLeft" align="right" valign="top"><a id="a7bc703970d9a6dd3fbbc54f52a0f8d1d"></a>
-abstract void&#160;</td><td class="memItemRight" valign="bottom"><b>revertBuffs</b> (<a class="el" href="class_player.html">Player</a> player)</td></tr>
+<tr class="memitem:a7bc703970d9a6dd3fbbc54f52a0f8d1d"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_item.html#a7bc703970d9a6dd3fbbc54f52a0f8d1d">revertBuffs</a> (<a class="el" href="class_player.html">Player</a> player)</td></tr>
+<tr class="memdesc:a7bc703970d9a6dd3fbbc54f52a0f8d1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to reverse the specific stat increases for this item. Used when the item is dequipped.  <a href="#a7bc703970d9a6dd3fbbc54f52a0f8d1d">More...</a><br /></td></tr>
 <tr class="separator:a7bc703970d9a6dd3fbbc54f52a0f8d1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -102,6 +106,81 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>Name</b><code> [get
 string&#160;</td><td class="memItemRight" valign="bottom"><b>Desc</b><code> [get, set]</code></td></tr>
 <tr class="separator:a0c226d68bfcbcf9f6ac0445d53b34d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Abstract class for items that can be equipped to a player, increasing some of their stats </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a205eda904d05218a7e50e44f6dfb95b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a205eda904d05218a7e50e44f6dfb95b5">&#9670;&nbsp;</a></span>applyBuffs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract void Item.applyBuffs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_player.html">Player</a>&#160;</td>
+          <td class="paramname"><em>player</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A function that applies to specific stat increases for this item </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>The player to apply the stat increases to</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_hammer.html#a177c904dfa8bbc030efe0865ea9467bd">Hammer</a>.</p>
+
+</div>
+</div>
+<a id="a7bc703970d9a6dd3fbbc54f52a0f8d1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bc703970d9a6dd3fbbc54f52a0f8d1d">&#9670;&nbsp;</a></span>revertBuffs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract void Item.revertBuffs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_player.html">Player</a>&#160;</td>
+          <td class="paramname"><em>player</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A function to reverse the specific stat increases for this item. Used when the item is dequipped. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>The player to reverse the stat increases of</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_hammer.html#aee61cd7269a0529f34c7fade83a8d207">Hammer</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Assets/GlobalScripts/Item.cs</li>
 </ul>

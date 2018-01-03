@@ -115,7 +115,7 @@ var sectionId = 'dynsection-0';
 <polygon fill="none" stroke="black" points="558,-127.5 558,-195.5 652,-195.5 652,-127.5 558,-127.5"/>
 <text text-anchor="middle" x="605" y="-183.5" font-family="Helvetica,sans-Serif" font-size="10.00">SwitchPlayers</text>
 <polyline fill="none" stroke="black" points="558,-176.5 652,-176.5 "/>
-<text text-anchor="start" x="566" y="-164.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; manager</text>
+<text text-anchor="middle" x="605" y="-164.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <polyline fill="none" stroke="black" points="558,-157.5 652,-157.5 "/>
 <text text-anchor="start" x="566" y="-145.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SwitchPlayers()</text>
 <text text-anchor="start" x="566" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ performMove()</text>

@@ -20,6 +20,9 @@ public class GlobalFunctions : MonoBehaviour {
 	private int money;
 	/// <summary>Holds an item for the battle scene to load from</summary>
 	private Item item;
+	/// <summary>Holds whether a battle to be started can be run from or not</summary>
+	[System.NonSerialized]
+	public bool canRunAway;
 	/// <summary>Refers to the player object so it can be set active or inactive</summary>
 	private GameObject player;
 	/// <summary>Refers to the scene a battle was initiated from so it can be returned to afterwards</summary>
@@ -30,10 +33,10 @@ public class GlobalFunctions : MonoBehaviour {
 	/// Stores an objects unique ID and whether they should be active or not, as to determine whether to display
 	/// it </summary>
 	public IDictionary<string, bool> objectsActive;
+	/// <summary>The current level that the player is up to</summary>
 	[System.NonSerialized]
 	public int currentLevel;
-	[System.NonSerialized]
-	public bool canRunAway;
+
 
 	/// <summary>
 	/// An enum type representing items so that they can be selected from within the Unity Editor

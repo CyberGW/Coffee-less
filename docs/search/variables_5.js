@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['objectsactive',['objectsActive',['../class_global_functions.html#a23e7a1977974f6229fce6848033a1b7f',1,'GlobalFunctions']]]
+  ['forcecriticalhits',['forceCriticalHits',['../class_battle_manager.html#a74ecb4c8ca408a25bc445df54290fce8',1,'BattleManager']]],
+  ['forceenemymove',['forceEnemyMove',['../class_battle_manager.html#a32a17c388365b0f7f3e02dcd25821c43',1,'BattleManager']]]
 ];

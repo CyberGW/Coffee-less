@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Abstract class for items that can be equipped to a player, increasing some of their stats
+/// </summary>
 public abstract class Item {
 
 	protected string name;
@@ -25,11 +28,21 @@ public abstract class Item {
 		}
 	}
 
+	/// <summary>
+	/// A function that applies to specific stat increases for this item
+	/// </summary>
+	/// <param name="player">The player to apply the stat increases to</param>
 	abstract public void applyBuffs(Player player);
+	/// <summary>
+	/// A function to reverse the specific stat increases for this item. Used when the item is dequipped.
+	/// </summary>
+	/// <param name="player">The player to reverse the stat increases of</param>
 	abstract public void revertBuffs(Player player);
 }
 
-[System.Serializable]
+/// <summary>
+/// An item that increases a player's attack stat by 5
+/// </summary>
 public class Hammer : Item {
 
 	public Hammer ()

@@ -54,14 +54,12 @@
      <Compile Include="Assets\Battle\Scripts\AttackButton.cs" />
      <Compile Include="Assets\Battle\Scripts\BattleManager.cs" />
      <Compile Include="Assets\Battle\Scripts\CharacterMoves.cs" />
-     <Compile Include="Assets\Battle\Scripts\ItemButton.cs" />
      <Compile Include="Assets\Battle\Scripts\MainBattle.cs" />
      <Compile Include="Assets\Battle\Scripts\StatsScript.cs" />
      <Compile Include="Assets\Exploration\Scripts\CameraController.cs" />
      <Compile Include="Assets\Exploration\Scripts\CanvasScript.cs" />
      <Compile Include="Assets\Exploration\Scripts\DialogueScript.cs" />
      <Compile Include="Assets\Exploration\Scripts\HealingStation.cs" />
-     <Compile Include="Assets\Exploration\Scripts\ItemObjects.cs" />
      <Compile Include="Assets\Exploration\Scripts\LevelManager.cs" />
      <Compile Include="Assets\Exploration\Scripts\ObjectInteraction.cs" />
      <Compile Include="Assets\Exploration\Scripts\PlayerMovement.cs" />

@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// A script to manage all background music and sound effects in the game
+/// </summary>
 public class SoundManager : MonoBehaviour {
 
 	public AudioSource BGMSource;
@@ -9,7 +12,9 @@ public class SoundManager : MonoBehaviour {
 	public static SoundManager instance = null;
 	private IDictionary<string, AudioClip> soundEffects;
 
-	// Use this for initialization
+	/// <summary>
+	/// Setup object and load all sound effects into <see cref="soundEffects"/> dictionary 
+	/// </summary>
 	void Awake () {
 		if (instance == null) {
 			instance = this;
@@ -25,18 +30,22 @@ public class SoundManager : MonoBehaviour {
 		soundEffects.Add ("interact", Resources.Load ("Audio/interact", typeof(AudioClip)) as AudioClip);
 	}
 
+	/// <summary>
+	/// Plays a background track
+	/// </summary>
+	/// <param name="clip">The background music to play</param>
 	public void playBGM(AudioClip clip) {
 		BGMSource.clip = clip;
 		BGMSource.Play ();
 	}
 
+	/// <summary>
+	/// Play a sound effect
+	/// </summary>
+	/// <param name="SFX">The name of the sound effect to reference within <see cref="soundEffects"/> </param>
 	public void playSFX(string SFX) {
 		SFXSource.clip = soundEffects [SFX];
 		SFXSource.Play ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 }

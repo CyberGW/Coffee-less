@@ -1,28 +1,26 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_mono_behaviour.html" title="MonoBehaviour" alt="" coords="5,613,116,640"/>
-<area shape="rect" id="node2" href="$class_attack_button.html" title="AttackButton" alt="" coords="176,5,275,32"/>
+<area shape="rect" id="node1" href="$class_mono_behaviour.html" title="MonoBehaviour" alt="" coords="5,563,116,589"/>
+<area shape="rect" id="node2" href="$class_attack_button.html" title="Script to handle the function of the Attack Button in the Battle Scene" alt="" coords="176,5,275,32"/>
 <area shape="rect" id="node3" href="$class_battle_descriptor.html" title="A component that be added to an object to describe the parameters of a battle from within the Unity E..." alt="" coords="168,56,283,83"/>
 <area shape="rect" id="node4" href="$class_button_manager.html" title="ButtonManager" alt="" coords="170,107,281,133"/>
 <area shape="rect" id="node5" href="$class_camera_controller.html" title="Script to move the camera around so that it follows the player" alt="" coords="164,157,287,184"/>
-<area shape="rect" id="node6" href="$class_canvas_script.html" title="CanvasScript" alt="" coords="176,208,275,235"/>
+<area shape="rect" id="node6" href="$class_canvas_script.html" title="Added to a canvas holding the dialogue elements to ensure it&#39;s not destroyed when a new scene is crea..." alt="" coords="176,208,275,235"/>
 <area shape="rect" id="node7" href="$class_container_data.html" title="ContainerData" alt="" coords="173,259,277,285"/>
 <area shape="rect" id="node8" href="$class_dialogue_script.html" title="Script to show dialogue, as well as step through multiple lines and close afterwards ..." alt="" coords="172,309,279,336"/>
 <area shape="rect" id="node9" href="$class_global_functions.html" title="Provides functions and variables to be accessed by any game object to allow data to be passed between..." alt="" coords="167,360,283,387"/>
-<area shape="rect" id="node10" href="$class_healing_station.html" title="HealingStation" alt="" coords="172,411,279,437"/>
-<area shape="rect" id="node11" href="$class_item_button.html" title="ItemButton" alt="" coords="183,461,268,488"/>
-<area shape="rect" id="node12" href="$class_item_data.html" title="ItemData" alt="" coords="188,512,263,539"/>
-<area shape="rect" id="node13" href="$class_item_objects.html" title="ItemObjects" alt="" coords="179,563,271,589"/>
-<area shape="rect" id="node14" href="$class_items_menu_script.html" title="Controls all initialisation of menu and updates arrays when an item is moved " alt="" coords="165,613,285,640"/>
-<area shape="rect" id="node15" href="$class_level_manager.html" title="LevelManager" alt="" coords="175,664,276,691"/>
-<area shape="rect" id="node16" href="$class_main_battle.html" title="Script for handing a battle scene. Uses BattleManager, but handles turn order and execution as well a..." alt="" coords="183,715,267,741"/>
-<area shape="rect" id="node17" href="$class_menu_script.html" title="MenuScript" alt="" coords="181,765,269,792"/>
-<area shape="rect" id="node18" href="$class_object_interaction.html" title="A component to add to collider relating to an object that can interact with the player by pressing th..." alt="" coords="165,816,285,843"/>
-<area shape="rect" id="node19" href="$class_player_data.html" title="A monobehaviour object to house an instance of DataManager so it can be called by other objects ..." alt="" coords="182,867,269,893"/>
-<area shape="rect" id="node20" href="$class_player_movement.html" title="PlayerMovement" alt="" coords="166,917,285,944"/>
-<area shape="rect" id="node21" href="$class_portal.html" title="Portal" alt="" coords="197,968,253,995"/>
-<area shape="rect" id="node22" href="$class_quit.html" title="Quit" alt="" coords="202,1019,249,1045"/>
-<area shape="rect" id="node23" href="$class_scene_changer.html" title="A set of functions to be called to change scenes smoothly whilst handling the player&#39;s location and a..." alt="" coords="172,1069,279,1096"/>
-<area shape="rect" id="node24" href="$class_sound_manager.html" title="SoundManager" alt="" coords="171,1120,280,1147"/>
-<area shape="rect" id="node25" href="$class_stats_script.html" title="StatsScript" alt="" coords="182,1171,269,1197"/>
-<area shape="rect" id="node26" href="$class_world_map_script.html" title="WorldMapScript" alt="" coords="168,1221,283,1248"/>
+<area shape="rect" id="node10" href="$class_healing_station.html" title="A script describing a healing station, where all player&#39;s health and magic are restored ..." alt="" coords="172,411,279,437"/>
+<area shape="rect" id="node11" href="$class_item_data.html" title="A component to add to a drag and drop cell, carrying the data for the item the cell references ..." alt="" coords="188,461,263,488"/>
+<area shape="rect" id="node12" href="$class_items_menu_script.html" title="Controls all initialisation of menu and updates arrays when an item is moved " alt="" coords="165,512,285,539"/>
+<area shape="rect" id="node13" href="$class_level_manager.html" title="A script used to check and handle when a level is beat by defeating the final boss ..." alt="" coords="175,563,276,589"/>
+<area shape="rect" id="node14" href="$class_main_battle.html" title="Script for handing a battle scene. Uses BattleManager, but handles turn order and execution as well a..." alt="" coords="183,613,267,640"/>
+<area shape="rect" id="node15" href="$class_menu_script.html" title="Script to handle the main menu " alt="" coords="181,664,269,691"/>
+<area shape="rect" id="node16" href="$class_object_interaction.html" title="A component to add to collider relating to an object that can interact with the player by pressing th..." alt="" coords="165,715,285,741"/>
+<area shape="rect" id="node17" href="$class_player_data.html" title="A monobehaviour object to house an instance of DataManager so it can be called by other objects ..." alt="" coords="182,765,269,792"/>
+<area shape="rect" id="node18" href="$class_player_movement.html" title="A script to control the movement and animations of the player" alt="" coords="166,816,285,843"/>
+<area shape="rect" id="node19" href="$class_portal.html" title="A component to add to an object, such as when the player touches it they are teleported to a new scen..." alt="" coords="197,867,253,893"/>
+<area shape="rect" id="node20" href="$class_quit.html" title="Quit" alt="" coords="202,917,249,944"/>
+<area shape="rect" id="node21" href="$class_scene_changer.html" title="A set of functions to be called to change scenes smoothly whilst handling the player&#39;s location and a..." alt="" coords="172,968,279,995"/>
+<area shape="rect" id="node22" href="$class_sound_manager.html" title="A script to manage all background music and sound effects in the game " alt="" coords="171,1019,280,1045"/>
+<area shape="rect" id="node23" href="$class_stats_script.html" title="A script used to manage and update all of the stat displays in the battle scene " alt="" coords="182,1069,269,1096"/>
+<area shape="rect" id="node24" href="$class_world_map_script.html" title="A controler for the world map, stopping players from entering old or future levels, and colouring the departments approriately" alt="" coords="168,1120,283,1147"/>
 </map>

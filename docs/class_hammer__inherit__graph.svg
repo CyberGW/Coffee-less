@@ -21,7 +21,7 @@
 </g>
 <!-- Node1 -->
 <g id="node2" class="node"><title>Node1</title>
-<g id="a_node2"><a xlink:href="class_item.html" target="_top" xlink:title="{Item\n|+ Name\l+ Desc\l# name\l# desc\l|+ applyBuffs()\l+ revertBuffs()\l}">
+<g id="a_node2"><a xlink:href="class_item.html" target="_top" xlink:title="Abstract class for items that can be equipped to a player, increasing some of their stats ...">
 <polygon fill="none" stroke="black" points="0,-116.5 0,-217.5 77,-217.5 77,-116.5 0,-116.5"/>
 <text text-anchor="middle" x="38.5" y="-205.5" font-family="Helvetica,sans-Serif" font-size="10.00">Item</text>
 <polyline fill="none" stroke="black" points="0,-198.5 77,-198.5 "/>
