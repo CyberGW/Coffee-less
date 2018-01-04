@@ -18,6 +18,7 @@ public class SceneChanger : MonoBehaviour {
 	public static SceneChanger instance;
 	private GameObject player;
 	private PlayerMovement movementScript;
+	public static bool menuClosed;
 
 
 	void Awake() {
@@ -53,6 +54,10 @@ public class SceneChanger : MonoBehaviour {
 		if (scene.name != "Battle") {
 			//Allow player to move again
 			movementScript.setCanMove (true);
+		}
+		if (menuClosed) {
+			movementScript.setCanMove (true);
+			menuClosed = false;
 		}
 	}
 	
