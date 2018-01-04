@@ -105,10 +105,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 635
-  m_MinSize: {x: 404, y: 321}
-  m_MaxSize: {x: 12004, y: 8042}
+  m_MinSize: {x: 581, y: 471}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 1
-  controlID: 110
+  controlID: 11
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -129,10 +129,10 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 635
-  m_MinSize: {x: 404, y: 321}
-  m_MaxSize: {x: 12004, y: 8042}
+  m_MinSize: {x: 581, y: 471}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 111
+  controlID: 12
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -153,10 +153,10 @@ MonoBehaviour:
     y: 0
     width: 888
     height: 635
-  m_MinSize: {x: 304, y: 321}
-  m_MaxSize: {x: 8004, y: 8042}
+  m_MinSize: {x: 304, y: 471}
+  m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 35
+  controlID: 118
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_MinSize: {x: 304, y: 200}
   m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 86
+  controlID: 119
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -224,8 +224,8 @@ MonoBehaviour:
     y: 0
     width: 560
     height: 342
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 104, y: 121}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -252,14 +252,14 @@ MonoBehaviour:
     y: 342
     width: 888
     height: 293
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 19}
+  m_MinSize: {x: 232, y: 271}
+  m_MaxSize: {x: 10002, y: 10021}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -278,16 +278,16 @@ MonoBehaviour:
     y: 0
     width: 478
     height: 635
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 21}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
   - {fileID: 21}
   - {fileID: 22}
   - {fileID: 23}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -394,27 +394,28 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f4060000
+    m_SelectedIDs: b4050000
     m_LastClickedID: 0
-    m_ExpandedIDs: b8cdffffb6e9ffff08eaffff7cf3ffff9efbffff00000000
+    m_ExpandedIDs: 282cfdffa430fdffac31fdff6a3afdffa63cfdffd840fdff1e73fdff9a73fdff9c7cfdfff87ffdff7680fdfff894fdffe0a6fdffeaa6fdff70a7fdff72b9fdff1cbafdff96bafdff00c3fdff78dcfdff24ddfdff3cddfdff48ddfdffa2ddfdffece8fdff34eefdffe0eefdff5eeffdffeefafdff9afbfdffb2fbfdffbefbfdff18fcfdff042efeffb02efeffc82efeff2e2ffeffae2ffeff323efeffbe4afeff8e4bfeffe84bfeff684cfeffc452feff9259feff125afeffd464feff7270feff9c71feff7873fefffa73feff287efeff0283feff588afeffda8afefffc94feff729bfefff29bfeffb8a6feffbca9feff3caafeff9eb3feff62bafeffd2c1feff52c2feff5ecffeffd4d4feff00d6feff3eddfefff4ffffff000000000c6400004e830000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Canvas
+      m_OriginalName: Canvas
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 33350
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 4
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 9}
     m_SearchString: 
-  m_ExpandedScenes: []
+  m_ExpandedScenes:
+  - WorldMap
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -446,14 +447,14 @@ MonoBehaviour:
     height: 321
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 4462.898649952417
+  lastFramingTime: 1158.4717041784802
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 270, y: 202.16, z: 0}
+    m_Target: {x: 270, y: 152, z: 0}
     speed: 2
-    m_Value: {x: 270, y: 202.16, z: 0}
+    m_Value: {x: 270, y: 152, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -481,9 +482,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 292.28345
+    m_Target: 1022.48895
     speed: 2
-    m_Value: 292.28345
+    m_Value: 1022.48895
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -604,19 +605,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Battle/Scripts
+    - Assets/Exploration/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Battle/Scripts
+  - Assets/Exploration/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\CyberGW\Documents\Unity\SEPRPhase2
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ee2e0000
-    m_LastClickedID: 12014
-    m_ExpandedIDs: 000000000a2800001e28000062280000aa2800007a2a0000982a0000a42b00001c2c0000ae2c0000ee2c0000ee2e00000c2f000090300000923000009430000096300000ffffff7f
+    m_SelectedIDs: fa3d0000
+    m_LastClickedID: 15866
+    m_ExpandedIDs: 000000009c3d00009e3d0000bc3d0000c03d0000fa3d00005e3e00008c3e00008e3e0000963e0000a03e0000b83e0000be3e0000d23e0000c64a0000a44c0000a64c0000a84c0000aa4c0000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -644,7 +645,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000a2800001e28000062280000aa2800007a2a0000982a0000a42b00001c2c0000ae2c0000ee2c0000ee2e00000c2f000090300000923000009430000096300000
+    m_ExpandedIDs: 000000009c3d00009e3d0000bc3d0000c03d0000fa3d00005e3e0000963e0000a03e0000b83e0000be3e0000d23e0000c64a0000a44c0000a64c0000a84c0000aa4c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -669,8 +670,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: f4060000
-    m_LastClickedInstanceID: 1780
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000ce280000682700007a270000543100004034fbffce2a0000bc290000d42a0000000000004c2c0000
     m_RenameOverlay:
@@ -786,7 +787,7 @@ MonoBehaviour:
     width: 476
     height: 614
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_TestTypeToolbarIndex: 1
+  m_TestTypeToolbarIndex: 0
   m_PlayModeTestListGUI:
     m_Window: {fileID: 21}
     newResultList:
@@ -794,7 +795,7 @@ MonoBehaviour:
       name: Test
       fullName: Test
       resultStatus: 1
-      duration: 16.46152
+      duration: 14.307797
       messages: 
       output: 
       stacktrace: 
@@ -806,7 +807,7 @@ MonoBehaviour:
       name: Assembly-CSharp.dll
       fullName: C:/Users/CyberGW/Documents/Unity/SEPRPhase2/Library/ScriptAssemblies/Assembly-CSharp.dll
       resultStatus: 1
-      duration: 16.374992
+      duration: 14.226639
       messages: 
       output: 
       stacktrace: 
@@ -818,7 +819,7 @@ MonoBehaviour:
       name: BattleModeTest
       fullName: BattleModeTest
       resultStatus: 1
-      duration: 16.354425
+      duration: 16.532373
       messages: 
       output: 
       stacktrace: 
@@ -830,7 +831,7 @@ MonoBehaviour:
       name: A1StartBattle
       fullName: BattleModeTest.A1StartBattle
       resultStatus: 1
-      duration: 3.6348274
+      duration: 3.809719
       messages: 
       output: 
       stacktrace: 
@@ -842,7 +843,7 @@ MonoBehaviour:
       name: A2AttackButton
       fullName: BattleModeTest.A2AttackButton
       resultStatus: 1
-      duration: 0.0500327
+      duration: 0.0500623
       messages: 
       output: 
       stacktrace: 
@@ -854,7 +855,7 @@ MonoBehaviour:
       name: A3AttackPanelDisplay
       fullName: BattleModeTest.A3AttackPanelDisplay
       resultStatus: 1
-      duration: 0.0334375
+      duration: 0.0334273
       messages: 
       output: 
       stacktrace: 
@@ -866,7 +867,7 @@ MonoBehaviour:
       name: A4AttackMove
       fullName: BattleModeTest.A4AttackMove
       resultStatus: 1
-      duration: 3.0482094
+      duration: 3.0481446
       messages: 
       output: 
       stacktrace: 
@@ -878,7 +879,7 @@ MonoBehaviour:
       name: A5MagicMove
       fullName: BattleModeTest.A5MagicMove
       resultStatus: 1
-      duration: 3.0482624
+      duration: 3.0481794
       messages: 
       output: 
       stacktrace: 
@@ -890,7 +891,7 @@ MonoBehaviour:
       name: A6WinBattle
       fullName: BattleModeTest.A6WinBattle
       resultStatus: 1
-      duration: 6.3410864
+      duration: 6.343512
       messages: 
       output: "100\r\nMoney: 0\r\n"
       stacktrace: 
@@ -902,7 +903,7 @@ MonoBehaviour:
       name: ExplorationTest
       fullName: ExplorationTest
       resultStatus: 1
-      duration: 13.94758
+      duration: 14.206502
       messages: 
       output: 
       stacktrace: 
@@ -914,7 +915,7 @@ MonoBehaviour:
       name: CameraMovement
       fullName: ExplorationTest.CameraMovement
       resultStatus: 1
-      duration: 0.8089607
+      duration: 0.6658595
       messages: 
       output: 
       stacktrace: 
@@ -926,7 +927,19 @@ MonoBehaviour:
       name: DialogueBox
       fullName: ExplorationTest.DialogueBox
       resultStatus: 1
-      duration: 1.402847
+      duration: 1.421327
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    - id: '[Assembly-CSharp][ExplorationTest.HealingStation]'
+      name: HealingStation
+      fullName: ExplorationTest.HealingStation
+      resultStatus: 1
+      duration: 1.6729575
       messages: 
       output: 
       stacktrace: 
@@ -938,7 +951,7 @@ MonoBehaviour:
       name: ItemObtain
       fullName: ExplorationTest.ItemObtain
       resultStatus: 1
-      duration: 0.1371015
+      duration: 0.1367619
       messages: 
       output: 
       stacktrace: 
@@ -950,7 +963,7 @@ MonoBehaviour:
       name: ObjectCollision
       fullName: ExplorationTest.ObjectCollision
       resultStatus: 1
-      duration: 2.421692
+      duration: 2.4386206
       messages: 
       output: 
       stacktrace: 
@@ -962,7 +975,7 @@ MonoBehaviour:
       name: PlayerAnimation
       fullName: ExplorationTest.PlayerAnimation
       resultStatus: 1
-      duration: 0.2319718
+      duration: 0.2319139
       messages: 
       output: 
       stacktrace: 
@@ -974,10 +987,9 @@ MonoBehaviour:
       name: PlayerMovement
       fullName: ExplorationTest.PlayerMovement
       resultStatus: 1
-      duration: 6.1687784
+      duration: 4.8373976
       messages: 
-      output: "OperationID 72 Done\r\nOperationID 73 Done\r\nCurrent xiaomi package
-        version is empty\r\nLatest xiaomi package version is 1.0.0\r\n"
+      output: 
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -987,7 +999,7 @@ MonoBehaviour:
       name: Portal
       fullName: ExplorationTest.Portal
       resultStatus: 1
-      duration: 2.554033
+      duration: 2.5441446
       messages: 
       output: 
       stacktrace: 
@@ -995,13 +1007,97 @@ MonoBehaviour:
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
-    m_ResultText: CameraMovement (0.809s)
+    - id: '[Assembly-CSharp][WorldMapTest][suite]'
+      name: WorldMapTest
+      fullName: WorldMapTest
+      resultStatus: 1
+      duration: 7.936277
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+    - id: '[Assembly-CSharp][WorldMapTest.A1Load]'
+      name: A1Load
+      fullName: WorldMapTest.A1Load
+      resultStatus: 1
+      duration: 0.6798786
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    - id: '[Assembly-CSharp][WorldMapTest.A2DepartmentColouring]'
+      name: A2DepartmentColouring
+      fullName: WorldMapTest.A2DepartmentColouring
+      resultStatus: 1
+      duration: 0.0294478
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    - id: '[Assembly-CSharp][WorldMapTest.A3CantEnterPreviousDepartments]'
+      name: A3CantEnterPreviousDepartments
+      fullName: WorldMapTest.A3CantEnterPreviousDepartments
+      resultStatus: 1
+      duration: 0.4144606
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    - id: '[Assembly-CSharp][WorldMapTest.A4CantEnterFutureDepartments]'
+      name: A4CantEnterFutureDepartments
+      fullName: WorldMapTest.A4CantEnterFutureDepartments
+      resultStatus: 1
+      duration: 0.4310012
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    - id: '[Assembly-CSharp][WorldMapTest.A5BusStop]'
+      name: A5BusStop
+      fullName: WorldMapTest.A5BusStop
+      resultStatus: 1
+      duration: 3.043764
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    - id: '[Assembly-CSharp][WorldMapTest.A6CanEnterAndReturnFromCurrentLevel]'
+      name: A6CanEnterAndReturnFromCurrentLevel
+      fullName: WorldMapTest.A6CanEnterAndReturnFromCurrentLevel
+      resultStatus: 1
+      duration: 3.1320374
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    m_ResultText: ExplorationTest (14.207s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: bf7e93ab
-      m_LastClickedID: -1416397121
-      m_ExpandedIDs: 7cf13ee267c6ec2c101c9c4ea46c015ac1574275ffffff7f
+      m_SelectedIDs: 67c6ec2c
+      m_LastClickedID: 753714791
+      m_ExpandedIDs: 70c743c57cf13ee267c6ec2c101c9c4ea46c015ac1574275ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1116,8 +1212,8 @@ MonoBehaviour:
     - id: '[Assembly-CSharp-Editor][BattleScriptTest.CriticalHitGeneration]'
       name: CriticalHitGeneration
       fullName: BattleScriptTest.CriticalHitGeneration
-      resultStatus: 4
-      duration: 0.0006076
+      resultStatus: 0
+      duration: 0
       messages: Manual Probability Test
       output: 
       stacktrace: 

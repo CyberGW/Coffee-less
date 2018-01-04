@@ -777,6 +777,23 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1585079029966646, guid: 482f958a8f2dc8941bb586cf88048ea9, type: 2}
+      propertyPath: m_TagString
+      value: TFTV
+      objectReference: {fileID: 0}
+    - target: {fileID: 1514963241880676, guid: 482f958a8f2dc8941bb586cf88048ea9, type: 2}
+      propertyPath: m_TagString
+      value: CS
+      objectReference: {fileID: 0}
+    - target: {fileID: 1296926398508426, guid: 482f958a8f2dc8941bb586cf88048ea9, type: 2}
+      propertyPath: m_TagString
+      value: RCH
+      objectReference: {fileID: 0}
+    - target: {fileID: 60053356506110764, guid: 482f958a8f2dc8941bb586cf88048ea9,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 482f958a8f2dc8941bb586cf88048ea9, type: 2}
   m_IsPrefabParent: 0
@@ -800,10 +817,20 @@ MonoBehaviour:
   newPosition: {x: 90.7, y: -159.2}
 --- !u!1 &1084306536 stripped
 GameObject:
-  m_PrefabParentObject: {fileID: 1870904334640268, guid: 482f958a8f2dc8941bb586cf88048ea9,
+  m_PrefabParentObject: {fileID: 1445471359510408, guid: 482f958a8f2dc8941bb586cf88048ea9,
     type: 2}
   m_PrefabInternal: {fileID: 1084306533}
---- !u!114 &1084306537
+--- !u!1 &1084306537 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1308493040041224, guid: 482f958a8f2dc8941bb586cf88048ea9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1084306533}
+--- !u!1 &1084306538 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1612898466806852, guid: 482f958a8f2dc8941bb586cf88048ea9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1084306533}
+--- !u!114 &1084306539
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -815,13 +842,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newScene: TFTV-Ground
-  newPosition: {x: 113.1, y: -115.84}
---- !u!1 &1084306538 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1278435018835496, guid: 482f958a8f2dc8941bb586cf88048ea9,
-    type: 2}
-  m_PrefabInternal: {fileID: 1084306533}
---- !u!114 &1084306539
+  newPosition: {x: 113, y: -116}
+--- !u!114 &1084306540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1084306537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f17759d8c0e6704cbc0d9ff507a876c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newScene: 
+  newPosition: {x: 0, y: 0}
+--- !u!114 &1084306541
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -832,44 +867,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f17759d8c0e6704cbc0d9ff507a876c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newScene: RCH
-  newPosition: {x: 101.77, y: -95.96}
---- !u!1 &1084306540 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1310582015964618, guid: 482f958a8f2dc8941bb586cf88048ea9,
-    type: 2}
-  m_PrefabInternal: {fileID: 1084306533}
---- !u!114 &1084306541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1084306540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f17759d8c0e6704cbc0d9ff507a876c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newScene: Physics
-  newPosition: {x: 92.3, y: -111.4}
---- !u!1 &1084306542 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1027551312078132, guid: 482f958a8f2dc8941bb586cf88048ea9,
-    type: 2}
-  m_PrefabInternal: {fileID: 1084306533}
---- !u!114 &1084306543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1084306542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f17759d8c0e6704cbc0d9ff507a876c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newScene: Library-Ground
-  newPosition: {x: 126.4, y: -133.17}
+  newScene: 
+  newPosition: {x: 0, y: 0}
 --- !u!1 &1191828938
 GameObject:
   m_ObjectHideFlags: 0
@@ -1651,11 +1650,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b79d888a3367c6428e2995bc46e94ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
-  currentLevel: 0
-  levelOrder:
-  - CS
-  - TFTV
 --- !u!1 &1874946396
 GameObject:
   m_ObjectHideFlags: 0

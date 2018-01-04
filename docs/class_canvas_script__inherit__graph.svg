@@ -13,7 +13,7 @@
 <polygon fill="#bfbfbf" stroke="black" points="4.5,-0.5 4.5,-57.5 78.5,-57.5 78.5,-0.5 4.5,-0.5"/>
 <text text-anchor="middle" x="41.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">CanvasScript</text>
 <polyline fill="none" stroke="black" points="4.5,-38.5 78.5,-38.5 "/>
-<text text-anchor="middle" x="41.5" y="-26.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="12.5" y="-26.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ instance</text>
 <polyline fill="none" stroke="black" points="4.5,-19.5 78.5,-19.5 "/>
 <text text-anchor="start" x="12.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Start()</text>
 </g>

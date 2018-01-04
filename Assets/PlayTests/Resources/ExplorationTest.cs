@@ -177,6 +177,34 @@ public class ExplorationTest {
 	}
 
 	[UnityTest]
+	public IEnumerator HealingStation() {
+		//Reset
+		yield return Setup();
+		//Lower Player Health and Magic
+		Player playerStats = PlayerData.instance.data.Players[0];
+		playerStats.Health = 70;
+		playerStats.Magic = 0;
+		player.transform.position = new Vector2(-4,-2);
+		yield return moveForFrames (10, "Down");
+		Assert.IsNotNull (GameObject.Find ("DialogueBox")); //Check box saying that players have been healed is shown
+		Assert.AreEqual(playerStats.Health, 100); //Health now 100
+		Assert.AreEqual(playerStats.Magic, playerStats.MaximumMagic); //Magic back at maximum value
+		DialogueScript dialogueScript = GameObject.Find ("Dialogue Manager").GetComponent<DialogueScript> ();
+		dialogueScript.pseudoKeyPress = true;
+		yield return WaitForFrames (3);
+		dialogueScript.pseudoKeyPress = false;
+		Assert.Null (GameObject.Find ("DialogueBox")); //Check box vanished again
+		yield return moveForFrames(2, "Up"); //Move within range of station
+		Assert.Null (GameObject.Find ("DialogueBox")); //Check box isn't opened again
+		yield return moveForFrames(30, "Up"); //Move out of range
+		yield return moveForFrames(35, "Down"); //Move back in range
+		Assert.IsNotNull (GameObject.Find ("DialogueBox")); //Check station is triggered again
+		//Close
+		dialogueScript.pseudoKeyPress = true;
+		yield return WaitForFrames (3);
+	}
+
+	[UnityTest]
 	public IEnumerator Portal() {
 		//Reset
 		yield return Setup ();

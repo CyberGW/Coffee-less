@@ -74,22 +74,32 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for LevelManager:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_level_manager__inherit__graph.svg" width="166" height="228"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_level_manager__inherit__graph.svg" width="166" height="272"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:afcd5c1d3d30954925d73f22ec1d0ecce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_level_manager.html#afcd5c1d3d30954925d73f22ec1d0ecce">Start</a> ()</td></tr>
-<tr class="memdesc:afcd5c1d3d30954925d73f22ec1d0ecce"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the scene is loaded (either at the start or after exiting the boss battle scene, check if boss has been defeated and if so increase <a class="el" href="class_global_functions.html#adc1d068e5df57486aedf7b29213ad606" title="The current level that the player is up to">GlobalFunctions.currentLevel</a> and send the player back to the world map  <a href="#afcd5c1d3d30954925d73f22ec1d0ecce">More...</a><br /></td></tr>
+<tr class="memdesc:afcd5c1d3d30954925d73f22ec1d0ecce"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the scene is loaded (either at the start or after exiting the boss battle scene, check if boss has been defeated and if so increase <a class="el" href="class_global_functions.html#adc1d068e5df57486aedf7b29213ad606" title="The current level that the player is up to">GlobalFunctions.currentLevel</a> and send the player back to the world map. A new player will also be added to the team with a brief description shown  <a href="#afcd5c1d3d30954925d73f22ec1d0ecce">More...</a><br /></td></tr>
 <tr class="separator:afcd5c1d3d30954925d73f22ec1d0ecce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4f687800eb11cdf26ba2e9cb17f26bb"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_level_manager.html#ad4f687800eb11cdf26ba2e9cb17f26bb">WaitThenLoad</a> ()</td></tr>
+<tr class="memdesc:ad4f687800eb11cdf26ba2e9cb17f26bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called by <a class="el" href="class_level_manager.html#afcd5c1d3d30954925d73f22ec1d0ecce" title="When the scene is loaded (either at the start or after exiting the boss battle scene, check if boss has been defeated and if so increase GlobalFunctions.currentLevel and send the player back to the world map. A new player will also be added to the team with a brief description shown ">Start</a> once boss has been beaten Applies all functions along with waiting 5 seconds for user to read dialogue about new player  <a href="#ad4f687800eb11cdf26ba2e9cb17f26bb">More...</a><br /></td></tr>
+<tr class="separator:ad4f687800eb11cdf26ba2e9cb17f26bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:aab96f769f8a7593d48f450809e408d67"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_level_manager.html#aab96f769f8a7593d48f450809e408d67">bossObjectName</a> = &quot;Boss&quot;</td></tr>
 <tr class="memdesc:aab96f769f8a7593d48f450809e408d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the object that should be beat in order to progress  <a href="#aab96f769f8a7593d48f450809e408d67">More...</a><br /></td></tr>
 <tr class="separator:aab96f769f8a7593d48f450809e408d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74634aee19c7efc1e61198c5b3f25473"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_level_manager.html#a74634aee19c7efc1e61198c5b3f25473">worldMapExitPosition</a></td></tr>
-<tr class="memdesc:a74634aee19c7efc1e61198c5b3f25473"><td class="mdescLeft">&#160;</td><td class="mdescRight">The position that the player should spawn at on the world map once beat  <a href="#a74634aee19c7efc1e61198c5b3f25473">More...</a><br /></td></tr>
+<tr class="memitem:a9bf0fe4741e414bbb192b1d554fabfa0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_level_manager.html#a9bf0fe4741e414bbb192b1d554fabfa0">newPlayer</a></td></tr>
+<tr class="memdesc:a9bf0fe4741e414bbb192b1d554fabfa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The position that the player should spawn at on the world map once beat  <a href="#a9bf0fe4741e414bbb192b1d554fabfa0">More...</a><br /></td></tr>
+<tr class="separator:a9bf0fe4741e414bbb192b1d554fabfa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a92f438e9fed325503a35fe15afd200"><td class="memItemLeft" align="right" valign="top"><a id="a8a92f438e9fed325503a35fe15afd200"></a>
+string []&#160;</td><td class="memItemRight" valign="bottom"><b>playerDesc</b></td></tr>
+<tr class="separator:a8a92f438e9fed325503a35fe15afd200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74634aee19c7efc1e61198c5b3f25473"><td class="memItemLeft" align="right" valign="top"><a id="a74634aee19c7efc1e61198c5b3f25473"></a>
+Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>worldMapExitPosition</b></td></tr>
 <tr class="separator:a74634aee19c7efc1e61198c5b3f25473"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -118,7 +128,35 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>When the scene is loaded (either at the start or after exiting the boss battle scene, check if boss has been defeated and if so increase <a class="el" href="class_global_functions.html#adc1d068e5df57486aedf7b29213ad606" title="The current level that the player is up to">GlobalFunctions.currentLevel</a> and send the player back to the world map </p>
+<p>When the scene is loaded (either at the start or after exiting the boss battle scene, check if boss has been defeated and if so increase <a class="el" href="class_global_functions.html#adc1d068e5df57486aedf7b29213ad606" title="The current level that the player is up to">GlobalFunctions.currentLevel</a> and send the player back to the world map. A new player will also be added to the team with a brief description shown </p>
+
+</div>
+</div>
+<a id="ad4f687800eb11cdf26ba2e9cb17f26bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4f687800eb11cdf26ba2e9cb17f26bb">&#9670;&nbsp;</a></span>WaitThenLoad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IEnumerator LevelManager.WaitThenLoad </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Function called by <a class="el" href="class_level_manager.html#afcd5c1d3d30954925d73f22ec1d0ecce" title="When the scene is loaded (either at the start or after exiting the boss battle scene, check if boss has been defeated and if so increase GlobalFunctions.currentLevel and send the player back to the world map. A new player will also be added to the team with a brief description shown ">Start</a> once boss has been beaten Applies all functions along with waiting 5 seconds for user to read dialogue about new player </p>
+<dl class="section return"><dt>Returns</dt><dd>The then load.</dd></dl>
 
 </div>
 </div>
@@ -147,8 +185,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a74634aee19c7efc1e61198c5b3f25473"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74634aee19c7efc1e61198c5b3f25473">&#9670;&nbsp;</a></span>worldMapExitPosition</h2>
+<a id="a9bf0fe4741e414bbb192b1d554fabfa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bf0fe4741e414bbb192b1d554fabfa0">&#9670;&nbsp;</a></span>newPlayer</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -157,7 +195,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Vector2 LevelManager.worldMapExitPosition</td>
+          <td class="memname"><a class="el" href="class_player.html">Player</a> LevelManager.newPlayer</td>
         </tr>
       </table>
   </td>

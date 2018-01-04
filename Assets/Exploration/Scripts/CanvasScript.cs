@@ -6,10 +6,18 @@ using UnityEngine;
 /// is created </summary>
 public class CanvasScript : MonoBehaviour {
 
+	public static CanvasScript instance = null;
+
 	/// <summary>
-	/// Calls <c>DontDestroyOnLoad</c> here when the object is created
+	/// Ensures that the canvas isn't duplicated, and the same one is carried acrossed multiple scenes
 	/// </summary>
 	void Start () {
+		if (instance == null) {
+			instance = this;
+		} else if (instance != this) {
+			Destroy (gameObject);
+		}
+
 		DontDestroyOnLoad (gameObject);
 	}
 

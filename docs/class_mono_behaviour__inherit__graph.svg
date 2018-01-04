@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 2535;
+var viewWidth = 2672;
 var viewHeight = 578;
 var sectionId = 'dynsection-0';
 </script>
@@ -56,12 +56,12 @@ var sectionId = 'dynsection-0';
 <title>MonoBehaviour</title>
 <!-- Node0 -->
 <g id="node1" class="node"><title>Node0</title>
-<polygon fill="#bfbfbf" stroke="black" points="1247.5,-512.5 1247.5,-569.5 1330.5,-569.5 1330.5,-512.5 1247.5,-512.5"/>
-<text text-anchor="middle" x="1289" y="-557.5" font-family="Helvetica,sans-Serif" font-size="10.00">MonoBehaviour</text>
-<polyline fill="none" stroke="black" points="1247.5,-550.5 1330.5,-550.5 "/>
-<text text-anchor="middle" x="1289" y="-538.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="1247.5,-531.5 1330.5,-531.5 "/>
-<text text-anchor="middle" x="1289" y="-519.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#bfbfbf" stroke="black" points="1318.5,-512.5 1318.5,-569.5 1401.5,-569.5 1401.5,-512.5 1318.5,-512.5"/>
+<text text-anchor="middle" x="1360" y="-557.5" font-family="Helvetica,sans-Serif" font-size="10.00">MonoBehaviour</text>
+<polyline fill="none" stroke="black" points="1318.5,-550.5 1401.5,-550.5 "/>
+<text text-anchor="middle" x="1360" y="-538.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="1318.5,-531.5 1401.5,-531.5 "/>
+<text text-anchor="middle" x="1360" y="-519.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 </g>
 <!-- Node1 -->
 <g id="node2" class="node"><title>Node1</title>
@@ -81,8 +81,8 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node0&#45;&gt;Node1 -->
 <g id="edge1" class="edge"><title>Node0&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M1237.09,-540.43C1026.14,-541.729 240.11,-542.067 153,-476 94.969,-431.988 78.2006,-344.109 73.5421,-288.609"/>
-<polygon fill="none" stroke="midnightblue" points="1237.3,-543.929 1247.28,-540.363 1237.26,-536.929 1237.3,-543.929"/>
+<path fill="none" stroke="midnightblue" d="M1307.96,-538.856C1082.54,-533.698 199.707,-511.303 153,-476 94.8964,-432.084 78.1503,-344.175 73.516,-288.643"/>
+<polygon fill="none" stroke="midnightblue" points="1308.11,-542.361 1318.19,-539.089 1308.27,-535.362 1308.11,-542.361"/>
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
@@ -118,8 +118,8 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node0&#45;&gt;Node2 -->
 <g id="edge2" class="edge"><title>Node0&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M1237.45,-540.182C1042.21,-540.41 355.445,-536.847 281,-476 250.888,-451.388 234.111,-414.21 224.989,-376.552"/>
-<polygon fill="none" stroke="midnightblue" points="1237.46,-543.682 1247.45,-540.167 1237.45,-536.682 1237.46,-543.682"/>
+<path fill="none" stroke="midnightblue" d="M1308.25,-540.416C1104.02,-541.591 361.246,-541.31 281,-476 250.837,-451.451 234.045,-414.291 224.925,-376.63"/>
+<polygon fill="none" stroke="midnightblue" points="1308.43,-543.915 1318.41,-540.353 1308.39,-536.915 1308.43,-543.915"/>
 </g>
 <!-- Node3 -->
 <g id="node4" class="node"><title>Node3</title>
@@ -138,8 +138,8 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node0&#45;&gt;Node3 -->
 <g id="edge3" class="edge"><title>Node0&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M1237.41,-539.832C1056.08,-538.768 455.482,-531.084 391,-476 335.599,-428.674 329.887,-337.519 332.055,-283.089"/>
-<polygon fill="none" stroke="midnightblue" points="1237.47,-543.332 1247.49,-539.886 1237.51,-536.332 1237.47,-543.332"/>
+<path fill="none" stroke="midnightblue" d="M1308.18,-540.121C1117.35,-540.094 461.173,-535.631 391,-476 335.477,-428.818 329.807,-337.613 332.016,-283.135"/>
+<polygon fill="none" stroke="midnightblue" points="1308.24,-543.621 1318.23,-540.119 1308.23,-536.621 1308.24,-543.621"/>
 </g>
 <!-- Node4 -->
 <g id="node5" class="node"><title>Node4</title>
@@ -156,8 +156,8 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node0&#45;&gt;Node4 -->
 <g id="edge4" class="edge"><title>Node0&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M1236.94,-539.273C1070.13,-536.469 556.61,-523.983 501,-476 441.997,-425.089 439.473,-324.461 442.667,-272.222"/>
-<polygon fill="none" stroke="midnightblue" points="1237.36,-542.78 1247.41,-539.444 1237.47,-535.781 1237.36,-542.78"/>
+<path fill="none" stroke="midnightblue" d="M1308.3,-539.651C1132.07,-537.991 562.337,-528.568 501,-476 441.827,-425.286 439.379,-324.571 442.627,-272.268"/>
+<polygon fill="none" stroke="midnightblue" points="1308.33,-543.152 1318.36,-539.742 1308.39,-536.152 1308.33,-543.152"/>
 </g>
 <!-- Node5 -->
 <g id="node6" class="node"><title>Node5</title>
@@ -165,7 +165,7 @@ var sectionId = 'dynsection-0';
 <polygon fill="none" stroke="black" points="510,-209.5 510,-266.5 584,-266.5 584,-209.5 510,-209.5"/>
 <text text-anchor="middle" x="547" y="-254.5" font-family="Helvetica,sans-Serif" font-size="10.00">CanvasScript</text>
 <polyline fill="none" stroke="black" points="510,-247.5 584,-247.5 "/>
-<text text-anchor="middle" x="547" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="518" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ instance</text>
 <polyline fill="none" stroke="black" points="510,-228.5 584,-228.5 "/>
 <text text-anchor="start" x="518" y="-216.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Start()</text>
 </a>
@@ -173,8 +173,8 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node0&#45;&gt;Node5 -->
 <g id="edge5" class="edge"><title>Node0&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M1237.3,-538.766C1084.15,-534.632 640.555,-519.022 593,-476 533.634,-422.293 537.247,-316.799 542.909,-266.691"/>
-<polygon fill="none" stroke="midnightblue" points="1237.3,-542.267 1247.39,-539.033 1237.48,-535.27 1237.3,-542.267"/>
+<path fill="none" stroke="midnightblue" d="M1308.13,-539.234C1144.38,-536.334 646.106,-523.637 593,-476 533.407,-422.544 537.132,-316.927 542.865,-266.739"/>
+<polygon fill="none" stroke="midnightblue" points="1308.37,-542.739 1318.42,-539.411 1308.49,-535.74 1308.37,-542.739"/>
 </g>
 <!-- Node6 -->
 <g id="node7" class="node"><title>Node6</title>
@@ -193,8 +193,8 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node0&#45;&gt;Node6 -->
 <g id="edge6" class="edge"><title>Node0&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M1237.06,-537.927C1098.74,-531.927 729.199,-512.603 689,-476 635.61,-427.385 632.295,-337.111 635.867,-283.103"/>
-<polygon fill="none" stroke="midnightblue" points="1237.25,-541.438 1247.39,-538.368 1237.55,-534.444 1237.25,-541.438"/>
+<path fill="none" stroke="midnightblue" d="M1308.17,-538.555C1158.74,-533.911 734.754,-517.197 689,-476 635.339,-427.684 632.117,-337.307 635.78,-283.199"/>
+<polygon fill="none" stroke="midnightblue" points="1308.35,-542.062 1318.45,-538.869 1308.56,-535.065 1308.35,-542.062"/>
 </g>
 <!-- Node7 -->
 <g id="node8" class="node"><title>Node7</title>
@@ -224,408 +224,444 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node0&#45;&gt;Node7 -->
 <g id="edge7" class="edge"><title>Node0&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M1236.99,-540.218C1125.72,-539.587 869.571,-531.929 807,-476 770.091,-443.009 754.576,-390.817 748.618,-343.799"/>
-<polygon fill="none" stroke="midnightblue" points="1237.28,-543.719 1247.3,-540.258 1237.31,-536.719 1237.28,-543.719"/>
+<path fill="none" stroke="midnightblue" d="M1308.17,-537.331C1177.85,-530.159 844.284,-508.768 807,-476 769.736,-443.25 754.21,-390.932 748.336,-343.772"/>
+<polygon fill="none" stroke="midnightblue" points="1308.12,-540.834 1318.3,-537.882 1308.5,-533.844 1308.12,-540.834"/>
 </g>
 <!-- Node8 -->
 <g id="node9" class="node"><title>Node8</title>
-<g id="a_node9"><a xlink:href="class_global_functions.html" target="_top" xlink:title="Provides functions and variables to be accessed by any game object to allow data to be passed between...">
-<polygon fill="none" stroke="black" points="816.5,-116 816.5,-360 903.5,-360 903.5,-116 816.5,-116"/>
-<text text-anchor="middle" x="860" y="-348" font-family="Helvetica,sans-Serif" font-size="10.00">GlobalFunctions</text>
-<polyline fill="none" stroke="black" points="816.5,-341 903.5,-341 "/>
-<text text-anchor="start" x="824.5" y="-329" font-family="Helvetica,sans-Serif" font-size="10.00">+ sprite</text>
-<text text-anchor="start" x="824.5" y="-318" font-family="Helvetica,sans-Serif" font-size="10.00">+ canRunAway</text>
-<text text-anchor="start" x="824.5" y="-307" font-family="Helvetica,sans-Serif" font-size="10.00">+ objectsActive</text>
-<text text-anchor="start" x="824.5" y="-296" font-family="Helvetica,sans-Serif" font-size="10.00">+ currentLevel</text>
-<text text-anchor="start" x="824.5" y="-285" font-family="Helvetica,sans-Serif" font-size="10.00">+ levelOrder</text>
-<text text-anchor="start" x="824.5" y="-274" font-family="Helvetica,sans-Serif" font-size="10.00">+ instance</text>
-<text text-anchor="start" x="824.5" y="-263" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; enemy</text>
-<text text-anchor="start" x="824.5" y="-252" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; money</text>
-<text text-anchor="start" x="824.5" y="-241" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; item</text>
-<text text-anchor="start" x="824.5" y="-230" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; player</text>
-<text text-anchor="start" x="824.5" y="-219" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; previousScene</text>
-<text text-anchor="start" x="824.5" y="-208" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; previousBGM</text>
-<polyline fill="none" stroke="black" points="816.5,-201 903.5,-201 "/>
-<text text-anchor="start" x="824.5" y="-189" font-family="Helvetica,sans-Serif" font-size="10.00">+ createBattle()</text>
-<text text-anchor="start" x="824.5" y="-178" font-family="Helvetica,sans-Serif" font-size="10.00">+ getEnemy()</text>
-<text text-anchor="start" x="824.5" y="-167" font-family="Helvetica,sans-Serif" font-size="10.00">+ getMoney()</text>
-<text text-anchor="start" x="824.5" y="-156" font-family="Helvetica,sans-Serif" font-size="10.00">+ getItem()</text>
-<text text-anchor="start" x="824.5" y="-145" font-family="Helvetica,sans-Serif" font-size="10.00">+ endBattle()</text>
-<text text-anchor="start" x="824.5" y="-134" font-family="Helvetica,sans-Serif" font-size="10.00">+ createItem()</text>
-<text text-anchor="start" x="824.5" y="-123" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Awake()</text>
+<g id="a_node9"><a xlink:href="class_exploration_menu_script.html" target="_top" xlink:title="{ExplorationMenuScript\n|+ menuActive\l+ inventButton\l+ partyButton\l+ saveButton\l+ optionButton\l+ exitButton\l&#45; menuBox\l&#45; movementScript\l|+ inventPressed()\l+ partyPressed()\l+ savePressed()\l+ optionPressed()\l+ exitPressed()\l&#45; Start()\l&#45; Update()\l&#45; setInactive()\l}">
+<polygon fill="none" stroke="black" points="816.5,-132.5 816.5,-343.5 931.5,-343.5 931.5,-132.5 816.5,-132.5"/>
+<text text-anchor="middle" x="874" y="-331.5" font-family="Helvetica,sans-Serif" font-size="10.00">ExplorationMenuScript</text>
+<polyline fill="none" stroke="black" points="816.5,-324.5 931.5,-324.5 "/>
+<text text-anchor="start" x="824.5" y="-312.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ menuActive</text>
+<text text-anchor="start" x="824.5" y="-301.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ inventButton</text>
+<text text-anchor="start" x="824.5" y="-290.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ partyButton</text>
+<text text-anchor="start" x="824.5" y="-279.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ saveButton</text>
+<text text-anchor="start" x="824.5" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ optionButton</text>
+<text text-anchor="start" x="824.5" y="-257.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ exitButton</text>
+<text text-anchor="start" x="824.5" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; menuBox</text>
+<text text-anchor="start" x="824.5" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; movementScript</text>
+<polyline fill="none" stroke="black" points="816.5,-228.5 931.5,-228.5 "/>
+<text text-anchor="start" x="824.5" y="-216.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ inventPressed()</text>
+<text text-anchor="start" x="824.5" y="-205.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ partyPressed()</text>
+<text text-anchor="start" x="824.5" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ savePressed()</text>
+<text text-anchor="start" x="824.5" y="-183.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ optionPressed()</text>
+<text text-anchor="start" x="824.5" y="-172.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ exitPressed()</text>
+<text text-anchor="start" x="824.5" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Start()</text>
+<text text-anchor="start" x="824.5" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Update()</text>
+<text text-anchor="start" x="824.5" y="-139.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; setInactive()</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node8 -->
 <g id="edge8" class="edge"><title>Node0&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M1237.15,-538.171C1144.95,-533.825 957.864,-519.722 912,-476 880.671,-446.135 866.114,-402.064 859.912,-360.002"/>
-<polygon fill="none" stroke="midnightblue" points="1237.22,-541.678 1247.37,-538.631 1237.54,-534.685 1237.22,-541.678"/>
+<path fill="none" stroke="midnightblue" d="M1308.02,-538.925C1207.95,-535.787 993.645,-523.546 940,-476 902.682,-442.925 885.675,-390.725 878.215,-343.724"/>
+<polygon fill="none" stroke="midnightblue" points="1308.11,-542.429 1318.21,-539.225 1308.31,-535.432 1308.11,-542.429"/>
 </g>
 <!-- Node9 -->
 <g id="node10" class="node"><title>Node9</title>
-<g id="a_node10"><a xlink:href="class_healing_station.html" target="_top" xlink:title="A script describing a healing station, where all player&#39;s health and magic are restored ...">
-<polygon fill="none" stroke="black" points="921.5,-176.5 921.5,-299.5 1024.5,-299.5 1024.5,-176.5 921.5,-176.5"/>
-<text text-anchor="middle" x="973" y="-287.5" font-family="Helvetica,sans-Serif" font-size="10.00">HealingStation</text>
-<polyline fill="none" stroke="black" points="921.5,-280.5 1024.5,-280.5 "/>
-<text text-anchor="start" x="929.5" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; dManager</text>
-<text text-anchor="start" x="929.5" y="-257.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; movementScript</text>
-<text text-anchor="start" x="929.5" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; text</text>
-<text text-anchor="start" x="929.5" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; inRange</text>
-<polyline fill="none" stroke="black" points="921.5,-228.5 1024.5,-228.5 "/>
-<text text-anchor="start" x="929.5" y="-216.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ healPlayers()</text>
-<text text-anchor="start" x="929.5" y="-205.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Start()</text>
-<text text-anchor="start" x="929.5" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; OnTriggerStay2D()</text>
-<text text-anchor="start" x="929.5" y="-183.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; OnTriggerExit2D()</text>
+<g id="a_node10"><a xlink:href="class_global_functions.html" target="_top" xlink:title="Provides functions and variables to be accessed by any game object to allow data to be passed between...">
+<polygon fill="none" stroke="black" points="949.5,-116 949.5,-360 1036.5,-360 1036.5,-116 949.5,-116"/>
+<text text-anchor="middle" x="993" y="-348" font-family="Helvetica,sans-Serif" font-size="10.00">GlobalFunctions</text>
+<polyline fill="none" stroke="black" points="949.5,-341 1036.5,-341 "/>
+<text text-anchor="start" x="957.5" y="-329" font-family="Helvetica,sans-Serif" font-size="10.00">+ sprite</text>
+<text text-anchor="start" x="957.5" y="-318" font-family="Helvetica,sans-Serif" font-size="10.00">+ canRunAway</text>
+<text text-anchor="start" x="957.5" y="-307" font-family="Helvetica,sans-Serif" font-size="10.00">+ objectsActive</text>
+<text text-anchor="start" x="957.5" y="-296" font-family="Helvetica,sans-Serif" font-size="10.00">+ currentLevel</text>
+<text text-anchor="start" x="957.5" y="-285" font-family="Helvetica,sans-Serif" font-size="10.00">+ levelOrder</text>
+<text text-anchor="start" x="957.5" y="-274" font-family="Helvetica,sans-Serif" font-size="10.00">+ instance</text>
+<text text-anchor="start" x="957.5" y="-263" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; enemy</text>
+<text text-anchor="start" x="957.5" y="-252" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; money</text>
+<text text-anchor="start" x="957.5" y="-241" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; item</text>
+<text text-anchor="start" x="957.5" y="-230" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; player</text>
+<text text-anchor="start" x="957.5" y="-219" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; previousScene</text>
+<text text-anchor="start" x="957.5" y="-208" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; previousBGM</text>
+<polyline fill="none" stroke="black" points="949.5,-201 1036.5,-201 "/>
+<text text-anchor="start" x="957.5" y="-189" font-family="Helvetica,sans-Serif" font-size="10.00">+ createBattle()</text>
+<text text-anchor="start" x="957.5" y="-178" font-family="Helvetica,sans-Serif" font-size="10.00">+ getEnemy()</text>
+<text text-anchor="start" x="957.5" y="-167" font-family="Helvetica,sans-Serif" font-size="10.00">+ getMoney()</text>
+<text text-anchor="start" x="957.5" y="-156" font-family="Helvetica,sans-Serif" font-size="10.00">+ getItem()</text>
+<text text-anchor="start" x="957.5" y="-145" font-family="Helvetica,sans-Serif" font-size="10.00">+ endBattle()</text>
+<text text-anchor="start" x="957.5" y="-134" font-family="Helvetica,sans-Serif" font-size="10.00">+ createItem()</text>
+<text text-anchor="start" x="957.5" y="-123" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Awake()</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node9 -->
 <g id="edge9" class="edge"><title>Node0&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M1237.22,-533.311C1171.25,-523.754 1062.35,-504.177 1034,-476 987.52,-429.799 974.906,-353.23 972.221,-299.662"/>
-<polygon fill="none" stroke="midnightblue" points="1237.03,-536.818 1247.42,-534.758 1238.02,-529.888 1237.03,-536.818"/>
+<path fill="none" stroke="midnightblue" d="M1307.93,-536.207C1228.29,-529.322 1081.58,-512.018 1045,-476 1014.31,-445.781 999.837,-401.893 993.527,-360.075"/>
+<polygon fill="none" stroke="midnightblue" points="1307.98,-539.723 1318.24,-537.072 1308.57,-532.747 1307.98,-539.723"/>
 </g>
 <!-- Node10 -->
 <g id="node11" class="node"><title>Node10</title>
-<g id="a_node11"><a xlink:href="class_item_data.html" target="_top" xlink:title="A component to add to a drag and drop cell, carrying the data for the item the cell references ...">
-<polygon fill="none" stroke="black" points="1043,-204 1043,-272 1099,-272 1099,-204 1043,-204"/>
-<text text-anchor="middle" x="1071" y="-260" font-family="Helvetica,sans-Serif" font-size="10.00">ItemData</text>
-<polyline fill="none" stroke="black" points="1043,-253 1099,-253 "/>
-<text text-anchor="start" x="1051" y="-241" font-family="Helvetica,sans-Serif" font-size="10.00">+ Item</text>
-<text text-anchor="start" x="1051" y="-230" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; item</text>
-<polyline fill="none" stroke="black" points="1043,-223 1099,-223 "/>
-<text text-anchor="middle" x="1071" y="-211" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<g id="a_node11"><a xlink:href="class_healing_station.html" target="_top" xlink:title="A script describing a healing station, where all player&#39;s health and magic are restored ...">
+<polygon fill="none" stroke="black" points="1054.5,-176.5 1054.5,-299.5 1157.5,-299.5 1157.5,-176.5 1054.5,-176.5"/>
+<text text-anchor="middle" x="1106" y="-287.5" font-family="Helvetica,sans-Serif" font-size="10.00">HealingStation</text>
+<polyline fill="none" stroke="black" points="1054.5,-280.5 1157.5,-280.5 "/>
+<text text-anchor="start" x="1062.5" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; dManager</text>
+<text text-anchor="start" x="1062.5" y="-257.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; movementScript</text>
+<text text-anchor="start" x="1062.5" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; text</text>
+<text text-anchor="start" x="1062.5" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; inRange</text>
+<polyline fill="none" stroke="black" points="1054.5,-228.5 1157.5,-228.5 "/>
+<text text-anchor="start" x="1062.5" y="-216.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ healPlayers()</text>
+<text text-anchor="start" x="1062.5" y="-205.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Start()</text>
+<text text-anchor="start" x="1062.5" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; OnTriggerStay2D()</text>
+<text text-anchor="start" x="1062.5" y="-183.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; OnTriggerExit2D()</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node10 -->
 <g id="edge10" class="edge"><title>Node0&#45;&gt;Node10</title>
-<path fill="none" stroke="midnightblue" d="M1237.36,-535.855C1195.98,-529.663 1139.76,-514.261 1108,-476 1059.59,-417.685 1061.31,-322.499 1066.35,-272.343"/>
-<polygon fill="none" stroke="midnightblue" points="1236.89,-539.323 1247.27,-537.206 1237.84,-532.387 1236.89,-539.323"/>
+<path fill="none" stroke="midnightblue" d="M1308.31,-536.29C1264.66,-530.39 1203.58,-515.17 1167,-476 1122.49,-428.337 1109.42,-352.624 1106.1,-299.634"/>
+<polygon fill="none" stroke="midnightblue" points="1308.1,-539.791 1318.45,-537.537 1308.95,-532.843 1308.1,-539.791"/>
 </g>
 <!-- Node11 -->
 <g id="node12" class="node"><title>Node11</title>
-<g id="a_node12"><a xlink:href="class_items_menu_script.html" target="_top" xlink:title="Controls all initialisation of menu and updates arrays when an item is moved ">
-<polygon fill="none" stroke="black" points="1117.5,-171 1117.5,-305 1212.5,-305 1212.5,-171 1117.5,-171"/>
-<text text-anchor="middle" x="1165" y="-293" font-family="Helvetica,sans-Serif" font-size="10.00">ItemsMenuScript</text>
-<polyline fill="none" stroke="black" points="1117.5,-286 1212.5,-286 "/>
-<text text-anchor="start" x="1125.5" y="-274" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; itemContainers</text>
-<text text-anchor="start" x="1125.5" y="-263" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; playerContainers</text>
-<text text-anchor="start" x="1125.5" y="-252" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; data</text>
-<text text-anchor="start" x="1125.5" y="-241" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; items</text>
-<text text-anchor="start" x="1125.5" y="-230" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; players</text>
-<text text-anchor="start" x="1125.5" y="-219" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; itemObjects</text>
-<polyline fill="none" stroke="black" points="1117.5,-212 1212.5,-212 "/>
-<text text-anchor="start" x="1125.5" y="-200" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Start()</text>
-<text text-anchor="start" x="1125.5" y="-189" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Update()</text>
-<text text-anchor="start" x="1125.5" y="-178" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; OnItemPlace()</text>
+<g id="a_node12"><a xlink:href="class_item_data.html" target="_top" xlink:title="A component to add to a drag and drop cell, carrying the data for the item the cell references ...">
+<polygon fill="none" stroke="black" points="1176,-204 1176,-272 1232,-272 1232,-204 1176,-204"/>
+<text text-anchor="middle" x="1204" y="-260" font-family="Helvetica,sans-Serif" font-size="10.00">ItemData</text>
+<polyline fill="none" stroke="black" points="1176,-253 1232,-253 "/>
+<text text-anchor="start" x="1184" y="-241" font-family="Helvetica,sans-Serif" font-size="10.00">+ Item</text>
+<text text-anchor="start" x="1184" y="-230" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; item</text>
+<polyline fill="none" stroke="black" points="1176,-223 1232,-223 "/>
+<text text-anchor="middle" x="1204" y="-211" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node11 -->
 <g id="edge11" class="edge"><title>Node0&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M1245.18,-505.213C1236.43,-496.484 1228.08,-486.566 1222,-476 1191.61,-423.181 1177.37,-354.795 1170.73,-305.067"/>
-<polygon fill="none" stroke="midnightblue" points="1242.92,-507.895 1252.57,-512.253 1247.74,-502.824 1242.92,-507.895"/>
+<path fill="none" stroke="midnightblue" d="M1308.74,-524.471C1284.46,-514.488 1257.28,-498.986 1241,-476 1197.44,-414.483 1196.98,-321.48 1200.45,-272.266"/>
+<polygon fill="none" stroke="midnightblue" points="1307.63,-527.796 1318.22,-528.159 1310.17,-521.272 1307.63,-527.796"/>
 </g>
 <!-- Node12 -->
 <g id="node13" class="node"><title>Node12</title>
-<g id="a_node13"><a xlink:href="class_level_manager.html" target="_top" xlink:title="A script used to check and handle when a level is beat by defeating the final boss ...">
-<polygon fill="none" stroke="black" points="1231,-204 1231,-272 1347,-272 1347,-204 1231,-204"/>
-<text text-anchor="middle" x="1289" y="-260" font-family="Helvetica,sans-Serif" font-size="10.00">LevelManager</text>
-<polyline fill="none" stroke="black" points="1231,-253 1347,-253 "/>
-<text text-anchor="start" x="1239" y="-241" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; bossObjectName</text>
-<text text-anchor="start" x="1239" y="-230" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; worldMapExitPosition</text>
-<polyline fill="none" stroke="black" points="1231,-223 1347,-223 "/>
-<text text-anchor="start" x="1239" y="-211" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Start()</text>
+<g id="a_node13"><a xlink:href="class_items_menu_script.html" target="_top" xlink:title="Controls all initialisation of menu and updates arrays when an item is moved ">
+<polygon fill="none" stroke="black" points="1250.5,-171 1250.5,-305 1345.5,-305 1345.5,-171 1250.5,-171"/>
+<text text-anchor="middle" x="1298" y="-293" font-family="Helvetica,sans-Serif" font-size="10.00">ItemsMenuScript</text>
+<polyline fill="none" stroke="black" points="1250.5,-286 1345.5,-286 "/>
+<text text-anchor="start" x="1258.5" y="-274" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; itemContainers</text>
+<text text-anchor="start" x="1258.5" y="-263" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; playerContainers</text>
+<text text-anchor="start" x="1258.5" y="-252" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; data</text>
+<text text-anchor="start" x="1258.5" y="-241" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; items</text>
+<text text-anchor="start" x="1258.5" y="-230" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; players</text>
+<text text-anchor="start" x="1258.5" y="-219" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; itemObjects</text>
+<polyline fill="none" stroke="black" points="1250.5,-212 1345.5,-212 "/>
+<text text-anchor="start" x="1258.5" y="-200" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Start()</text>
+<text text-anchor="start" x="1258.5" y="-189" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Update()</text>
+<text text-anchor="start" x="1258.5" y="-178" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; OnItemPlace()</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node12 -->
 <g id="edge12" class="edge"><title>Node0&#45;&gt;Node12</title>
-<path fill="none" stroke="midnightblue" d="M1289,-502.425C1289,-443.105 1289,-328.706 1289,-272.219"/>
-<polygon fill="none" stroke="midnightblue" points="1285.5,-502.49 1289,-512.49 1292.5,-502.49 1285.5,-502.49"/>
+<path fill="none" stroke="midnightblue" d="M1352.29,-502.567C1342.13,-453.232 1324.08,-365.624 1311.6,-305.031"/>
+<polygon fill="none" stroke="midnightblue" points="1348.89,-503.402 1354.33,-512.49 1355.74,-501.99 1348.89,-503.402"/>
 </g>
 <!-- Node13 -->
 <g id="node14" class="node"><title>Node13</title>
-<g id="a_node14"><a xlink:href="class_main_battle.html" target="_top" xlink:title="Script for handing a battle scene. Uses BattleManager, but handles turn order and execution as well a...">
-<polygon fill="none" stroke="black" points="1365.5,-0.5 1365.5,-475.5 1472.5,-475.5 1472.5,-0.5 1365.5,-0.5"/>
-<text text-anchor="middle" x="1419" y="-463.5" font-family="Helvetica,sans-Serif" font-size="10.00">MainBattle</text>
-<polyline fill="none" stroke="black" points="1365.5,-456.5 1472.5,-456.5 "/>
-<text text-anchor="start" x="1373.5" y="-444.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ manager</text>
-<text text-anchor="start" x="1373.5" y="-433.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ player</text>
-<text text-anchor="start" x="1373.5" y="-422.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; globalData</text>
-<text text-anchor="start" x="1373.5" y="-411.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; playerArray</text>
-<text text-anchor="start" x="1373.5" y="-400.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; attackButton</text>
-<text text-anchor="start" x="1373.5" y="-389.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; runButton</text>
-<text text-anchor="start" x="1373.5" y="-378.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; textBox</text>
-<text text-anchor="start" x="1373.5" y="-367.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; enemy</text>
-<text text-anchor="start" x="1373.5" y="-356.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; moneyReward</text>
-<text text-anchor="start" x="1373.5" y="-345.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; itemReward</text>
-<text text-anchor="start" x="1373.5" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; text</text>
-<text text-anchor="start" x="1373.5" y="-323.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; enemyObject</text>
-<text text-anchor="start" x="1373.5" y="-312.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; playerMove</text>
-<text text-anchor="start" x="1373.5" y="-301.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; enemyMove</text>
-<text text-anchor="start" x="1373.5" y="-290.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; moveChosen</text>
-<text text-anchor="start" x="1373.5" y="-279.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; attacksPanel</text>
-<text text-anchor="start" x="1373.5" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; playerStats</text>
-<text text-anchor="start" x="1373.5" y="-257.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; enemyStats</text>
-<text text-anchor="start" x="1373.5" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; healthBar</text>
-<text text-anchor="start" x="1373.5" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; magicBar</text>
-<text text-anchor="start" x="1373.5" y="-224.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; expBar</text>
-<text text-anchor="start" x="1373.5" y="-213.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; enemySprite</text>
-<text text-anchor="start" x="1373.5" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; playerCamera</text>
-<text text-anchor="start" x="1373.5" y="-191.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; BGM</text>
-<text text-anchor="start" x="1373.5" y="-180.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; victory</text>
-<polyline fill="none" stroke="black" points="1365.5,-173.5 1472.5,-173.5 "/>
-<text text-anchor="start" x="1373.5" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ standardAttack()</text>
-<text text-anchor="start" x="1373.5" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ special1()</text>
-<text text-anchor="start" x="1373.5" y="-139.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ special2()</text>
-<text text-anchor="start" x="1373.5" y="-128.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ranAway()</text>
-<text text-anchor="start" x="1373.5" y="-117.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Start()</text>
-<text text-anchor="start" x="1373.5" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Update()</text>
-<text text-anchor="start" x="1373.5" y="-95.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; playerThenEnemy()</text>
-<text text-anchor="start" x="1373.5" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; enemyThenPlayer()</text>
-<text text-anchor="start" x="1373.5" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; performTurn()</text>
-<text text-anchor="start" x="1373.5" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; checkIfPlayerWon()</text>
-<text text-anchor="start" x="1373.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; updateExp()</text>
-<text text-anchor="start" x="1373.5" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; updateExpHelper()</text>
-<text text-anchor="start" x="1373.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; checkIfPlayerLost()</text>
-<text text-anchor="start" x="1373.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; prepareTurn()</text>
-<text text-anchor="start" x="1373.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; runAway()</text>
+<g id="a_node14"><a xlink:href="class_level_manager.html" target="_top" xlink:title="A script used to check and handle when a level is beat by defeating the final boss ...">
+<polygon fill="none" stroke="black" points="1364,-187.5 1364,-288.5 1480,-288.5 1480,-187.5 1364,-187.5"/>
+<text text-anchor="middle" x="1422" y="-276.5" font-family="Helvetica,sans-Serif" font-size="10.00">LevelManager</text>
+<polyline fill="none" stroke="black" points="1364,-269.5 1480,-269.5 "/>
+<text text-anchor="start" x="1372" y="-257.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; bossObjectName</text>
+<text text-anchor="start" x="1372" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; newPlayer</text>
+<text text-anchor="start" x="1372" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; playerDesc</text>
+<text text-anchor="start" x="1372" y="-224.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; worldMapExitPosition</text>
+<polyline fill="none" stroke="black" points="1364,-217.5 1480,-217.5 "/>
+<text text-anchor="start" x="1372" y="-205.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Start()</text>
+<text text-anchor="start" x="1372" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; WaitThenLoad()</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node13 -->
 <g id="edge13" class="edge"><title>Node0&#45;&gt;Node13</title>
-<path fill="none" stroke="midnightblue" d="M1332.37,-505.374C1341.22,-496.585 1349.73,-486.601 1356,-476 1359.3,-470.411 1362.44,-464.648 1365.41,-458.749"/>
-<polygon fill="none" stroke="midnightblue" points="1329.74,-503.041 1324.89,-512.462 1334.56,-508.121 1329.74,-503.041"/>
+<path fill="none" stroke="midnightblue" d="M1367.69,-502.645C1378.82,-448.644 1399.41,-348.67 1411.79,-288.558"/>
+<polygon fill="none" stroke="midnightblue" points="1364.26,-501.99 1365.67,-512.49 1371.11,-503.402 1364.26,-501.99"/>
 </g>
 <!-- Node14 -->
 <g id="node15" class="node"><title>Node14</title>
-<g id="a_node15"><a xlink:href="class_menu_script.html" target="_top" xlink:title="Script to handle the main menu ">
-<polygon fill="none" stroke="black" points="1490.5,-176.5 1490.5,-299.5 1565.5,-299.5 1565.5,-176.5 1490.5,-176.5"/>
-<text text-anchor="middle" x="1528" y="-287.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuScript</text>
-<polyline fill="none" stroke="black" points="1490.5,-280.5 1565.5,-280.5 "/>
-<text text-anchor="start" x="1498.5" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ quitMenu</text>
-<text text-anchor="start" x="1498.5" y="-257.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ exitText</text>
-<text text-anchor="start" x="1498.5" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ startText</text>
-<polyline fill="none" stroke="black" points="1490.5,-239.5 1565.5,-239.5 "/>
-<text text-anchor="start" x="1498.5" y="-227.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ExitPress()</text>
-<text text-anchor="start" x="1498.5" y="-216.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ NoPress()</text>
-<text text-anchor="start" x="1498.5" y="-205.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ StartLevel()</text>
-<text text-anchor="start" x="1498.5" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ExitGame()</text>
-<text text-anchor="start" x="1498.5" y="-183.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Start()</text>
+<g id="a_node15"><a xlink:href="class_main_battle.html" target="_top" xlink:title="Script for handing a battle scene. Uses BattleManager, but handles turn order and execution as well a...">
+<polygon fill="none" stroke="black" points="1498.5,-0.5 1498.5,-475.5 1605.5,-475.5 1605.5,-0.5 1498.5,-0.5"/>
+<text text-anchor="middle" x="1552" y="-463.5" font-family="Helvetica,sans-Serif" font-size="10.00">MainBattle</text>
+<polyline fill="none" stroke="black" points="1498.5,-456.5 1605.5,-456.5 "/>
+<text text-anchor="start" x="1506.5" y="-444.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ manager</text>
+<text text-anchor="start" x="1506.5" y="-433.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ player</text>
+<text text-anchor="start" x="1506.5" y="-422.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; globalData</text>
+<text text-anchor="start" x="1506.5" y="-411.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; playerArray</text>
+<text text-anchor="start" x="1506.5" y="-400.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; attackButton</text>
+<text text-anchor="start" x="1506.5" y="-389.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; runButton</text>
+<text text-anchor="start" x="1506.5" y="-378.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; textBox</text>
+<text text-anchor="start" x="1506.5" y="-367.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; enemy</text>
+<text text-anchor="start" x="1506.5" y="-356.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; moneyReward</text>
+<text text-anchor="start" x="1506.5" y="-345.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; itemReward</text>
+<text text-anchor="start" x="1506.5" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; text</text>
+<text text-anchor="start" x="1506.5" y="-323.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; enemyObject</text>
+<text text-anchor="start" x="1506.5" y="-312.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; playerMove</text>
+<text text-anchor="start" x="1506.5" y="-301.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; enemyMove</text>
+<text text-anchor="start" x="1506.5" y="-290.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; moveChosen</text>
+<text text-anchor="start" x="1506.5" y="-279.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; attacksPanel</text>
+<text text-anchor="start" x="1506.5" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; playerStats</text>
+<text text-anchor="start" x="1506.5" y="-257.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; enemyStats</text>
+<text text-anchor="start" x="1506.5" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; healthBar</text>
+<text text-anchor="start" x="1506.5" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; magicBar</text>
+<text text-anchor="start" x="1506.5" y="-224.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; expBar</text>
+<text text-anchor="start" x="1506.5" y="-213.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; enemySprite</text>
+<text text-anchor="start" x="1506.5" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; playerCamera</text>
+<text text-anchor="start" x="1506.5" y="-191.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; BGM</text>
+<text text-anchor="start" x="1506.5" y="-180.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; victory</text>
+<polyline fill="none" stroke="black" points="1498.5,-173.5 1605.5,-173.5 "/>
+<text text-anchor="start" x="1506.5" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ standardAttack()</text>
+<text text-anchor="start" x="1506.5" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ special1()</text>
+<text text-anchor="start" x="1506.5" y="-139.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ special2()</text>
+<text text-anchor="start" x="1506.5" y="-128.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ranAway()</text>
+<text text-anchor="start" x="1506.5" y="-117.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Start()</text>
+<text text-anchor="start" x="1506.5" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Update()</text>
+<text text-anchor="start" x="1506.5" y="-95.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; playerThenEnemy()</text>
+<text text-anchor="start" x="1506.5" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; enemyThenPlayer()</text>
+<text text-anchor="start" x="1506.5" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; performTurn()</text>
+<text text-anchor="start" x="1506.5" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; checkIfPlayerWon()</text>
+<text text-anchor="start" x="1506.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; updateExp()</text>
+<text text-anchor="start" x="1506.5" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; updateExpHelper()</text>
+<text text-anchor="start" x="1506.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; checkIfPlayerLost()</text>
+<text text-anchor="start" x="1506.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; prepareTurn()</text>
+<text text-anchor="start" x="1506.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; runAway()</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node14 -->
 <g id="edge14" class="edge"><title>Node0&#45;&gt;Node14</title>
-<path fill="none" stroke="midnightblue" d="M1340.61,-536.914C1384.68,-531.426 1446.43,-516.462 1482,-476 1524.41,-427.758 1532.53,-352.343 1532.21,-299.576"/>
-<polygon fill="none" stroke="midnightblue" points="1340.2,-533.438 1330.65,-538.031 1340.98,-540.394 1340.2,-533.438"/>
+<path fill="none" stroke="midnightblue" d="M1411.15,-525.918C1437.94,-516.06 1469.21,-500.226 1489,-476 1492.3,-471.961 1495.43,-467.766 1498.39,-463.439"/>
+<polygon fill="none" stroke="midnightblue" points="1409.8,-522.683 1401.51,-529.284 1412.11,-529.291 1409.8,-522.683"/>
 </g>
 <!-- Node15 -->
 <g id="node16" class="node"><title>Node15</title>
-<g id="a_node16"><a xlink:href="class_object_interaction.html" target="_top" xlink:title="A component to add to collider relating to an object that can interact with the player by pressing th...">
-<polygon fill="none" stroke="black" points="1583.5,-154.5 1583.5,-321.5 1686.5,-321.5 1686.5,-154.5 1583.5,-154.5"/>
-<text text-anchor="middle" x="1635" y="-309.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectInteraction</text>
-<polyline fill="none" stroke="black" points="1583.5,-302.5 1686.5,-302.5 "/>
-<text text-anchor="start" x="1591.5" y="-290.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ dialogue</text>
-<text text-anchor="start" x="1591.5" y="-279.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ pseudoKeyPress</text>
-<text text-anchor="start" x="1591.5" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ treasure</text>
-<text text-anchor="start" x="1591.5" y="-257.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ createBattle</text>
-<text text-anchor="start" x="1591.5" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SFX</text>
-<text text-anchor="start" x="1591.5" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; dManager</text>
-<text text-anchor="start" x="1591.5" y="-224.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; movementScript</text>
-<text text-anchor="start" x="1591.5" y="-213.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; id</text>
-<polyline fill="none" stroke="black" points="1583.5,-206.5 1686.5,-206.5 "/>
-<text text-anchor="start" x="1591.5" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ keyPressed()</text>
-<text text-anchor="start" x="1591.5" y="-183.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ endOfDialogue()</text>
-<text text-anchor="start" x="1591.5" y="-172.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Start()</text>
-<text text-anchor="start" x="1591.5" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; OnTriggerStay2D()</text>
+<g id="a_node16"><a xlink:href="class_menu_script.html" target="_top" xlink:title="Script to handle the main menu ">
+<polygon fill="none" stroke="black" points="1623.5,-176.5 1623.5,-299.5 1698.5,-299.5 1698.5,-176.5 1623.5,-176.5"/>
+<text text-anchor="middle" x="1661" y="-287.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuScript</text>
+<polyline fill="none" stroke="black" points="1623.5,-280.5 1698.5,-280.5 "/>
+<text text-anchor="start" x="1631.5" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ quitMenu</text>
+<text text-anchor="start" x="1631.5" y="-257.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ exitText</text>
+<text text-anchor="start" x="1631.5" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ startText</text>
+<polyline fill="none" stroke="black" points="1623.5,-239.5 1698.5,-239.5 "/>
+<text text-anchor="start" x="1631.5" y="-227.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ExitPress()</text>
+<text text-anchor="start" x="1631.5" y="-216.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ NoPress()</text>
+<text text-anchor="start" x="1631.5" y="-205.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ StartLevel()</text>
+<text text-anchor="start" x="1631.5" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ExitGame()</text>
+<text text-anchor="start" x="1631.5" y="-183.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Start()</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node15 -->
 <g id="edge15" class="edge"><title>Node0&#45;&gt;Node15</title>
-<path fill="none" stroke="midnightblue" d="M1341.09,-534.855C1414.25,-526.577 1542.19,-507.91 1575,-476 1615.92,-436.198 1630.41,-372.799 1634.94,-321.585"/>
-<polygon fill="none" stroke="midnightblue" points="1340.27,-531.425 1330.71,-536.002 1341.04,-538.383 1340.27,-531.425"/>
+<path fill="none" stroke="midnightblue" d="M1411.76,-533.6C1478,-524.337 1587.48,-505.056 1615,-476 1659.39,-429.139 1667.02,-352.892 1666.05,-299.573"/>
+<polygon fill="none" stroke="midnightblue" points="1410.96,-530.177 1401.53,-535 1411.91,-537.113 1410.96,-530.177"/>
 </g>
 <!-- Node16 -->
 <g id="node17" class="node"><title>Node16</title>
-<g id="a_node17"><a xlink:href="class_player_data.html" target="_top" xlink:title="A monobehaviour object to house an instance of DataManager so it can be called by other objects ...">
-<polygon fill="none" stroke="black" points="1704.5,-198.5 1704.5,-277.5 1769.5,-277.5 1769.5,-198.5 1704.5,-198.5"/>
-<text text-anchor="middle" x="1737" y="-265.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerData</text>
-<polyline fill="none" stroke="black" points="1704.5,-258.5 1769.5,-258.5 "/>
-<text text-anchor="start" x="1712.5" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ data</text>
-<text text-anchor="start" x="1712.5" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ instance</text>
-<polyline fill="none" stroke="black" points="1704.5,-228.5 1769.5,-228.5 "/>
-<text text-anchor="start" x="1712.5" y="-216.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Awake()</text>
-<text text-anchor="start" x="1712.5" y="-205.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Update()</text>
+<g id="a_node17"><a xlink:href="class_object_interaction.html" target="_top" xlink:title="A component to add to collider relating to an object that can interact with the player by pressing th...">
+<polygon fill="none" stroke="black" points="1716.5,-154.5 1716.5,-321.5 1819.5,-321.5 1819.5,-154.5 1716.5,-154.5"/>
+<text text-anchor="middle" x="1768" y="-309.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectInteraction</text>
+<polyline fill="none" stroke="black" points="1716.5,-302.5 1819.5,-302.5 "/>
+<text text-anchor="start" x="1724.5" y="-290.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ dialogue</text>
+<text text-anchor="start" x="1724.5" y="-279.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ pseudoKeyPress</text>
+<text text-anchor="start" x="1724.5" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ treasure</text>
+<text text-anchor="start" x="1724.5" y="-257.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ createBattle</text>
+<text text-anchor="start" x="1724.5" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SFX</text>
+<text text-anchor="start" x="1724.5" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; dManager</text>
+<text text-anchor="start" x="1724.5" y="-224.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; movementScript</text>
+<text text-anchor="start" x="1724.5" y="-213.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; id</text>
+<polyline fill="none" stroke="black" points="1716.5,-206.5 1819.5,-206.5 "/>
+<text text-anchor="start" x="1724.5" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ keyPressed()</text>
+<text text-anchor="start" x="1724.5" y="-183.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ endOfDialogue()</text>
+<text text-anchor="start" x="1724.5" y="-172.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Start()</text>
+<text text-anchor="start" x="1724.5" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; OnTriggerStay2D()</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node16 -->
 <g id="edge16" class="edge"><title>Node0&#45;&gt;Node16</title>
-<path fill="none" stroke="midnightblue" d="M1340.82,-539.11C1438.98,-536.298 1646.64,-524.606 1696,-476 1748.81,-423.993 1748.1,-330.168 1742.7,-277.517"/>
-<polygon fill="none" stroke="midnightblue" points="1340.44,-535.618 1330.54,-539.383 1340.63,-542.616 1340.44,-535.618"/>
+<path fill="none" stroke="midnightblue" d="M1411.88,-537.192C1498.17,-531.456 1665.87,-515.431 1708,-476 1749.83,-436.844 1764.23,-373.077 1768.5,-321.546"/>
+<polygon fill="none" stroke="midnightblue" points="1411.53,-533.707 1401.78,-537.842 1411.98,-540.693 1411.53,-533.707"/>
 </g>
 <!-- Node17 -->
 <g id="node18" class="node"><title>Node17</title>
-<g id="a_node18"><a xlink:href="class_player_movement.html" target="_top" xlink:title="A script to control the movement and animations of the player">
-<polygon fill="none" stroke="black" points="1787.5,-143.5 1787.5,-332.5 1892.5,-332.5 1892.5,-143.5 1787.5,-143.5"/>
-<text text-anchor="middle" x="1840" y="-320.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerMovement</text>
-<polyline fill="none" stroke="black" points="1787.5,-313.5 1892.5,-313.5 "/>
-<text text-anchor="start" x="1795.5" y="-301.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; speed</text>
-<text text-anchor="start" x="1795.5" y="-290.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; lastMove</text>
-<text text-anchor="start" x="1795.5" y="-279.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; canMove</text>
-<text text-anchor="start" x="1795.5" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; previousPosition</text>
-<text text-anchor="start" x="1795.5" y="-257.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; player</text>
-<text text-anchor="start" x="1795.5" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; anim</text>
-<text text-anchor="start" x="1795.5" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; playerExists</text>
-<polyline fill="none" stroke="black" points="1787.5,-228.5 1892.5,-228.5 "/>
-<text text-anchor="start" x="1795.5" y="-216.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ move()</text>
-<text text-anchor="start" x="1795.5" y="-205.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setCanMove()</text>
-<text text-anchor="start" x="1795.5" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Start()</text>
-<text text-anchor="start" x="1795.5" y="-183.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; FixedUpdate()</text>
-<text text-anchor="start" x="1795.5" y="-172.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; randomEncounter()</text>
-<text text-anchor="start" x="1795.5" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; walkAnimation()</text>
-<text text-anchor="start" x="1795.5" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; setIdle()</text>
+<g id="a_node18"><a xlink:href="class_player_data.html" target="_top" xlink:title="A monobehaviour object to house an instance of DataManager so it can be called by other objects ...">
+<polygon fill="none" stroke="black" points="1837.5,-198.5 1837.5,-277.5 1902.5,-277.5 1902.5,-198.5 1837.5,-198.5"/>
+<text text-anchor="middle" x="1870" y="-265.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerData</text>
+<polyline fill="none" stroke="black" points="1837.5,-258.5 1902.5,-258.5 "/>
+<text text-anchor="start" x="1845.5" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ data</text>
+<text text-anchor="start" x="1845.5" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ instance</text>
+<polyline fill="none" stroke="black" points="1837.5,-228.5 1902.5,-228.5 "/>
+<text text-anchor="start" x="1845.5" y="-216.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Awake()</text>
+<text text-anchor="start" x="1845.5" y="-205.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Update()</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node17 -->
 <g id="edge17" class="edge"><title>Node0&#45;&gt;Node17</title>
-<path fill="none" stroke="midnightblue" d="M1340.67,-540.311C1453.08,-539.901 1714.9,-532.716 1779,-476 1819.17,-440.455 1834.56,-382.328 1839.83,-332.537"/>
-<polygon fill="none" stroke="midnightblue" points="1340.58,-536.811 1330.59,-540.331 1340.59,-543.811 1340.58,-536.811"/>
+<path fill="none" stroke="midnightblue" d="M1411.72,-540.335C1521.03,-539.909 1770.35,-532.593 1829,-476 1882.34,-424.533 1881.42,-330.499 1875.84,-277.669"/>
+<polygon fill="none" stroke="midnightblue" points="1411.58,-536.835 1401.58,-540.356 1411.59,-543.835 1411.58,-536.835"/>
 </g>
 <!-- Node18 -->
 <g id="node19" class="node"><title>Node18</title>
-<g id="a_node19"><a xlink:href="class_portal.html" target="_top" xlink:title="A component to add to an object, such as when the player touches it they are teleported to a new scen...">
-<polygon fill="none" stroke="black" points="1911,-187.5 1911,-288.5 2017,-288.5 2017,-187.5 1911,-187.5"/>
-<text text-anchor="middle" x="1964" y="-276.5" font-family="Helvetica,sans-Serif" font-size="10.00">Portal</text>
-<polyline fill="none" stroke="black" points="1911,-269.5 2017,-269.5 "/>
-<text text-anchor="start" x="1919" y="-257.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ newScene</text>
-<text text-anchor="start" x="1919" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ newPosition</text>
-<text text-anchor="start" x="1919" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sceneChanger</text>
-<text text-anchor="start" x="1919" y="-224.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; SFX</text>
-<polyline fill="none" stroke="black" points="1911,-217.5 2017,-217.5 "/>
-<text text-anchor="start" x="1919" y="-205.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Start()</text>
-<text text-anchor="start" x="1919" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; OnTriggerEnter2D()</text>
+<g id="a_node19"><a xlink:href="class_player_movement.html" target="_top" xlink:title="A script to control the movement and animations of the player">
+<polygon fill="none" stroke="black" points="1920.5,-143.5 1920.5,-332.5 2025.5,-332.5 2025.5,-143.5 1920.5,-143.5"/>
+<text text-anchor="middle" x="1973" y="-320.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerMovement</text>
+<polyline fill="none" stroke="black" points="1920.5,-313.5 2025.5,-313.5 "/>
+<text text-anchor="start" x="1928.5" y="-301.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; speed</text>
+<text text-anchor="start" x="1928.5" y="-290.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; lastMove</text>
+<text text-anchor="start" x="1928.5" y="-279.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; canMove</text>
+<text text-anchor="start" x="1928.5" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; previousPosition</text>
+<text text-anchor="start" x="1928.5" y="-257.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; player</text>
+<text text-anchor="start" x="1928.5" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; anim</text>
+<text text-anchor="start" x="1928.5" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; playerExists</text>
+<polyline fill="none" stroke="black" points="1920.5,-228.5 2025.5,-228.5 "/>
+<text text-anchor="start" x="1928.5" y="-216.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ move()</text>
+<text text-anchor="start" x="1928.5" y="-205.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setCanMove()</text>
+<text text-anchor="start" x="1928.5" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Start()</text>
+<text text-anchor="start" x="1928.5" y="-183.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; FixedUpdate()</text>
+<text text-anchor="start" x="1928.5" y="-172.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; randomEncounter()</text>
+<text text-anchor="start" x="1928.5" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; walkAnimation()</text>
+<text text-anchor="start" x="1928.5" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; setIdle()</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node18 -->
 <g id="edge18" class="edge"><title>Node0&#45;&gt;Node18</title>
-<path fill="none" stroke="midnightblue" d="M1341.03,-537.92C1481.33,-531.851 1859.78,-512.254 1902,-476 1955.73,-429.87 1965.79,-343.492 1966.26,-288.733"/>
-<polygon fill="none" stroke="midnightblue" points="1340.79,-534.427 1330.95,-538.351 1341.09,-541.421 1340.79,-534.427"/>
+<path fill="none" stroke="midnightblue" d="M1411.73,-537.307C1541.77,-530.079 1874.66,-508.566 1912,-476 1952.43,-440.746 1967.82,-382.623 1973.03,-332.761"/>
+<polygon fill="none" stroke="midnightblue" points="1411.41,-533.819 1401.62,-537.863 1411.79,-540.809 1411.41,-533.819"/>
 </g>
 <!-- Node19 -->
 <g id="node20" class="node"><title>Node19</title>
-<g id="a_node20"><a xlink:href="class_quit.html" target="_top" xlink:title="{Quit\n||&#45; Start()\l&#45; Update()\l}">
-<polygon fill="none" stroke="black" points="2035.5,-204 2035.5,-272 2094.5,-272 2094.5,-204 2035.5,-204"/>
-<text text-anchor="middle" x="2065" y="-260" font-family="Helvetica,sans-Serif" font-size="10.00">Quit</text>
-<polyline fill="none" stroke="black" points="2035.5,-253 2094.5,-253 "/>
-<text text-anchor="middle" x="2065" y="-241" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="2035.5,-234 2094.5,-234 "/>
-<text text-anchor="start" x="2043.5" y="-222" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Start()</text>
-<text text-anchor="start" x="2043.5" y="-211" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Update()</text>
+<g id="a_node20"><a xlink:href="class_portal.html" target="_top" xlink:title="A component to add to an object, such as when the player touches it they are teleported to a new scen...">
+<polygon fill="none" stroke="black" points="2044,-187.5 2044,-288.5 2150,-288.5 2150,-187.5 2044,-187.5"/>
+<text text-anchor="middle" x="2097" y="-276.5" font-family="Helvetica,sans-Serif" font-size="10.00">Portal</text>
+<polyline fill="none" stroke="black" points="2044,-269.5 2150,-269.5 "/>
+<text text-anchor="start" x="2052" y="-257.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ newScene</text>
+<text text-anchor="start" x="2052" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ newPosition</text>
+<text text-anchor="start" x="2052" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sceneChanger</text>
+<text text-anchor="start" x="2052" y="-224.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; SFX</text>
+<polyline fill="none" stroke="black" points="2044,-217.5 2150,-217.5 "/>
+<text text-anchor="start" x="2052" y="-205.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Start()</text>
+<text text-anchor="start" x="2052" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; OnTriggerEnter2D()</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node19 -->
 <g id="edge19" class="edge"><title>Node0&#45;&gt;Node19</title>
-<path fill="none" stroke="midnightblue" d="M1340.54,-539.115C1499.71,-535.897 1975.87,-522.438 2026,-476 2082.29,-423.86 2077.81,-324.237 2070.84,-272.323"/>
-<polygon fill="none" stroke="midnightblue" points="1340.45,-535.616 1330.52,-539.313 1340.58,-542.615 1340.45,-535.616"/>
+<path fill="none" stroke="midnightblue" d="M1412.03,-538.453C1562.05,-533.529 1987.82,-516.121 2035,-476 2088.94,-430.125 2098.95,-343.671 2099.34,-288.827"/>
+<polygon fill="none" stroke="midnightblue" points="1411.59,-534.965 1401.71,-538.786 1411.82,-541.961 1411.59,-534.965"/>
 </g>
 <!-- Node20 -->
 <g id="node21" class="node"><title>Node20</title>
-<g id="a_node21"><a xlink:href="class_scene_changer.html" target="_top" xlink:title="A set of functions to be called to change scenes smoothly whilst handling the player&#39;s location and a...">
-<polygon fill="none" stroke="black" points="2113,-149 2113,-327 2211,-327 2211,-149 2113,-149"/>
-<text text-anchor="middle" x="2162" y="-315" font-family="Helvetica,sans-Serif" font-size="10.00">SceneChanger</text>
-<polyline fill="none" stroke="black" points="2113,-308 2211,-308 "/>
-<text text-anchor="start" x="2121" y="-296" font-family="Helvetica,sans-Serif" font-size="10.00">+ movePlayer</text>
-<text text-anchor="start" x="2121" y="-285" font-family="Helvetica,sans-Serif" font-size="10.00">+ startPosition</text>
-<text text-anchor="start" x="2121" y="-274" font-family="Helvetica,sans-Serif" font-size="10.00">+ instance</text>
-<text text-anchor="start" x="2121" y="-263" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; player</text>
-<text text-anchor="start" x="2121" y="-252" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; movementScript</text>
-<polyline fill="none" stroke="black" points="2113,-245 2211,-245 "/>
-<text text-anchor="start" x="2121" y="-233" font-family="Helvetica,sans-Serif" font-size="10.00">+ loadLevel()</text>
-<text text-anchor="start" x="2121" y="-222" font-family="Helvetica,sans-Serif" font-size="10.00">+ loadLevel()</text>
-<text text-anchor="start" x="2121" y="-211" font-family="Helvetica,sans-Serif" font-size="10.00">+ changePosition()</text>
-<text text-anchor="start" x="2121" y="-200" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Awake()</text>
-<text text-anchor="start" x="2121" y="-189" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; OnDisable()</text>
-<text text-anchor="start" x="2121" y="-178" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sceneChanged()</text>
-<text text-anchor="start" x="2121" y="-167" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Update()</text>
-<text text-anchor="start" x="2121" y="-156" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; changeScene()</text>
+<g id="a_node21"><a xlink:href="class_quit.html" target="_top" xlink:title="{Quit\n||&#45; Start()\l&#45; Update()\l}">
+<polygon fill="none" stroke="black" points="2168.5,-204 2168.5,-272 2227.5,-272 2227.5,-204 2168.5,-204"/>
+<text text-anchor="middle" x="2198" y="-260" font-family="Helvetica,sans-Serif" font-size="10.00">Quit</text>
+<polyline fill="none" stroke="black" points="2168.5,-253 2227.5,-253 "/>
+<text text-anchor="middle" x="2198" y="-241" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="2168.5,-234 2227.5,-234 "/>
+<text text-anchor="start" x="2176.5" y="-222" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Start()</text>
+<text text-anchor="start" x="2176.5" y="-211" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Update()</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node20 -->
 <g id="edge20" class="edge"><title>Node0&#45;&gt;Node20</title>
-<path fill="none" stroke="midnightblue" d="M1340.84,-539.399C1511.15,-536.955 2045.91,-525.383 2104,-476 2146.44,-439.92 2160.58,-378.372 2164.3,-327.041"/>
-<polygon fill="none" stroke="midnightblue" points="1340.58,-535.902 1330.63,-539.541 1340.68,-542.902 1340.58,-535.902"/>
+<path fill="none" stroke="midnightblue" d="M1411.83,-539.483C1580.21,-537.315 2104.08,-526.53 2159,-476 2215.46,-424.048 2210.91,-324.343 2203.88,-272.368"/>
+<polygon fill="none" stroke="midnightblue" points="1411.69,-535.985 1401.73,-539.609 1411.78,-542.984 1411.69,-535.985"/>
 </g>
 <!-- Node21 -->
 <g id="node22" class="node"><title>Node21</title>
-<g id="a_node22"><a xlink:href="class_sound_manager.html" target="_top" xlink:title="A script to manage all background music and sound effects in the game ">
-<polygon fill="none" stroke="black" points="2229,-182 2229,-294 2311,-294 2311,-182 2229,-182"/>
-<text text-anchor="middle" x="2270" y="-282" font-family="Helvetica,sans-Serif" font-size="10.00">SoundManager</text>
-<polyline fill="none" stroke="black" points="2229,-275 2311,-275 "/>
-<text text-anchor="start" x="2237" y="-263" font-family="Helvetica,sans-Serif" font-size="10.00">+ BGMSource</text>
-<text text-anchor="start" x="2237" y="-252" font-family="Helvetica,sans-Serif" font-size="10.00">+ SFXSource</text>
-<text text-anchor="start" x="2237" y="-241" font-family="Helvetica,sans-Serif" font-size="10.00">+ instance</text>
-<text text-anchor="start" x="2237" y="-230" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; soundEffects</text>
-<polyline fill="none" stroke="black" points="2229,-223 2311,-223 "/>
-<text text-anchor="start" x="2237" y="-211" font-family="Helvetica,sans-Serif" font-size="10.00">+ playBGM()</text>
-<text text-anchor="start" x="2237" y="-200" font-family="Helvetica,sans-Serif" font-size="10.00">+ playSFX()</text>
-<text text-anchor="start" x="2237" y="-189" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Awake()</text>
+<g id="a_node22"><a xlink:href="class_scene_changer.html" target="_top" xlink:title="A set of functions to be called to change scenes smoothly whilst handling the player&#39;s location and a...">
+<polygon fill="none" stroke="black" points="2246,-143.5 2246,-332.5 2344,-332.5 2344,-143.5 2246,-143.5"/>
+<text text-anchor="middle" x="2295" y="-320.5" font-family="Helvetica,sans-Serif" font-size="10.00">SceneChanger</text>
+<polyline fill="none" stroke="black" points="2246,-313.5 2344,-313.5 "/>
+<text text-anchor="start" x="2254" y="-301.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ movePlayer</text>
+<text text-anchor="start" x="2254" y="-290.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ startPosition</text>
+<text text-anchor="start" x="2254" y="-279.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ instance</text>
+<text text-anchor="start" x="2254" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ menuClosed</text>
+<text text-anchor="start" x="2254" y="-257.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; player</text>
+<text text-anchor="start" x="2254" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; movementScript</text>
+<polyline fill="none" stroke="black" points="2246,-239.5 2344,-239.5 "/>
+<text text-anchor="start" x="2254" y="-227.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ loadLevel()</text>
+<text text-anchor="start" x="2254" y="-216.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ loadLevel()</text>
+<text text-anchor="start" x="2254" y="-205.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ changePosition()</text>
+<text text-anchor="start" x="2254" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Awake()</text>
+<text text-anchor="start" x="2254" y="-183.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; OnDisable()</text>
+<text text-anchor="start" x="2254" y="-172.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sceneChanged()</text>
+<text text-anchor="start" x="2254" y="-161.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Update()</text>
+<text text-anchor="start" x="2254" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; changeScene()</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node21 -->
 <g id="edge21" class="edge"><title>Node0&#45;&gt;Node21</title>
-<path fill="none" stroke="midnightblue" d="M1340.66,-540.017C1526.49,-539.598 2153.44,-533.875 2220,-476 2271.17,-431.505 2277.71,-349.033 2275.55,-294.08"/>
-<polygon fill="none" stroke="midnightblue" points="1340.6,-536.517 1330.6,-540.035 1340.61,-543.517 1340.6,-536.517"/>
+<path fill="none" stroke="midnightblue" d="M1411.84,-539.708C1590.62,-538.231 2173.92,-529.33 2237,-476 2278,-441.337 2292.62,-382.9 2296.93,-332.728"/>
+<polygon fill="none" stroke="midnightblue" points="1411.62,-536.209 1401.64,-539.788 1411.67,-543.209 1411.62,-536.209"/>
 </g>
 <!-- Node22 -->
 <g id="node23" class="node"><title>Node22</title>
-<g id="a_node23"><a xlink:href="class_stats_script.html" target="_top" xlink:title="A script used to manage and update all of the stat displays in the battle scene ">
-<polygon fill="none" stroke="black" points="2329.5,-171 2329.5,-305 2422.5,-305 2422.5,-171 2329.5,-171"/>
-<text text-anchor="middle" x="2376" y="-293" font-family="Helvetica,sans-Serif" font-size="10.00">StatsScript</text>
-<polyline fill="none" stroke="black" points="2329.5,-286 2422.5,-286 "/>
-<text text-anchor="start" x="2337.5" y="-274" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; textHeader</text>
-<text text-anchor="start" x="2337.5" y="-263" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; textFooter</text>
-<text text-anchor="start" x="2337.5" y="-252" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; rect</text>
-<text text-anchor="start" x="2337.5" y="-241" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; textDisplay</text>
-<text text-anchor="start" x="2337.5" y="-230" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; initialWidth</text>
-<text text-anchor="start" x="2337.5" y="-219" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; widthPerUnit</text>
-<polyline fill="none" stroke="black" points="2329.5,-212 2422.5,-212 "/>
-<text text-anchor="start" x="2337.5" y="-200" font-family="Helvetica,sans-Serif" font-size="10.00">+ setUpDisplay()</text>
-<text text-anchor="start" x="2337.5" y="-189" font-family="Helvetica,sans-Serif" font-size="10.00">+ updateDisplay()</text>
-<text text-anchor="start" x="2337.5" y="-178" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Start()</text>
+<g id="a_node23"><a xlink:href="class_sound_manager.html" target="_top" xlink:title="A script to manage all background music and sound effects in the game ">
+<polygon fill="none" stroke="black" points="2362,-182 2362,-294 2444,-294 2444,-182 2362,-182"/>
+<text text-anchor="middle" x="2403" y="-282" font-family="Helvetica,sans-Serif" font-size="10.00">SoundManager</text>
+<polyline fill="none" stroke="black" points="2362,-275 2444,-275 "/>
+<text text-anchor="start" x="2370" y="-263" font-family="Helvetica,sans-Serif" font-size="10.00">+ BGMSource</text>
+<text text-anchor="start" x="2370" y="-252" font-family="Helvetica,sans-Serif" font-size="10.00">+ SFXSource</text>
+<text text-anchor="start" x="2370" y="-241" font-family="Helvetica,sans-Serif" font-size="10.00">+ instance</text>
+<text text-anchor="start" x="2370" y="-230" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; soundEffects</text>
+<polyline fill="none" stroke="black" points="2362,-223 2444,-223 "/>
+<text text-anchor="start" x="2370" y="-211" font-family="Helvetica,sans-Serif" font-size="10.00">+ playBGM()</text>
+<text text-anchor="start" x="2370" y="-200" font-family="Helvetica,sans-Serif" font-size="10.00">+ playSFX()</text>
+<text text-anchor="start" x="2370" y="-189" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Awake()</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node22 -->
 <g id="edge22" class="edge"><title>Node0&#45;&gt;Node22</title>
-<path fill="none" stroke="midnightblue" d="M1340.78,-540.334C1539.33,-541.141 2244.69,-539.483 2320,-476 2368.81,-434.854 2379.52,-359.791 2380.1,-305.138"/>
-<polygon fill="none" stroke="midnightblue" points="1340.63,-536.833 1330.62,-540.289 1340.6,-543.833 1340.63,-536.833"/>
+<path fill="none" stroke="midnightblue" d="M1411.83,-540.256C1605.8,-540.732 2281.51,-537.903 2353,-476 2404.26,-431.615 2410.78,-349.114 2408.59,-294.125"/>
+<polygon fill="none" stroke="midnightblue" points="1411.63,-536.755 1401.62,-540.226 1411.61,-543.755 1411.63,-536.755"/>
 </g>
 <!-- Node23 -->
 <g id="node24" class="node"><title>Node23</title>
-<g id="a_node24"><a xlink:href="class_world_map_script.html" target="_top" xlink:title="A controler for the world map, stopping players from entering old or future levels, and colouring the departments approriately">
-<polygon fill="none" stroke="black" points="2441,-209.5 2441,-266.5 2527,-266.5 2527,-209.5 2441,-209.5"/>
-<text text-anchor="middle" x="2484" y="-254.5" font-family="Helvetica,sans-Serif" font-size="10.00">WorldMapScript</text>
-<polyline fill="none" stroke="black" points="2441,-247.5 2527,-247.5 "/>
-<text text-anchor="middle" x="2484" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="2441,-228.5 2527,-228.5 "/>
-<text text-anchor="start" x="2449" y="-216.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Start()</text>
+<g id="a_node24"><a xlink:href="class_stats_script.html" target="_top" xlink:title="A script used to manage and update all of the stat displays in the battle scene ">
+<polygon fill="none" stroke="black" points="2462.5,-171 2462.5,-305 2555.5,-305 2555.5,-171 2462.5,-171"/>
+<text text-anchor="middle" x="2509" y="-293" font-family="Helvetica,sans-Serif" font-size="10.00">StatsScript</text>
+<polyline fill="none" stroke="black" points="2462.5,-286 2555.5,-286 "/>
+<text text-anchor="start" x="2470.5" y="-274" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; textHeader</text>
+<text text-anchor="start" x="2470.5" y="-263" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; textFooter</text>
+<text text-anchor="start" x="2470.5" y="-252" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; rect</text>
+<text text-anchor="start" x="2470.5" y="-241" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; textDisplay</text>
+<text text-anchor="start" x="2470.5" y="-230" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; initialWidth</text>
+<text text-anchor="start" x="2470.5" y="-219" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; widthPerUnit</text>
+<polyline fill="none" stroke="black" points="2462.5,-212 2555.5,-212 "/>
+<text text-anchor="start" x="2470.5" y="-200" font-family="Helvetica,sans-Serif" font-size="10.00">+ setUpDisplay()</text>
+<text text-anchor="start" x="2470.5" y="-189" font-family="Helvetica,sans-Serif" font-size="10.00">+ updateDisplay()</text>
+<text text-anchor="start" x="2470.5" y="-178" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Start()</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node23 -->
 <g id="edge23" class="edge"><title>Node0&#45;&gt;Node23</title>
-<path fill="none" stroke="midnightblue" d="M1340.85,-538.83C1558.62,-533.697 2389.94,-511.814 2432,-476 2493.42,-423.701 2492.05,-317.027 2487.46,-266.594"/>
-<polygon fill="none" stroke="midnightblue" points="1340.57,-535.336 1330.65,-539.069 1340.73,-542.334 1340.57,-535.336"/>
+<path fill="none" stroke="midnightblue" d="M1411.98,-538.671C1623.81,-533.038 2412.7,-509.851 2453,-476 2501.88,-434.94 2512.58,-359.862 2513.14,-305.182"/>
+<polygon fill="none" stroke="midnightblue" points="1411.65,-535.179 1401.75,-538.942 1411.84,-542.176 1411.65,-535.179"/>
+</g>
+<!-- Node24 -->
+<g id="node25" class="node"><title>Node24</title>
+<g id="a_node25"><a xlink:href="class_world_map_script.html" target="_top" xlink:title="A controler for the world map, stopping players from entering old or future levels, and colouring the departments approriately">
+<polygon fill="none" stroke="black" points="2574,-204 2574,-272 2664,-272 2664,-204 2574,-204"/>
+<text text-anchor="middle" x="2619" y="-260" font-family="Helvetica,sans-Serif" font-size="10.00">WorldMapScript</text>
+<polyline fill="none" stroke="black" points="2574,-253 2664,-253 "/>
+<text text-anchor="middle" x="2619" y="-241" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="2574,-234 2664,-234 "/>
+<text text-anchor="start" x="2582" y="-222" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Start()</text>
+<text text-anchor="start" x="2582" y="-211" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; renderBuilding()</text>
+</a>
+</g>
+</g>
+<!-- Node0&#45;&gt;Node24 -->
+<g id="edge24" class="edge"><title>Node0&#45;&gt;Node24</title>
+<path fill="none" stroke="midnightblue" d="M1412.05,-538.972C1637.49,-534.3 2520.29,-513.652 2565,-476 2624.55,-425.846 2626.32,-324.884 2622.65,-272.399"/>
+<polygon fill="none" stroke="midnightblue" points="1411.75,-535.477 1401.82,-539.182 1411.89,-542.476 1411.75,-535.477"/>
 </g>
 </g>
 </svg>

@@ -73,18 +73,74 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for WorldMapScript:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_world_map_script__inherit__graph.svg" width="126" height="214"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_world_map_script__inherit__graph.svg" width="131" height="228"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:ad1149b034672faaa3cbacab0ae0e59d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world_map_script.html#ad1149b034672faaa3cbacab0ae0e59d7">Start</a> ()</td></tr>
-<tr class="memdesc:ad1149b034672faaa3cbacab0ae0e59d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">When World Map is loaded, set all beaten levels to red and stop them acting as portals and set the next level to green  <a href="#ad1149b034672faaa3cbacab0ae0e59d7">More...</a><br /></td></tr>
+<tr class="memdesc:ad1149b034672faaa3cbacab0ae0e59d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">When World Map is loaded, set all beaten levels to red and stop them acting as portals and set the next level to green. The future levels are then defaultly uncoloured  <a href="#ad1149b034672faaa3cbacab0ae0e59d7">More...</a><br /></td></tr>
 <tr class="separator:ad1149b034672faaa3cbacab0ae0e59d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c76550ed3c4cfc7191de966204e2f9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world_map_script.html#a0c76550ed3c4cfc7191de966204e2f9f">renderBuilding</a> (string buildingName, Color colour, bool removeCollider=false)</td></tr>
+<tr class="memdesc:a0c76550ed3c4cfc7191de966204e2f9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the building, when called by <a class="el" href="class_world_map_script.html#ad1149b034672faaa3cbacab0ae0e59d7" title="When World Map is loaded, set all beaten levels to red and stop them acting as portals and set the ne...">Start</a>  <a href="#a0c76550ed3c4cfc7191de966204e2f9f">More...</a><br /></td></tr>
+<tr class="separator:a0c76550ed3c4cfc7191de966204e2f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A controler for the world map, stopping players from entering old or future levels, and colouring the departments approriately</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0c76550ed3c4cfc7191de966204e2f9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c76550ed3c4cfc7191de966204e2f9f">&#9670;&nbsp;</a></span>renderBuilding()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WorldMapScript.renderBuilding </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>buildingName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color&#160;</td>
+          <td class="paramname"><em>colour</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>removeCollider</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Renders the building, when called by <a class="el" href="class_world_map_script.html#ad1149b034672faaa3cbacab0ae0e59d7" title="When World Map is loaded, set all beaten levels to red and stop them acting as portals and set the ne...">Start</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buildingName</td><td>The name of the building to render</td></tr>
+    <tr><td class="paramname">colour</td><td>The colour to colour the building as</td></tr>
+    <tr><td class="paramname">removeCollider</td><td>If set to <code>true</code> remove collider. <code>false</code> by default</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad1149b034672faaa3cbacab0ae0e59d7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad1149b034672faaa3cbacab0ae0e59d7">&#9670;&nbsp;</a></span>Start()</h2>
 
@@ -108,7 +164,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>When World Map is loaded, set all beaten levels to red and stop them acting as portals and set the next level to green </p>
+<p>When World Map is loaded, set all beaten levels to red and stop them acting as portals and set the next level to green. The future levels are then defaultly uncoloured </p>
 
 </div>
 </div>

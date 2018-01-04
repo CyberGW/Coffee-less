@@ -43,7 +43,7 @@ public class GlobalFunctions : MonoBehaviour {
 	/// </summary>
 	public enum ItemTypes { None, Hammer };
 	[System.NonSerialized]
-	public string[] levelOrder = new string[] { "CS", "TFTV" };
+	public string[] levelOrder = new string[] { "CS", "TFTV", "RCH" };
 
 	void Awake() {
 		if (instance == null) {
