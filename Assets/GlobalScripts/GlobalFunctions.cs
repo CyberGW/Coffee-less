@@ -15,14 +15,13 @@ public class GlobalFunctions : MonoBehaviour {
 	/// <summary>Holds an enemy object for the battle scene to load from</summary>
 	private Enemy enemy;
 	/// <summary>Holds an amount of money for the battle scene to load from</summary>
-	[System.NonSerialized]
-	public Texture2D sprite;
 	private int money;
 	/// <summary>Holds an item for the battle scene to load from</summary>
 	private Item item;
 	/// <summary>Holds whether a battle to be started can be run from or not</summary>
 	[System.NonSerialized]
 	public bool canRunAway;
+	public bool playerDied;
 	/// <summary>Refers to the player object so it can be set active or inactive</summary>
 	private GameObject player;
 	/// <summary>Refers to the scene a battle was initiated from so it can be returned to afterwards</summary>
@@ -66,9 +65,8 @@ public class GlobalFunctions : MonoBehaviour {
 	/// <param name="enemy">The enemy object to battle against</param>
 	/// <param name="money">The monetary reward if the battle is won</param>
 	/// <param name="item">The item rewards if the battle is won, may be <c>null</c></param>
-	public void createBattle(Enemy enemy, Texture2D sprite, int money, Item item, bool canRunAway) {
+	public void createBattle(Enemy enemy, int money, Item item, bool canRunAway) {
 		this.enemy = enemy;
-		this.sprite = sprite;
 		this.money = money;
 		this.item = item;
 		this.canRunAway = canRunAway;

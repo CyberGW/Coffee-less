@@ -13,7 +13,10 @@ public class PlayerData : MonoBehaviour {
 	// Use this for initialization
 	void Awake() {
 		
-		data = new DataManager (new Player ("George", 1, 100, 30, 5, 5, 5, 5, 5, 0, null, new MagicAttack("hi-jump kicked", "Kick with power 15", 3, 15), new RaiseDefence("buffed up against", "Increase your defence by 10%", 2, 0.1f)));
+		data = new DataManager (new Player ("George", 1, 100, 30, 5, 5, 5, 5, 5, 0, null,
+			new MagicAttack("hi-jump kicked", "Kick with power 15", 3, 15),
+			new RaiseDefence("buffed up against", "Increase your defence by 10%", 2, 0.1f),
+			(Texture2D) Resources.Load("Character1", typeof(Texture2D))));
 
 		if (instance == null) {
 			instance = this;
@@ -94,6 +97,7 @@ public class DataManager {
 		for (int i = 0; i < players.Length; i++) {
 			if (players[i] == null) {
 				players[i] = player;
+				alive += 1;
 				added = true;
 				break;
 			}

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Script for handing a battle scene. Uses <see cref="BattleManager"/>, but handles turn order and execution as well
@@ -38,6 +39,7 @@ public class MainBattle : MonoBehaviour {
 	private IDictionary<Character, StatsScript> healthBar;
 	private IDictionary<Character, StatsScript> magicBar;
 	private StatsScript expBar;
+	private Image playerSprite;
 	private Image enemySprite;
 	//Scene Management
 	private GameObject playerCamera;
@@ -59,9 +61,8 @@ public class MainBattle : MonoBehaviour {
 		runButton = GameObject.Find ("RunButton").GetComponent<Button> ();
 		runButton.interactable = GlobalFunctions.instance.canRunAway;
 		textBox = GameObject.Find ("TextBox").transform.Find ("Text").GetComponent<Text> ();
+		playerSprite = GameObject.Find ("PlayerImage").GetComponent<Image> ();
 		enemySprite = GameObject.Find ("EnemyImage").GetComponent<Image> ();
-		Texture2D image = GlobalFunctions.instance.sprite;
-		enemySprite.sprite = Sprite.Create (image, new Rect (0.0f, 0.0f, image.width, image.height), new Vector2 (0.5f, 0.5f));
 
 
 		//Setup Object references
@@ -73,6 +74,11 @@ public class MainBattle : MonoBehaviour {
 		manager = new BattleManager (playerArray[0], enemyObject, moneyReward);
 		player = manager.Player;
 		enemy = manager.Enemy;
+		Texture2D image;
+		image = enemy.Image;
+		enemySprite.sprite = Sprite.Create (image, new Rect (0.0f, 0.0f, image.width, image.height), new Vector2 (0.5f, 0.5f));
+		image = player.Image;
+		playerSprite.sprite = Sprite.Create (image, new Rect (0.0f, 0.0f, image.width, image.height), new Vector2 (0.5f, 0.5f));
 
 		//Bars
 		healthBar = new Dictionary<Character, StatsScript>();
@@ -160,7 +166,7 @@ public class MainBattle : MonoBehaviour {
 		if (move.Target is Enemy) {
 			StartCoroutine( checkIfPlayerWon ());
 		} else {
-			checkIfPlayerLost ();
+			StartCoroutine( checkIfPlayerLost ());
 		}
 	}
 
@@ -229,12 +235,17 @@ public class MainBattle : MonoBehaviour {
 	/// Checks if player lost.
 	/// </summary>
 	/// <returns><c>true</c>, if player has fainted, <c>false</c> otherwise.</returns>
-	private bool checkIfPlayerLost() {
+	private IEnumerator checkIfPlayerLost() {
 		if (manager.playerFainted()) {
-			Debug.Log ("Lost!");
-			return true;
-		} else {
-			return false;
+			PlayerData.instance.data.Alive -= 1;
+			if (PlayerData.instance.data.Alive == 0) {
+				textBox.text = "All players have fainted! Game Over.";
+				SceneChanger.instance.loadLevel ("mainmenu1");
+			} else {
+				textBox.text = player.Name + " fainted!";
+				yield return new WaitForSeconds (2);
+				SceneManager.LoadSceneAsync ("SwitchPlayer", LoadSceneMode.Additive);
+			}
 		}
 	}
 
@@ -264,16 +275,28 @@ public class MainBattle : MonoBehaviour {
 		prepareTurn ();
 	}
 
+	public void switchPlayers(int playerIndex) {
+		Player newPlayer = PlayerData.instance.data.Players [playerIndex];
+		playerMove = new SwitchPlayers (manager, player, newPlayer);
+		playerSprite.sprite = Sprite.Create (newPlayer.Image, new Rect (0.0f, 0.0f, newPlayer.Image.width, newPlayer.Image.height),
+			new Vector2 (0.5f, 0.5f));
+		prepareTurn();
+	}
+
 	/// <summary>
 	/// Called by any of <see cref="standardAttack"/>, <see cref="special1"/> or <see cref="special2"/>
 	/// Uses <see cref="BattleManager.enemyMove"/> to decide on the enemy's move, and hides attack panel and makes
 	/// attack button unclickable    
 	/// </summary>
 	private void prepareTurn() {
-		enemyMove = manager.enemyMove (enemy, player);
-		moveChosen = true;
-		attacksPanel.SetActive (false);
-		attackButton.interactable = false;
+		if (!GlobalFunctions.instance.playerDied) {
+			enemyMove = manager.enemyMove (enemy, player);
+			moveChosen = true;
+			attacksPanel.SetActive (false);
+			attackButton.interactable = false;
+		} else {
+			playerMove.performMove ();
+		}
 	}
 
 

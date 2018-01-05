@@ -19,8 +19,10 @@ public abstract class Character {
 	protected int speed;
 	protected SpecialMove special1;
 	protected SpecialMove special2;
+	protected Texture2D image;
 
-	protected Character (string name, int level, int health, int attack, int defence, int maximumMagic, int magic, int luck, int speed, SpecialMove special1, SpecialMove special2)
+	protected Character (string name, int level, int health, int attack, int defence, int maximumMagic,
+		int magic, int luck, int speed, SpecialMove special1, SpecialMove special2, Texture2D image = null)
 	{
 		this.name = name;
 		this.level = level;
@@ -33,6 +35,7 @@ public abstract class Character {
 		this.speed = speed;
 		this.special1 = special1;
 		this.special2 = special2;
+		this.image = image;
 	}		
 
 	public string Name {
@@ -131,6 +134,12 @@ public abstract class Character {
 		}
 		set {
 			special2 = value;
+		}
+	}
+
+	public Texture2D Image {
+		get {
+			return this.image;
 		}
 	}
 

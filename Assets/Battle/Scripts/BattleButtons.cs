@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 /// <summary>Script to handle the function of the Attack Button in the Battle Scene</summary>
-public class AttackButton : MonoBehaviour {
+public class BattleButtons : MonoBehaviour {
 
 	private GameObject attacksPanel;
 	private bool panelActive;
@@ -26,6 +27,10 @@ public class AttackButton : MonoBehaviour {
 			attacksPanel.SetActive (true);
 			panelActive = true;
 		}
+	}
+
+	public void showPlayerMenu() {
+		SceneManager.LoadSceneAsync ("SwitchPlayer", LoadSceneMode.Additive);
 	}
 
 	/// <summary>

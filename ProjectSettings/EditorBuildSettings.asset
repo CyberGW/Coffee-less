@@ -48,7 +48,7 @@ EditorBuildSettings:
     path: Assets/Menus/MainMenu/mainmenu1.unity
     guid: 8d411f211734a45a98ebaeb652359071
   - enabled: 1
-    path: Assets/Menus/ItemMenu/ItemMenu.unity
+    path: Assets/Menus/ExplorationMenu/ItemMenu.unity
     guid: 48505b1b792ae544992122802d6fd914
   - enabled: 1
     path: Assets/Exploration/Scenes/RCH.unity
@@ -71,3 +71,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Menus/ExplorationMenu/Party.unity
     guid: 99cbee4a5b55747d6a56777d38a752fd
+  - enabled: 1
+    path: Assets/Battle/SwitchPlayer.unity
+    guid: 5ff7ff44e0bdf504e9a646c403a7e7e6

@@ -13,8 +13,8 @@ public class Player : Character {
 	private Item item;
 
 	public Player (string name, int level, int health, int attack, int defence, int maximumMagic, int magic,
-				  	int luck, int speed, int exp, Item item, SpecialMove special1, SpecialMove special2)
-		   : base(name, level, health, attack, defence, maximumMagic, magic, luck, speed, special1, special2)
+		int luck, int speed, int exp, Item item, SpecialMove special1, SpecialMove special2, Texture2D image = null)
+		   : base(name, level, health, attack, defence, maximumMagic, magic, luck, speed, special1, special2, image)
 	{
 		this.exp = exp;
 		setExpToNextLevel ();

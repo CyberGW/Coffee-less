@@ -44,8 +44,8 @@ public class BattleDescriptor : MonoBehaviour {
 	public void createBattle() {
 		GlobalFunctions.instance.createBattle (new Enemy (name, level, health, attack, defence, maximumMagic, maximumMagic,
 			luck, speed, createSpecialMove (special1, special1Text, special1Magic, special1Value),
-			createSpecialMove (special2, special2Text, special2Magic, special2Value)),
-			sprite, battleMoney, GlobalFunctions.instance.createItem(battleItem), canRunAway);
+			createSpecialMove (special2, special2Text, special2Magic, special2Value), sprite),
+			battleMoney, GlobalFunctions.instance.createItem(battleItem), canRunAway);
 	}
 
 

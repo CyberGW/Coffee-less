@@ -1505,8 +1505,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: setItemPanelActive
+      - m_Target: {fileID: 1431015780}
+        m_MethodName: showPlayerMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2995,7 +2995,7 @@ GameObject:
   - component: {fileID: 1431015781}
   - component: {fileID: 1431015780}
   m_Layer: 0
-  m_Name: AttackButtonHandler
+  m_Name: ButtonHandler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3009,7 +3009,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1431015779}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 367e3250df22d134aaecc5881719b751, type: 3}
+  m_Script: {fileID: 11500000, guid: 4abff127849a49c428e457e62fa83c28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1431015781
@@ -3875,9 +3875,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3537ffc6cd6f2e6499f924b87dcb19af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager:
-    forceCriticalHits: 
-    money: 0
 --- !u!1 &1800719177
 GameObject:
   m_ObjectHideFlags: 0

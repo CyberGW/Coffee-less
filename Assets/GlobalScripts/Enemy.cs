@@ -11,8 +11,8 @@ public class Enemy : Character {
 	private int expGiven;
 
 	public Enemy (string name, int level, int health, int attack, int defence, int maximumMagic,
-		  			int magic, int luck, int speed, SpecialMove special1, SpecialMove special2)
-		   : base(name, level, health, attack, defence, maximumMagic, magic, luck, speed, special1, special2)
+		int magic, int luck, int speed, SpecialMove special1, SpecialMove special2, Texture2D image = null)
+		   : base(name, level, health, attack, defence, maximumMagic, magic, luck, speed, special1, special2, image)
 	{
 		this.expGiven = level * 100;
 	}

@@ -30,30 +30,30 @@ public class ItemsMenuScript : MonoBehaviour {
 		items = data.Items;
 		players = data.Players;
 		//Add two hammers for testing purposes
-		data.addItem (new Hammer());
-		data.addItem (new Hammer());
+		//data.addItem (new Hammer());
+		//data.addItem (new Hammer());
 		itemObjects = new GameObject[6];
 		GameObject container;
 		GameObject stats;
+		Texture2D image;
 		//Find all cells
 		for (int i = 0; i < 6; i++) {
 			//Find and store the item and player container
 			itemContainers [i] = GameObject.Find ("Item" + i).GetComponent<DragAndDropCell>();
 			playerContainers [i] = GameObject.Find ("Player" + i);
-			Debug.Log (playerContainers [i]);
 			//If there is an item in the item inventory
 			if (items[i] != null) {
 				//Load an item object in this position to drag and drop
-				itemObjects [i] = Instantiate (Resources.Load ("Item", typeof(GameObject))) as GameObject;
-				itemObjects [i].GetComponent<ItemData> ().Item = data.Items [i];
-				itemObjects [i].transform.Find ("Text").GetComponent<Text> ().text = data.Items [i].Name + " - " + data.Items [i].Desc;
-				itemContainers [i].PlaceItem (itemObjects [i]);
+				createItemCell(itemContainers[i], data.Items[i]);
 			}
 			//If there's not a player at this current position
 			if (players [i] == null) {
 				Destroy (playerContainers [i]);
 			} else {
 				container = playerContainers [i].transform.Find ("Container").gameObject;
+				image = players [i].Image;
+				container.transform.Find("Image").GetComponent<Image>().sprite = 
+					Sprite.Create (image, new Rect (0.0f, 0.0f, image.width, image.height), new Vector2 (0.5f, 0.5f));
 				container.transform.Find ("Name").GetComponent<Text> ().text = players [i].Name;
 				stats = container.transform.Find ("Stats").gameObject;
 				stats.transform.Find ("Attack").GetComponent<Text> ().text = "Attack: " + players [i].Attack.ToString ();
@@ -64,10 +64,7 @@ public class ItemsMenuScript : MonoBehaviour {
 				stats.transform.Find ("Speed").GetComponent<Text> ().text = "Speed: " + players [i].Speed.ToString ();
 				if (players [i].Item != null) {
 					DragAndDropCell itemCell = playerContainers [i].transform.Find ("Container/Stats/Item").GetComponent<DragAndDropCell> ();
-					GameObject item = Instantiate (Resources.Load ("Item", typeof(GameObject))) as GameObject;
-					item.GetComponent<ItemData> ().Item = players [i].Item;
-					item.transform.Find ("Text").GetComponent<Text> ().text = data.Items [i].Name + " - " + data.Items [i].Desc;
-					itemCell.PlaceItem (item);
+					createItemCell (itemCell, players [i].Item);
 					//Disabled the container from having items dragged into it and set to grey to indicate this
 					//playerContainers [i].enabled = false;
 					//playerContainers [i].GetComponent<Image> ().color = Color.grey;
@@ -76,9 +73,11 @@ public class ItemsMenuScript : MonoBehaviour {
 		}
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
+	private void createItemCell(DragAndDropCell cell, Item itemObject) {
+		GameObject item = Instantiate (Resources.Load ("Item", typeof(GameObject))) as GameObject;
+		item.GetComponent<ItemData> ().Item = itemObject;
+		item.transform.Find ("Text").GetComponent<Text> ().text = itemObject.Name + " - " + itemObject.Desc;
+		cell.PlaceItem (item);
 	}
 
 	/// <summary>
@@ -92,16 +91,13 @@ public class ItemsMenuScript : MonoBehaviour {
 		//If moving to a new item slot
 		if (dest.Type == "Item") {
 			items [dest.Index] = items [source.Index]; //Assign item to new slot
-		}
-		//If equipping to a player
-		if (dest.Type == "Player") {
+		} else if (dest.Type == "Player") {	//If equipping to a player
 			PlayerData.instance.data.Players [dest.Index].Item = items [source.Index]; //Change that player's item accordingly
 		}
 		//If coming from an item slot
 		if (source.Type == "Item") {
 			items [source.Index] = null; //Remove from it's original location
-		}
-		if (source.Type == "Player") {
+		} else if (source.Type == "Player") {
 			PlayerData.instance.data.Players [source.Index].Item = null;
 		}
 		Debug.Log ("Source: " + source.Type);
