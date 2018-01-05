@@ -79,6 +79,7 @@
      <Compile Include="Assets\GlobalScripts\SimpleDragAndDrop\Scripts\DummyControlUnit.cs" />
      <Compile Include="Assets\GlobalScripts\SoundManager.cs" />
      <Compile Include="Assets\Menus\ExplorationMenu\Scripts\ExplorationMenuScript.cs" />
+     <Compile Include="Assets\Menus\ExplorationMenu\Scripts\PlayerMenu.cs" />
      <Compile Include="Assets\Menus\ItemMenu\ContainerData.cs" />
      <Compile Include="Assets\Menus\ItemMenu\ItemData.cs" />
      <Compile Include="Assets\Menus\ItemMenu\ItemsMenuScript.cs" />

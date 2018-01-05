@@ -39,7 +39,9 @@ public class Player : Character {
 				item.revertBuffs (this);
 			}
 			item = value;
-			value.applyBuffs (this);
+			if (item != null) {
+				value.applyBuffs (this);
+			}
 		}
 	}
 

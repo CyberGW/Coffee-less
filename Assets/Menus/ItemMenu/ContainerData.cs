@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class ContainerData : MonoBehaviour {
 
-	private string type;
-	private int index;
+	public string type;
+	public int index;
 
 	void Start() {
-		type = gameObject.name.Substring (0, gameObject.name.Length - 1);
-		index = int.Parse (gameObject.name.Substring (gameObject.name.Length - 1));
+		//type = gameObject.name.Substring (0, gameObject.name.Length - 1);
+		//index = int.Parse (gameObject.name.Substring (gameObject.name.Length - 1));
 	}
 
 	public string Type {

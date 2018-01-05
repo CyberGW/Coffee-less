@@ -10,31 +10,33 @@ public class ExplorationMenuScript : MonoBehaviour {
 	private GameObject menuBox;
 	private PlayerMovement movementScript;
 
-	public Button inventButton;
-	public Button partyButton;
-	public Button saveButton;
-	public Button optionButton;
-	public Button exitButton;
+//	public Button inventButton;
+//	public Button partyButton;
+//	public Button saveButton;
+//	public Button optionButton;
+//	public Button exitButton;
 
 	// Use this for initialization
 	void Start () {
 
-		inventButton = inventButton.GetComponent<Button> ();
-		partyButton = partyButton.GetComponent<Button> ();
-		saveButton = saveButton.GetComponent<Button> ();
-		optionButton = optionButton.GetComponent<Button> ();
-		exitButton = exitButton.GetComponent<Button> ();
+//		inventButton = inventButton.GetComponent<Button> ();
+//		partyButton = partyButton.GetComponent<Button> ();
+//		saveButton = saveButton.GetComponent<Button> ();
+//		optionButton = optionButton.GetComponent<Button> ();
+//		exitButton = exitButton.GetComponent<Button> ();
 
 		movementScript = FindObjectOfType<PlayerMovement> ();
-		menuBox = gameObject.transform.Find ("MenuScript").gameObject;
-		setInactive ();
+		//menuBox = gameObject.transform.Find ("MenuScript").gameObject;
+		SceneChanger.instance.menuOpen = true;
+		//setInactive ();
 	}
 
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.Escape)) {
-			SceneChanger.menuClosed = true;
-			UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync (6);
+//			SceneChanger.instance.menuOpen = false;
+//			movementScript.setCanMove (true);
+//			UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(20);
 		}
 	}
 
@@ -45,12 +47,13 @@ public class ExplorationMenuScript : MonoBehaviour {
 	}
 
 	public void inventPressed() {
-		//inventButton.enabled = true;
-		UnityEngine.SceneManagement.SceneManager.LoadScene ("ItemMenu");
+		SceneChanger.instance.menuOpen = false;
+		SceneChanger.instance.loadLevel ("ItemMenu");
 	}
 
 	public void partyPressed() {
-		UnityEngine.SceneManagement.SceneManager.LoadScene ("Party");
+		SceneChanger.instance.menuOpen = false;
+		SceneChanger.instance.loadLevel ("Party");
 	}
 
 	public void savePressed() {
@@ -62,7 +65,8 @@ public class ExplorationMenuScript : MonoBehaviour {
 	}
 
 	public void exitPressed() {
-		UnityEngine.SceneManagement.SceneManager.LoadScene ("mainmenu1");
+		SceneChanger.instance.menuOpen = false;
+		SceneChanger.instance.loadLevel ("mainmenu1");
 	}
 
 	/*

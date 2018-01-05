@@ -18,7 +18,8 @@ public class SceneChanger : MonoBehaviour {
 	public static SceneChanger instance;
 	private GameObject player;
 	private PlayerMovement movementScript;
-	public static bool menuClosed;
+	public bool menuOpen = false;
+	public string menuScene;
 
 
 	void Awake() {
@@ -50,20 +51,27 @@ public class SceneChanger : MonoBehaviour {
 		if (movePlayer) {
 			//Change the player position on load
 			changePosition (startPosition);
+			movePlayer = false;
 		}
 		if (scene.name != "Battle") {
 			//Allow player to move again
 			movementScript.setCanMove (true);
 		}
-		if (menuClosed) {
-			movementScript.setCanMove (true);
-			menuClosed = false;
+		if (menuOpen) {
+			movementScript.setCanMove (false);
+			if (scene.name != "GameMenu") {
+				SceneManager.LoadScene ("GameMenu", LoadSceneMode.Additive);
+			}
 		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
+	}
+
+	public void hidePlayer() {
+		player.SetActive (false);
 	}
 
 	/// <summary>Load a new level, without moving the player. </summary>

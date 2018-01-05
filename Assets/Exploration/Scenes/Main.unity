@@ -1514,7 +1514,6 @@ GameObject:
   - component: {fileID: 1865146521}
   - component: {fileID: 1865146520}
   - component: {fileID: 1865146522}
-  - component: {fileID: 1865146523}
   m_Layer: 0
   m_Name: GlobalData
   m_TagString: Untagged
@@ -1557,18 +1556,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b79d888a3367c6428e2995bc46e94ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
---- !u!114 &1865146523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1865146519}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91d40ffb74bad664da7b4c297b9d8607, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1874946396
 GameObject:
   m_ObjectHideFlags: 0
@@ -1596,6 +1583,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49d947e5ab100fa4993b25ee51cb8476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuOpen: 0
+  menuScene: 
 --- !u!4 &1874946398
 Transform:
   m_ObjectHideFlags: 0
@@ -1725,6 +1714,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f2ada571bbfb0448a34a040c72af284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  battleMoney: 10
+  battleItem: 0
+  canRunAway: 0
   name: Skyfoogle
   sprite: {fileID: 2800000, guid: b719094e8d564a74d9c4d09098f3cb3a, type: 3}
   level: 1
@@ -1742,8 +1734,6 @@ MonoBehaviour:
   special2Text: weakend
   special2Magic: 1
   special2Value: 0.05
-  battleMoney: 10
-  battleItem: 0
 --- !u!1 &2038476224
 GameObject:
   m_ObjectHideFlags: 0
@@ -1771,6 +1761,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f2ada571bbfb0448a34a040c72af284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  battleMoney: 10
+  battleItem: 0
+  canRunAway: 0
   name: Goose
   sprite: {fileID: 2800000, guid: 8d03301ca5f90364799053e80e9c6bb9, type: 3}
   level: 1
@@ -1788,8 +1781,6 @@ MonoBehaviour:
   special2Text: flapped at
   special2Magic: 1
   special2Value: 5
-  battleMoney: 10
-  battleItem: 0
 --- !u!4 &2038476226
 Transform:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>A script to control the movement and animations of the player</summary>
 public class PlayerMovement : MonoBehaviour {
@@ -51,7 +52,15 @@ public class PlayerMovement : MonoBehaviour {
 			GlobalFunctions.instance.createBattle (new Enemy ("Swinefoogle", 5, 100, 15, 5, 5, 5, 5, 5, new MagicAttack("fireballed", "Fireball", 30, 3),  new MagicAttack("fireballed", "Fireball", 30, 5)), (Texture2D) Resources.Load("Little_Green_Enemy", typeof(Texture2D)), 50, null, false);
 		}
 		if (Input.GetKeyDown (KeyCode.Escape)) {
-			SceneChanger.instance.loadLevel ("ItemMenu");
+			if (SceneChanger.instance.menuOpen) {
+				SceneChanger.instance.menuOpen = false;
+				setCanMove (true);
+				UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync (20);
+			} else {
+				SceneChanger.instance.menuOpen = true;
+				SceneChanger.instance.menuScene = SceneManager.GetActiveScene ().name;
+				SceneManager.LoadScene ("GameMenu", LoadSceneMode.Additive);
+			}
 		}
 
 		if (Input.GetKey (KeyCode.UpArrow)) {
