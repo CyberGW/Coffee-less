@@ -16,7 +16,6 @@ public class ItemsMenuScript : MonoBehaviour {
 	private DataManager data;
 	private Item[] items;
 	private Player[] players;
-	private GameObject[] itemObjects;
 
 	/// <summary>
 	/// Initialises variables and creates item objects as required
@@ -29,10 +28,6 @@ public class ItemsMenuScript : MonoBehaviour {
 		data = PlayerData.instance.data;
 		items = data.Items;
 		players = data.Players;
-		//Add two hammers for testing purposes
-		//data.addItem (new Hammer());
-		//data.addItem (new Hammer());
-		itemObjects = new GameObject[6];
 		GameObject container;
 		GameObject stats;
 		Texture2D image;
@@ -75,7 +70,7 @@ public class ItemsMenuScript : MonoBehaviour {
 	
 	private void createItemCell(DragAndDropCell cell, Item itemObject) {
 		GameObject item = Instantiate (Resources.Load ("Item", typeof(GameObject))) as GameObject;
-		item.GetComponent<ItemData> ().Item = itemObject;
+		item.name = "Item";
 		item.transform.Find ("Text").GetComponent<Text> ().text = itemObject.Name + " - " + itemObject.Desc;
 		cell.PlaceItem (item);
 	}
@@ -85,24 +80,35 @@ public class ItemsMenuScript : MonoBehaviour {
 	/// </summary>
 	/// <param name="desc">The description of the event, containing source and destination cells as well
 	/// as item details</param>
-	void OnItemPlace(DragAndDropCell.DropDescriptor desc) {
+	public void OnItemPlace(DragAndDropCell.DropDescriptor desc) {
 		ContainerData source = desc.sourceCell.gameObject.GetComponent<ContainerData> ();
 		ContainerData dest = desc.destinationCell.gameObject.GetComponent<ContainerData> ();
-		//If moving to a new item slot
-		if (dest.Type == "Item") {
-			items [dest.Index] = items [source.Index]; //Assign item to new slot
-		} else if (dest.Type == "Player") {	//If equipping to a player
-			PlayerData.instance.data.Players [dest.Index].Item = items [source.Index]; //Change that player's item accordingly
-		}
-		//If coming from an item slot
-		if (source.Type == "Item") {
-			items [source.Index] = null; //Remove from it's original location
-		} else if (source.Type == "Player") {
-			PlayerData.instance.data.Players [source.Index].Item = null;
+		Player[] players = data.Players;
+		Item temp;
+		if (dest.type == "Item") {
+			if (source.type == "Item") {
+				temp = items [source.Index];
+				items [source.Index] = items [dest.Index];
+				items [dest.Index] = temp;
+			} else { //if source.type == "Player"
+				temp = players [source.Index].Item;
+				players [source.Index].Item = items [dest.Index];
+				items [dest.Index] = temp;
+			}
+		} else { //if dest.type == "Player"
+			if (source.type == "Item") {
+				temp = items [source.Index];
+				items [source.Index] = players [dest.Index].Item;
+				players [dest.Index].Item = temp;
+			} else { //if source.type == "Player"
+				temp = players [source.Index].Item;
+				players [source.Index].Item = players [dest.Index].Item;
+				players [dest.Index].Item = temp;
+			}
 		}
 		Debug.Log ("Source: " + source.Type);
 		Debug.Log ("Destination: " + dest.Type);
-		Debug.Log ("Item Name: " + desc.item.GetComponent<ItemData> ().Item.Name);
+		//Debug.Log ("Item Name: " + desc.item.GetComponent<ItemData> ().Item.Name);
 	}
 
 	public void back() {

@@ -14,6 +14,7 @@ public class MainBattle : MonoBehaviour {
 	public BattleManager manager;
 	private Player[] playerArray;
 	private Button attackButton;
+	private Button playerButton;
 	private Button runButton;
 	private Text textBox;
 	//Battle Manager References
@@ -26,6 +27,7 @@ public class MainBattle : MonoBehaviour {
 	private Item itemReward;
 	//Local Variables
 	private string text;
+	public bool playerDied;
 	//Test Enemy
 	private Enemy enemyObject;
 	//Moves
@@ -58,6 +60,7 @@ public class MainBattle : MonoBehaviour {
 		playerStats = GameObject.Find("PlayerStats");
 		enemyStats = GameObject.Find ("EnemyStats");
 		attackButton = GameObject.Find ("AttackButton").GetComponent<Button> ();
+		playerButton = GameObject.Find ("PlayersButton").GetComponent<Button> ();
 		runButton = GameObject.Find ("RunButton").GetComponent<Button> ();
 		runButton.interactable = GlobalFunctions.instance.canRunAway;
 		textBox = GameObject.Find ("TextBox").transform.Find ("Text").GetComponent<Text> ();
@@ -97,6 +100,7 @@ public class MainBattle : MonoBehaviour {
 
 		//Setup local variables
 		moveChosen = false;
+		playerDied = false;
 
 		//Change Music
 		BGM = Resources.Load("Audio/battle", typeof(AudioClip)) as AudioClip;
@@ -130,7 +134,7 @@ public class MainBattle : MonoBehaviour {
 		yield return StartCoroutine (performTurn(playerMove));
 		if (!manager.battleWon()) {
 			yield return StartCoroutine (performTurn(enemyMove));
-			attackButton.interactable = true;
+			setButtonsInteractable (true);
 		}
 	}
 
@@ -143,7 +147,7 @@ public class MainBattle : MonoBehaviour {
 		yield return StartCoroutine (performTurn(enemyMove));
 		if (!manager.playerFainted()) {
 			yield return StartCoroutine (performTurn(playerMove));
-			attackButton.interactable = true;
+			setButtonsInteractable (true);
 		}
 	}
 
@@ -179,7 +183,7 @@ public class MainBattle : MonoBehaviour {
 		if (manager.battleWon()) {
 			SoundManager.instance.playBGM(victory);
 			enemySprite.gameObject.SetActive (false);
-			attackButton.interactable = false;
+			setButtonsInteractable (false);
 			Debug.Log(enemy.ExpGiven);
 			yield return StartCoroutine (updateExp(enemy.ExpGiven));
 			playerArray [0] = player;
@@ -242,11 +246,18 @@ public class MainBattle : MonoBehaviour {
 				textBox.text = "All players have fainted! Game Over.";
 				SceneChanger.instance.loadLevel ("mainmenu1");
 			} else {
+				playerDied = true;
 				textBox.text = player.Name + " fainted!";
 				yield return new WaitForSeconds (2);
 				SceneManager.LoadSceneAsync ("SwitchPlayer", LoadSceneMode.Additive);
 			}
 		}
+	}
+
+	private void setButtonsInteractable(bool val) {
+		attackButton.interactable = val;
+		playerButton.interactable = val;
+		runButton.interactable = val;
 	}
 
 	/// <summary>
@@ -289,12 +300,13 @@ public class MainBattle : MonoBehaviour {
 	/// attack button unclickable    
 	/// </summary>
 	private void prepareTurn() {
-		if (!GlobalFunctions.instance.playerDied) {
+		if (!playerDied) {
 			enemyMove = manager.enemyMove (enemy, player);
 			moveChosen = true;
 			attacksPanel.SetActive (false);
-			attackButton.interactable = false;
+			setButtonsInteractable (false);
 		} else {
+			//Perform the switch character move
 			playerMove.performMove ();
 		}
 	}
@@ -302,7 +314,7 @@ public class MainBattle : MonoBehaviour {
 
     /// <summary>
 	/// Run away from battle if <see cref="BattleManager.ranAway"/> returns true.
-	/// Otherwise display appropriate text and make sure run cannot be selected again
+	/// Otherwise display appropriate text and make sure run cannot be selected again that move
     /// </summary>
 	public void ranAway() {
         if (manager.ranAway(player.Speed,enemy.Speed)) {

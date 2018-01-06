@@ -81,15 +81,15 @@
      <Compile Include="Assets\GlobalScripts\SoundManager.cs" />
      <Compile Include="Assets\Menus\ExplorationMenu\Scripts\ContainerData.cs" />
      <Compile Include="Assets\Menus\ExplorationMenu\Scripts\ExplorationMenuScript.cs" />
-     <Compile Include="Assets\Menus\ExplorationMenu\Scripts\ItemData.cs" />
      <Compile Include="Assets\Menus\ExplorationMenu\Scripts\ItemsMenuScript.cs" />
-     <Compile Include="Assets\Menus\ExplorationMenu\Scripts\PlayerDataComponent.cs" />
      <Compile Include="Assets\Menus\ExplorationMenu\Scripts\PlayerMenu.cs" />
      <Compile Include="Assets\Menus\MainMenu\ButtonManager.cs" />
      <Compile Include="Assets\Menus\MainMenu\MenuScript.cs" />
      <Compile Include="Assets\Menus\MainMenu\Quit.cs" />
      <Compile Include="Assets\PlayTests\Resources\BattleModeTest.cs" />
      <Compile Include="Assets\PlayTests\Resources\ExplorationTest.cs" />
+     <Compile Include="Assets\PlayTests\Resources\MenuTest.cs" />
+     <Compile Include="Assets\PlayTests\Resources\MenuTestSetupScript.cs" />
      <Compile Include="Assets\PlayTests\Resources\WorldMapTest.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\CircleObject.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\GameObjectExtensions.cs" />

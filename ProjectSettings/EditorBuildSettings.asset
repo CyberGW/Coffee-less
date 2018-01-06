@@ -74,3 +74,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Battle/SwitchPlayer.unity
     guid: 5ff7ff44e0bdf504e9a646c403a7e7e6
+  - enabled: 1
+    path: Assets/PlayTests/MenuTestScene.unity
+    guid: fe9017499f7c5224da8f99fc1d2372ce

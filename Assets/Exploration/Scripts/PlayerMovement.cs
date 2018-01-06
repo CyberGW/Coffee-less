@@ -26,6 +26,7 @@ public class PlayerMovement : MonoBehaviour {
 	/// The animation controller of the player
 	/// </summary>
 	private Animator anim;
+	public bool pseudoEscapeKeyPress = false;
 
 	// Use this for initialization
 	void Start () {
@@ -55,16 +56,17 @@ public class PlayerMovement : MonoBehaviour {
 				(Texture2D) Resources.Load("Little_Green_Enemy", typeof(Texture2D))),
 				50, null, false);
 		}
-		if (Input.GetKeyDown (KeyCode.Escape)) {
+		if (Input.GetKeyDown (KeyCode.Escape) || pseudoEscapeKeyPress) {
 			if (SceneChanger.instance.menuOpen) {
 				SceneChanger.instance.menuOpen = false;
 				setCanMove (true);
-				UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync (20);
+				UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync (SceneManager.GetSceneByName("GameMenu").buildIndex);
 			} else {
 				SceneChanger.instance.menuOpen = true;
 				SceneChanger.instance.menuScene = SceneManager.GetActiveScene ().name;
 				SceneManager.LoadScene ("GameMenu", LoadSceneMode.Additive);
 			}
+			pseudoEscapeKeyPress = false;
 		}
 
 		if (Input.GetKey (KeyCode.UpArrow)) {

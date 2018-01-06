@@ -21,7 +21,7 @@ public class PlayerMenu : MonoBehaviour {
 			cell = GameObject.Find ("Player" + (i + 1));
 			container = cell.transform.Find ("Container").gameObject;
 			if (players [i] != null) {
-				container.AddComponent<PlayerDataComponent>().Player = players[i];
+				//container.AddComponent<PlayerDataComponent>().Player = players[i];
 				//container.GetComponent<PlayerDataComponent> ().Player = players [i];
 				image = players [i].Image;
 				container.transform.Find("Image").GetComponent<Image>().sprite = 
@@ -56,7 +56,7 @@ public class PlayerMenu : MonoBehaviour {
 		PlayerData.instance.data.swapPlayers (source.index, dest.index);
 		Debug.Log ("Source: " + source.Type);
 		Debug.Log ("Destination: " + dest.Type);
-		Debug.Log ("Item Name: " + desc.item.GetComponent<ItemData> ().Item.Name);
+		//Debug.Log ("Item Name: " + desc.item.GetComponent<ItemData> ().Item.Name);
 	}
 
 	public void back() {

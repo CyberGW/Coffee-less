@@ -143,7 +143,7 @@ public class DragAndDropCell : MonoBehaviour, IDropHandler
                                         desc.sourceCell = this;
                                         desc.destinationCell = sourceCell;
                                         // Send message with DragAndDrop info to parents GameObjects
-                                        StartCoroutine(NotifyOnDragEnd(desc));
+                                        //StartCoroutine(NotifyOnDragEnd(desc));
                                     }
                                     break;
                                 default:

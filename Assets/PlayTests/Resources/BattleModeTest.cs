@@ -65,7 +65,7 @@ public class BattleModeTest {
 
 	[UnityTest]
 	public IEnumerator A2AttackButton() {
-		BattleButtons attackButton = GameObject.Find ("AttackButtonHandler").GetComponent<BattleButtons> ();
+		BattleButtons attackButton = GameObject.Find ("ButtonHandler").GetComponent<BattleButtons> ();
 		attackButton.setPanelActive (); //Click attack button
 		yield return null;
 		Assert.NotNull (GameObject.Find ("AttacksPanel")); //Check panel shows
@@ -76,7 +76,7 @@ public class BattleModeTest {
 
 	[UnityTest]
 	public IEnumerator A3AttackPanelDisplay() {
-		BattleButtons attackButton = GameObject.Find ("AttackButtonHandler").GetComponent<BattleButtons> ();
+		BattleButtons attackButton = GameObject.Find ("ButtonHandler").GetComponent<BattleButtons> ();
 		attackButton.setPanelActive (); //Click attack button
 		yield return null;
 		Player player = PlayerData.instance.data.Players [0];

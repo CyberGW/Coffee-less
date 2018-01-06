@@ -21,7 +21,6 @@ public class GlobalFunctions : MonoBehaviour {
 	/// <summary>Holds whether a battle to be started can be run from or not</summary>
 	[System.NonSerialized]
 	public bool canRunAway;
-	public bool playerDied;
 	/// <summary>Refers to the player object so it can be set active or inactive</summary>
 	private GameObject player;
 	/// <summary>Refers to the scene a battle was initiated from so it can be returned to afterwards</summary>
@@ -40,7 +39,7 @@ public class GlobalFunctions : MonoBehaviour {
 	/// <summary>
 	/// An enum type representing items so that they can be selected from within the Unity Editor
 	/// </summary>
-	public enum ItemTypes { None, Hammer };
+	public enum ItemTypes { None, Hammer, Trainers, RabbitFoot, MagicAmulet, Shield, Armour };
 	[System.NonSerialized]
 	public string[] levelOrder = new string[] { "CS", "TFTV", "RCH" };
 
@@ -108,6 +107,21 @@ public class GlobalFunctions : MonoBehaviour {
 		{
 		case ItemTypes.Hammer:
 			item = new Hammer();
+			break;
+		case ItemTypes.Trainers:
+			item = new Trainers ();
+			break;
+		case ItemTypes.RabbitFoot:
+			item = new RabbitFoot ();
+			break;
+		case ItemTypes.MagicAmulet:
+			item = new MagicAmulet ();
+			break;
+		case ItemTypes.Shield:
+			item = new Shield ();
+			break;
+		case ItemTypes.Armour:
+			item = new Armour ();
 			break;
 		default:
 			item = null;

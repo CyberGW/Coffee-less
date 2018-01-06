@@ -45,8 +45,7 @@ public abstract class Item {
 /// </summary>
 public class Hammer : Item {
 
-	public Hammer ()
-	{
+	public Hammer () {
 		this.name = "Hammer";
 		this.desc = "Increases user's attack power by 5";
 	}
@@ -58,6 +57,97 @@ public class Hammer : Item {
 
 	public override void revertBuffs(Player player) {
 		player.Attack -= 5;
+	}
+
+}
+
+public class Trainers : Item {
+
+	public Trainers () {
+		this.name = "Trainers";
+		this.desc = "Increases user's speed by 5";
+	}
+
+	public override void applyBuffs(Player player) {
+		player.Speed += 5;
+	}
+
+	public override void revertBuffs(Player player) {
+		player.Speed -= 5;
+	}
+
+}
+
+public class RabbitFoot : Item {
+
+	public RabbitFoot () {
+		this.name = "Rabbit Foot";
+		this.desc = "Increases user's luck by 5";
+	}
+
+	public override void applyBuffs(Player player) {
+		player.Luck += 5;
+	}
+
+	public override void revertBuffs(Player player) {
+		player.Luck -= 5;
+	}
+
+}
+
+public class MagicAmulet : Item {
+
+	public MagicAmulet () {
+		this.name = "Magic Amulet";
+		this.desc = "Increases user's maximum magic points by 3";
+	}
+
+	public override void applyBuffs(Player player) {
+		player.MaximumMagic += 3;
+		player.Magic += 3;
+	}
+
+	public override void revertBuffs(Player player) {
+		player.MaximumMagic -= 3;
+		if (player.Magic > player.MaximumMagic) {
+			player.Magic = player.MaximumMagic;
+		}
+	}
+
+}
+
+public class Shield : Item {
+
+	public Shield () {
+		this.name = "Shield";
+		this.desc = "Increases user's defence by 5";
+	}
+
+	public override void applyBuffs(Player player) {
+		player.Defence += 5;
+	}
+
+	public override void revertBuffs(Player player) {
+		player.Defence -= 5;
+	}
+
+}
+
+public class Armour : Item {
+
+	public Armour () {
+		this.name = "Armour";
+		this.desc = "Increase attack by 2 and defence by 3";
+	}
+
+	public override void applyBuffs(Player player) {
+		player.Attack += 3;
+		player.Defence += 3;
+	}
+
+	public override void revertBuffs(Player player) {
+		player.Attack -= 3;
+		player.Defence -= 3;
 	}
 
 }

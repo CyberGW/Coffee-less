@@ -50,7 +50,7 @@ public class SwitchPlayersScript : MonoBehaviour {
 			}
 		}
 		//Disable attack button if opened after player has died
-		if (!GlobalFunctions.instance.playerDied) {
+		if (mainBattle.playerDied) {
 			GameObject.Find ("BackButton").GetComponent<Button> ().interactable = false;
 		}
 

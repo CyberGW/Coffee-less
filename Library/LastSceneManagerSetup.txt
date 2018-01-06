@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Menus/ExplorationMenu/Party.unity
+- path: Assets/PlayTests/BattleTestInitialScene.unity
   isLoaded: 1
   isActive: 1
