@@ -69,7 +69,9 @@ public class BattleManager {
 	/// </summary>
 	/// <param name="newPlayer">The new player the current one should be switched with</param>
 	public void switchPlayers(Player newPlayer) {
-		player = newPlayer;
+		Debug.Log (newPlayer.Name);
+		this.player = newPlayer;
+		Debug.Log (this.player.Name);
 	}
 
 	/// <summary>

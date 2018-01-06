@@ -50,7 +50,7 @@ public class PlayerMenu : MonoBehaviour {
 
 	}
 	
-	void OnItemPlace(DragAndDropCell.DropDescriptor desc) {
+	public void OnItemPlace(DragAndDropCell.DropDescriptor desc) {
 		ContainerData source = desc.sourceCell.gameObject.GetComponent<ContainerData> ();
 		ContainerData dest = desc.destinationCell.gameObject.GetComponent<ContainerData> ();
 		PlayerData.instance.data.swapPlayers (source.index, dest.index);

@@ -57,6 +57,10 @@ public class ObjectInteraction : MonoBehaviour {
 	/// <param name="other">The object that has been collided with, checked to see if "Player"</param>
 	void OnTriggerStay2D(Collider2D other) {
 		if (other.gameObject.name == "Player" && keyPressed() && !dManager.dialogueActive) {
+			//Test debug
+			if (dManager == null) {
+				dManager = FindObjectOfType<DialogueScript> ();
+			}
 			SoundManager.instance.playSFX ("interact");
 			dManager.showDialogue (dialogue, this);
 			movementScript.setCanMove (false);
@@ -79,7 +83,7 @@ public class ObjectInteraction : MonoBehaviour {
 	/// </summary>
 	public void endOfDialogue() {
 		if (treasure != GlobalFunctions.ItemTypes.None) {
-			DataManager data= PlayerData.instance.data;
+			DataManager data = PlayerData.instance.data;
 			data.addItem ( GlobalFunctions.instance.createItem (treasure) );
 			GlobalFunctions.instance.objectsActive [id] = false;
 			Destroy (gameObject); //Remove trigger to stop player obtaining item again

@@ -57,7 +57,7 @@ public class SwitchPlayersScript : MonoBehaviour {
 	}
 
 	public void switchPlayers(int player) {
-		mainBattle.switchPlayers (0);
+		mainBattle.switchPlayers (player);
 		SceneManager.UnloadSceneAsync (SceneManager.GetSceneByName ("SwitchPlayer").buildIndex);
 	}
 		

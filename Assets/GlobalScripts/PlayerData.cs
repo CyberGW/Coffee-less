@@ -111,11 +111,9 @@ public class DataManager {
 	/// <param name="index1">The index of one player to swap</param>
 	/// <param name="index2">The index of the other player to swap</param>
 	public void swapPlayers(int index1, int index2) {
-		Debug.Log ("Original Index1: " + players [index1].Name);
 		Player temp = players [index1];
 		players [index1] = players [index2];
 		players [index2] = temp;
-		Debug.Log ("New Index1: " + players [index1].Name);
 	}
 
 	/// <summary>

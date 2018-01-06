@@ -38,8 +38,12 @@ public class MainBattle : MonoBehaviour {
 	private GameObject attacksPanel;
 	private GameObject playerStats;
 	private GameObject enemyStats;
-	private IDictionary<Character, StatsScript> healthBar;
-	private IDictionary<Character, StatsScript> magicBar;
+	//private IDictionary<Character, StatsScript> healthBar;
+	//private IDictionary<Character, StatsScript> magicBar;
+	private StatsScript playerHealthBar;
+	private StatsScript playerMagicBar;
+	private StatsScript enemyHealthBar;
+	private StatsScript enemyMagicBar;
 	private StatsScript expBar;
 	private Image playerSprite;
 	private Image enemySprite;
@@ -70,7 +74,6 @@ public class MainBattle : MonoBehaviour {
 
 		//Setup Object references
 		playerArray = PlayerData.instance.data.Players;
-		player = playerArray [0];
 		enemyObject = GlobalFunctions.instance.getEnemy ();
 		moneyReward = GlobalFunctions.instance.getMoney ();
 		itemReward = GlobalFunctions.instance.getItem ();
@@ -83,21 +86,17 @@ public class MainBattle : MonoBehaviour {
 		image = player.Image;
 		playerSprite.sprite = Sprite.Create (image, new Rect (0.0f, 0.0f, image.width, image.height), new Vector2 (0.5f, 0.5f));
 
-		//Bars
-		healthBar = new Dictionary<Character, StatsScript>();
-		healthBar[player] = playerStats.transform.Find("Health").GetComponent<StatsScript> ();
-		healthBar[enemy] = enemyStats.transform.Find("Health").GetComponent<StatsScript> ();
-		magicBar = new Dictionary<Character, StatsScript>();
-		magicBar[player] = playerStats.transform.Find ("Magic").GetComponent<StatsScript> ();
-		magicBar[enemy] = enemyStats.transform.Find ("Magic").GetComponent<StatsScript> ();
+
 		expBar = playerStats.transform.Find ("Exp").GetComponent<StatsScript> ();
-
-		healthBar[player].setUpDisplay (player.Health, 100);
-		healthBar[enemy].setUpDisplay (enemy.Health, 100);
-		magicBar[player].setUpDisplay (player.Magic, player.MaximumMagic);
-		magicBar[enemy].setUpDisplay (enemy.Magic, enemy.MaximumMagic);
+		playerHealthBar = playerStats.transform.Find("Health").GetComponent<StatsScript> ();
+		playerMagicBar = playerStats.transform.Find ("Magic").GetComponent<StatsScript> ();
+		enemyHealthBar = enemyStats.transform.Find("Health").GetComponent<StatsScript> ();
+		enemyMagicBar = enemyStats.transform.Find ("Magic").GetComponent<StatsScript> ();
 		expBar.setUpDisplay (player.Exp, player.ExpToNextLevel);
-
+		playerHealthBar.setUpDisplay (player.Health, 100);
+		enemyHealthBar.setUpDisplay (enemy.Health, 100);
+		playerMagicBar.setUpDisplay (player.Magic, player.MaximumMagic);
+		enemyMagicBar.setUpDisplay (enemy.Magic, enemy.MaximumMagic);
 		//Setup local variables
 		moveChosen = false;
 		playerDied = false;
@@ -133,6 +132,8 @@ public class MainBattle : MonoBehaviour {
 	private IEnumerator playerThenEnemy () {
 		yield return StartCoroutine (performTurn(playerMove));
 		if (!manager.battleWon()) {
+			Debug.Log (player.Name);
+			enemyMove = manager.enemyMove (enemy, player);
 			yield return StartCoroutine (performTurn(enemyMove));
 			setButtonsInteractable (true);
 		}
@@ -144,6 +145,7 @@ public class MainBattle : MonoBehaviour {
 	/// </summary>
 	/// <returns>Coroutine functions to perform the turns</returns>
 	private IEnumerator enemyThenPlayer() {
+		enemyMove = manager.enemyMove (enemy, player);
 		yield return StartCoroutine (performTurn(enemyMove));
 		if (!manager.playerFainted()) {
 			yield return StartCoroutine (performTurn(playerMove));
@@ -165,12 +167,29 @@ public class MainBattle : MonoBehaviour {
 		if (manager.WasCriticalHit) {
 			textBox.text += "\nCritical Hit!";
 		}
-		StartCoroutine (healthBar [move.Target].updateDisplay (previousHealth, move.Target.Health));
-		yield return StartCoroutine (magicBar [move.User].updateDisplay (previousMagic, move.User.Magic));
+
+		//Update bars and data
+		if (move is SwitchPlayers) {
+			updateToNewPlayer ();
+		}
+		yield return updateBars(move, previousHealth, previousMagic);
 		if (move.Target is Enemy) {
 			StartCoroutine( checkIfPlayerWon ());
 		} else {
 			StartCoroutine( checkIfPlayerLost ());
+		}
+	}
+
+	private IEnumerator updateBars(CharacterMove move, int previousHealth, int previousMagic) {
+		if (move.User is Player) {
+			StartCoroutine(playerMagicBar.updateDisplay (previousMagic, move.User.Magic));
+		} else { //if user is Enemy
+			StartCoroutine(enemyMagicBar.updateDisplay (previousMagic, move.User.Magic));
+		}
+		if (move.Target is Player) {
+			yield return playerHealthBar.updateDisplay (previousHealth, move.Target.Health);
+		} else { //if target is Enemy
+			yield return enemyHealthBar.updateDisplay( previousHealth, move.Target.Health);
 		}
 	}
 
@@ -241,14 +260,17 @@ public class MainBattle : MonoBehaviour {
 	/// <returns><c>true</c>, if player has fainted, <c>false</c> otherwise.</returns>
 	private IEnumerator checkIfPlayerLost() {
 		if (manager.playerFainted()) {
+			yield return null;
+			setButtonsInteractable (false);
 			PlayerData.instance.data.Alive -= 1;
 			if (PlayerData.instance.data.Alive == 0) {
 				textBox.text = "All players have fainted! Game Over.";
+				yield return new WaitForSeconds (2);
 				SceneChanger.instance.loadLevel ("mainmenu1");
 			} else {
 				playerDied = true;
 				textBox.text = player.Name + " fainted!";
-				yield return new WaitForSeconds (2);
+				yield return new WaitForSeconds (3);
 				SceneManager.LoadSceneAsync ("SwitchPlayer", LoadSceneMode.Additive);
 			}
 		}
@@ -289,9 +311,23 @@ public class MainBattle : MonoBehaviour {
 	public void switchPlayers(int playerIndex) {
 		Player newPlayer = PlayerData.instance.data.Players [playerIndex];
 		playerMove = new SwitchPlayers (manager, player, newPlayer);
+		PlayerData.instance.data.swapPlayers (0, playerIndex);
 		playerSprite.sprite = Sprite.Create (newPlayer.Image, new Rect (0.0f, 0.0f, newPlayer.Image.width, newPlayer.Image.height),
 			new Vector2 (0.5f, 0.5f));
+
 		prepareTurn();
+	}
+
+	public void updateToNewPlayer() {
+		this.player = manager.Player;
+		//Update references
+		playerHealthBar.setUpDisplay(player.Health, 100);
+		playerMagicBar.setUpDisplay (player.Magic, player.MaximumMagic);
+		expBar.setUpDisplay (player.Exp, player.ExpToNextLevel);
+		//healthBar[newPlayer].setUpDisplay (newPlayer.Health, 100);
+		//magicBar[newPlayer].setUpDisplay (newPlayer.Magic, newPlayer.MaximumMagic);
+
+		
 	}
 
 	/// <summary>
@@ -301,13 +337,13 @@ public class MainBattle : MonoBehaviour {
 	/// </summary>
 	private void prepareTurn() {
 		if (!playerDied) {
-			enemyMove = manager.enemyMove (enemy, player);
 			moveChosen = true;
 			attacksPanel.SetActive (false);
 			setButtonsInteractable (false);
 		} else {
 			//Perform the switch character move
-			playerMove.performMove ();
+			StartCoroutine(performTurn(playerMove));
+			playerDied = false;
 		}
 	}
 

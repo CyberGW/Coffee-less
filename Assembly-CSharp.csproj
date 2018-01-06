@@ -89,7 +89,6 @@
      <Compile Include="Assets\PlayTests\Resources\BattleModeTest.cs" />
      <Compile Include="Assets\PlayTests\Resources\ExplorationTest.cs" />
      <Compile Include="Assets\PlayTests\Resources\MenuTest.cs" />
-     <Compile Include="Assets\PlayTests\Resources\MenuTestSetupScript.cs" />
      <Compile Include="Assets\PlayTests\Resources\WorldMapTest.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\CircleObject.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\GameObjectExtensions.cs" />
