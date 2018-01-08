@@ -1,20 +1,25 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Battle\Scripts\MainBattle.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Editor\PlayerDataTest.cs">
     <Files>
-      <File FileName="Assets\Menus\ExplorationMenu\Scripts\PlayerMenu.cs" Line="53" Column="9" />
-      <File FileName="Assets\Menus\ExplorationMenu\Scripts\ItemsMenuScript.cs" Line="30" Column="26" />
-      <File FileName="Assets\PlayTests\Resources\BattleModeTest.cs" Line="187" Column="37" />
-      <File FileName="Assets\Exploration\Scripts\PlayerMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Menus\ExplorationMenu\Scripts\ExplorationMenuScript.cs" Line="49" Column="21" />
+      <File FileName="Assets\Menus\ExplorationMenu\Scripts\PlayerMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets\Menus\ExplorationMenu\Scripts\ItemsMenuScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\PlayTests\Resources\BattleModeTest.cs" Line="1" Column="1" />
+      <File FileName="Assets\Exploration\Scripts\PlayerMovement.cs" Line="60" Column="1" />
+      <File FileName="Assets\Menus\ExplorationMenu\Scripts\ExplorationMenuScript.cs" Line="1" Column="1" />
       <File FileName="Assets\GlobalScripts\SimpleDragAndDrop\Scripts\DragAndDropCell.cs" Line="1" Column="1" />
       <File FileName="Assets\Editor\PlayerTest.cs" Line="1" Column="1" />
-      <File FileName="Assets\Battle\Scripts\MainBattle.cs" Line="263" Column="22" />
-      <File FileName="Assets\Battle\Scripts\SwitchPlayersScript.cs" Line="39" Column="28" />
+      <File FileName="Assets\Battle\Scripts\MainBattle.cs" Line="265" Column="52" />
+      <File FileName="Assets\Battle\Scripts\SwitchPlayersScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Battle\Scripts\StatsScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Battle\Scripts\BattleManager.cs" Line="11" Column="9" />
-      <File FileName="Assets\Editor\PlayerDataTest.cs" Line="50" Column="33" />
-      <File FileName="Assets\GlobalScripts\PlayerData.cs" Line="113" Column="51" />
+      <File FileName="Assets\Battle\Scripts\BattleManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Editor\PlayerDataTest.cs" Line="22" Column="42" />
+      <File FileName="Assets\GlobalScripts\PlayerData.cs" Line="59" Column="3" />
+      <File FileName="Assets\GlobalScripts\SceneChanger.cs" Line="31" Column="1" />
+      <File FileName="Assets\GlobalScripts\GlobalFunctions.cs" Line="57" Column="1" />
+      <File FileName="Assets\Menus\MainMenu\MenuScript.cs" Line="40" Column="43" />
+      <File FileName="Assets\Exploration\Scripts\Portal.cs" Line="30" Column="1" />
+      <File FileName="Assets\GlobalScripts\SoundManager.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -39,14 +39,12 @@ public class PlayerData : MonoBehaviour {
 public class DataManager {
 
 	private Player[] players;
-	private int alive;
 	private Item[] items;
 	private int money;
 
 	public DataManager(Player initialPlayer) {
 		players = new Player[6];
 		players [0] = initialPlayer;
-		alive = 1;
 		items = new Item[6];
 		money = 0;
 	}
@@ -57,15 +55,6 @@ public class DataManager {
 		}
 		set {
 			players = value;
-		}
-	}
-
-	public int Alive {
-		get {
-			return this.alive;
-		}
-		set {
-			alive = value;
 		}
 	}
 
@@ -88,6 +77,18 @@ public class DataManager {
 		return players [0];
 	}
 
+	public int playersAlive() {
+		int alive = 0;
+		foreach (Player player in players) {
+			if (player != null) {
+				if (player.Health > 0) {
+					alive += 1;
+				}
+			}
+		}
+		return alive;
+	}
+
 	/// <summary>
 	/// Adds a new player to <see cref="players"/> if not-full, otherwise throwing an <c> InvalidOperationException</c>
 	/// </summary>
@@ -97,7 +98,6 @@ public class DataManager {
 		for (int i = 0; i < players.Length; i++) {
 			if (players[i] == null) {
 				players[i] = player;
-				alive += 1;
 				added = true;
 				break;
 			}

@@ -37,8 +37,10 @@ public class MenuScript : MonoBehaviour {
 	}
 
 	public void StartLevel(string newGameLevel){
-		SceneManager.LoadScene (newGameLevel);
+		SoundManager.instance.playSFX ("interact");
+		Initiate.Fade ("CS-Jail", Color.black, 1f);
 	}
+
 	public void ExitGame(){
 		
 		Application.Quit ();

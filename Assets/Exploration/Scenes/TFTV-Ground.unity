@@ -276,6 +276,12 @@ Prefab:
       propertyPath: dialogue.Array.data[1]
       value: Nah just kidding, you've gotta go upstairs to find the evil professor.
       objectReference: {fileID: 0}
+    - target: {fileID: 212996946334501392, guid: 029c17544fabbde43bb73a9f1d1359b7,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 007db2b482e3ecf41be25ac28e37a1bf,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
   m_IsPrefabParent: 0
@@ -340,11 +346,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
-        type: 2}
-      propertyPath: dialogue.Array.size
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 4704459060425080, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
       propertyPath: m_LocalPosition.x
       value: 113.95
@@ -379,29 +380,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 212996946334501392, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
-      propertyPath: m_SortingLayerID
-      value: -180578707
-      objectReference: {fileID: 0}
-    - target: {fileID: 212996946334501392, guid: 029c17544fabbde43bb73a9f1d1359b7,
-        type: 2}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
-        type: 2}
-      propertyPath: dialogue.Array.data[0]
-      value: Welcome to the TFTV Block!
-      objectReference: {fileID: 0}
-    - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
-        type: 2}
-      propertyPath: dialogue.Array.data[1]
-      value: There's lots of weird things happening at the moment...
-      objectReference: {fileID: 0}
-    - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
-        type: 2}
-      propertyPath: dialogue.Array.data[2]
-      value: You'd better accept it or leave.
-      objectReference: {fileID: 0}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1d69228c70d5ca845af3c1ed47e1374f,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
   m_IsPrefabParent: 0
@@ -463,6 +445,12 @@ Prefab:
       propertyPath: dialogue.Array.data[1]
       value: Truley, I am
       objectReference: {fileID: 0}
+    - target: {fileID: 212996946334501392, guid: 029c17544fabbde43bb73a9f1d1359b7,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 54132e496b1ddbd489b4010dadaa64bc,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
   m_IsPrefabParent: 0
@@ -850,6 +838,21 @@ Prefab:
     - target: {fileID: 4877416950172522, guid: 39c6f442aa2174047910f10f0c6b8e8f, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20784022718258468, guid: 39c6f442aa2174047910f10f0c6b8e8f,
+        type: 2}
+      propertyPath: m_BackGroundColor.r
+      value: 0.7058824
+      objectReference: {fileID: 0}
+    - target: {fileID: 20784022718258468, guid: 39c6f442aa2174047910f10f0c6b8e8f,
+        type: 2}
+      propertyPath: m_BackGroundColor.g
+      value: 0.5137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 20784022718258468, guid: 39c6f442aa2174047910f10f0c6b8e8f,
+        type: 2}
+      propertyPath: m_BackGroundColor.b
+      value: 0.33333334
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 39c6f442aa2174047910f10f0c6b8e8f, type: 2}

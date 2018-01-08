@@ -463,6 +463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e50dd5af215034048a8b665f2fc0d0e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pseudoEscapeKeyPress: 0
 --- !u!61 &976097574
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1677,6 +1678,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49d947e5ab100fa4993b25ee51cb8476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuOpen: 0
+  menuScene: 
 --- !u!4 &1874946398
 Transform:
   m_ObjectHideFlags: 0
@@ -1728,6 +1731,21 @@ Prefab:
     - target: {fileID: 4877416950172522, guid: 39c6f442aa2174047910f10f0c6b8e8f, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20784022718258468, guid: 39c6f442aa2174047910f10f0c6b8e8f,
+        type: 2}
+      propertyPath: m_BackGroundColor.r
+      value: 0.5529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 20784022718258468, guid: 39c6f442aa2174047910f10f0c6b8e8f,
+        type: 2}
+      propertyPath: m_BackGroundColor.g
+      value: 0.7686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 20784022718258468, guid: 39c6f442aa2174047910f10f0c6b8e8f,
+        type: 2}
+      propertyPath: m_BackGroundColor.b
+      value: 0.20784315
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 39c6f442aa2174047910f10f0c6b8e8f, type: 2}

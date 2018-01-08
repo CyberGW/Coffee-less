@@ -155,7 +155,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4704459060425080, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
@@ -334,7 +334,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4348523475837576, guid: e22a54a2f6c471e41b003c2999926774, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e22a54a2f6c471e41b003c2999926774, type: 2}
@@ -438,66 +438,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4704459060425080, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1344385287322598, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
       propertyPath: m_Name
       value: Character (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
-        type: 2}
-      propertyPath: dialogue.Array.data[0]
-      value: You'll find that the boss of this department is on the floor above
-      objectReference: {fileID: 0}
-    - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
-        type: 2}
-      propertyPath: dialogue.Array.data[1]
-      value: But I'm going to make an editor's cut, and stop you from reaching that
-        scene!!
-      objectReference: {fileID: 0}
-    - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
-        type: 2}
-      propertyPath: createBattle
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1298337601 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1060671026712308, guid: 029c17544fabbde43bb73a9f1d1359b7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1298337600}
---- !u!114 &1298337602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1298337601}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f2ada571bbfb0448a34a040c72af284, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: Evil Lecturer
-  sprite: {fileID: 2800000, guid: f8d4123b9fd9f8544966c9fdffb1a4d4, type: 3}
-  level: 5
-  health: 100
-  attack: 7
-  defence: 7
-  maximumMagic: 7
-  luck: 7
-  speed: 7
-  special1: 0
-  special1Text: gave a two hour lecture to
-  special1Magic: 3
-  special1Value: 15
-  special2: 2
-  special2Text: battered the self esteem of
-  special2Magic: 2
-  special2Value: 0.1
-  battleMoney: 100
-  battleItem: 0
 --- !u!1 &1679266580
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,6 +553,21 @@ Prefab:
     - target: {fileID: 4877416950172522, guid: 39c6f442aa2174047910f10f0c6b8e8f, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 20784022718258468, guid: 39c6f442aa2174047910f10f0c6b8e8f,
+        type: 2}
+      propertyPath: m_BackGroundColor.r
+      value: 0.7058824
+      objectReference: {fileID: 0}
+    - target: {fileID: 20784022718258468, guid: 39c6f442aa2174047910f10f0c6b8e8f,
+        type: 2}
+      propertyPath: m_BackGroundColor.g
+      value: 0.5137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 20784022718258468, guid: 39c6f442aa2174047910f10f0c6b8e8f,
+        type: 2}
+      propertyPath: m_BackGroundColor.b
+      value: 0.33333334
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 39c6f442aa2174047910f10f0c6b8e8f, type: 2}
@@ -720,6 +684,12 @@ Prefab:
       propertyPath: dialogue.Array.data[1]
       value: Truley, I am
       objectReference: {fileID: 0}
+    - target: {fileID: 212996946334501392, guid: 029c17544fabbde43bb73a9f1d1359b7,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e6627fd4f0ec3454dbf2b3c5b3981df0,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
   m_IsPrefabParent: 0

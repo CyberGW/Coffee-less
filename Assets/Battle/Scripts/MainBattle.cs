@@ -262,8 +262,7 @@ public class MainBattle : MonoBehaviour {
 		if (manager.playerFainted()) {
 			yield return null;
 			setButtonsInteractable (false);
-			PlayerData.instance.data.Alive -= 1;
-			if (PlayerData.instance.data.Alive == 0) {
+			if (PlayerData.instance.data.playersAlive() == 0) {
 				textBox.text = "All players have fainted! Game Over.";
 				yield return new WaitForSeconds (2);
 				SceneChanger.instance.loadLevel ("mainmenu1");

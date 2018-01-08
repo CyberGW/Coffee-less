@@ -20,7 +20,6 @@ public class PlayerDataTest {
 	public void Constructor() {
 		Assert.AreEqual (playerObject, data.Players [0]);
 		Assert.AreEqual (0, data.countItems());
-		Assert.AreEqual (1, data.Alive);
 		Assert.AreEqual (0, data.Money);
 	}
 
