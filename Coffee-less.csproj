@@ -285,17 +285,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Battle\Scripts\AttackButton.cs" />
+    <Compile Include="Assets\Battle\Scripts\BattleButtons.cs" />
     <Compile Include="Assets\Battle\Scripts\BattleManager.cs" />
     <Compile Include="Assets\Battle\Scripts\CharacterMoves.cs" />
-    <Compile Include="Assets\Battle\Scripts\ItemButton.cs" />
     <Compile Include="Assets\Battle\Scripts\MainBattle.cs" />
     <Compile Include="Assets\Battle\Scripts\StatsScript.cs" />
+    <Compile Include="Assets\Battle\Scripts\SwitchPlayersScript.cs" />
     <Compile Include="Assets\Exploration\Scripts\CameraController.cs" />
     <Compile Include="Assets\Exploration\Scripts\CanvasScript.cs" />
     <Compile Include="Assets\Exploration\Scripts\DialogueScript.cs" />
     <Compile Include="Assets\Exploration\Scripts\HealingStation.cs" />
-    <Compile Include="Assets\Exploration\Scripts\ItemObjects.cs" />
     <Compile Include="Assets\Exploration\Scripts\LevelManager.cs" />
     <Compile Include="Assets\Exploration\Scripts\ObjectInteraction.cs" />
     <Compile Include="Assets\Exploration\Scripts\PlayerMovement.cs" />
@@ -314,13 +313,17 @@
     <Compile Include="Assets\GlobalScripts\SimpleDragAndDrop\Scripts\DragAndDropItem.cs" />
     <Compile Include="Assets\GlobalScripts\SimpleDragAndDrop\Scripts\DummyControlUnit.cs" />
     <Compile Include="Assets\GlobalScripts\SoundManager.cs" />
-    <Compile Include="Assets\Menus\ItemMenu\ContainerData.cs" />
-    <Compile Include="Assets\Menus\ItemMenu\ItemData.cs" />
-    <Compile Include="Assets\Menus\ItemMenu\ItemsMenuScript.cs" />
+    <Compile Include="Assets\Menus\ExplorationMenu\Scripts\ContainerData.cs" />
+    <Compile Include="Assets\Menus\ExplorationMenu\Scripts\ExplorationMenuScript.cs" />
+    <Compile Include="Assets\Menus\ExplorationMenu\Scripts\ItemsMenuScript.cs" />
+    <Compile Include="Assets\Menus\ExplorationMenu\Scripts\PlayerMenu.cs" />
     <Compile Include="Assets\Menus\MainMenu\ButtonManager.cs" />
     <Compile Include="Assets\Menus\MainMenu\MenuScript.cs" />
     <Compile Include="Assets\Menus\MainMenu\Quit.cs" />
+    <Compile Include="Assets\PlayTests\Resources\BattleModeTest.cs" />
     <Compile Include="Assets\PlayTests\Resources\ExplorationTest.cs" />
+    <Compile Include="Assets\PlayTests\Resources\MenuTest.cs" />
+    <Compile Include="Assets\PlayTests\Resources\WorldMapTest.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\CircleObject.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\GameObjectExtensions.cs" />
     <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\GPUInstancing.cs" />

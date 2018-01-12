@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 521}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 685
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 521}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -105,10 +105,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 635
-  m_MinSize: {x: 583, y: 492}
+  m_MinSize: {x: 581, y: 471}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 1
-  controlID: 8589
+  controlID: 11
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -129,10 +129,10 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 635
-  m_MinSize: {x: 583, y: 492}
+  m_MinSize: {x: 581, y: 471}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 8590
+  controlID: 12
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -153,10 +153,10 @@ MonoBehaviour:
     y: 0
     width: 887
     height: 635
-  m_MinSize: {x: 306, y: 492}
+  m_MinSize: {x: 304, y: 471}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 8521
+  controlID: 13
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -177,10 +177,10 @@ MonoBehaviour:
     y: 0
     width: 887
     height: 342
-  m_MinSize: {x: 306, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
+  m_MinSize: {x: 304, y: 200}
+  m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 8522
+  controlID: 14
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -199,8 +199,8 @@ MonoBehaviour:
     y: 0
     width: 328
     height: 342
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -311,7 +311,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 330
-    y: 19
+    y: 92
     width: 555
     height: 321
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -323,10 +323,10 @@ MonoBehaviour:
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
-    m_HBaseRangeMin: -530.6667
-    m_HBaseRangeMax: 530.6667
-    m_VBaseRangeMin: -298.5
-    m_VBaseRangeMax: 298.5
+    m_HBaseRangeMin: -270.22223
+    m_HBaseRangeMax: 270.22223
+    m_VBaseRangeMin: -152
+    m_VBaseRangeMax: 152
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -343,25 +343,25 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
-      width: 1366
-      height: 597
+      width: 555
+      height: 304
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 683, y: 298.5}
+    m_Translation: {x: 277.5, y: 152}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -683
-      y: -298.5
-      width: 1366
-      height: 597
+      x: -277.5
+      y: -152
+      width: 555
+      height: 304
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 1366, y: 614}
+  m_LastWindowPixelSize: {x: 555, y: 321}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -394,23 +394,23 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c62a0000
-    m_LastClickedID: 0
-    m_ExpandedIDs: 5ccffcff1cdefcffaa24fdff963dfdff585afdffac64fdff5a76fdff4a7efdff3486fdff4492fdff06a1fdfff0a5fdffdeb4fdffb0d0fdffb2d0fdfff4d2fdff121bfeff9c21feff6022feffc032feff2875feff6279feff567bfeffcaddfeffca29ffff3432ffffa23affffd43dffff9245ffff004cffff3850ffff4851fffff85bffff0270ffffe282ffff4693ffffca9ffffff2b1ffff02bcffff0cf5ffff9efbfffff4ffffff0000000002310000f23d000088530000
+    m_SelectedIDs: 224e0100
+    m_LastClickedID: 85538
+    m_ExpandedIDs: 2efef4ff0622f5ffc459f5ff7071f5ff4872f5ff7280f5ff26ecf6ff9af1f6ff4616f7ff7629f7ff8629f7ff9629f7ff862af7ffb02df7ff583bf7ff945bf7ff965bf7ff9a60f7ff0c63f7ff0298f7ff4aa7f7ff4ca7f7fff2e6f7ffcae7f7ffec1cf8ff141df8ff281df8ff4826f8ff263af8ff623af8ff963ff8ff2493f8ff2e93f8ff5693f8ff6a93f8ffb6b8f8ff8eb9f8ff10d2f8ff70f6f8ff8ab4f9ff8eb6f9ff36bcf9ff78f5f9ff5891faff1c96faff46edfafffe1cfbff9a45fbffbc49fbff9855fbffc870fbff0471fbff44bbfbffec04fcff8a2bfcffba2bfcffca2bfcffc22cfcffde54fcff0255fcff1a55fcff0a78fcff2678fcff4a78fcff6478fcff4ab8fcff22b9fcffb8cbfcfff6cbfcff7ed5fcffc68cfdffd85bfeff446afeffc46dfeff0e71feff2873feffe875feffd878feff5a67ffff3074ffff4a75ffff7e77ffffda93ffffe893ffffc294ffff20a7ffff38a9ffff9cabffffb2afffffaebbffffecbbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Diamond
+      m_OriginalName: Diamond
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 70246
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 9}
     m_SearchString: 
@@ -447,14 +447,14 @@ MonoBehaviour:
     height: 321
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 2146.603998983483
+  lastFramingTime: 8557.32905151321
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 117.2939, y: -106.25573, z: -0.049804688}
+    m_Target: {x: -2.255432, y: 0.8154304, z: -0.15234375}
     speed: 2
-    m_Value: {x: 117.2939, y: -106.25573, z: -0.049804688}
+    m_Value: {x: -2.255432, y: 0.8154304, z: -0.15234375}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -482,9 +482,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 7.8421254
+    m_Target: 18.2303
     speed: 2
-    m_Value: 7.8421254
+    m_Value: 18.2303
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -628,13 +628,13 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/WorldMap/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\CyberGW\Documents\Unity\SEPRPhase2
+  m_LastProjectPath: C:\Users\Chris\Google Drive\York Uni\2nd Year\SEPR\Coffee-less\Coffee-less
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 309}
-    m_SelectedIDs: c22a0000
-    m_LastClickedID: 10946
-    m_ExpandedIDs: 000000000c280000202800006428000096280000b02800008c2a0000aa2a0000bc2b0000c62c0000082d0000542d0000a82d00000e2f00002c2f0000ae300000b0300000b2300000b4300000b6300000ffffff7f
+    m_SelectedIDs: c6420000
+    m_LastClickedID: 17094
+    m_ExpandedIDs: 00000000783f00007a3f0000983f00009e3f0000c83f00003c4000006640000068400000744000008c40000092400000a0400000e6410000bc450000be450000c0450000c2450000c445000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -662,7 +662,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000c280000202800006428000096280000b02800008c2a0000aa2a0000bc2b0000c62c0000082d0000542d0000a82d00000e2f00002c2f0000ae300000b0300000b2300000b4300000b6300000ffffff7f
+    m_ExpandedIDs: 00000000783f00007a3f0000983f00009e3f0000c83f0000ca3f00003c4000006640000068400000744000008c40000092400000a0400000e6410000bc450000be450000c0450000c2450000c4450000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -689,8 +689,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c6230000ce280000682700007a270000543100004034fbffce2a0000bc290000d42a0000000000004c2c0000382a0000
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c6230000ce280000682700007a270000543100004034fbffce2a0000bc290000d42a0000000000004c2c0000382a0000e83f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -820,11 +820,11 @@ MonoBehaviour:
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
-    - id: '[C:/Users/CyberGW/Documents/Unity/SEPRPhase2/Library/ScriptAssemblies/Assembly-CSharp.dll][suite]'
+    - id: '[C:/Users/Chris/Google Drive/York Uni/2nd Year/SEPR/Coffee-less/Coffee-less/Library/ScriptAssemblies/Assembly-CSharp.dll][suite]'
       name: Assembly-CSharp.dll
-      fullName: C:/Users/CyberGW/Documents/Unity/SEPRPhase2/Library/ScriptAssemblies/Assembly-CSharp.dll
-      resultStatus: 1
-      duration: 34.297943
+      fullName: C:/Users/Chris/Google Drive/York Uni/2nd Year/SEPR/Coffee-less/Coffee-less/Library/ScriptAssemblies/Assembly-CSharp.dll
+      resultStatus: 0
+      duration: 0
       messages: 
       output: 
       stacktrace: 
