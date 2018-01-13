@@ -59,7 +59,7 @@ public class WorldMapTest {
 		yield return moveForFrames(20, "Down");
 		yield return new WaitForSeconds (1); //Wait for transition
 		//Check back on Hes East site now
-		Assert.AreEqual(-12, (int) player.transform.position.x);
+		Assert.AreEqual(-13, (int) player.transform.position.x);
 		Assert.AreEqual(-7, (int) player.transform.position.y);
 	}
 

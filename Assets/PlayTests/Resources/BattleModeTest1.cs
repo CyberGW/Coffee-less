@@ -10,12 +10,9 @@ public class BattleModeTest1 {
 
 	bool sceneLoaded = false;
 	GameObject playableCharacter;
-	PlayerMovement movementScript;
 	MainBattle mainBattle;
 	BattleManager battleManager;
 	DialogueScript dialogueScript;
-	BattleButtons buttonManager;
-	SwitchPlayersScript partyScript;
 	Player player;
 	Enemy enemy;
 	GameObject enemyStats;
@@ -30,7 +27,6 @@ public class BattleModeTest1 {
 			SceneManager.LoadScene ("BattleTestInitialScene", LoadSceneMode.Single);
 			yield return null; //Wait for scene to load
 			playableCharacter = GameObject.Find ("Player");
-			movementScript = playableCharacter.GetComponent<PlayerMovement> ();
 			sceneLoaded = true;
 		}
 		playableCharacter.transform.position = new Vector2 (0, 0);
@@ -43,7 +39,6 @@ public class BattleModeTest1 {
 		battleManager.forceCriticalHits = "None";
 		player = battleManager.Player;
 		enemy = battleManager.Enemy;
-		buttonManager = GameObject.Find ("ButtonHandler").GetComponent<BattleButtons> ();
 		enemyStats = GameObject.Find ("EnemyStats");
 		playerStats = GameObject.Find ("PlayerStats");
 		enemyHealthBar = enemyStats.transform.Find ("Health/Text").GetComponent<Text>();

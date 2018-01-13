@@ -1,12 +1,19 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PlayTests\Resources\WorldMapTest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PlayTests\Resources\MenuTest.cs">
     <Files>
       <File FileName="Assets\Battle\Scripts\StatsScript.cs" Line="1" Column="1" />
       <File FileName="Assets\PlayTests\Resources\MenuTest.cs" Line="39" Column="23" />
       <File FileName="Assets\PlayTests\Resources\WorldMapTest.cs" Line="62" Column="22" />
-      <File FileName="Assets\PlayTests\Resources\BattleModeTest1.cs" Line="148" Column="3" />
-      <File FileName="Assets\PlayTests\Resources\BattleModeTest2.cs" Line="121" Column="2" />
+      <File FileName="Assets\PlayTests\Resources\BattleModeTest1.cs" Line="41" Column="31" />
+      <File FileName="Assets\PlayTests\Resources\BattleModeTest2.cs" Line="51" Column="66" />
+      <File FileName="Assets\Menus\MainMenu\MenuScript.cs" Line="17" Column="17" />
+      <File FileName="Assets\GlobalScripts\GlobalFunctions.cs" Line="51" Column="20" />
+      <File FileName="Assets\GlobalScripts\PlayerData.cs" Line="22" Column="5" />
+      <File FileName="Assets\Exploration\Scripts\DialogueScript.cs" Line="63" Column="24" />
+      <File FileName="Assets\Exploration\Scripts\HealingStation.cs" Line="42" Column="5" />
+      <File FileName="Assets\WorldMap\WorldMapScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Exploration\Scripts\ObjectInteraction.cs" Line="9" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

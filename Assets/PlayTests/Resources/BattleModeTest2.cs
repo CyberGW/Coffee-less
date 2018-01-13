@@ -14,16 +14,10 @@ public class BattleModeTest2 {
 	MainBattle mainBattle;
 	BattleManager battleManager;
 	DialogueScript dialogueScript;
-	BattleButtons buttonManager;
 	SwitchPlayersScript partyScript;
+	BattleButtons buttonManager;
 	Player player;
 	Enemy enemy;
-	GameObject enemyStats;
-	GameObject playerStats;
-	Text enemyHealthBar;
-	Text playerHealthBar;
-	Text enemyMagicBar;
-	Text playerMagicBar;
 
 	public IEnumerator Setup() {
 		if (!sceneLoaded) {
@@ -44,12 +38,6 @@ public class BattleModeTest2 {
 		player = battleManager.Player;
 		enemy = battleManager.Enemy;
 		buttonManager = GameObject.Find ("ButtonHandler").GetComponent<BattleButtons> ();
-		enemyStats = GameObject.Find ("EnemyStats");
-		playerStats = GameObject.Find ("PlayerStats");
-		enemyHealthBar = enemyStats.transform.Find ("Health/Text").GetComponent<Text>();
-		playerHealthBar = playerStats.transform.Find ("Health/Text").GetComponent<Text>();
-		enemyMagicBar = enemyStats.transform.Find ("Magic/Text").GetComponent<Text>();
-		playerMagicBar = playerStats.transform.Find ("Magic/Text").GetComponent<Text>();
 	}
 
 	[UnityTest]

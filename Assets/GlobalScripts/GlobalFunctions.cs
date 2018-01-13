@@ -48,10 +48,12 @@ public class GlobalFunctions : MonoBehaviour {
 			instance = this;
 			DontDestroyOnLoad (gameObject);
 			objectsActive = new Dictionary <string, bool> ();
-			currentLevel = 1;
+			currentLevel = 2;
 		} else if (instance != this) {
 			Destroy (gameObject);
 		}
+		QualitySettings.vSyncCount = 0;
+		Application.targetFrameRate = 60;
 
 		//Set References
 		player = GameObject.Find ("Player").gameObject;

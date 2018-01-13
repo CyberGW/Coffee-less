@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/InitialLoadScene.unity
-    guid: d79376e80b822f84780bf6bf76ec5b15
+    path: Assets/Menus/MainMenu/mainmenu1.unity
+    guid: 8d411f211734a45a98ebaeb652359071
   - enabled: 1
     path: Assets/Exploration/Scenes/Main.unity
     guid: b3f58439df6497b4abfc01fd0228ef4c
@@ -47,9 +47,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Exploration/Scenes/TFTV-Floor3.unity
     guid: 7982107ce71252e4eb48fe8246561318
-  - enabled: 1
-    path: Assets/Menus/MainMenu/mainmenu1.unity
-    guid: 8d411f211734a45a98ebaeb652359071
   - enabled: 1
     path: Assets/Menus/ExplorationMenu/ItemMenu.unity
     guid: 48505b1b792ae544992122802d6fd914

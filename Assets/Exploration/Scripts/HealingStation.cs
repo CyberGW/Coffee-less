@@ -37,6 +37,9 @@ public class HealingStation : MonoBehaviour {
 		if (other.gameObject.name == "Player" && !inRange && !dManager.dialogueActive) {
 			inRange = true;
 			SoundManager.instance.playSFX ("interact");
+			if (dManager == null) {
+				dManager = FindObjectOfType<DialogueScript> ();
+			}
 			dManager.showDialogue (text);
 			movementScript.setCanMove (false);
 			healPlayers ();

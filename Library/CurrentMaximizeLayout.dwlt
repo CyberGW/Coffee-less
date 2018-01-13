@@ -19,10 +19,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 635
-  m_MinSize: {x: 583, y: 492}
-  m_MaxSize: {x: 14004, y: 14042}
+  m_MinSize: {x: 579, y: 471}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 1
-  controlID: 5472
+  controlID: 2075
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -53,13 +53,13 @@ MonoBehaviour:
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 05000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_TargetDisplay: 0
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
-    m_HBaseRangeMin: -270.22223
-    m_HBaseRangeMax: 270.22223
+    m_HBaseRangeMin: -277.5
+    m_HBaseRangeMax: 277.5
     m_VBaseRangeMin: -152
     m_VBaseRangeMax: 152
     m_HAllowExceedBaseRangeMin: 1
@@ -120,10 +120,10 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 635
-  m_MinSize: {x: 583, y: 492}
-  m_MaxSize: {x: 14004, y: 14042}
+  m_MinSize: {x: 579, y: 471}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 5473
+  controlID: 2076
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,10 +144,10 @@ MonoBehaviour:
     y: 0
     width: 887
     height: 635
-  m_MinSize: {x: 306, y: 492}
+  m_MinSize: {x: 304, y: 471}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 5474
+  controlID: 2077
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -168,10 +168,10 @@ MonoBehaviour:
     y: 0
     width: 887
     height: 342
-  m_MinSize: {x: 306, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
+  m_MinSize: {x: 304, y: 200}
+  m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 5475
+  controlID: 2078
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -190,8 +190,8 @@ MonoBehaviour:
     y: 0
     width: 328
     height: 342
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 7}
   m_Panes:
   - {fileID: 7}
@@ -226,28 +226,28 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e6420000
+    m_SelectedIDs: ee2a0000
     m_LastClickedID: 0
-    m_ExpandedIDs: 46bcfbffcee3fbff9af3fbff5001fcffa416fcffe83afcffea49fcff244dfcff684ffcffec52fcffc858fcffd658fcffb059fcffa4befcffc0befcffbabffcffbebffcff50dffcff10e0fcff1ee0fcff22e0fcff7822fdff8822fdff9822fdff8823fdffae33fdff3837fdff6637fdff464cfdff4652fdff7452fdff6467fdff3069fdff5869fdff2677fdff047ffdff1e7ffdffe48cfdffae8efdffd08efdfff897fdffc499fdffde99fdffcaa3fdff96a5fdffb2a5fdff82affdff7ab9fdffa2b9fdffe2c3fdfff6c6fdff1ec7fdff08cdfdff4cd2fdff72d2fdffe4dcfdffc0eefdffdaeefdff1ef9fdffcefafdfffcfafdff9401feff740cfeff980cfeff3212feff5a12feffce1cfeff6e32feff403ffeff4a51feffc8e9feff0cfefeff34fefeff8012ffff4014ffff6814ffff2222ffff8824ffffa224ffff862dfffff438ffff2239ffffba42fffff844ffff2045ffffc04bffffc84fffffaa59ffffd259fffffc67ffff0473ffff1695ffff5c9dffffacbbffff00000000ec7e00001c7f00008a840000fa840000008500000486000018860000eeef0000e4f000005efc00000605010052050100a0050100f0050100f60501000a0601001406010052060100
+    m_ExpandedIDs: 2830feffe05dfeff7e82feffc085feffc285feff7a87feff7ea4fefff6d9feff98e4feff78f9feffe206ffff0607ffff8c1bffff7625ffffb027ffff723bffff043dfffffa49ffffde4affff3053ffffec54fffff45dffff2c5fffff8869ffffde8bfffff88cffff108effff188effff1e8effff5c8effffb48fffffe690ffffea91ffff2c93ffff3893ffff4e93ffff5494ffff7c95ffff5e96ffff8a97ffff6699ffff589affff7e9bffff2a9cffff649cffff689cffff769cffff909cffffe09cffffd8a3ffff62aeffff24b5ffffe4daffff4ef8ffff98fbfffff4ffffff0000000026a30000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Diamond
+      m_OriginalName: Diamond
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 41526
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 6}
     m_SearchString: 
   m_ExpandedScenes:
-  - WorldMap
+  - Battle
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -269,8 +269,8 @@ MonoBehaviour:
     y: 0
     width: 559
     height: 342
-  m_MinSize: {x: 104, y: 121}
-  m_MaxSize: {x: 4004, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 9}
@@ -307,14 +307,14 @@ MonoBehaviour:
     height: 321
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 7773.501198185212
+  lastFramingTime: 1053.9368625981056
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 322.94858, y: 211.58519, z: 8.03125}
+    m_Target: {x: 137.98, y: -68.6, z: 0}
     speed: 2
-    m_Value: {x: 322.94858, y: 211.58519, z: 8.03125}
+    m_Value: {x: 137.98, y: -68.6, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -342,9 +342,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 216.63087
+    m_Target: 8.170666
     speed: 2
-    m_Value: 216.63087
+    m_Value: 8.170666
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -518,9 +518,9 @@ MonoBehaviour:
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 261}
-    m_SelectedIDs: e2420000
-    m_LastClickedID: 17122
-    m_ExpandedIDs: 000000008e3f0000903f0000ae3f0000b43f0000de3f00005a400000844000008640000092400000aa400000b0400000be40000004420000da450000dc450000de450000e0450000e2450000ffffff7f
+    m_SelectedIDs: ea2a0000
+    m_LastClickedID: 10986
+    m_ExpandedIDs: 00000000102800002428000068280000bc280000b42a0000d22a0000ee2b0000002d00004a2d00009a2d0000f22d0000682f0000862f0000083200000a3200000c3200000e32000010320000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -548,7 +548,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000008e3f0000903f0000ae3f0000b43f0000de3f00005a400000844000008640000092400000aa400000b0400000be40000004420000da450000dc450000de450000e0450000e2450000ffffff7f
+    m_ExpandedIDs: 00000000102800002428000068280000bc280000b42a0000d22a0000ee2b0000002d00004a2d00009a2d0000f22d0000682f0000862f0000083200000a3200000c3200000e32000010320000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -573,8 +573,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: e6420000
-    m_LastClickedInstanceID: 17126
+    m_SelectedInstanceIDs: ee2a0000
+    m_LastClickedInstanceID: 10990
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000ce280000682700007a270000543100004034fbffce2a0000bc290000d42a0000000000004c2c0000382a0000e83f0000
     m_RenameOverlay:
@@ -648,8 +648,8 @@ MonoBehaviour:
     y: 0
     width: 479
     height: 635
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -718,7 +718,7 @@ MonoBehaviour:
     width: 477
     height: 614
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_TestTypeToolbarIndex: 0
+  m_TestTypeToolbarIndex: 1
   m_PlayModeTestListGUI:
     m_Window: {fileID: 17}
     newResultList:
@@ -726,7 +726,7 @@ MonoBehaviour:
       name: Test
       fullName: Test
       resultStatus: 1
-      duration: 8.129628
+      duration: 8.088295
       messages: 
       output: 
       stacktrace: 
@@ -738,7 +738,7 @@ MonoBehaviour:
       name: Assembly-CSharp.dll
       fullName: C:/Users/CyberGW/Documents/Unity/SEPRPhase2/Library/ScriptAssemblies/Assembly-CSharp.dll
       resultStatus: 1
-      duration: 8.028591
+      duration: 7.9804573
       messages: 
       output: 
       stacktrace: 
@@ -750,7 +750,7 @@ MonoBehaviour:
       name: BattleModeTest1
       fullName: BattleModeTest1
       resultStatus: 1
-      duration: 15.500906
+      duration: 15.513351
       messages: 
       output: 
       stacktrace: 
@@ -762,7 +762,7 @@ MonoBehaviour:
       name: B0StartBattle
       fullName: BattleModeTest1.B0StartBattle
       resultStatus: 1
-      duration: 2.7712016
+      duration: 2.7669635
       messages: 
       output: 
       stacktrace: 
@@ -774,7 +774,7 @@ MonoBehaviour:
       name: B1AttackButton
       fullName: BattleModeTest1.B1AttackButton
       resultStatus: 1
-      duration: 0.0499148
+      duration: 0.0498873
       messages: 
       output: 
       stacktrace: 
@@ -786,7 +786,7 @@ MonoBehaviour:
       name: B2AttackPanelDisplay
       fullName: BattleModeTest1.B2AttackPanelDisplay
       resultStatus: 1
-      duration: 0.0334301
+      duration: 0.0334885
       messages: 
       output: 
       stacktrace: 
@@ -798,7 +798,7 @@ MonoBehaviour:
       name: B3AttackMove
       fullName: BattleModeTest1.B3AttackMove
       resultStatus: 1
-      duration: 3.0481951
+      duration: 3.0482278
       messages: 
       output: "George\r\n"
       stacktrace: 
@@ -810,7 +810,7 @@ MonoBehaviour:
       name: B4MagicMove
       fullName: BattleModeTest1.B4MagicMove
       resultStatus: 1
-      duration: 3.0482242
+      duration: 3.0482275
       messages: 
       output: "George\r\n"
       stacktrace: 
@@ -822,7 +822,7 @@ MonoBehaviour:
       name: B5WinBattle
       fullName: BattleModeTest1.B5WinBattle
       resultStatus: 1
-      duration: 6.3512573
+      duration: 6.3682895
       messages: 
       output: "100\r\nMoney: 50\r\n"
       stacktrace: 
@@ -834,7 +834,7 @@ MonoBehaviour:
       name: BattleModeTest2
       fullName: BattleModeTest2
       resultStatus: 1
-      duration: 20.323551
+      duration: 20.42266
       messages: 
       output: 
       stacktrace: 
@@ -846,7 +846,7 @@ MonoBehaviour:
       name: B6StartNextBattle
       fullName: BattleModeTest2.B6StartNextBattle
       resultStatus: 1
-      duration: 3.829949
+      duration: 3.950393
       messages: 
       output: 
       stacktrace: 
@@ -858,7 +858,7 @@ MonoBehaviour:
       name: B7ChangePlayerMenu
       fullName: BattleModeTest2.B7ChangePlayerMenu
       resultStatus: 1
-      duration: 6.1575646
+      duration: 6.1350975
       messages: 
       output: "Hannah\r\nHannah\r\nHannah\r\n"
       stacktrace: 
@@ -870,7 +870,7 @@ MonoBehaviour:
       name: B8ChangePlayerOnceFainted
       fullName: BattleModeTest2.B8ChangePlayerOnceFainted
       resultStatus: 1
-      duration: 4.0587993
+      duration: 4.058342
       messages: 
       output: "George\r\nGeorge\r\n"
       stacktrace: 
@@ -882,7 +882,7 @@ MonoBehaviour:
       name: B9CheckWhenGameOver
       fullName: BattleModeTest2.B9CheckWhenGameOver
       resultStatus: 1
-      duration: 6.1441026
+      duration: 6.1457243
       messages: 
       output: "George\r\n"
       stacktrace: 
@@ -894,7 +894,7 @@ MonoBehaviour:
       name: ExplorationTest
       fullName: ExplorationTest
       resultStatus: 1
-      duration: 13.853951
+      duration: 13.8696375
       messages: 
       output: 
       stacktrace: 
@@ -906,7 +906,7 @@ MonoBehaviour:
       name: CameraMovement
       fullName: ExplorationTest.CameraMovement
       resultStatus: 1
-      duration: 0.3092192
+      duration: 0.3210279
       messages: 
       output: 
       stacktrace: 
@@ -918,7 +918,7 @@ MonoBehaviour:
       name: DialogueBox
       fullName: ExplorationTest.DialogueBox
       resultStatus: 1
-      duration: 1.4097818
+      duration: 1.4403788
       messages: 
       output: 
       stacktrace: 
@@ -930,7 +930,7 @@ MonoBehaviour:
       name: HealingStation
       fullName: ExplorationTest.HealingStation
       resultStatus: 1
-      duration: 1.6732249
+      duration: 1.6565484
       messages: 
       output: 
       stacktrace: 
@@ -942,7 +942,7 @@ MonoBehaviour:
       name: ItemObtain
       fullName: ExplorationTest.ItemObtain
       resultStatus: 1
-      duration: 0.1371974
+      duration: 0.1387099
       messages: 
       output: 
       stacktrace: 
@@ -954,7 +954,7 @@ MonoBehaviour:
       name: ObjectCollision
       fullName: ExplorationTest.ObjectCollision
       resultStatus: 1
-      duration: 2.4383082
+      duration: 2.439159
       messages: 
       output: 
       stacktrace: 
@@ -966,7 +966,7 @@ MonoBehaviour:
       name: PlayerAnimation
       fullName: ExplorationTest.PlayerAnimation
       resultStatus: 1
-      duration: 0.2319048
+      duration: 0.2319028
       messages: 
       output: 
       stacktrace: 
@@ -978,7 +978,7 @@ MonoBehaviour:
       name: PlayerMovement
       fullName: ExplorationTest.PlayerMovement
       resultStatus: 1
-      duration: 4.837021
+      duration: 4.8375177
       messages: 
       output: 
       stacktrace: 
@@ -990,7 +990,7 @@ MonoBehaviour:
       name: Portal
       fullName: ExplorationTest.Portal
       resultStatus: 1
-      duration: 2.56029
+      duration: 2.5493886
       messages: 
       output: 
       stacktrace: 
@@ -1002,7 +1002,7 @@ MonoBehaviour:
       name: MenuTest
       fullName: MenuTest
       resultStatus: 1
-      duration: 7.333148
+      duration: 7.579379
       messages: 
       output: 
       stacktrace: 
@@ -1014,7 +1014,7 @@ MonoBehaviour:
       name: M0OpenAndCloseMenu
       fullName: MenuTest.M0OpenAndCloseMenu
       resultStatus: 1
-      duration: 2.1287172
+      duration: 2.271996
       messages: 
       output: 
       stacktrace: 
@@ -1026,7 +1026,7 @@ MonoBehaviour:
       name: M1OpenItemMenu
       fullName: MenuTest.M1OpenItemMenu
       resultStatus: 1
-      duration: 1.3913383
+      duration: 1.4619083
       messages: 
       output: 
       stacktrace: 
@@ -1038,7 +1038,7 @@ MonoBehaviour:
       name: M2SwapItems
       fullName: MenuTest.M2SwapItems
       resultStatus: 1
-      duration: 0.0396204
+      duration: 0.0430559
       messages: 
       output: "Source: Item\r\nDestination: Item\r\nSource: Item\r\nDestination: Player\r\nSource:
         Player\r\nDestination: Player\r\nSource: Player\r\nDestination: Item\r\n"
@@ -1051,7 +1051,7 @@ MonoBehaviour:
       name: M3ItemBackButton
       fullName: MenuTest.M3ItemBackButton
       resultStatus: 1
-      duration: 1.1789752
+      duration: 1.1954436
       messages: 
       output: 
       stacktrace: 
@@ -1063,7 +1063,7 @@ MonoBehaviour:
       name: M4OpenPlayerMenu
       fullName: MenuTest.M4OpenPlayerMenu
       resultStatus: 1
-      duration: 1.1738635
+      duration: 1.1830215
       messages: 
       output: "PartyCanvas (PlayerMenu)\r\n"
       stacktrace: 
@@ -1075,7 +1075,7 @@ MonoBehaviour:
       name: M5SwitchPlayers
       fullName: MenuTest.M5SwitchPlayers
       resultStatus: 1
-      duration: 0.0227198
+      duration: 0.0247483
       messages: 
       output: "Source: Player\r\nDestination: Player\r\nSource: Player\r\nDestination:
         Player\r\n"
@@ -1088,7 +1088,7 @@ MonoBehaviour:
       name: M6PartyBackButton
       fullName: MenuTest.M6PartyBackButton
       resultStatus: 1
-      duration: 1.1887081
+      duration: 1.1944304
       messages: 
       output: 
       stacktrace: 
@@ -1100,7 +1100,7 @@ MonoBehaviour:
       name: WorldMapTest
       fullName: WorldMapTest
       resultStatus: 1
-      duration: 8.007739
+      duration: 7.9591365
       messages: 
       output: 
       stacktrace: 
@@ -1112,7 +1112,7 @@ MonoBehaviour:
       name: W0DepartmentColouring
       fullName: WorldMapTest.W0DepartmentColouring
       resultStatus: 1
-      duration: 0.7616188
+      duration: 0.7339003
       messages: 
       output: 
       stacktrace: 
@@ -1124,7 +1124,7 @@ MonoBehaviour:
       name: W1CantEnterPreviousDepartments
       fullName: WorldMapTest.W1CantEnterPreviousDepartments
       resultStatus: 1
-      duration: 0.4147096
+      duration: 0.4144181
       messages: 
       output: 
       stacktrace: 
@@ -1136,7 +1136,7 @@ MonoBehaviour:
       name: W2CantEnterFutureDepartments
       fullName: WorldMapTest.W2CantEnterFutureDepartments
       resultStatus: 1
-      duration: 0.4306804
+      duration: 0.4475469
       messages: 
       output: 
       stacktrace: 
@@ -1148,7 +1148,7 @@ MonoBehaviour:
       name: W3BusStop
       fullName: WorldMapTest.W3BusStop
       resultStatus: 1
-      duration: 3.0616302
+      duration: 3.0483477
       messages: 
       output: 
       stacktrace: 
@@ -1160,7 +1160,7 @@ MonoBehaviour:
       name: W4CanEnterAndReturnFromCurrentLevel
       fullName: WorldMapTest.W4CanEnterAndReturnFromCurrentLevel
       resultStatus: 1
-      duration: 3.1403866
+      duration: 3.1289692
       messages: 
       output: 
       stacktrace: 
@@ -1168,7 +1168,7 @@ MonoBehaviour:
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
-    m_ResultText: WorldMapTest (8.008s)
+    m_ResultText: WorldMapTest (7.959s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
@@ -1301,8 +1301,8 @@ MonoBehaviour:
     - id: '[Assembly-CSharp-Editor][BattleScriptTest.CriticalHitGeneration]'
       name: CriticalHitGeneration
       fullName: BattleScriptTest.CriticalHitGeneration
-      resultStatus: 4
-      duration: 0.0008051
+      resultStatus: 0
+      duration: 0
       messages: Manual Probability Test
       output: 
       stacktrace: 
@@ -1689,7 +1689,7 @@ MonoBehaviour:
       One or more child tests were ignored'
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 175.68628}
+      scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 9d8d08d7
       m_LastClickedID: -687305315
       m_ExpandedIDs: d33c63859bef5c9018e98f9e51a899a87a729ab09d8d08d765d137e8431375fbe888c91b101c9c4e0df8175b0dd2fd5bffffff7f
