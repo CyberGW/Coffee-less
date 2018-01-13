@@ -90,8 +90,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae469cabaeab438d23b8306191ce18461"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_battle.html#ae469cabaeab438d23b8306191ce18461">special2</a> ()</td></tr>
 <tr class="memdesc:ae469cabaeab438d23b8306191ce18461"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup the second special move for the player  <a href="#ae469cabaeab438d23b8306191ce18461">More...</a><br /></td></tr>
 <tr class="separator:ae469cabaeab438d23b8306191ce18461"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ef523eee69439b2b66eaf495f735a06"><td class="memItemLeft" align="right" valign="top"><a id="a3ef523eee69439b2b66eaf495f735a06"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>switchPlayers</b> (int playerIndex)</td></tr>
+<tr class="separator:a3ef523eee69439b2b66eaf495f735a06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcbf1342f37ecf0d9287fbb9f2c04562"><td class="memItemLeft" align="right" valign="top"><a id="afcbf1342f37ecf0d9287fbb9f2c04562"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateToNewPlayer</b> ()</td></tr>
+<tr class="separator:afcbf1342f37ecf0d9287fbb9f2c04562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c8675673979fe7b0f2fcadc3b2fb3db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_battle.html#a7c8675673979fe7b0f2fcadc3b2fb3db">ranAway</a> ()</td></tr>
-<tr class="memdesc:a7c8675673979fe7b0f2fcadc3b2fb3db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run away from battle if <a class="el" href="class_battle_manager.html#a802a257580e9cc0bdb17c90e5fd11355" title="Generate whether the player has run away or not, dependent upon speed stats and random element ...">BattleManager.ranAway</a> returns true. Otherwise display appropriate text and make sure run cannot be selected again  <a href="#a7c8675673979fe7b0f2fcadc3b2fb3db">More...</a><br /></td></tr>
+<tr class="memdesc:a7c8675673979fe7b0f2fcadc3b2fb3db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run away from battle if <a class="el" href="class_battle_manager.html#a802a257580e9cc0bdb17c90e5fd11355" title="Generate whether the player has run away or not, dependent upon speed stats and random element ...">BattleManager.ranAway</a> returns true. Otherwise display appropriate text and make sure run cannot be selected again that move  <a href="#a7c8675673979fe7b0f2fcadc3b2fb3db">More...</a><br /></td></tr>
 <tr class="separator:a7c8675673979fe7b0f2fcadc3b2fb3db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -102,6 +108,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ad0f29314d670af9f7f0d9c6bdc88cd62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_battle.html#ad0f29314d670af9f7f0d9c6bdc88cd62">player</a></td></tr>
 <tr class="memdesc:ad0f29314d670af9f7f0d9c6bdc88cd62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set to public  <a href="#ad0f29314d670af9f7f0d9c6bdc88cd62">More...</a><br /></td></tr>
 <tr class="separator:ad0f29314d670af9f7f0d9c6bdc88cd62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7cc70483766bd15227be2516ce81bde"><td class="memItemLeft" align="right" valign="top"><a id="ab7cc70483766bd15227be2516ce81bde"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>playerDied</b></td></tr>
+<tr class="separator:ab7cc70483766bd15227be2516ce81bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -122,6 +131,9 @@ Re-enables attack button afterwards  <a href="#ad5d7fbb2b3a3605f052f79d3bf35c468
 <tr class="memitem:a5168101721a64b3828415636fc23fb16"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_battle.html#a5168101721a64b3828415636fc23fb16">performTurn</a> (<a class="el" href="class_character_move.html">CharacterMove</a> move)</td></tr>
 <tr class="memdesc:a5168101721a64b3828415636fc23fb16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs the turn, updating text display and health and magic bars. Afterwards, checks to see whether the player has won or lost  <a href="#a5168101721a64b3828415636fc23fb16">More...</a><br /></td></tr>
 <tr class="separator:a5168101721a64b3828415636fc23fb16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a576f9d11b05e2255688d761f4033bc91"><td class="memItemLeft" align="right" valign="top"><a id="a576f9d11b05e2255688d761f4033bc91"></a>
+IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><b>updateBars</b> (<a class="el" href="class_character_move.html">CharacterMove</a> move, int previousHealth, int previousMagic)</td></tr>
+<tr class="separator:a576f9d11b05e2255688d761f4033bc91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6e002d717e6e6ade576984457565e67"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_battle.html#ac6e002d717e6e6ade576984457565e67">checkIfPlayerWon</a> ()</td></tr>
 <tr class="memdesc:ac6e002d717e6e6ade576984457565e67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the player has won<br />
 If they have, exp is given and shown on screen, before saving player data, adding money, adding the item and ending the battle  <a href="#ac6e002d717e6e6ade576984457565e67">More...</a><br /></td></tr>
@@ -132,9 +144,12 @@ If they have, exp is given and shown on screen, before saving player data, addin
 <tr class="memitem:a955f305966c8000cd511bc64ebbce315"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_battle.html#a955f305966c8000cd511bc64ebbce315">updateExpHelper</a> (int gainedExp, bool levelledUp)</td></tr>
 <tr class="memdesc:a955f305966c8000cd511bc64ebbce315"><td class="mdescLeft">&#160;</td><td class="mdescRight">A helper function for <a class="el" href="class_main_battle.html#aafecb33944f3ff97ba34e0ef6ae304a4" title="Updates the saved and displayed exp ">updateExp</a> that performs an exp increase within a single level interval. Updates text display if player levels up  <a href="#a955f305966c8000cd511bc64ebbce315">More...</a><br /></td></tr>
 <tr class="separator:a955f305966c8000cd511bc64ebbce315"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab64f97383c3bf575c57fffddef5e9d08"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_battle.html#ab64f97383c3bf575c57fffddef5e9d08">checkIfPlayerLost</a> ()</td></tr>
-<tr class="memdesc:ab64f97383c3bf575c57fffddef5e9d08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if player lost.  <a href="#ab64f97383c3bf575c57fffddef5e9d08">More...</a><br /></td></tr>
-<tr class="separator:ab64f97383c3bf575c57fffddef5e9d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa467f0994839837c4e5a020dae5e121"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_battle.html#afa467f0994839837c4e5a020dae5e121">checkIfPlayerLost</a> ()</td></tr>
+<tr class="memdesc:afa467f0994839837c4e5a020dae5e121"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if player lost.  <a href="#afa467f0994839837c4e5a020dae5e121">More...</a><br /></td></tr>
+<tr class="separator:afa467f0994839837c4e5a020dae5e121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6f2f777af563a0d967a7e2586e42220"><td class="memItemLeft" align="right" valign="top"><a id="ae6f2f777af563a0d967a7e2586e42220"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setButtonsInteractable</b> (bool val)</td></tr>
+<tr class="separator:ae6f2f777af563a0d967a7e2586e42220"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeafd9a98996791467186ee14286706cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_battle.html#aeafd9a98996791467186ee14286706cc">prepareTurn</a> ()</td></tr>
 <tr class="memdesc:aeafd9a98996791467186ee14286706cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by any of <a class="el" href="class_main_battle.html#a7e1ab667b7ab20e3d76d49e26fbd58d2" title="Setup a standard attack move for the player ">standardAttack</a>, <a class="el" href="class_main_battle.html#af07e8602e4c524a4803ab5f20aff30ad" title="Setup the first special move for the player ">special1</a> or <a class="el" href="class_main_battle.html#ae469cabaeab438d23b8306191ce18461" title="Setup the second special move for the player ">special2</a> Uses <a class="el" href="class_battle_manager.html#a6bf113085b2ee7a71308934ba769b1ce" title="Decides upon whether to pick a special or standard attack move for the enemy Can be forced for testin...">BattleManager.enemyMove</a> to decide on the enemy's move, and hides attack panel and makes attack button unclickable  <a href="#aeafd9a98996791467186ee14286706cc">More...</a><br /></td></tr>
 <tr class="separator:aeafd9a98996791467186ee14286706cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,6 +168,9 @@ GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>globalData</b><
 <tr class="memitem:a2dc439a4e671a25a49e3503c61985dc3"><td class="memItemLeft" align="right" valign="top"><a id="a2dc439a4e671a25a49e3503c61985dc3"></a>
 Button&#160;</td><td class="memItemRight" valign="bottom"><b>attackButton</b></td></tr>
 <tr class="separator:a2dc439a4e671a25a49e3503c61985dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f78d663489044af13d4a4c5fb1bfd29"><td class="memItemLeft" align="right" valign="top"><a id="a6f78d663489044af13d4a4c5fb1bfd29"></a>
+Button&#160;</td><td class="memItemRight" valign="bottom"><b>playerButton</b></td></tr>
+<tr class="separator:a6f78d663489044af13d4a4c5fb1bfd29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ec5966eae2e0609f3a4b3fc171b09f5"><td class="memItemLeft" align="right" valign="top"><a id="a4ec5966eae2e0609f3a4b3fc171b09f5"></a>
 Button&#160;</td><td class="memItemRight" valign="bottom"><b>runButton</b></td></tr>
 <tr class="separator:a4ec5966eae2e0609f3a4b3fc171b09f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,15 +210,24 @@ GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>playerStats</b>
 <tr class="memitem:aa581b794c4f11dd41cadb4dd9da464c0"><td class="memItemLeft" align="right" valign="top"><a id="aa581b794c4f11dd41cadb4dd9da464c0"></a>
 GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>enemyStats</b></td></tr>
 <tr class="separator:aa581b794c4f11dd41cadb4dd9da464c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10569d09080310aa25bf7bf652483d57"><td class="memItemLeft" align="right" valign="top"><a id="a10569d09080310aa25bf7bf652483d57"></a>
-IDictionary&lt; <a class="el" href="class_character.html">Character</a>, <a class="el" href="class_stats_script.html">StatsScript</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>healthBar</b></td></tr>
-<tr class="separator:a10569d09080310aa25bf7bf652483d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea7ffb58bc94828dd05e39a71669cf56"><td class="memItemLeft" align="right" valign="top"><a id="aea7ffb58bc94828dd05e39a71669cf56"></a>
-IDictionary&lt; <a class="el" href="class_character.html">Character</a>, <a class="el" href="class_stats_script.html">StatsScript</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>magicBar</b></td></tr>
-<tr class="separator:aea7ffb58bc94828dd05e39a71669cf56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfd6b49de57902f1dcbaac9c21e32989"><td class="memItemLeft" align="right" valign="top"><a id="abfd6b49de57902f1dcbaac9c21e32989"></a>
+<a class="el" href="class_stats_script.html">StatsScript</a>&#160;</td><td class="memItemRight" valign="bottom"><b>playerHealthBar</b></td></tr>
+<tr class="separator:abfd6b49de57902f1dcbaac9c21e32989"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57bfc2f78b7aa85810fe35192e22709e"><td class="memItemLeft" align="right" valign="top"><a id="a57bfc2f78b7aa85810fe35192e22709e"></a>
+<a class="el" href="class_stats_script.html">StatsScript</a>&#160;</td><td class="memItemRight" valign="bottom"><b>playerMagicBar</b></td></tr>
+<tr class="separator:a57bfc2f78b7aa85810fe35192e22709e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8f493812db5213cd1521f1f259b5bec"><td class="memItemLeft" align="right" valign="top"><a id="af8f493812db5213cd1521f1f259b5bec"></a>
+<a class="el" href="class_stats_script.html">StatsScript</a>&#160;</td><td class="memItemRight" valign="bottom"><b>enemyHealthBar</b></td></tr>
+<tr class="separator:af8f493812db5213cd1521f1f259b5bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8a963ccb5e816a3c084cbb88ab69d6c"><td class="memItemLeft" align="right" valign="top"><a id="ab8a963ccb5e816a3c084cbb88ab69d6c"></a>
+<a class="el" href="class_stats_script.html">StatsScript</a>&#160;</td><td class="memItemRight" valign="bottom"><b>enemyMagicBar</b></td></tr>
+<tr class="separator:ab8a963ccb5e816a3c084cbb88ab69d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7fdd81ba253c2ea3144dbadb77229b4"><td class="memItemLeft" align="right" valign="top"><a id="af7fdd81ba253c2ea3144dbadb77229b4"></a>
 <a class="el" href="class_stats_script.html">StatsScript</a>&#160;</td><td class="memItemRight" valign="bottom"><b>expBar</b></td></tr>
 <tr class="separator:af7fdd81ba253c2ea3144dbadb77229b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a552bc15aab74b56ac73ac4c64553767f"><td class="memItemLeft" align="right" valign="top"><a id="a552bc15aab74b56ac73ac4c64553767f"></a>
+Image&#160;</td><td class="memItemRight" valign="bottom"><b>playerSprite</b></td></tr>
+<tr class="separator:a552bc15aab74b56ac73ac4c64553767f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc8b79c1fe2ce64afaa4b19c1661b81b"><td class="memItemLeft" align="right" valign="top"><a id="afc8b79c1fe2ce64afaa4b19c1661b81b"></a>
 Image&#160;</td><td class="memItemRight" valign="bottom"><b>enemySprite</b></td></tr>
 <tr class="separator:afc8b79c1fe2ce64afaa4b19c1661b81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,8 +244,8 @@ AudioClip&#160;</td><td class="memItemRight" valign="bottom"><b>victory</b></td>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Script for handing a battle scene. Uses <a class="el" href="class_battle_manager.html" title="Holds current Player and Enemy objects in battle and provides functions for MainBattle and other obje...">BattleManager</a>, but handles turn order and execution as well as updating the display appropriately </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab64f97383c3bf575c57fffddef5e9d08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab64f97383c3bf575c57fffddef5e9d08">&#9670;&nbsp;</a></span>checkIfPlayerLost()</h2>
+<a id="afa467f0994839837c4e5a020dae5e121"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa467f0994839837c4e5a020dae5e121">&#9670;&nbsp;</a></span>checkIfPlayerLost()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -227,7 +254,7 @@ AudioClip&#160;</td><td class="memItemRight" valign="bottom"><b>victory</b></td>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool MainBattle.checkIfPlayerLost </td>
+          <td class="memname">IEnumerator MainBattle.checkIfPlayerLost </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -417,7 +444,7 @@ Re-enables attack button afterwards </p>
 </table>
 </div><div class="memdoc">
 
-<p>Run away from battle if <a class="el" href="class_battle_manager.html#a802a257580e9cc0bdb17c90e5fd11355" title="Generate whether the player has run away or not, dependent upon speed stats and random element ...">BattleManager.ranAway</a> returns true. Otherwise display appropriate text and make sure run cannot be selected again </p>
+<p>Run away from battle if <a class="el" href="class_battle_manager.html#a802a257580e9cc0bdb17c90e5fd11355" title="Generate whether the player has run away or not, dependent upon speed stats and random element ...">BattleManager.ranAway</a> returns true. Otherwise display appropriate text and make sure run cannot be selected again that move </p>
 
 </div>
 </div>

@@ -148,4 +148,17 @@ public class BattleScriptTest {
 		Assert.True (manager.battleWon ());
 	}
 
+	[Test]
+	public void CharacterFainted() {
+		//Initially
+		Assert.False (manager.playerFainted ());
+		player.Health = 1;
+		//Check still alive at 1
+		Assert.False (manager.playerFainted ());
+		enemyMove = new StandardAttack (manager, enemy, player);
+		enemyMove.performMove ();
+		//Check that character fainting has been recognised
+		Assert.True (manager.playerFainted ());
+	}
+
 }

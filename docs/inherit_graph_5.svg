@@ -18,15 +18,15 @@
 </g>
 <!-- Node1 -->
 <g id="node2" class="node"><title>Node1</title>
-<g id="a_node2"><a xlink:href="class_attack_button.html" target="_top" xlink:title="Script to handle the function of the Attack Button in the Battle Scene">
-<polygon fill="none" stroke="black" points="139.5,-874.5 139.5,-893.5 213.5,-893.5 213.5,-874.5 139.5,-874.5"/>
-<text text-anchor="middle" x="176.5" y="-881.5" font-family="Helvetica,sans-Serif" font-size="10.00">AttackButton</text>
+<g id="a_node2"><a xlink:href="class_battle_buttons.html" target="_top" xlink:title="Script to handle the function of the Attack Button in the Battle Scene">
+<polygon fill="none" stroke="black" points="138.5,-874.5 138.5,-893.5 214.5,-893.5 214.5,-874.5 138.5,-874.5"/>
+<text text-anchor="middle" x="176.5" y="-881.5" font-family="Helvetica,sans-Serif" font-size="10.00">BattleButtons</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node1 -->
 <g id="edge1" class="edge"><title>Node0&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M43.5299,-467.054C47.763,-541.935 66.1657,-803.99 119,-865 124.352,-871.18 131.781,-875.356 139.496,-878.175"/>
+<path fill="none" stroke="midnightblue" d="M43.5299,-467.054C47.763,-541.935 66.1657,-803.99 119,-865 124.081,-870.867 131.034,-874.928 138.327,-877.736"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="47.005,-466.499 42.9691,-456.703 40.0153,-466.878 47.005,-466.499"/>
 </g>
 <!-- Node2 -->
@@ -83,7 +83,7 @@
 </g>
 <!-- Node6 -->
 <g id="node7" class="node"><title>Node6</title>
-<g id="a_node7"><a xlink:href="class_container_data.html" target="_top" xlink:title="ContainerData">
+<g id="a_node7"><a xlink:href="class_container_data.html" target="_top" xlink:title="An attribute to store information for a container in the item menu ">
 <polygon fill="none" stroke="black" points="137.5,-684.5 137.5,-703.5 215.5,-703.5 215.5,-684.5 137.5,-684.5"/>
 <text text-anchor="middle" x="176.5" y="-691.5" font-family="Helvetica,sans-Serif" font-size="10.00">ContainerData</text>
 </a>
@@ -109,7 +109,7 @@
 </g>
 <!-- Node8 -->
 <g id="node9" class="node"><title>Node8</title>
-<g id="a_node9"><a xlink:href="class_exploration_menu_script.html" target="_top" xlink:title="ExplorationMenuScript">
+<g id="a_node9"><a xlink:href="class_exploration_menu_script.html" target="_top" xlink:title="A script to manage the exploration menu that the user can call up at anytime ">
 <polygon fill="none" stroke="black" points="119,-608.5 119,-627.5 234,-627.5 234,-608.5 119,-608.5"/>
 <text text-anchor="middle" x="176.5" y="-615.5" font-family="Helvetica,sans-Serif" font-size="10.00">ExplorationMenuScript</text>
 </a>
@@ -148,48 +148,48 @@
 </g>
 <!-- Node11 -->
 <g id="node12" class="node"><title>Node11</title>
-<g id="a_node12"><a xlink:href="class_item_data.html" target="_top" xlink:title="A component to add to a drag and drop cell, carrying the data for the item the cell references ...">
-<polygon fill="none" stroke="black" points="148.5,-494.5 148.5,-513.5 204.5,-513.5 204.5,-494.5 148.5,-494.5"/>
-<text text-anchor="middle" x="176.5" y="-501.5" font-family="Helvetica,sans-Serif" font-size="10.00">ItemData</text>
+<g id="a_node12"><a xlink:href="class_items_menu_script.html" target="_top" xlink:title="Controls all initialisation of menu and updates arrays when an item is moved ">
+<polygon fill="none" stroke="black" points="131.5,-494.5 131.5,-513.5 221.5,-513.5 221.5,-494.5 131.5,-494.5"/>
+<text text-anchor="middle" x="176.5" y="-501.5" font-family="Helvetica,sans-Serif" font-size="10.00">ItemsMenuScript</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node11 -->
 <g id="edge11" class="edge"><title>Node0&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M69.0388,-461.302C83.5716,-468.847 102.029,-477.97 119,-485 128.465,-488.921 139.06,-492.651 148.494,-495.751"/>
+<path fill="none" stroke="midnightblue" d="M69.0388,-461.302C83.5716,-468.847 102.029,-477.97 119,-485 127.222,-488.406 136.297,-491.668 144.722,-494.498"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="70.5907,-458.163 60.1105,-456.609 67.334,-464.36 70.5907,-458.163"/>
 </g>
 <!-- Node12 -->
 <g id="node13" class="node"><title>Node12</title>
-<g id="a_node13"><a xlink:href="class_items_menu_script.html" target="_top" xlink:title="Controls all initialisation of menu and updates arrays when an item is moved ">
-<polygon fill="none" stroke="black" points="131.5,-456.5 131.5,-475.5 221.5,-475.5 221.5,-456.5 131.5,-456.5"/>
-<text text-anchor="middle" x="176.5" y="-463.5" font-family="Helvetica,sans-Serif" font-size="10.00">ItemsMenuScript</text>
+<g id="a_node13"><a xlink:href="class_level_manager.html" target="_top" xlink:title="A script used to check and handle when a level is beat by defeating the final boss ...">
+<polygon fill="none" stroke="black" points="138.5,-456.5 138.5,-475.5 214.5,-475.5 214.5,-456.5 138.5,-456.5"/>
+<text text-anchor="middle" x="176.5" y="-463.5" font-family="Helvetica,sans-Serif" font-size="10.00">LevelManager</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node12 -->
 <g id="edge12" class="edge"><title>Node0&#45;&gt;Node12</title>
-<path fill="none" stroke="midnightblue" d="M93.0459,-454.221C105.679,-456.026 119.129,-457.947 131.421,-459.703"/>
+<path fill="none" stroke="midnightblue" d="M93.2711,-454.253C108.242,-456.392 124.342,-458.692 138.292,-460.685"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="93.5216,-450.753 83.1271,-452.804 92.5316,-457.683 93.5216,-450.753"/>
 </g>
 <!-- Node13 -->
 <g id="node14" class="node"><title>Node13</title>
-<g id="a_node14"><a xlink:href="class_level_manager.html" target="_top" xlink:title="A script used to check and handle when a level is beat by defeating the final boss ...">
-<polygon fill="none" stroke="black" points="138.5,-418.5 138.5,-437.5 214.5,-437.5 214.5,-418.5 138.5,-418.5"/>
-<text text-anchor="middle" x="176.5" y="-425.5" font-family="Helvetica,sans-Serif" font-size="10.00">LevelManager</text>
+<g id="a_node14"><a xlink:href="class_main_battle.html" target="_top" xlink:title="Script for handing a battle scene. Uses BattleManager, but handles turn order and execution as well a...">
+<polygon fill="none" stroke="black" points="145,-418.5 145,-437.5 208,-437.5 208,-418.5 145,-418.5"/>
+<text text-anchor="middle" x="176.5" y="-425.5" font-family="Helvetica,sans-Serif" font-size="10.00">MainBattle</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node13 -->
 <g id="edge13" class="edge"><title>Node0&#45;&gt;Node13</title>
-<path fill="none" stroke="midnightblue" d="M93.2711,-439.747C108.242,-437.608 124.342,-435.308 138.292,-433.315"/>
+<path fill="none" stroke="midnightblue" d="M93.1585,-439.763C110.564,-437.277 129.507,-434.57 144.831,-432.381"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="92.5316,-436.317 83.1271,-441.196 93.5216,-443.247 92.5316,-436.317"/>
 </g>
 <!-- Node14 -->
 <g id="node15" class="node"><title>Node14</title>
-<g id="a_node15"><a xlink:href="class_main_battle.html" target="_top" xlink:title="Script for handing a battle scene. Uses BattleManager, but handles turn order and execution as well a...">
-<polygon fill="none" stroke="black" points="145,-380.5 145,-399.5 208,-399.5 208,-380.5 145,-380.5"/>
-<text text-anchor="middle" x="176.5" y="-387.5" font-family="Helvetica,sans-Serif" font-size="10.00">MainBattle</text>
+<g id="a_node15"><a xlink:href="class_menu_script.html" target="_top" xlink:title="Script to handle the main menu ">
+<polygon fill="none" stroke="black" points="143.5,-380.5 143.5,-399.5 209.5,-399.5 209.5,-380.5 143.5,-380.5"/>
+<text text-anchor="middle" x="176.5" y="-387.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuScript</text>
 </a>
 </g>
 </g>
@@ -200,41 +200,41 @@
 </g>
 <!-- Node15 -->
 <g id="node16" class="node"><title>Node15</title>
-<g id="a_node16"><a xlink:href="class_menu_script.html" target="_top" xlink:title="Script to handle the main menu ">
-<polygon fill="none" stroke="black" points="143.5,-342.5 143.5,-361.5 209.5,-361.5 209.5,-342.5 143.5,-342.5"/>
-<text text-anchor="middle" x="176.5" y="-349.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuScript</text>
+<g id="a_node16"><a xlink:href="class_object_interaction.html" target="_top" xlink:title="A component to add to collider relating to an object that can interact with the player by pressing th...">
+<polygon fill="none" stroke="black" points="131.5,-342.5 131.5,-361.5 221.5,-361.5 221.5,-342.5 131.5,-342.5"/>
+<text text-anchor="middle" x="176.5" y="-349.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectInteraction</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node15 -->
 <g id="edge15" class="edge"><title>Node0&#45;&gt;Node15</title>
-<path fill="none" stroke="midnightblue" d="M56.1537,-429.35C70.226,-412.249 93.6354,-386.665 119,-371 126.396,-366.432 135.022,-362.816 143.274,-360.019"/>
+<path fill="none" stroke="midnightblue" d="M56.1537,-429.35C70.226,-412.249 93.6354,-386.665 119,-371 125.075,-367.248 131.98,-364.138 138.826,-361.597"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="53.2073,-427.43 49.6851,-437.422 58.6697,-431.807 53.2073,-427.43"/>
 </g>
 <!-- Node16 -->
 <g id="node17" class="node"><title>Node16</title>
-<g id="a_node17"><a xlink:href="class_object_interaction.html" target="_top" xlink:title="A component to add to collider relating to an object that can interact with the player by pressing th...">
-<polygon fill="none" stroke="black" points="131.5,-304.5 131.5,-323.5 221.5,-323.5 221.5,-304.5 131.5,-304.5"/>
-<text text-anchor="middle" x="176.5" y="-311.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectInteraction</text>
+<g id="a_node17"><a xlink:href="class_player_data.html" target="_top" xlink:title="A monobehaviour object to house an instance of DataManager so it can be called by other objects ...">
+<polygon fill="none" stroke="black" points="144,-304.5 144,-323.5 209,-323.5 209,-304.5 144,-304.5"/>
+<text text-anchor="middle" x="176.5" y="-311.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerData</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node16 -->
 <g id="edge16" class="edge"><title>Node0&#45;&gt;Node16</title>
-<path fill="none" stroke="midnightblue" d="M50.5177,-427.923C62.0617,-402.683 85.6992,-358.425 119,-333 124.018,-329.169 129.852,-326.085 135.829,-323.61"/>
+<path fill="none" stroke="midnightblue" d="M50.5177,-427.923C62.0617,-402.683 85.6992,-358.425 119,-333 126.238,-327.474 135.177,-323.501 143.791,-320.668"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="47.271,-426.612 46.4413,-437.174 53.6766,-429.435 47.271,-426.612"/>
 </g>
 <!-- Node17 -->
 <g id="node18" class="node"><title>Node17</title>
-<g id="a_node18"><a xlink:href="class_player_data.html" target="_top" xlink:title="A monobehaviour object to house an instance of DataManager so it can be called by other objects ...">
-<polygon fill="none" stroke="black" points="144,-266.5 144,-285.5 209,-285.5 209,-266.5 144,-266.5"/>
-<text text-anchor="middle" x="176.5" y="-273.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerData</text>
+<g id="a_node18"><a xlink:href="class_player_menu.html" target="_top" xlink:title="Script for controlling the menu which allows users to switch the order of their team members ...">
+<polygon fill="none" stroke="black" points="142.5,-266.5 142.5,-285.5 210.5,-285.5 210.5,-266.5 142.5,-266.5"/>
+<text text-anchor="middle" x="176.5" y="-273.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerMenu</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node17 -->
 <g id="edge17" class="edge"><title>Node0&#45;&gt;Node17</title>
-<path fill="none" stroke="midnightblue" d="M47.2114,-427.229C55.9003,-394.972 77.4749,-331.015 119,-295 126.036,-288.897 135.108,-284.737 143.915,-281.908"/>
+<path fill="none" stroke="midnightblue" d="M47.2114,-427.229C55.9003,-394.972 77.4749,-331.015 119,-295 125.645,-289.236 134.106,-285.206 142.445,-282.392"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="43.7435,-426.664 44.6638,-437.219 50.5264,-428.394 43.7435,-426.664"/>
 </g>
 <!-- Node18 -->
@@ -265,54 +265,54 @@
 </g>
 <!-- Node20 -->
 <g id="node21" class="node"><title>Node20</title>
-<g id="a_node21"><a xlink:href="class_quit.html" target="_top" xlink:title="Quit">
-<polygon fill="none" stroke="black" points="159,-152.5 159,-171.5 194,-171.5 194,-152.5 159,-152.5"/>
-<text text-anchor="middle" x="176.5" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">Quit</text>
+<g id="a_node21"><a xlink:href="class_scene_changer.html" target="_top" xlink:title="A set of functions to be called to change scenes smoothly whilst handling the player&#39;s location and a...">
+<polygon fill="none" stroke="black" points="136.5,-152.5 136.5,-171.5 216.5,-171.5 216.5,-152.5 136.5,-152.5"/>
+<text text-anchor="middle" x="176.5" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">SceneChanger</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node20 -->
 <g id="edge20" class="edge"><title>Node0&#45;&gt;Node20</title>
-<path fill="none" stroke="midnightblue" d="M42.2983,-427.398C42.8829,-378.857 51.1943,-251.883 119,-181 129.444,-170.082 146.353,-165.437 158.955,-163.462"/>
+<path fill="none" stroke="midnightblue" d="M42.2983,-427.398C42.8829,-378.857 51.1943,-251.883 119,-181 123.793,-175.99 129.947,-172.3 136.422,-169.584"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="38.7982,-427.484 42.28,-437.49 45.7982,-427.497 38.7982,-427.484"/>
 </g>
 <!-- Node21 -->
 <g id="node22" class="node"><title>Node21</title>
-<g id="a_node22"><a xlink:href="class_scene_changer.html" target="_top" xlink:title="A set of functions to be called to change scenes smoothly whilst handling the player&#39;s location and a...">
-<polygon fill="none" stroke="black" points="136.5,-114.5 136.5,-133.5 216.5,-133.5 216.5,-114.5 136.5,-114.5"/>
-<text text-anchor="middle" x="176.5" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">SceneChanger</text>
+<g id="a_node22"><a xlink:href="class_sound_manager.html" target="_top" xlink:title="A script to manage all background music and sound effects in the game ">
+<polygon fill="none" stroke="black" points="135.5,-114.5 135.5,-133.5 217.5,-133.5 217.5,-114.5 135.5,-114.5"/>
+<text text-anchor="middle" x="176.5" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">SoundManager</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node21 -->
 <g id="edge21" class="edge"><title>Node0&#45;&gt;Node21</title>
-<path fill="none" stroke="midnightblue" d="M44.9953,-427.17C52.9914,-366.578 79.7684,-185.412 119,-143 123.708,-137.91 129.822,-134.183 136.283,-131.454"/>
+<path fill="none" stroke="midnightblue" d="M44.9953,-427.17C52.9914,-366.578 79.7684,-185.412 119,-143 123.497,-138.138 129.277,-134.519 135.418,-131.826"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="41.495,-426.948 43.685,-437.314 48.4374,-427.845 41.495,-426.948"/>
 </g>
 <!-- Node22 -->
 <g id="node23" class="node"><title>Node22</title>
-<g id="a_node23"><a xlink:href="class_sound_manager.html" target="_top" xlink:title="A script to manage all background music and sound effects in the game ">
-<polygon fill="none" stroke="black" points="135.5,-76.5 135.5,-95.5 217.5,-95.5 217.5,-76.5 135.5,-76.5"/>
-<text text-anchor="middle" x="176.5" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">SoundManager</text>
+<g id="a_node23"><a xlink:href="class_stats_script.html" target="_top" xlink:title="A script used to manage and update all of the stat displays in the battle scene ">
+<polygon fill="none" stroke="black" points="144,-76.5 144,-95.5 209,-95.5 209,-76.5 144,-76.5"/>
+<text text-anchor="middle" x="176.5" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">StatsScript</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node22 -->
 <g id="edge22" class="edge"><title>Node0&#45;&gt;Node22</title>
-<path fill="none" stroke="midnightblue" d="M44.3818,-427.311C51.001,-361.958 75.2085,-153.617 119,-105 123.433,-100.079 129.18,-96.4307 135.308,-93.7267"/>
+<path fill="none" stroke="midnightblue" d="M44.3818,-427.311C51.001,-361.958 75.2085,-153.617 119,-105 125.441,-97.8489 134.659,-93.386 143.786,-90.602"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="40.8783,-427.175 43.3793,-437.471 47.8445,-427.863 40.8783,-427.175"/>
 </g>
 <!-- Node23 -->
 <g id="node24" class="node"><title>Node23</title>
-<g id="a_node24"><a xlink:href="class_stats_script.html" target="_top" xlink:title="A script used to manage and update all of the stat displays in the battle scene ">
-<polygon fill="none" stroke="black" points="144,-38.5 144,-57.5 209,-57.5 209,-38.5 144,-38.5"/>
-<text text-anchor="middle" x="176.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">StatsScript</text>
+<g id="a_node24"><a xlink:href="class_switch_players_script.html" target="_top" xlink:title="Script to handle the menu allowing users to switch players in and out of battle ">
+<polygon fill="none" stroke="black" points="124.5,-38.5 124.5,-57.5 228.5,-57.5 228.5,-38.5 124.5,-38.5"/>
+<text text-anchor="middle" x="176.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">SwitchPlayersScript</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node23 -->
 <g id="edge23" class="edge"><title>Node0&#45;&gt;Node23</title>
-<path fill="none" stroke="midnightblue" d="M43.8941,-427.428C49.2433,-357.588 70.6274,-121.872 119,-67 125.433,-59.7028 134.759,-55.2027 143.987,-52.4296"/>
+<path fill="none" stroke="midnightblue" d="M43.8941,-427.428C49.2433,-357.588 70.6274,-121.872 119,-67 122.422,-63.1185 126.662,-60.0284 131.271,-57.5686"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="40.3971,-427.258 43.1479,-437.49 47.378,-427.776 40.3971,-427.258"/>
 </g>
 <!-- Node24 -->

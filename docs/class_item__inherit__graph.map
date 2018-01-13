@@ -1,3 +1,8 @@
 <map id="Item" name="Item">
-<area shape="rect" id="node2" href="$class_hammer.html" title="An item that increases a player&#39;s attack stat by 5 " alt="" coords="5,189,108,296"/>
+<area shape="rect" id="node2" href="$class_armour.html" title="An item that increases a player&#39;s attack stat by 2 and defence stat by 3 " alt="" coords="5,189,108,296"/>
+<area shape="rect" id="node3" href="$class_hammer.html" title="An item that increases a player&#39;s attack stat by 5 " alt="" coords="132,189,235,296"/>
+<area shape="rect" id="node4" href="$class_magic_amulet.html" title="An item that increases a player&#39;s maximum magic points by 3 " alt="" coords="259,189,377,296"/>
+<area shape="rect" id="node5" href="$class_rabbit_foot.html" title="An item that increases a player&#39;s luck stat by 5 " alt="" coords="401,189,507,296"/>
+<area shape="rect" id="node6" href="$class_shield.html" title="An item that increases a player&#39;s defence stat by 5 " alt="" coords="531,189,633,296"/>
+<area shape="rect" id="node7" href="$class_trainers.html" title="An item that increases a player&#39;s speed stat by 5 " alt="" coords="657,189,760,296"/>
 </map>

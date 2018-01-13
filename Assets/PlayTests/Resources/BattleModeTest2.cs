@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 [TestFixture]
-public class BattleModeTest {
+public class BattleModeTest2 {
 
 	bool sceneLoaded = false;
 	GameObject playableCharacter;
@@ -53,96 +53,7 @@ public class BattleModeTest {
 	}
 
 	[UnityTest]
-	public IEnumerator A1StartBattle() {
-		//Setup
-		yield return Setup ();
-		ObjectInteraction objectScript = GameObject.Find ("Triangle").GetComponentInChildren<ObjectInteraction> ();
-		dialogueScript = GameObject.Find ("Dialogue Manager").GetComponent<DialogueScript> ();
-
-		objectScript.pseudoKeyPress = true;
-		yield return WaitForFrames (3); //Wait 3 frames for player to move then trigger to be detected and input processed
-		Assert.IsNotNull (GameObject.Find ("DialogueBox")); //Check DialogueBox can be found (is active)
-		dialogueScript.pseudoKeyPress = true;
-		yield return new WaitForSeconds(1); //Wait 3 frames for player to move then trigger to be detected and input processed
-		Assert.AreEqual("Battle", SceneManager.GetActiveScene().name); //Check Battle scene has loaded
-
-		//Check Run Button not enabled
-		Assert.False(GameObject.Find("RunButton").GetComponent<Button>().interactable);
-
-		//Perform setup
-		SetupReferences();
-	}
-
-	[UnityTest]
-	public IEnumerator A2AttackButton() {
-		BattleButtons attackButton = GameObject.Find ("ButtonHandler").GetComponent<BattleButtons> ();
-		attackButton.setPanelActive (); //Click attack button
-		yield return null;
-		Assert.NotNull (GameObject.Find ("AttacksPanel")); //Check panel shows
-		attackButton.setPanelActive (); //Click again
-		yield return null;
-		Assert.Null (GameObject.Find ("AttacksPanel")); //Check panel hides
-	}
-
-	[UnityTest]
-	public IEnumerator A3AttackPanelDisplay() {
-		BattleButtons attackButton = GameObject.Find ("ButtonHandler").GetComponent<BattleButtons> ();
-		attackButton.setPanelActive (); //Click attack button
-		yield return null;
-		Player player = PlayerData.instance.data.Players [0];
-		checkPanelMagicSpell (player.Special1, GameObject.Find ("MagicSpell1"));
-		checkPanelMagicSpell (player.Special2, GameObject.Find ("MagicSpell2"));
-	}
-
-	private void checkPanelMagicSpell (SpecialMove specialMove, GameObject containerObject) {
-		Text desc = containerObject.transform.Find ("Desc").GetComponent<Text> ();
-		Assert.AreEqual(specialMove.Desc, desc.text);
-		Text magic = containerObject.transform.Find ("Magic").GetComponent<Text> ();
-		Assert.AreEqual ("Magic: " + specialMove.Magic, magic.text);
-	}
-
-	[UnityTest]
-	public IEnumerator A4AttackMove() {
-		battleManager.forceEnemyMove = "StandardAttack"; //Make sure enemy performs standard attack
-		mainBattle.standardAttack (); //Should do 30 * 10 / 5 = 60 damage
-		yield return new WaitForSeconds(3);
-		//Enemy Health Bar
-		Assert.AreEqual ("Health: 40 / 100", enemyHealthBar.text);
-		//Player Health Bar
-		Assert.AreEqual ("Health: 90 / 100", playerHealthBar.text);
-	}
-
-	[UnityTest]
-	public IEnumerator A5MagicMove() {
-		enemy.Special1.setUp (battleManager, enemy, player);
-		battleManager.forceEnemyMove = "Special1"; // Should do 15 * 5 / 6 = 12.5 = 12 damage (as defence is buffed first in turn)
-		mainBattle.special2();
-		yield return new WaitForSeconds(3);
-		//Check Player stat buff has been applied
-		Assert.AreEqual(6, player.Defence); //5 * 0.1 = 5.5 = 6
-		//Player Health Bar
-		Assert.AreEqual("Health: 78 / 100", playerHealthBar.text); 
-		//Enemy Magic Bar
-		Assert.AreEqual("Magic: 2 / 5", enemyMagicBar.text);
-		//Enemy Health Bar
-		Assert.AreEqual ("Health: 40 / 100", enemyHealthBar.text); //Stayed the same
-		//Player Magic Bar
-		Assert.AreEqual("Magic: 3 / 5", playerMagicBar.text);
-	}
-
-	[UnityTest]
-	public IEnumerator A6WinBattle() {
-		mainBattle.standardAttack();
-		yield return new WaitForSeconds(4.2f);
-		Assert.AreEqual ("Exp: 100 / 200", playerStats.transform.Find ("Exp/Text").GetComponent<Text> ().text);
-		yield return new WaitForSeconds (2);
-		Assert.AreEqual ("BattleTestInitialScene", SceneManager.GetActiveScene ().name);
-		Assert.AreEqual (50, PlayerData.instance.data.Money);
-		Assert.IsInstanceOf (typeof(Shield), PlayerData.instance.data.Items [0]);
-	}
-
-	[UnityTest]
-	public IEnumerator B1StartNextBattle() {
+	public IEnumerator B6StartNextBattle() {
 		yield return Setup ();
 		//Add new player for testing
 		DataManager data = PlayerData.instance.data;
@@ -152,7 +63,7 @@ public class BattleModeTest {
 			(Texture2D)Resources.Load ("Character2", typeof(Texture2D))));
 
 		//Move to next fight
-		yield return moveForFrames(10, "Left");
+		yield return moveForFrames(20, "Left");
 
 		ObjectInteraction objectScript = GameObject.Find ("Character").GetComponentInChildren<ObjectInteraction> ();
 		dialogueScript = GameObject.Find ("Dialogue Manager").GetComponent<DialogueScript> ();
@@ -170,7 +81,7 @@ public class BattleModeTest {
 	}
 
 	[UnityTest]
-	public IEnumerator B2ChangePlayerMenu() {
+	public IEnumerator B7ChangePlayerMenu() {
 		buttonManager.showPlayerMenu ();
 		yield return WaitForFrames (5);
 
@@ -188,7 +99,7 @@ public class BattleModeTest {
 	}
 
 	[UnityTest]
-	public IEnumerator B3ChangePlayerOnceFainted() {
+	public IEnumerator B8ChangePlayerOnceFainted() {
 		//Check Button for Hannah is disabled
 		Assert.Null (GameObject.Find ("SwitchCanvas/Margin/Player1").GetComponent<Button> ());
 		//Put George back in
@@ -199,7 +110,7 @@ public class BattleModeTest {
 	}
 
 	[UnityTest]
-	public IEnumerator B4CheckWhenGameOver() {
+	public IEnumerator B9CheckWhenGameOver() {
 		enemy.Special1.setUp (battleManager, enemy, player);
 		battleManager.forceEnemyMove = "Special1";
 		mainBattle.standardAttack ();

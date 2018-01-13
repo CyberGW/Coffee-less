@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// A script to manage the exploration menu that the user can call up at anytime
+/// </summary>
 public class ExplorationMenuScript : MonoBehaviour {
 
 	public bool menuActive;
@@ -10,85 +13,61 @@ public class ExplorationMenuScript : MonoBehaviour {
 	private GameObject menuBox;
 	private PlayerMovement movementScript;
 
-//	public Button inventButton;
-//	public Button partyButton;
-//	public Button saveButton;
-//	public Button optionButton;
-//	public Button exitButton;
-
 	// Use this for initialization
 	void Start () {
-
-//		inventButton = inventButton.GetComponent<Button> ();
-//		partyButton = partyButton.GetComponent<Button> ();
-//		saveButton = saveButton.GetComponent<Button> ();
-//		optionButton = optionButton.GetComponent<Button> ();
-//		exitButton = exitButton.GetComponent<Button> ();
-
 		movementScript = FindObjectOfType<PlayerMovement> ();
 		//menuBox = gameObject.transform.Find ("MenuScript").gameObject;
 		SceneChanger.instance.menuOpen = true;
 		//setInactive ();
 	}
 
-	// Update is called once per frame
-	void Update () {
-		if (Input.GetKeyDown(KeyCode.Escape)) {
-//			SceneChanger.instance.menuOpen = false;
-//			movementScript.setCanMove (true);
-//			UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(20);
-		}
-	}
-
+	/// <summary>
+	/// Hide menu and renable player movement
+	/// </summary>
 	private void setInactive() {
 		menuBox.SetActive (false);
 		movementScript.setCanMove (true);
 		menuActive = false;
 	}
 
+	/// <summary>
+	/// When the inventory button is pressed, update <see cref="SceneChanger"/> to show that <see cref="SceneChanger.menuOpen"/>
+	/// is now false, and load the item menu  
+	/// </summary>
 	public void inventPressed() {
 		SceneChanger.instance.menuOpen = false;
 		SceneChanger.instance.loadLevel ("ItemMenu");
 	}
 
+	/// <summary>
+	/// When the party button is pressed, update <see cref="SceneChanger"/> to show that <see cref="SceneChanger.menuOpen"/>
+	/// is now false, and load the party menu
+	/// </summary>
 	public void partyPressed() {
 		SceneChanger.instance.menuOpen = false;
 		SceneChanger.instance.loadLevel ("Party");
 	}
 
+	/// <summary>
+	/// Placeholder function for when the save button is pressed, to be implemented in later builds
+	/// </summary>
 	public void savePressed() {
 		//UnityEngine.SceneManagement.SceneManager.LoadScene ();
 	}
 
+	/// <summary>
+	/// Placeholder function for when the option button is pressed, to be implemented in later builds
+	/// </summary>
 	public void optionPressed() {
 		//UnityEngine.SceneManagement.SceneManager.LoadScene ();
 	}
 
+	/// <summary>
+	/// When the exit button is pressed, update <see cref="SceneChanger"/> to show that <see cref="SceneChanger.menuOpen"/>
+	/// is now false, and go back to the main menu
+	/// </summary>
 	public void exitPressed() {
 		SceneChanger.instance.menuOpen = false;
 		SceneChanger.instance.loadLevel ("mainmenu1");
 	}
-
-	/*
-	private bool keyPress() {
-		bool val = Input.GetKeyDown (KeyCode.Escape) || pseudoKeyPress;
-		pseudoKeyPress = false;
-		return val;
-	}
-
-	public void showDialogue(string[] dialogue) {
-		menuBox.SetActive (true);
-		StartCoroutine (delaySetActive ());
-	}
-
-	private IEnumerator delaySetInactive() {
-		yield return new WaitForEndOfFrame ();
-		setInactive ();
-	}
-
-	private IEnumerator delaySetActive() {
-		yield return new WaitForEndOfFrame ();
-		menuActive = true;
-	}
-	*/
 }

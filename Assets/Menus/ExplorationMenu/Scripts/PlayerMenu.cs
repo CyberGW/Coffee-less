@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Script for controlling the menu which allows users to switch the order of their team members 
+/// </summary>
 public class PlayerMenu : MonoBehaviour {
 
 	Player[] players;
@@ -17,12 +20,14 @@ public class PlayerMenu : MonoBehaviour {
 		GameObject container;
 		GameObject stats;
 		Texture2D image;
+
+		//Loop through all players
 		for (int i = 0; i < 6; i++) {
 			cell = GameObject.Find ("Player" + (i + 1));
 			container = cell.transform.Find ("Container").gameObject;
+
+			//If player exists
 			if (players [i] != null) {
-				//container.AddComponent<PlayerDataComponent>().Player = players[i];
-				//container.GetComponent<PlayerDataComponent> ().Player = players [i];
 				image = players [i].Image;
 				container.transform.Find("Image").GetComponent<Image>().sprite = 
 					Sprite.Create (image, new Rect (0.0f, 0.0f, image.width, image.height), new Vector2 (0.5f, 0.5f));
@@ -38,6 +43,8 @@ public class PlayerMenu : MonoBehaviour {
 				stats.transform.Find ("Speed").GetComponent<Text> ().text = "Speed: " + players [i].Speed.ToString ();
 				stats.transform.Find ("Exp").GetComponent<Text> ().text = "Exp: " + players [i].Exp.ToString () + " / "
 					+ players[i].ExpToNextLevel.ToString();
+
+			//if player doesn't exits
 			} else {
 				//Destroy all children
 				var children = new List<GameObject>();
@@ -49,16 +56,24 @@ public class PlayerMenu : MonoBehaviour {
 		}
 
 	}
-	
+
+	/// <summary>
+	/// On the OnItemPlace event called by DragAndDropScript, call <see cref="DataManager.swapPlayers"/> to
+	/// swap the two players in the array 
+	/// </summary>
+	/// <param name="desc">Desc.</param>
 	public void OnItemPlace(DragAndDropCell.DropDescriptor desc) {
 		ContainerData source = desc.sourceCell.gameObject.GetComponent<ContainerData> ();
 		ContainerData dest = desc.destinationCell.gameObject.GetComponent<ContainerData> ();
 		PlayerData.instance.data.swapPlayers (source.index, dest.index);
 		Debug.Log ("Source: " + source.Type);
 		Debug.Log ("Destination: " + dest.Type);
-		//Debug.Log ("Item Name: " + desc.item.GetComponent<ItemData> ().Item.Name);
 	}
 
+	/// <summary>
+	/// When the back button is pressed, show player again and reload the previous scene, ensuring that the
+	/// exploration menu is shown
+	/// </summary>
 	public void back() {
 		player.SetActive (true);
 		SceneChanger.instance.menuOpen = true;

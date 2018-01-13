@@ -62,6 +62,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
@@ -76,17 +77,23 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for PlayerMovement:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_player_movement__inherit__graph.svg" width="151" height="390"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_player_movement__inherit__graph.svg" width="188" height="419"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a892db7f33d2f1b536ce32c10462f6c42"><td class="memItemLeft" align="right" valign="top"><a id="a892db7f33d2f1b536ce32c10462f6c42"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>move</b> (string direction)</td></tr>
+<tr class="memitem:a892db7f33d2f1b536ce32c10462f6c42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#a892db7f33d2f1b536ce32c10462f6c42">move</a> (string direction)</td></tr>
+<tr class="memdesc:a892db7f33d2f1b536ce32c10462f6c42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move the player  <a href="#a892db7f33d2f1b536ce32c10462f6c42">More...</a><br /></td></tr>
 <tr class="separator:a892db7f33d2f1b536ce32c10462f6c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a407332fad927bbddd860b3dff2d37651"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#a407332fad927bbddd860b3dff2d37651">setCanMove</a> (bool value)</td></tr>
 <tr class="memdesc:a407332fad927bbddd860b3dff2d37651"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether the player should be able to move or not  <a href="#a407332fad927bbddd860b3dff2d37651">More...</a><br /></td></tr>
 <tr class="separator:a407332fad927bbddd860b3dff2d37651"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a4fb486a2da7347c52f39fa59bde75f39"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#a4fb486a2da7347c52f39fa59bde75f39">pseudoEscapeKeyPress</a> = false</td></tr>
+<tr class="memdesc:a4fb486a2da7347c52f39fa59bde75f39"><td class="mdescLeft">&#160;</td><td class="mdescRight">For testing purposes, simulates an escape key press to open and close the exploration menu  <a href="#a4fb486a2da7347c52f39fa59bde75f39">More...</a><br /></td></tr>
+<tr class="separator:a4fb486a2da7347c52f39fa59bde75f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -94,8 +101,11 @@ Private Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> ()</td></tr>
 <tr class="separator:abf3660ca2b1a352b4a9da98437c61aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0caaa871b9ef680c9f02bd0e22c77db1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#a0caaa871b9ef680c9f02bd0e22c77db1">FixedUpdate</a> ()</td></tr>
-<tr class="memdesc:a0caaa871b9ef680c9f02bd0e22c77db1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once per frame to check the user key presses  <a href="#a0caaa871b9ef680c9f02bd0e22c77db1">More...</a><br /></td></tr>
+<tr class="memdesc:a0caaa871b9ef680c9f02bd0e22c77db1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called once per frame to check the user key presses.  <a href="#a0caaa871b9ef680c9f02bd0e22c77db1">More...</a><br /></td></tr>
 <tr class="separator:a0caaa871b9ef680c9f02bd0e22c77db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add6f222159b26d96e05accace2b74207"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#add6f222159b26d96e05accace2b74207">explorationMenu</a> ()</td></tr>
+<tr class="memdesc:add6f222159b26d96e05accace2b74207"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows or hides the exploration menu when the escape key is pressed, detected and called by <a class="el" href="class_player_movement.html#a0caaa871b9ef680c9f02bd0e22c77db1" title="Called once per frame to check the user key presses. ">FixedUpdate</a>  <a href="#add6f222159b26d96e05accace2b74207">More...</a><br /></td></tr>
+<tr class="separator:add6f222159b26d96e05accace2b74207"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18f2ad7eb5c710c42e85eb517f3311b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#a18f2ad7eb5c710c42e85eb517f3311b9">randomEncounter</a> ()</td></tr>
 <tr class="memdesc:a18f2ad7eb5c710c42e85eb517f3311b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the player has moved enough since last called, then 5% chance of creating a random encounter battle  <a href="#a18f2ad7eb5c710c42e85eb517f3311b9">More...</a><br /></td></tr>
 <tr class="separator:a18f2ad7eb5c710c42e85eb517f3311b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,6 +146,33 @@ Static Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A script to control the movement and animations of the player</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="add6f222159b26d96e05accace2b74207"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add6f222159b26d96e05accace2b74207">&#9670;&nbsp;</a></span>explorationMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerMovement.explorationMenu </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Shows or hides the exploration menu when the escape key is pressed, detected and called by <a class="el" href="class_player_movement.html#a0caaa871b9ef680c9f02bd0e22c77db1" title="Called once per frame to check the user key presses. ">FixedUpdate</a> </p>
+
+</div>
+</div>
 <a id="a0caaa871b9ef680c9f02bd0e22c77db1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0caaa871b9ef680c9f02bd0e22c77db1">&#9670;&nbsp;</a></span>FixedUpdate()</h2>
 
@@ -159,7 +196,41 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Called once per frame to check the user key presses </p>
+<p>Called once per frame to check the user key presses. </p>
+
+</div>
+</div>
+<a id="a892db7f33d2f1b536ce32c10462f6c42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a892db7f33d2f1b536ce32c10462f6c42">&#9670;&nbsp;</a></span>move()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerMovement.move </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>direction</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Move the player </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">direction</td><td>Direction, can be Up, Down, Left or Right</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -379,6 +450,22 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Used in case a scene duplicated the player </p>
+
+</div>
+</div>
+<a id="a4fb486a2da7347c52f39fa59bde75f39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fb486a2da7347c52f39fa59bde75f39">&#9670;&nbsp;</a></span>pseudoEscapeKeyPress</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlayerMovement.pseudoEscapeKeyPress = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>For testing purposes, simulates an escape key press to open and close the exploration menu </p>
 
 </div>
 </div>

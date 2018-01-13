@@ -36,7 +36,7 @@ public class MenuTest {
 	}
 
 	[UnityTest]
-	public IEnumerator A1OpenAndCloseMenu() {
+	public IEnumerator M0OpenAndCloseMenu() {
 		yield return Setup ();
 
 		//Open
@@ -56,7 +56,7 @@ public class MenuTest {
 	}
 
 	[UnityTest]
-	public IEnumerator A2OpenItemMenu() {
+	public IEnumerator M1OpenItemMenu() {
 		movementScript.pseudoEscapeKeyPress = true;
 		yield return WaitForFrames (3);
 		menuScript = GameObject.Find ("MenuCanvas").GetComponent<ExplorationMenuScript> ();
@@ -83,7 +83,7 @@ public class MenuTest {
 	}
 
 	[Test]
-	public void A3SwapItems() {
+	public void M2SwapItems() {
 		Item[] items = PlayerData.instance.data.Items;
 		Player[] players = PlayerData.instance.data.Players;
 
@@ -119,7 +119,7 @@ public class MenuTest {
 	}
 
 	[UnityTest]
-	public IEnumerator A4ItemBackButton() {
+	public IEnumerator M3ItemBackButton() {
 		itemScript.back ();
 		yield return new WaitForSeconds (1);
 		//Check back in previous scene
@@ -129,7 +129,7 @@ public class MenuTest {
 	}
 
 	[UnityTest]
-	public IEnumerator A5OpenPlayerMenu() {
+	public IEnumerator M4OpenPlayerMenu() {
 		menuScript.partyPressed ();
 		yield return new WaitForSeconds (1);
 		partyScript = GameObject.Find ("PartyCanvas").GetComponent<PlayerMenu> ();
@@ -145,7 +145,7 @@ public class MenuTest {
 	}
 
 	[Test]
-	public void A6SwitchPlayers() {
+	public void M5SwitchPlayers() {
 		Player[] players = PlayerData.instance.data.Players;
 
 		//Swap
@@ -169,7 +169,7 @@ public class MenuTest {
 	}
 
 	[UnityTest]
-	public IEnumerator A7PartyBackButton() {
+	public IEnumerator M6PartyBackButton() {
 		partyScript.back ();
 		yield return new WaitForSeconds (1);
 		//Check back in previous scene

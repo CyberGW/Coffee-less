@@ -81,9 +81,9 @@ Inheritance diagram for Player:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adcf3b977778d2acaa083ce54e6e05f76"><td class="memItemLeft" align="right" valign="top"><a id="adcf3b977778d2acaa083ce54e6e05f76"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Player</b> (string name, int level, int health, int attack, int defence, int maximumMagic, int magic, int luck, int speed, int <a class="el" href="class_player.html#ab21c747363b226e9e0f4493cb9d70409">exp</a>, <a class="el" href="class_item.html">Item</a> <a class="el" href="class_player.html#a840287e9537842c7376ea8584e57d655">item</a>, <a class="el" href="class_special_move.html">SpecialMove</a> special1, <a class="el" href="class_special_move.html">SpecialMove</a> special2)</td></tr>
-<tr class="separator:adcf3b977778d2acaa083ce54e6e05f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0c3f1dd63ba4fa1415d75162fe903c7"><td class="memItemLeft" align="right" valign="top"><a id="ad0c3f1dd63ba4fa1415d75162fe903c7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Player</b> (string name, int level, int health, int attack, int defence, int maximumMagic, int magic, int luck, int speed, int <a class="el" href="class_player.html#ab21c747363b226e9e0f4493cb9d70409">exp</a>, <a class="el" href="class_item.html">Item</a> <a class="el" href="class_player.html#a840287e9537842c7376ea8584e57d655">item</a>, <a class="el" href="class_special_move.html">SpecialMove</a> special1, <a class="el" href="class_special_move.html">SpecialMove</a> special2, Texture2D image=null)</td></tr>
+<tr class="separator:ad0c3f1dd63ba4fa1415d75162fe903c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea5a87e9456ca8c655300367517c269e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#aea5a87e9456ca8c655300367517c269e">gainExp</a> (int gainedExp)</td></tr>
 <tr class="memdesc:aea5a87e9456ca8c655300367517c269e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursive function to gain experience points. If enough exp to level up, call <a class="el" href="class_player.html#a00d472bd1111adabe2b54b66a21198f4" title="Increases all stats by 2, while increasing level by 1, recalculating setExpToNextLevel and setting cu...">levelUp</a> and recurse on remaining exp after this level up. If not enough exp to level up, simply add this to <a class="el" href="class_player.html#ab21c747363b226e9e0f4493cb9d70409" title="The amount of exp points gained in current level">exp</a>  <a href="#aea5a87e9456ca8c655300367517c269e">More...</a><br /></td></tr>
 <tr class="separator:aea5a87e9456ca8c655300367517c269e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -96,8 +96,8 @@ Properties</h2></td></tr>
 <tr class="memitem:a3a659796329488a836f0ad07275a77dd"><td class="memItemLeft" align="right" valign="top"><a id="a3a659796329488a836f0ad07275a77dd"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>Exp</b><code> [get, set]</code></td></tr>
 <tr class="separator:a3a659796329488a836f0ad07275a77dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3028a1586619800d4435eccec22350d4"><td class="memItemLeft" align="right" valign="top"><a id="a3028a1586619800d4435eccec22350d4"></a>
-<a class="el" href="class_item.html">Item</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Item</b><code> [get, set]</code></td></tr>
+<tr class="memitem:a3028a1586619800d4435eccec22350d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_item.html">Item</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a3028a1586619800d4435eccec22350d4">Item</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a3028a1586619800d4435eccec22350d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the item. If setting, <a class="el" href="class_item.html#a205eda904d05218a7e50e44f6dfb95b5" title="A function that applies to specific stat increases for this item ">Item.applyBuffs</a> is called immediately on this player. If the item wasn't null beforehand, <a class="el" href="class_item.html#a7bc703970d9a6dd3fbbc54f52a0f8d1d" title="A function to reverse the specific stat increases for this item. Used when the item is dequipped...">Item.revertBuffs</a> is also called beforehand  <a href="#a3028a1586619800d4435eccec22350d4">More...</a><br /></td></tr>
 <tr class="separator:a3028a1586619800d4435eccec22350d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add3a3d0b12792e02b6e0517ac7606e78"><td class="memItemLeft" align="right" valign="top"><a id="add3a3d0b12792e02b6e0517ac7606e78"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ExpToNextLevel</b><code> [get]</code></td></tr>
@@ -136,6 +136,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>Speed</b><code> [get, 
 <tr class="memitem:a5c60d0ecf2a2635165e5247f330c2f34 inherit properties_class_character"><td class="memItemLeft" align="right" valign="top"><a id="a5c60d0ecf2a2635165e5247f330c2f34"></a>
 <a class="el" href="class_special_move.html">SpecialMove</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Special2</b><code> [get, set]</code></td></tr>
 <tr class="separator:a5c60d0ecf2a2635165e5247f330c2f34 inherit properties_class_character"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20719892c0c927be96abf00e73c9f495 inherit properties_class_character"><td class="memItemLeft" align="right" valign="top"><a id="a20719892c0c927be96abf00e73c9f495"></a>
+Texture2D&#160;</td><td class="memItemRight" valign="bottom"><b>Image</b><code> [get]</code></td></tr>
+<tr class="separator:a20719892c0c927be96abf00e73c9f495 inherit properties_class_character"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -158,9 +161,9 @@ Private Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_class_character"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_character')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_character.html">Character</a></td></tr>
-<tr class="memitem:a14136a3310653dd4e75c07f9255a2f87 inherit pro_methods_class_character"><td class="memItemLeft" align="right" valign="top"><a id="a14136a3310653dd4e75c07f9255a2f87"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Character</b> (string name, int level, int health, int attack, int defence, int maximumMagic, int magic, int luck, int speed, <a class="el" href="class_special_move.html">SpecialMove</a> special1, <a class="el" href="class_special_move.html">SpecialMove</a> special2)</td></tr>
-<tr class="separator:a14136a3310653dd4e75c07f9255a2f87 inherit pro_methods_class_character"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c9fd6aa12338df627c37e530e6de725 inherit pro_methods_class_character"><td class="memItemLeft" align="right" valign="top"><a id="a3c9fd6aa12338df627c37e530e6de725"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Character</b> (string name, int level, int health, int attack, int defence, int maximumMagic, int magic, int luck, int speed, <a class="el" href="class_special_move.html">SpecialMove</a> special1, <a class="el" href="class_special_move.html">SpecialMove</a> special2, Texture2D image=null)</td></tr>
+<tr class="separator:a3c9fd6aa12338df627c37e530e6de725 inherit pro_methods_class_character"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_character"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_character')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_character.html">Character</a></td></tr>
 <tr class="memitem:adbfa3b858f99f337203a1bec67b2fe45 inherit pro_attribs_class_character"><td class="memItemLeft" align="right" valign="top"><a id="adbfa3b858f99f337203a1bec67b2fe45"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
@@ -195,6 +198,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>speed</b></td></tr>
 <tr class="memitem:a8123fd6c7627005dfe094491c4aa0ba9 inherit pro_attribs_class_character"><td class="memItemLeft" align="right" valign="top"><a id="a8123fd6c7627005dfe094491c4aa0ba9"></a>
 <a class="el" href="class_special_move.html">SpecialMove</a>&#160;</td><td class="memItemRight" valign="bottom"><b>special2</b></td></tr>
 <tr class="separator:a8123fd6c7627005dfe094491c4aa0ba9 inherit pro_attribs_class_character"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2450b18eb4deeb550b1648f2bf5b504 inherit pro_attribs_class_character"><td class="memItemLeft" align="right" valign="top"><a id="af2450b18eb4deeb550b1648f2bf5b504"></a>
+Texture2D&#160;</td><td class="memItemRight" valign="bottom"><b>image</b></td></tr>
+<tr class="separator:af2450b18eb4deeb550b1648f2bf5b504 inherit pro_attribs_class_character"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defines a playable character for use in battle scenes</p>
@@ -357,6 +363,32 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>speed</b></td></tr>
 </div><div class="memdoc">
 
 <p>The item that the player has equipped</p>
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="a3028a1586619800d4435eccec22350d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3028a1586619800d4435eccec22350d4">&#9670;&nbsp;</a></span>Item</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_item.html">Item</a> Player.Item</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the item. If setting, <a class="el" href="class_item.html#a205eda904d05218a7e50e44f6dfb95b5" title="A function that applies to specific stat increases for this item ">Item.applyBuffs</a> is called immediately on this player. If the item wasn't null beforehand, <a class="el" href="class_item.html#a7bc703970d9a6dd3fbbc54f52a0f8d1d" title="A function to reverse the specific stat increases for this item. Used when the item is dequipped...">Item.revertBuffs</a> is also called beforehand </p>
+<p>The item.</p>
 
 </div>
 </div>

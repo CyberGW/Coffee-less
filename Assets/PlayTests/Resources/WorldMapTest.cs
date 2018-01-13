@@ -18,12 +18,10 @@ public class WorldMapTest {
 	}
 
 	[UnityTest]
-	public IEnumerator A1Load() {
+	public IEnumerator W0DepartmentColouring() {
+		//Setup
 		yield return Setup ();
-	}
 
-	[Test]
-	public void A2DepartmentColouring() {
 		//Check completed regions are coloured red
 		MeshRenderer CS = GameObject.FindGameObjectWithTag ("CS").transform.Find ("CS").GetComponent<MeshRenderer> ();
 		Assert.AreEqual (Color.red, CS.material.color);
@@ -36,14 +34,14 @@ public class WorldMapTest {
 	}
 
 	[UnityTest]
-	public IEnumerator A3CantEnterPreviousDepartments() {
+	public IEnumerator W1CantEnterPreviousDepartments() {
 		yield return moveForFrames (20, "Left"); //Walk to beaten Computer Science building
 		Assert.AreEqual("WorldMap", SceneManager.GetActiveScene().name); //Check active scene is still WorldMap
 		// e.g. not entered CS
 	}
 
 	[UnityTest]
-	public IEnumerator A4CantEnterFutureDepartments() {
+	public IEnumerator W2CantEnterFutureDepartments() {
 		player.transform.position = new Vector2 (1,2); //Line up with RCH building
 		yield return null;
 		yield return moveForFrames (20, "Right");
@@ -51,7 +49,7 @@ public class WorldMapTest {
 	}
 
 	[UnityTest]
-	public IEnumerator A5BusStop() {
+	public IEnumerator W3BusStop() {
 		player.transform.position = new Vector2 (-13,-8); //Line up with bus stop
 		yield return moveForFrames(20, "Down");
 		yield return new WaitForSeconds (1); //Wait for transition
@@ -61,12 +59,12 @@ public class WorldMapTest {
 		yield return moveForFrames(20, "Down");
 		yield return new WaitForSeconds (1); //Wait for transition
 		//Check back on Hes East site now
-		Assert.AreEqual(-13, (int) player.transform.position.x);
+		Assert.AreEqual(-12, (int) player.transform.position.x);
 		Assert.AreEqual(-7, (int) player.transform.position.y);
 	}
 
 	[UnityTest]
-	public IEnumerator A6CanEnterAndReturnFromCurrentLevel() {
+	public IEnumerator W4CanEnterAndReturnFromCurrentLevel() {
 		player.transform.position = new Vector2 (-10,-1); //Line up with TFTV
 		yield return moveForFrames(20, "Left");
 		yield return new WaitForSeconds (1); //Wait for transition

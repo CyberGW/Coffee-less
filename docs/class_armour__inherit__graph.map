@@ -1,0 +1,3 @@
+<map id="Armour" name="Armour">
+<area shape="rect" id="node2" href="$class_item.html" title="Abstract class for items that can be equipped to a player, increasing some of their stats ..." alt="" coords="5,5,108,141"/>
+</map>

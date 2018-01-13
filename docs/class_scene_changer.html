@@ -62,6 +62,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
@@ -76,12 +77,14 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for SceneChanger:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_scene_changer__inherit__graph.svg" width="142" height="390"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_scene_changer__inherit__graph.svg" width="142" height="419"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:aa3b0776953618ac9887a027f766304c8"><td class="memItemLeft" align="right" valign="top"><a id="aa3b0776953618ac9887a027f766304c8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>hidePlayer</b> ()</td></tr>
+<tr class="separator:aa3b0776953618ac9887a027f766304c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47b11efe0991dd2a9c697efe25e609dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_changer.html#a47b11efe0991dd2a9c697efe25e609dc">loadLevel</a> (string newScene)</td></tr>
 <tr class="memdesc:a47b11efe0991dd2a9c697efe25e609dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a new level, without moving the player.  <a href="#a47b11efe0991dd2a9c697efe25e609dc">More...</a><br /></td></tr>
 <tr class="separator:a47b11efe0991dd2a9c697efe25e609dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -91,6 +94,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab7f9172f9ca303b998012e63dbb769e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_changer.html#ab7f9172f9ca303b998012e63dbb769e3">changePosition</a> (Vector2 position)</td></tr>
 <tr class="memdesc:ab7f9172f9ca303b998012e63dbb769e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the position of the player. Called on a scene load by <a class="el" href="class_scene_changer.html#a279c813f371ec3214b1d9898dfb293d3" title="Called when a new scene is loaded, allowing the player&#39;s position to be changed and enable their move...">sceneChanged</a> if <a class="el" href="class_scene_changer.html#a3b204c06327370f2f5289b5a97b73b23" title="Set to true if the player&#39;s location is to change on next scene load">movePlayer</a> is <code>true</code>  <a href="#ab7f9172f9ca303b998012e63dbb769e3">More...</a><br /></td></tr>
 <tr class="separator:ab7f9172f9ca303b998012e63dbb769e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ab2fc15d9ea68f2245793706e7a5d478f"><td class="memItemLeft" align="right" valign="top"><a id="ab2fc15d9ea68f2245793706e7a5d478f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>menuOpen</b> = false</td></tr>
+<tr class="separator:ab2fc15d9ea68f2245793706e7a5d478f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2218dfef1c5bf38ba9cbad11d4be949"><td class="memItemLeft" align="right" valign="top"><a id="ad2218dfef1c5bf38ba9cbad11d4be949"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>menuScene</b></td></tr>
+<tr class="separator:ad2218dfef1c5bf38ba9cbad11d4be949"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -103,9 +115,6 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a3daa202648aa8924b623764c4cc0e4dd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_scene_changer.html">SceneChanger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_changer.html#a3daa202648aa8924b623764c4cc0e4dd">instance</a></td></tr>
 <tr class="memdesc:a3daa202648aa8924b623764c4cc0e4dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">A static variable relating to this script so functions can be easily accessed by <code> <a class="el" href="class_scene_changer.html#a3daa202648aa8924b623764c4cc0e4dd" title="A static variable relating to this script so functions can be easily accessed by  SceneChanger...">SceneChanger.instance</a>....</code>  <a href="#a3daa202648aa8924b623764c4cc0e4dd">More...</a><br /></td></tr>
 <tr class="separator:a3daa202648aa8924b623764c4cc0e4dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa68735123bd9eb800159c149117bca6"><td class="memItemLeft" align="right" valign="top"><a id="afa68735123bd9eb800159c149117bca6"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>menuClosed</b></td></tr>
-<tr class="separator:afa68735123bd9eb800159c149117bca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>

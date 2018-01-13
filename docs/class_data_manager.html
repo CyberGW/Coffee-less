@@ -78,9 +78,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a25f86c59f07a95df2776fed8211f502f"><td class="memItemLeft" align="right" valign="top"><a id="a25f86c59f07a95df2776fed8211f502f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>DataManager</b> (<a class="el" href="class_player.html">Player</a> initialPlayer)</td></tr>
 <tr class="separator:a25f86c59f07a95df2776fed8211f502f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c9256958cd8245360b53384741fa170"><td class="memItemLeft" align="right" valign="top"><a id="a9c9256958cd8245360b53384741fa170"></a>
-<a class="el" href="class_player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getFirstPlayer</b> ()</td></tr>
+<tr class="memitem:a9c9256958cd8245360b53384741fa170"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#a9c9256958cd8245360b53384741fa170">getFirstPlayer</a> ()</td></tr>
+<tr class="memdesc:a9c9256958cd8245360b53384741fa170"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the first player.  <a href="#a9c9256958cd8245360b53384741fa170">More...</a><br /></td></tr>
 <tr class="separator:a9c9256958cd8245360b53384741fa170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2df915d726f196e9ca423be29c030f37"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#a2df915d726f196e9ca423be29c030f37">playersAlive</a> ()</td></tr>
+<tr class="memdesc:a2df915d726f196e9ca423be29c030f37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of players in players that are not null and have health above zero  <a href="#a2df915d726f196e9ca423be29c030f37">More...</a><br /></td></tr>
+<tr class="separator:a2df915d726f196e9ca423be29c030f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6232a000c57087e4beab027e9f37d514"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#a6232a000c57087e4beab027e9f37d514">addPlayer</a> (<a class="el" href="class_player.html">Player</a> player)</td></tr>
 <tr class="memdesc:a6232a000c57087e4beab027e9f37d514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new player to players if not-full, otherwise throwing an <code> InvalidOperationException</code>  <a href="#a6232a000c57087e4beab027e9f37d514">More...</a><br /></td></tr>
 <tr class="separator:a6232a000c57087e4beab027e9f37d514"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -99,9 +102,6 @@ Properties</h2></td></tr>
 <tr class="memitem:ab4eba818c21efb81d8d978fbf6eab03b"><td class="memItemLeft" align="right" valign="top"><a id="ab4eba818c21efb81d8d978fbf6eab03b"></a>
 <a class="el" href="class_player.html">Player</a> []&#160;</td><td class="memItemRight" valign="bottom"><b>Players</b><code> [get, set]</code></td></tr>
 <tr class="separator:ab4eba818c21efb81d8d978fbf6eab03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ac8c87461879f4570956f3f3dfe6ad6"><td class="memItemLeft" align="right" valign="top"><a id="a6ac8c87461879f4570956f3f3dfe6ad6"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>Alive</b><code> [get, set]</code></td></tr>
-<tr class="separator:a6ac8c87461879f4570956f3f3dfe6ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7869cefda3a501130a748fd388fda0ad"><td class="memItemLeft" align="right" valign="top"><a id="a7869cefda3a501130a748fd388fda0ad"></a>
 <a class="el" href="class_item.html">Item</a> []&#160;</td><td class="memItemRight" valign="bottom"><b>Items</b><code> [get]</code></td></tr>
 <tr class="separator:a7869cefda3a501130a748fd388fda0ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,9 +114,6 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:aa0a1431746f25bafd2fa619787ccecf1"><td class="memItemLeft" align="right" valign="top"><a id="aa0a1431746f25bafd2fa619787ccecf1"></a>
 <a class="el" href="class_player.html">Player</a> []&#160;</td><td class="memItemRight" valign="bottom"><b>players</b></td></tr>
 <tr class="separator:aa0a1431746f25bafd2fa619787ccecf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7774b32909b7a6ca6955946232ee5427"><td class="memItemLeft" align="right" valign="top"><a id="a7774b32909b7a6ca6955946232ee5427"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>alive</b></td></tr>
-<tr class="separator:a7774b32909b7a6ca6955946232ee5427"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a890bc489124b6f4b2e4b7032295140"><td class="memItemLeft" align="right" valign="top"><a id="a1a890bc489124b6f4b2e4b7032295140"></a>
 <a class="el" href="class_item.html">Item</a> []&#160;</td><td class="memItemRight" valign="bottom"><b>items</b></td></tr>
 <tr class="separator:a1a890bc489124b6f4b2e4b7032295140"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,6 +217,62 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>money</b></td></tr>
 
 <p>Counts all items in items which are not null </p>
 <dl class="section return"><dt>Returns</dt><dd>The number of non-null elements in the array</dd></dl>
+
+</div>
+</div>
+<a id="a9c9256958cd8245360b53384741fa170"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c9256958cd8245360b53384741fa170">&#9670;&nbsp;</a></span>getFirstPlayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_player.html">Player</a> DataManager.getFirstPlayer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the first player. </p>
+<dl class="section return"><dt>Returns</dt><dd>The first player in the array, players[0] </dd></dl>
+
+</div>
+</div>
+<a id="a2df915d726f196e9ca423be29c030f37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2df915d726f196e9ca423be29c030f37">&#9670;&nbsp;</a></span>playersAlive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DataManager.playersAlive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of players in players that are not null and have health above zero </p>
+<dl class="section return"><dt>Returns</dt><dd>The number of players alive</dd></dl>
 
 </div>
 </div>

@@ -60,4 +60,29 @@ public class PlayerDataTest {
 		Assert.AreEqual (itemObject, data.Items [0]);
 	}
 
+	[Test]
+	public void PlayersAlive() { 
+		//Add one more player
+		Player newPlayer = new Player ("Player2", 1, 1, 1, 1, 1, 1, 1, 1, 1, null, null, null);
+		data.addPlayer (newPlayer);
+		//Check initially 2
+		Assert.AreEqual (2, data.playersAlive ());
+		//Kill one player
+		data.Players [1].Health = 0;
+		Assert.AreEqual (1, data.playersAlive ());
+		//Kill the other
+		data.Players [0].Health = 0;
+		Assert.AreEqual (0, data.playersAlive ());
+	}
+
+	[Test]
+	public void CountItems() {
+		//Initially
+		Assert.AreEqual (0, data.countItems ());
+		//Add Item
+		Item itemObject = new Hammer ();
+		data.addItem (itemObject);
+		Assert.AreEqual (1, data.countItems ());
+	}
+
 }

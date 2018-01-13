@@ -371,6 +371,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
+        type: 2}
+      propertyPath: dialogue.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4704459060425080, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
       propertyPath: m_LocalPosition.x
       value: 103.31464
@@ -411,7 +416,7 @@ Prefab:
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.data[1]
-      value: What a great film quote. Now to make the fight scene!
+      value: That's a great film quote, now to make the fight scene.
       objectReference: {fileID: 0}
     - target: {fileID: 61449539767269810, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}

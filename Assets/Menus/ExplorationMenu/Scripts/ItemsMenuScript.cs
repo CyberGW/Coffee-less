@@ -67,7 +67,12 @@ public class ItemsMenuScript : MonoBehaviour {
 			}
 		}
 	}
-	
+
+	/// <summary>
+	/// Creates an item cell, showing the name and description
+	/// </summary>
+	/// <param name="cell">Cell.</param>
+	/// <param name="itemObject">Item object.</param>
 	private void createItemCell(DragAndDropCell cell, Item itemObject) {
 		GameObject item = Instantiate (Resources.Load ("Item", typeof(GameObject))) as GameObject;
 		item.name = "Item";
@@ -111,6 +116,10 @@ public class ItemsMenuScript : MonoBehaviour {
 		//Debug.Log ("Item Name: " + desc.item.GetComponent<ItemData> ().Item.Name);
 	}
 
+	/// <summary>
+	/// When the back button is pressed, reshow player and go back to the scene where the menu was called from,
+	/// ensuring the exploration menu is shown
+	/// </summary>
 	public void back() {
 		player.SetActive (true);
 		SceneChanger.instance.menuOpen = true;

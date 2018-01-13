@@ -2,15 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// An attribute to store information for a container in the item menu
+/// </summary>
 public class ContainerData : MonoBehaviour {
 
+	/// <summary>
+	/// The type of container, describing whether it represents a player or an item slot
+	/// </summary>
 	public string type;
+	/// <summary>
+	/// The array index that this container represents
+	/// </summary>
 	public int index;
-
-	void Start() {
-		//type = gameObject.name.Substring (0, gameObject.name.Length - 1);
-		//index = int.Parse (gameObject.name.Substring (gameObject.name.Length - 1));
-	}
 
 	public string Type {
 		get {

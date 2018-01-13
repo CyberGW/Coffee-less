@@ -29,6 +29,9 @@ public class BattleButtons : MonoBehaviour {
 		}
 	}
 
+	/// <summary>
+	/// Shows the player menu.
+	/// </summary>
 	public void showPlayerMenu() {
 		SceneManager.LoadSceneAsync ("SwitchPlayer", LoadSceneMode.Additive);
 	}

@@ -108,7 +108,7 @@ public class SpecialMoveTest {
 		Assert.AreEqual (6, player.Magic);
 	}
 
-	[Test]
+	[Ignore ("Healing Spells may be removed")]
 	public void HealingSpell() {
 		player.Health = 40; //Lower player health for test
 		player.Special1 = new HealingSpell ("healed", "Heal an ally", 5, 50);

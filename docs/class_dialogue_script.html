@@ -81,7 +81,7 @@ Inheritance diagram for DialogueScript:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae71a2a83f77c3401681cb6ec7f8b47b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialogue_script.html#ae71a2a83f77c3401681cb6ec7f8b47b6">showDialogue</a> (string[] dialogue, <a class="el" href="class_object_interaction.html">ObjectInteraction</a> caller=null)</td></tr>
+<tr class="memitem:ae71a2a83f77c3401681cb6ec7f8b47b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialogue_script.html#ae71a2a83f77c3401681cb6ec7f8b47b6">showDialogue</a> (string[] dialogue, <a class="el" href="class_object_interaction.html">ObjectInteraction</a> <a class="el" href="class_dialogue_script.html#a2af35d9d02d303b85693fde17b527b86">caller</a>=null)</td></tr>
 <tr class="memdesc:ae71a2a83f77c3401681cb6ec7f8b47b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows the dialogue box and the first line of text by calling <a class="el" href="class_dialogue_script.html#a5a14b8c27afb68f3df14604e86982995" title="Shows a line of text ">showLine</a>  <a href="#ae71a2a83f77c3401681cb6ec7f8b47b6">More...</a><br /></td></tr>
 <tr class="separator:ae71a2a83f77c3401681cb6ec7f8b47b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -90,8 +90,8 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a53381e63686175ff082b8fbe939dd857"><td class="memItemLeft" align="right" valign="top"><a id="a53381e63686175ff082b8fbe939dd857"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>dialogueActive</b></td></tr>
 <tr class="separator:a53381e63686175ff082b8fbe939dd857"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76b519505e68c46f302eaea865f3f30f"><td class="memItemLeft" align="right" valign="top"><a id="a76b519505e68c46f302eaea865f3f30f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>pseudoKeyPress</b></td></tr>
+<tr class="memitem:a76b519505e68c46f302eaea865f3f30f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialogue_script.html#a76b519505e68c46f302eaea865f3f30f">pseudoKeyPress</a></td></tr>
+<tr class="memdesc:a76b519505e68c46f302eaea865f3f30f"><td class="mdescLeft">&#160;</td><td class="mdescRight">For testing purposes, allows dialogue to be stepped through with pressing space  <a href="#a76b519505e68c46f302eaea865f3f30f">More...</a><br /></td></tr>
 <tr class="separator:a76b519505e68c46f302eaea865f3f30f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -135,8 +135,8 @@ Text&#160;</td><td class="memItemRight" valign="bottom"><b>dialogueText</b></td>
 <tr class="memitem:a5ba217e5922645827f63375e55d629bb"><td class="memItemLeft" align="right" valign="top"><a id="a5ba217e5922645827f63375e55d629bb"></a>
 <a class="el" href="class_player_movement.html">PlayerMovement</a>&#160;</td><td class="memItemRight" valign="bottom"><b>movementScript</b></td></tr>
 <tr class="separator:a5ba217e5922645827f63375e55d629bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2af35d9d02d303b85693fde17b527b86"><td class="memItemLeft" align="right" valign="top"><a id="a2af35d9d02d303b85693fde17b527b86"></a>
-<a class="el" href="class_object_interaction.html">ObjectInteraction</a>&#160;</td><td class="memItemRight" valign="bottom"><b>caller</b></td></tr>
+<tr class="memitem:a2af35d9d02d303b85693fde17b527b86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_object_interaction.html">ObjectInteraction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialogue_script.html#a2af35d9d02d303b85693fde17b527b86">caller</a></td></tr>
+<tr class="memdesc:a2af35d9d02d303b85693fde17b527b86"><td class="mdescLeft">&#160;</td><td class="mdescRight">The script that called this, allowing the appropiate end of dialogue function to be called once all dialogue has been stepped through  <a href="#a2af35d9d02d303b85693fde17b527b86">More...</a><br /></td></tr>
 <tr class="separator:a2af35d9d02d303b85693fde17b527b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -328,6 +328,47 @@ Text&#160;</td><td class="memItemRight" valign="bottom"><b>dialogueText</b></td>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a2af35d9d02d303b85693fde17b527b86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2af35d9d02d303b85693fde17b527b86">&#9670;&nbsp;</a></span>caller</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_object_interaction.html">ObjectInteraction</a> DialogueScript.caller</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The script that called this, allowing the appropiate end of dialogue function to be called once all dialogue has been stepped through </p>
+
+</div>
+</div>
+<a id="a76b519505e68c46f302eaea865f3f30f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76b519505e68c46f302eaea865f3f30f">&#9670;&nbsp;</a></span>pseudoKeyPress</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DialogueScript.pseudoKeyPress</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>For testing purposes, allows dialogue to be stepped through with pressing space </p>
 
 </div>
 </div>

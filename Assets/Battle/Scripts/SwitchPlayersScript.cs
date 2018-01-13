@@ -4,12 +4,18 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Script to handle the menu allowing users to switch players in and out of battle
+/// </summary>
 public class SwitchPlayersScript : MonoBehaviour {
 
 	Player[] players;
 	MainBattle mainBattle;
 
-	// Use this for initialization
+	/// <summary>
+	/// On start, show all existing players and their stats. Also disable back button if entered
+	/// after the current player has just died
+	/// </summary>
 	void Start () {
 		players = PlayerData.instance.data.Players;
 		mainBattle = GameObject.Find ("BattleCode").GetComponent<MainBattle> ();
@@ -17,10 +23,16 @@ public class SwitchPlayersScript : MonoBehaviour {
 		GameObject container;
 		GameObject stats;
 		Texture2D image;
+
+		//Loop through all players
 		for (int i = 0; i < 6; i++) {
 			cell = GameObject.Find ("Player" + (i + 1));
 			container = cell.transform.Find ("Container").gameObject;
+
+			//If player exits
 			if (players [i] != null) {
+
+				//Setup all sprites and player stats display
 				image = players [i].Image;
 				container.transform.Find("Image").GetComponent<Image>().sprite = 
 					Sprite.Create (image, new Rect (0.0f, 0.0f, image.width, image.height), new Vector2 (0.5f, 0.5f));
@@ -40,15 +52,18 @@ public class SwitchPlayersScript : MonoBehaviour {
 					container.GetComponent<Image> ().color = Color.grey;
 					Destroy (cell.GetComponent<Button> ());
 				}
+
+			//If player doesn't exists
 			} else {
-				//Destroy all children
+				//Destroy all children, leaving the container empty
 				var children = new List<GameObject>();
 				foreach (Transform child in container.transform) children.Add(child.gameObject);
 				children.ForEach(child => Destroy(child));
 				container.GetComponent<Image> ().color = Color.grey;
-				Destroy (cell.GetComponent<Button> ());
+				Destroy (cell.GetComponent<Button> ()); //Remove button component so can't be pressed
 			}
 		}
+			
 		//Disable attack button if opened after player has died
 		if (mainBattle.playerDied) {
 			GameObject.Find ("BackButton").GetComponent<Button> ().interactable = false;
@@ -56,17 +71,18 @@ public class SwitchPlayersScript : MonoBehaviour {
 
 	}
 
+	/// <summary>
+	/// Once a player has been selected, call <see cref="MainBattle.switchPlayers"/> and unload this menu scene  
+	/// </summary>
+	/// <param name="player">Player.</param>
 	public void switchPlayers(int player) {
 		mainBattle.switchPlayers (player);
 		SceneManager.UnloadSceneAsync (SceneManager.GetSceneByName ("SwitchPlayer").buildIndex);
 	}
-		
 
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
+	/// <summary>
+	/// When back button is pressed, unload this menu scene
+	/// </summary>
 	public void back() {
 		SceneManager.UnloadSceneAsync (SceneManager.GetSceneByName ("SwitchPlayer").buildIndex);
 	}

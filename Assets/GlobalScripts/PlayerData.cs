@@ -10,7 +10,9 @@ public class PlayerData : MonoBehaviour {
 	public DataManager data;
 	public static PlayerData instance = null;
 
-	// Use this for initialization
+	/// <summary>
+	/// Creates <see cref="DataManager"/> object and adds initial player 
+	/// </summary>
 	void Awake() {
 		
 		data = new DataManager (new Player ("George", 1, 100, 30, 5, 5, 5, 5, 5, 0, null,
@@ -24,11 +26,6 @@ public class PlayerData : MonoBehaviour {
 		} else if (instance != this) {
 			Destroy (gameObject);
 		}
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 
 }
@@ -73,10 +70,18 @@ public class DataManager {
 		}
 	}
 
+	/// <summary>
+	/// Gets the first player.
+	/// </summary>
+	/// <returns>The first player in the array, <see cref="players"/>[0] </returns>
 	public Player getFirstPlayer() {
 		return players [0];
 	}
 
+	/// <summary>
+	/// Returns the number of players in <see cref="players"/> that are not null and have health above zero 
+	/// </summary>
+	/// <returns>The number of players alive</returns>
 	public int playersAlive() {
 		int alive = 0;
 		foreach (Player player in players) {

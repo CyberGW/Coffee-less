@@ -22,8 +22,8 @@ public class MenuScript : MonoBehaviour {
 		quitMenu.enabled = false;
 	}
 
-	public void ExitPress(){
-		
+
+	public void ExitPress(){		
 		quitMenu.enabled = true;
 		exitText.enabled = false;
 		startText.enabled = false;
@@ -36,15 +36,16 @@ public class MenuScript : MonoBehaviour {
 		startText.enabled = true;
 	}
 
-	public void StartLevel(string newGameLevel){
+	/// <summary>
+	/// Start the game from the initial level
+	/// </summary>
+	public void StartLevel(){
 		SoundManager.instance.playSFX ("interact");
 		Initiate.Fade ("CS-Jail", Color.black, 1f);
 	}
 
-	public void ExitGame(){
-		
+	public void ExitGame() {
 		Application.Quit ();
-
 	}
 
 		

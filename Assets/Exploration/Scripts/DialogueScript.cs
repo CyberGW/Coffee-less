@@ -9,12 +9,19 @@ using UnityEngine.UI;
 public class DialogueScript : MonoBehaviour {
 
 	public bool dialogueActive;
+	/// <summary>
+	/// For testing purposes, allows dialogue to be stepped through with pressing space
+	/// </summary>
 	public bool pseudoKeyPress;
 	private string[] dialogueLines;
 	private int currentLineIndex;
 	private GameObject dialogueBox;
 	private Text dialogueText;
 	private PlayerMovement movementScript;
+	/// <summary>
+	/// The script that called this, allowing the appropiate end of dialogue function to be called once all dialogue has been
+	/// stepped through
+	/// </summary>
 	private ObjectInteraction caller;
 
 	// Use this for initialization

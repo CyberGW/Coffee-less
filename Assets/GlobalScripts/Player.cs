@@ -30,6 +30,11 @@ public class Player : Character {
 		}
 	}
 
+	/// <summary>
+	/// Gets or sets the item. If setting, <see cref="Item.applyBuffs"/> is called immediately on this player.
+	/// If the item wasn't null beforehand, <see cref="Item.revertBuffs"/> is also called beforehand  
+	/// </summary>
+	/// <value>The item.</value>
 	public Item Item {
 		get {
 			return this.item;

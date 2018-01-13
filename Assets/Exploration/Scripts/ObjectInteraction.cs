@@ -12,6 +12,9 @@ public class ObjectInteraction : MonoBehaviour {
 	/// An array of dialogue, with each element being one line to display on screen at a time
 	/// </summary>
 	public string[] dialogue;
+	/// <summary>
+	/// The sound effect to play when interacted
+	/// </summary>
 	public static AudioClip SFX;
 	//For testing
 	[HideInInspector]

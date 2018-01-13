@@ -26,6 +26,9 @@ public class PlayerMovement : MonoBehaviour {
 	/// The animation controller of the player
 	/// </summary>
 	private Animator anim;
+	/// <summary>
+	/// For testing purposes, simulates an escape key press to open and close the exploration menu
+	/// </summary>
 	public bool pseudoEscapeKeyPress = false;
 
 	// Use this for initialization
@@ -45,28 +48,22 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
 	/// <summary>
-	/// Called once per frame to check the user key presses
+	/// Called once per frame to check the user key presses.
 	/// </summary>
 	void FixedUpdate () {
 
-		if (Input.GetKeyDown (KeyCode.Return)) {
-			GlobalFunctions.instance.createBattle (new Enemy ("Swinefoogle", 5, 100, 15, 5, 5, 5, 5, 5,
-				new MagicAttack("fireballed", "Fireball", 30, 3),
-				new MagicAttack("fireballed", "Fireball", 30, 5),
-				(Texture2D) Resources.Load("Little_Green_Enemy", typeof(Texture2D))),
-				50, null, false);
-		}
+		// For testing, allows a battle to be started by pressing the enter key
+
+//		if (Input.GetKeyDown (KeyCode.Return)) {
+//			GlobalFunctions.instance.createBattle (new Enemy ("Swinefoogle", 5, 100, 15, 5, 5, 5, 5, 5,
+//				new MagicAttack("fireballed", "Fireball", 30, 3),
+//				new MagicAttack("fireballed", "Fireball", 30, 5),
+//				(Texture2D) Resources.Load("Little_Green_Enemy", typeof(Texture2D))),
+//				50, null, false);
+//		}
+
 		if (Input.GetKeyDown (KeyCode.Escape) || pseudoEscapeKeyPress) {
-			if (SceneChanger.instance.menuOpen) {
-				SceneChanger.instance.menuOpen = false;
-				setCanMove (true);
-				UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync (SceneManager.GetSceneByName("GameMenu").buildIndex);
-			} else {
-				SceneChanger.instance.menuOpen = true;
-				SceneChanger.instance.menuScene = SceneManager.GetActiveScene ().name;
-				SceneManager.LoadScene ("GameMenu", LoadSceneMode.Additive);
-			}
-			pseudoEscapeKeyPress = false;
+			explorationMenu ();
 		}
 
 		if (Input.GetKey (KeyCode.UpArrow)) {
@@ -88,6 +85,26 @@ public class PlayerMovement : MonoBehaviour {
 		}
 	}
 
+	/// <summary>
+	/// Shows or hides the exploration menu when the escape key is pressed, detected and called by <see cref="FixedUpdate"/> 
+	/// </summary>
+	private void explorationMenu() {
+		if (SceneChanger.instance.menuOpen) {
+			SceneChanger.instance.menuOpen = false;
+			setCanMove (true);
+			UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync (SceneManager.GetSceneByName ("GameMenu").buildIndex);
+		} else {
+			SceneChanger.instance.menuOpen = true;
+			SceneChanger.instance.menuScene = SceneManager.GetActiveScene ().name;
+			SceneManager.LoadScene ("GameMenu", LoadSceneMode.Additive);
+		}
+		pseudoEscapeKeyPress = false;
+	}
+
+	/// <summary>
+	/// Move the player
+	/// </summary>
+	/// <param name="direction">Direction, can be Up, Down, Left or Right</param>
 	public void move(string direction) {
 		if (canMove) {
 			walkAnimation (direction);
