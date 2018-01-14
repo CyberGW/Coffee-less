@@ -272,15 +272,15 @@ MonoBehaviour:
   sprite: {fileID: 2800000, guid: 0f68722fa6b3ebb4093e4c8d9a5969f7, type: 3}
   level: 10
   health: 100
-  attack: 8
+  attack: 15
   defence: 15
   maximumMagic: 11
-  luck: 15
+  luck: 20
   speed: 8
   special1: 0
   special1Text: threw a book at
   special1Magic: 5
-  special1Value: 15
+  special1Value: 18
   special2: 2
   special2Text: learnt more from that textbook than
   special2Magic: 3

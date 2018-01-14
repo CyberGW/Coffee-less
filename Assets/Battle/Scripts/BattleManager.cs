@@ -90,7 +90,7 @@ public class BattleManager {
 			return false;
 		default:
 			//Usual code block
-			float chance = 0.05f + (float) luck / 500;
+			float chance = 0.05f + (float) luck / 200;
 			float random = Random.value;
 			if (random < chance) {
 				return true;

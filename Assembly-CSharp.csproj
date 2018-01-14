@@ -83,7 +83,6 @@
      <Compile Include="Assets\Menus\ExplorationMenu\Scripts\ExplorationMenuScript.cs" />
      <Compile Include="Assets\Menus\ExplorationMenu\Scripts\ItemsMenuScript.cs" />
      <Compile Include="Assets\Menus\ExplorationMenu\Scripts\PlayerMenu.cs" />
-     <Compile Include="Assets\Menus\MainMenu\ButtonManager.cs" />
      <Compile Include="Assets\Menus\MainMenu\MenuScript.cs" />
      <Compile Include="Assets\PlayTests\Resources\BattleModeTest1.cs" />
      <Compile Include="Assets\PlayTests\Resources\BattleModeTest2.cs" />

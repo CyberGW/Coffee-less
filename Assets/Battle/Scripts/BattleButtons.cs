@@ -59,6 +59,8 @@ public class BattleButtons : MonoBehaviour {
 		UI.transform.Find ("Desc").GetComponent<Text> ().text = specialMove.Desc;
 		if (magic < specialMove.Magic) {
 			UI.transform.Find ("Button").GetComponent<Button> ().interactable = false;
+		} else {
+			UI.transform.Find ("Button").GetComponent<Button> ().interactable = true;
 		}
 	}
 }

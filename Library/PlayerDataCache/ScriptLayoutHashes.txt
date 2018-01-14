@@ -1,19 +1,19 @@
 WindowsStandalone
 SceneListBegin?
+Assets/Menus/MainMenu/mainmenu1.unity
+Assets/Exploration/Scenes/CS-Jail.unity
+Assets/WorldMap/Scenes/WorldMap.unity
 Assets/Exploration/Scenes/Main.unity
 Assets/Exploration/Scenes/Alternate.unity
 Assets/Battle/Battle.unity
 Assets/Menus/MainMenu/TEMP1.unity
 Assets/PlayTests/ExplorationTestScene.unity
-Assets/Exploration/Scenes/CS-Jail.unity
 Assets/Exploration/Scenes/CS-Ground.unity
 Assets/Exploration/Scenes/CS-Floor1.unity
-Assets/WorldMap/Scenes/WorldMap.unity
 Assets/Exploration/Scenes/TFTV-Ground.unity
 Assets/Exploration/Scenes/TFTV-Floor1.unity
 Assets/Exploration/Scenes/TFTV-Floor2.unity
 Assets/Exploration/Scenes/TFTV-Floor3.unity
-Assets/Menus/MainMenu/mainmenu1.unity
 Assets/Menus/ExplorationMenu/ItemMenu.unity
 Assets/Exploration/Scenes/RCH.unity
 Assets/Exploration/Scenes/Library-Floor1.unity
@@ -37,7 +37,6 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 6af7378a45ad6da4992a71ef50ddc2eb UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 9ca6347af5ceb6b0d1c105af31b6722e UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 76b67c157fc78f887e635d573c3b4839 Assembly-CSharp.dll:Tiled2Unity.GPUInstancing
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ButtonManager
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -137,7 +136,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.PlayerData
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CameraController
 fab3f48bb6484a76cde2b81e3201be7e Assembly-CSharp.dll:Tiled2Unity.TileObject
-5738d03eabf8194a8adbe5c65aabde39 Assembly-CSharp.dll:Tiled2Unity.ImportBehaviour
+1ac45e65362b8990ca8bc05364d4581e Assembly-CSharp.dll:Tiled2Unity.ImportBehaviour
 322cb40e1e282f28af980cbef7922a90 UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsEventTracker
 dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft

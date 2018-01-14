@@ -471,7 +471,7 @@ MonoBehaviour:
   level: 5
   health: 100
   attack: 5
-  defence: 5
+  defence: 2
   maximumMagic: 5
   luck: 5
   speed: 5

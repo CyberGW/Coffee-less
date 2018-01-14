@@ -41,14 +41,14 @@ public class GlobalFunctions : MonoBehaviour {
 	/// </summary>
 	public enum ItemTypes { None, Hammer, Trainers, RabbitFoot, MagicAmulet, Shield, Armour };
 	[System.NonSerialized]
-	public string[] levelOrder = new string[] { "CS", "TFTV", "RCH" };
+	public string[] levelOrder = new string[] { "CS", "TFTV", "RCH", "PHY", "LIB" };
 
 	void Awake() {
 		if (instance == null) {
 			instance = this;
 			DontDestroyOnLoad (gameObject);
 			objectsActive = new Dictionary <string, bool> ();
-			currentLevel = 2;
+			currentLevel = 0;
 		} else if (instance != this) {
 			Destroy (gameObject);
 		}

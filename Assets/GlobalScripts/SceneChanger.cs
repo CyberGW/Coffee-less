@@ -53,7 +53,7 @@ public class SceneChanger : MonoBehaviour {
 			changePosition (startPosition);
 			movePlayer = false;
 		}
-		if (scene.name != "Battle") {
+		if (scene.name != "Battle" && !menuOpen) {
 			//Allow player to move again
 			movementScript.setCanMove (true);
 		}
@@ -63,11 +63,6 @@ public class SceneChanger : MonoBehaviour {
 				SceneManager.LoadScene ("GameMenu", LoadSceneMode.Additive);
 			}
 		}
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 
 	public void hidePlayer() {

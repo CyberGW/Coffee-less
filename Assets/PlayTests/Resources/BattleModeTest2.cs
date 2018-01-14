@@ -71,7 +71,7 @@ public class BattleModeTest2 {
 	[UnityTest]
 	public IEnumerator B7ChangePlayerMenu() {
 		buttonManager.showPlayerMenu ();
-		yield return WaitForFrames (5);
+		yield return WaitForFrames (20);
 
 		//Check back button works
 		Assert.True (GameObject.Find ("SwitchCanvas/BackButton").GetComponent<Button> ().interactable);

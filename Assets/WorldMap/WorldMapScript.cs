@@ -14,10 +14,15 @@ public class WorldMapScript : MonoBehaviour {
 	void Start () {
 		string[] levelOrder = GlobalFunctions.instance.levelOrder;
 		int currentLevel = GlobalFunctions.instance.currentLevel;
-		for (int i = 0; i < currentLevel; i++) { //For all levels already beat
-			renderBuilding(levelOrder[i], Color.red, true);
+		for (int i = 0; i < levelOrder.Length; i++) { //For all levels already beat
+			if (i < currentLevel) {
+				renderBuilding (levelOrder [i], Color.red, true);
+			} else if (i == currentLevel) {
+				renderBuilding (levelOrder [i], Color.green);
+			} else { //if future level
+				renderBuilding (levelOrder [i], Color.grey, true);
+			}			
 		}
-		renderBuilding (levelOrder [currentLevel], Color.green);
 	}
 
 	/// <summary>
@@ -27,8 +32,11 @@ public class WorldMapScript : MonoBehaviour {
 	/// <param name="colour">The colour to colour the building as</param>
 	/// <param name="removeCollider">If set to <c>true</c> remove collider. <c>false</c> by default</param>
 	private void renderBuilding (string buildingName, Color colour, bool removeCollider = false) {
+		Debug.Log ("Name: " + buildingName);
 		GameObject building = GameObject.FindWithTag (buildingName);
+		Debug.Log ("Building Group: " + building);
 		GameObject image = building.transform.Find(buildingName).gameObject; //Get the image part
+		Debug.Log("Image: " + image);
 		image.GetComponent<MeshRenderer> ().material.color = colour; //Set mesh colour
 		GameObject collider = building.transform.Find ("Collision").gameObject; //Get collider element
 		collider.GetComponent<PolygonCollider2D> ().isTrigger = !removeCollider;

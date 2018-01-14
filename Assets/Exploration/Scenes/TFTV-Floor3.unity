@@ -456,11 +456,11 @@ MonoBehaviour:
   sprite: {fileID: 2800000, guid: 8d03301ca5f90364799053e80e9c6bb9, type: 3}
   level: 10
   health: 100
-  attack: 10
-  defence: 10
+  attack: 7
+  defence: 4
   maximumMagic: 10
-  luck: 10
-  speed: 10
+  luck: 7
+  speed: 7
   special1: 0
   special1Text: slapped a fish at
   special1Magic: 5

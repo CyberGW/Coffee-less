@@ -13,8 +13,14 @@ public class WorldMapTest {
 	public IEnumerator Setup() {
 		SceneManager.LoadScene ("WorldMap");
 		yield return null;
+
+		//Change current level then reload
+		GlobalFunctions.instance.currentLevel = 1;
+		SceneManager.LoadScene ("WorldMap");
+		yield return null;
 		player = GameObject.Find ("Player");
 		playerScript = player.GetComponent<PlayerMovement> ();
+
 	}
 
 	[UnityTest]
@@ -30,7 +36,7 @@ public class WorldMapTest {
 		Assert.AreEqual (Color.green, TFTV.material.color);
 		//Check future departments are uncoloured
 		MeshRenderer RCH = GameObject.FindGameObjectWithTag ("RCH").transform.Find ("RCH").GetComponent<MeshRenderer> ();
-		Assert.AreEqual (Color.white, RCH.material.color);
+		Assert.AreEqual (Color.grey, RCH.material.color);
 	}
 
 	[UnityTest]
@@ -59,8 +65,8 @@ public class WorldMapTest {
 		yield return moveForFrames(20, "Down");
 		yield return new WaitForSeconds (1); //Wait for transition
 		//Check back on Hes East site now
-		Assert.AreEqual(-13, (int) player.transform.position.x);
-		Assert.AreEqual(-7, (int) player.transform.position.y);
+		Assert.AreEqual(-13, Mathf.RoundToInt(player.transform.position.x) );
+		Assert.AreEqual(-7, Mathf.RoundToInt(player.transform.position.y) );
 	}
 
 	[UnityTest]
@@ -78,6 +84,12 @@ public class WorldMapTest {
 		for (int i = 0; i < frames; i++) {
 			playerScript.move (direction);
 			yield return new WaitForFixedUpdate();
+		}
+	}
+
+	public IEnumerator WaitForFrames(int frames) {
+		for (int i=0; i < frames; i++) {
+			yield return null;
 		}
 	}
 }

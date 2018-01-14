@@ -278,7 +278,8 @@ public class MainBattle : MonoBehaviour {
 	private void setButtonsInteractable(bool val) {
 		attackButton.interactable = val;
 		playerButton.interactable = val;
-		runButton.interactable = val;
+		//So both val and canRunAway need to be true to activate run button
+		runButton.interactable = val && GlobalFunctions.instance.canRunAway;
 	}
 
 	/// <summary>
@@ -343,6 +344,7 @@ public class MainBattle : MonoBehaviour {
 			//Perform the switch character move
 			StartCoroutine(performTurn(playerMove));
 			playerDied = false;
+			setButtonsInteractable (true);
 		}
 	}
 

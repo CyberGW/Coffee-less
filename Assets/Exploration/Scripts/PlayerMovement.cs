@@ -51,6 +51,9 @@ public class PlayerMovement : MonoBehaviour {
 	/// Called once per frame to check the user key presses.
 	/// </summary>
 	void FixedUpdate () {
+		if (canMove && SceneChanger.instance.menuOpen) {
+			setCanMove (false);
+		}
 
 		// For testing, allows a battle to be started by pressing the enter key
 
@@ -90,6 +93,7 @@ public class PlayerMovement : MonoBehaviour {
 	/// </summary>
 	private void explorationMenu() {
 		if (SceneChanger.instance.menuOpen) {
+			Debug.Log ("Close");
 			SceneChanger.instance.menuOpen = false;
 			setCanMove (true);
 			UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync (SceneManager.GetSceneByName ("GameMenu").buildIndex);
