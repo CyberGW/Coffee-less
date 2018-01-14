@@ -44,11 +44,11 @@ public class BattleModeTest2 {
 	public IEnumerator B6StartNextBattle() {
 		yield return Setup ();
 		//Add new player for testing
-		DataManager data = PlayerData.instance.data;
-		data.addPlayer (new Player ("Hannah", 5, 100, 5, 5, 5, 5, 5, 5, 0, null,
-			new IncreaseMoney ("stole money from", "Increase money returns by 50%", 2, 0.5f),
-			new MagicAttack ("threw wine battles at", "Thorw wine bottles with damage 15", 2, 15),
-			(Texture2D)Resources.Load ("Character2", typeof(Texture2D))));
+//		DataManager data = PlayerData.instance.data;
+//		data.addPlayer (new Player ("Hannah", 5, 100, 5, 5, 5, 5, 5, 5, 0, null,
+//			new IncreaseMoney ("stole money from", "Increase money returns by 50%", 2, 0.5f),
+//			new MagicAttack ("threw wine battles at", "Thorw wine bottles with damage 15", 2, 15),
+//			(Texture2D)Resources.Load ("Character2", typeof(Texture2D))));
 
 		//Move to next fight
 		yield return moveForFrames(20, "Left");

@@ -82,6 +82,9 @@ public class DialogueScript : MonoBehaviour {
 	/// </summary>
 	private void setInactive() {
 		dialogueBox.SetActive (false);
+		if (movementScript == null) {
+			movementScript = FindObjectOfType<PlayerMovement> ();
+		}
 		movementScript.setCanMove (true);
 		dialogueActive = false;
 		if (caller != null) {

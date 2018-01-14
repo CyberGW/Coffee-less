@@ -202,6 +202,8 @@ public class MainBattle : MonoBehaviour {
 		if (manager.battleWon()) {
 			SoundManager.instance.playBGM(victory);
 			enemySprite.gameObject.SetActive (false);
+			//Wait a frame before changing button states
+			yield return null;
 			setButtonsInteractable (false);
 			Debug.Log(enemy.ExpGiven);
 			yield return StartCoroutine (updateExp(enemy.ExpGiven));

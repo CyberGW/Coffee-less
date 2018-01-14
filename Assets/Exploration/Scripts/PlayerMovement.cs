@@ -131,7 +131,7 @@ public class PlayerMovement : MonoBehaviour {
 				break;
 			}
 			player.Translate (translation * speed);
-			//randomEncounter ();
+			randomEncounter ();
 		}
 	}
 

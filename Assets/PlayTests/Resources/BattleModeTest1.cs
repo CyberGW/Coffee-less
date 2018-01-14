@@ -29,6 +29,10 @@ public class BattleModeTest1 {
 			playableCharacter = GameObject.Find ("Player");
 			sceneLoaded = true;
 		}
+		PlayerData.instance.data.Players [0] = new Player ("George", 1, 100, 30, 5, 5, 5, 5, 5, 0, null,
+			new MagicAttack ("hi-jump kicked", "Kick with power 15", 3, 15),
+			new RaiseDefence ("buffed up against", "Increase your defence by 10%", 2, 0.1f),
+			(Texture2D)Resources.Load ("Character1", typeof(Texture2D)));
 		playableCharacter.transform.position = new Vector2 (0, 0);
 		yield return null;
 	}

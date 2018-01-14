@@ -57,8 +57,9 @@ public class MenuScript : MonoBehaviour {
 	/// Start the game from the initial level
 	/// </summary>
 	public void StartLevel(){
+		SoundManager.instance.playSFX ("interact");
 		player.SetActive (true);
-		SceneChanger.instance.loadLevel ("WorldMap", new Vector2 (0, 0));
+		SceneChanger.instance.loadLevel ("CS-Jail", new Vector2 (0, 0));
 	}
 
 	/// <summary>

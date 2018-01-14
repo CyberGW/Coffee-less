@@ -1,12 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Battle\Scripts\MainBattle.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PlayTests\Resources\BattleModeTest2.cs">
     <Files>
-      <File FileName="Assets\Battle\Scripts\StatsScript.cs" Line="8" Column="1" />
-      <File FileName="Assets\PlayTests\Resources\MenuTest.cs" Line="1" Column="1" />
+      <File FileName="Assets\Battle\Scripts\StatsScript.cs" Line="1" Column="1" />
       <File FileName="Assets\PlayTests\Resources\WorldMapTest.cs" Line="1" Column="1" />
       <File FileName="Assets\PlayTests\Resources\BattleModeTest1.cs" Line="1" Column="1" />
-      <File FileName="Assets\PlayTests\Resources\BattleModeTest2.cs" Line="1" Column="1" />
       <File FileName="Assets\GlobalScripts\GlobalFunctions.cs" Line="1" Column="1" />
       <File FileName="Assets\Exploration\Scripts\DialogueScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Exploration\Scripts\HealingStation.cs" Line="1" Column="1" />
@@ -19,11 +17,14 @@
       <File FileName="Assets\GlobalScripts\SceneChanger.cs" Line="1" Column="1" />
       <File FileName="Assets\Menus\ExplorationMenu\Scripts\ItemsMenuScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Battle\Scripts\SwitchPlayersScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Battle\Scripts\MainBattle.cs" Line="228" Column="26" />
+      <File FileName="Assets\Battle\Scripts\MainBattle.cs" Line="1" Column="1" />
       <File FileName="Assets\Menus\MainMenu\MenuScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Exploration\Scripts\Portal.cs" Line="1" Column="1" />
       <File FileName="Assets\Battle\Scripts\BattleManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Battle\Scripts\BattleButtons.cs" Line="1" Column="1" />
+      <File FileName="Assets\Menus\ExplorationMenu\Scripts\ExplorationMenuScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\PlayTests\Resources\BattleModeTest2.cs" Line="47" Column="3" />
+      <File FileName="Assets\PlayTests\Resources\MenuTest.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -29,7 +29,7 @@ public class LevelManager : MonoBehaviour {
 	void Start () {
 		switch (GlobalFunctions.instance.currentLevel) {
 		case (0):
-			newPlayer = new Player ("Jamie", 2, 100, 12, 12, 7, 7, 7, 7, 0, null,
+			newPlayer = new Player ("Jamie", 3, 100, 10, 10, 5, 5, 5, 5, 0, null,
 				new LowerDefence ("sung Langwith chants at", "Decrease enemy defence by 30%", 3, 0.3f),
 				new MagicAttack ("used the power of 2 for 1 cocktails against", "Use 2 for 1 cocktails to add at power 15", 4, 15),
 				(Texture2D) Resources.Load("Character3", typeof(Texture2D)));
