@@ -24,9 +24,6 @@ EditorBuildSettings:
     path: Assets/Battle/Battle.unity
     guid: 4ecfa394df50c7c46acec1e25e1219ca
   - enabled: 1
-    path: Assets/Menus/MainMenu/TEMP1.unity
-    guid: 6da054c5814dc4175bf9f2e6a61bf2b5
-  - enabled: 1
     path: Assets/PlayTests/ExplorationTestScene.unity
     guid: ebea0e8f39d99db46a1f573df476cba7
   - enabled: 1

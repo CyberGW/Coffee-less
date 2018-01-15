@@ -23,6 +23,7 @@ public class StatsScript : MonoBehaviour {
 		textDisplay = gameObject.transform.Find ("Text").GetComponent<UnityEngine.UI.Text> ();
 		initialWidth = rect.sizeDelta.x;
 	}
+
 	/// <summary>
 	/// Set up initial values
 	/// </summary>

@@ -140,11 +140,16 @@ public class PlayerMovement : MonoBehaviour {
 	/// </summary>
 	private void randomEncounter() {
 		Vector2 newPosition = player.transform.position;
-		if (Vector2.Distance (newPosition, previousPosition) > 3) {
+		if (Vector2.Distance (newPosition, previousPosition) > 5) {
 			previousPosition = newPosition;
-			if (Random.value < 0.05) {
-				BattleDescriptor battle = GameObject.Find ("RandomEncounter").GetComponent<BattleDescriptor> ();
-				battle.createBattle ();
+			if (Random.value < 0.025) {
+				try {
+					BattleDescriptor battle = GameObject.Find ("RandomEncounter").GetComponent<BattleDescriptor> ();
+					battle.createBattle ();
+				}
+				catch {
+					Debug.Log ("No random encounter here");
+				}
 			}
 		}
 	}

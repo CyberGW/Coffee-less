@@ -66,7 +66,7 @@ public class MainBattle : MonoBehaviour {
 		attackButton = GameObject.Find ("AttackButton").GetComponent<Button> ();
 		playerButton = GameObject.Find ("PlayersButton").GetComponent<Button> ();
 		runButton = GameObject.Find ("RunButton").GetComponent<Button> ();
-		runButton.interactable = GlobalFunctions.instance.canRunAway;
+		setButtonsInteractable (true);
 		textBox = GameObject.Find ("TextBox").transform.Find ("Text").GetComponent<Text> ();
 		playerSprite = GameObject.Find ("PlayerImage").GetComponent<Image> ();
 		enemySprite = GameObject.Find ("EnemyImage").GetComponent<Image> ();
@@ -164,7 +164,7 @@ public class MainBattle : MonoBehaviour {
 		int previousMagic = move.User.Magic;
 		move.performMove ();
 		textBox.text = move.User.Name + " " + move.Text + " " + move.Target.Name;
-		if (manager.WasCriticalHit) {
+		if (manager.WasCriticalHit && (move is StandardAttack || move is MagicAttack)) {
 			textBox.text += "\nCritical Hit!";
 		}
 
@@ -227,7 +227,7 @@ public class MainBattle : MonoBehaviour {
 		yield return new WaitForSeconds (1f);
 		int gainedExp;
 		int remainingExp = totalExp;
-		while (player.Exp + remainingExp >= player.ExpToNextLevel) {
+		while ( (player.Exp + remainingExp) >= player.ExpToNextLevel) {
 			gainedExp = player.ExpToNextLevel - player.Exp;
 			remainingExp -= gainedExp;
 			yield return StartCoroutine (updateExpHelper (gainedExp, true));
@@ -310,6 +310,10 @@ public class MainBattle : MonoBehaviour {
 		prepareTurn ();
 	}
 
+	/// <summary>
+	/// Switchs the players.
+	/// </summary>
+	/// <param name="playerIndex">Index of new player in <see cref="DataManager.players"/> array </param>
 	public void switchPlayers(int playerIndex) {
 		Player newPlayer = PlayerData.instance.data.Players [playerIndex];
 		playerMove = new SwitchPlayers (manager, player, newPlayer);
@@ -320,15 +324,15 @@ public class MainBattle : MonoBehaviour {
 		prepareTurn();
 	}
 
+	/// <summary>
+	/// Updates references and re-setup bars to this next player
+	/// </summary>
 	public void updateToNewPlayer() {
 		this.player = manager.Player;
 		//Update references
 		playerHealthBar.setUpDisplay(player.Health, 100);
 		playerMagicBar.setUpDisplay (player.Magic, player.MaximumMagic);
 		expBar.setUpDisplay (player.Exp, player.ExpToNextLevel);
-		//healthBar[newPlayer].setUpDisplay (newPlayer.Health, 100);
-		//magicBar[newPlayer].setUpDisplay (newPlayer.Magic, newPlayer.MaximumMagic);
-
 		
 	}
 

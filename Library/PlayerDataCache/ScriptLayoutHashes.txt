@@ -6,7 +6,6 @@ Assets/WorldMap/Scenes/WorldMap.unity
 Assets/Exploration/Scenes/Main.unity
 Assets/Exploration/Scenes/Alternate.unity
 Assets/Battle/Battle.unity
-Assets/Menus/MainMenu/TEMP1.unity
 Assets/PlayTests/ExplorationTestScene.unity
 Assets/Exploration/Scenes/CS-Ground.unity
 Assets/Exploration/Scenes/CS-Floor1.unity
