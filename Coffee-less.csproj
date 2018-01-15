@@ -317,10 +317,9 @@
     <Compile Include="Assets\Menus\ExplorationMenu\Scripts\ExplorationMenuScript.cs" />
     <Compile Include="Assets\Menus\ExplorationMenu\Scripts\ItemsMenuScript.cs" />
     <Compile Include="Assets\Menus\ExplorationMenu\Scripts\PlayerMenu.cs" />
-    <Compile Include="Assets\Menus\MainMenu\ButtonManager.cs" />
     <Compile Include="Assets\Menus\MainMenu\MenuScript.cs" />
-    <Compile Include="Assets\Menus\MainMenu\Quit.cs" />
-    <Compile Include="Assets\PlayTests\Resources\BattleModeTest.cs" />
+    <Compile Include="Assets\PlayTests\Resources\BattleModeTest1.cs" />
+    <Compile Include="Assets\PlayTests\Resources\BattleModeTest2.cs" />
     <Compile Include="Assets\PlayTests\Resources\ExplorationTest.cs" />
     <Compile Include="Assets\PlayTests\Resources\MenuTest.cs" />
     <Compile Include="Assets\PlayTests\Resources\WorldMapTest.cs" />
