@@ -90,11 +90,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae469cabaeab438d23b8306191ce18461"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_battle.html#ae469cabaeab438d23b8306191ce18461">special2</a> ()</td></tr>
 <tr class="memdesc:ae469cabaeab438d23b8306191ce18461"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup the second special move for the player  <a href="#ae469cabaeab438d23b8306191ce18461">More...</a><br /></td></tr>
 <tr class="separator:ae469cabaeab438d23b8306191ce18461"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ef523eee69439b2b66eaf495f735a06"><td class="memItemLeft" align="right" valign="top"><a id="a3ef523eee69439b2b66eaf495f735a06"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>switchPlayers</b> (int playerIndex)</td></tr>
+<tr class="memitem:a3ef523eee69439b2b66eaf495f735a06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_battle.html#a3ef523eee69439b2b66eaf495f735a06">switchPlayers</a> (int playerIndex)</td></tr>
+<tr class="memdesc:a3ef523eee69439b2b66eaf495f735a06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switchs the players.  <a href="#a3ef523eee69439b2b66eaf495f735a06">More...</a><br /></td></tr>
 <tr class="separator:a3ef523eee69439b2b66eaf495f735a06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcbf1342f37ecf0d9287fbb9f2c04562"><td class="memItemLeft" align="right" valign="top"><a id="afcbf1342f37ecf0d9287fbb9f2c04562"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>updateToNewPlayer</b> ()</td></tr>
+<tr class="memitem:afcbf1342f37ecf0d9287fbb9f2c04562"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_battle.html#afcbf1342f37ecf0d9287fbb9f2c04562">updateToNewPlayer</a> ()</td></tr>
+<tr class="memdesc:afcbf1342f37ecf0d9287fbb9f2c04562"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates references and re-setup bars to this next player  <a href="#afcbf1342f37ecf0d9287fbb9f2c04562">More...</a><br /></td></tr>
 <tr class="separator:afcbf1342f37ecf0d9287fbb9f2c04562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c8675673979fe7b0f2fcadc3b2fb3db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_battle.html#a7c8675673979fe7b0f2fcadc3b2fb3db">ranAway</a> ()</td></tr>
 <tr class="memdesc:a7c8675673979fe7b0f2fcadc3b2fb3db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run away from battle if <a class="el" href="class_battle_manager.html#a802a257580e9cc0bdb17c90e5fd11355" title="Generate whether the player has run away or not, dependent upon speed stats and random element ...">BattleManager.ranAway</a> returns true. Otherwise display appropriate text and make sure run cannot be selected again that move  <a href="#a7c8675673979fe7b0f2fcadc3b2fb3db">More...</a><br /></td></tr>
@@ -584,6 +584,40 @@ Re-enables attack button afterwards </p>
 
 </div>
 </div>
+<a id="a3ef523eee69439b2b66eaf495f735a06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ef523eee69439b2b66eaf495f735a06">&#9670;&nbsp;</a></span>switchPlayers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainBattle.switchPlayers </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>playerIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Switchs the players. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">playerIndex</td><td>Index of new player in DataManager.players array </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a8cca37af7eb0af1f136e0ddb5d265881"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8cca37af7eb0af1f136e0ddb5d265881">&#9670;&nbsp;</a></span>Update()</h2>
 
@@ -689,6 +723,33 @@ Re-enables attack button afterwards </p>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="afcbf1342f37ecf0d9287fbb9f2c04562"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcbf1342f37ecf0d9287fbb9f2c04562">&#9670;&nbsp;</a></span>updateToNewPlayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainBattle.updateToNewPlayer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updates references and re-setup bars to this next player </p>
 
 </div>
 </div>

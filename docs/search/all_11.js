@@ -27,6 +27,6 @@ var searchData=
   ['starttext',['startText',['../class_menu_script.html#a17d66e14ca5059c27493d8b936492789',1,'MenuScript']]],
   ['statsscript',['StatsScript',['../class_stats_script.html',1,'']]],
   ['swapplayers',['swapPlayers',['../class_data_manager.html#a7bf79fc76115d0c5586d2819e0bbcdfc',1,'DataManager']]],
-  ['switchplayers',['SwitchPlayers',['../class_switch_players.html',1,'SwitchPlayers'],['../class_battle_manager.html#a58ede6e934ea8982e65b8f34b665693f',1,'BattleManager.switchPlayers()'],['../class_switch_players_script.html#a9b4b6ed645fd2a06cb4e514193881002',1,'SwitchPlayersScript.switchPlayers()']]],
+  ['switchplayers',['SwitchPlayers',['../class_switch_players.html',1,'SwitchPlayers'],['../class_battle_manager.html#a58ede6e934ea8982e65b8f34b665693f',1,'BattleManager.switchPlayers()'],['../class_main_battle.html#a3ef523eee69439b2b66eaf495f735a06',1,'MainBattle.switchPlayers()'],['../class_switch_players_script.html#a9b4b6ed645fd2a06cb4e514193881002',1,'SwitchPlayersScript.switchPlayers()']]],
   ['switchplayersscript',['SwitchPlayersScript',['../class_switch_players_script.html',1,'']]]
 ];
