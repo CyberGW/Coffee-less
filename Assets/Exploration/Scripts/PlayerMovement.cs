@@ -92,17 +92,20 @@ public class PlayerMovement : MonoBehaviour {
 	/// Shows or hides the exploration menu when the escape key is pressed, detected and called by <see cref="FixedUpdate"/> 
 	/// </summary>
 	private void explorationMenu() {
-		if (SceneChanger.instance.menuOpen) {
-			Debug.Log ("Close");
-			SceneChanger.instance.menuOpen = false;
-			setCanMove (true);
-			UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync (SceneManager.GetSceneByName ("GameMenu").buildIndex);
-		} else {
-			SceneChanger.instance.menuOpen = true;
-			SceneChanger.instance.menuScene = SceneManager.GetActiveScene ().name;
-			SceneManager.LoadScene ("GameMenu", LoadSceneMode.Additive);
+		//Make sure menu can't be opened while dialogue box is on screen
+		if (GameObject.Find ("DialogueBox") == null) {
+			if (SceneChanger.instance.menuOpen) {
+				Debug.Log ("Close");
+				SceneChanger.instance.menuOpen = false;
+				setCanMove (true);
+				UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync (SceneManager.GetSceneByName ("GameMenu").buildIndex);
+			} else {
+				SceneChanger.instance.menuOpen = true;
+				SceneChanger.instance.menuScene = SceneManager.GetActiveScene ().name;
+				SceneManager.LoadScene ("GameMenu", LoadSceneMode.Additive);
+			}
+			pseudoEscapeKeyPress = false;
 		}
-		pseudoEscapeKeyPress = false;
 	}
 
 	/// <summary>
