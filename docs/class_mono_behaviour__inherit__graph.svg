@@ -402,25 +402,28 @@ var sectionId = 'dynsection-0';
 <!-- Node13 -->
 <g id="node14" class="node"><title>Node13</title>
 <g id="a_node14"><a xlink:href="class_menu_script.html" target="_top" xlink:title="Script to handle the main menu ">
-<polygon fill="none" stroke="black" points="1457.5,-220.5 1457.5,-354.5 1532.5,-354.5 1532.5,-220.5 1457.5,-220.5"/>
-<text text-anchor="middle" x="1495" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuScript</text>
-<polyline fill="none" stroke="black" points="1457.5,-335.5 1532.5,-335.5 "/>
-<text text-anchor="start" x="1465.5" y="-323.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ quitMenu</text>
-<text text-anchor="start" x="1465.5" y="-312.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ exitText</text>
-<text text-anchor="start" x="1465.5" y="-301.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ startText</text>
-<text text-anchor="start" x="1465.5" y="-290.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; player</text>
-<polyline fill="none" stroke="black" points="1457.5,-283.5 1532.5,-283.5 "/>
-<text text-anchor="start" x="1465.5" y="-271.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ExitPress()</text>
-<text text-anchor="start" x="1465.5" y="-260.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ NoPress()</text>
-<text text-anchor="start" x="1465.5" y="-249.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ StartLevel()</text>
-<text text-anchor="start" x="1465.5" y="-238.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ExitGame()</text>
-<text text-anchor="start" x="1465.5" y="-227.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Start()</text>
+<polygon fill="none" stroke="black" points="1457.5,-204 1457.5,-371 1532.5,-371 1532.5,-204 1457.5,-204"/>
+<text text-anchor="middle" x="1495" y="-359" font-family="Helvetica,sans-Serif" font-size="10.00">MenuScript</text>
+<polyline fill="none" stroke="black" points="1457.5,-352 1532.5,-352 "/>
+<text text-anchor="start" x="1465.5" y="-340" font-family="Helvetica,sans-Serif" font-size="10.00">+ quitMenu</text>
+<text text-anchor="start" x="1465.5" y="-329" font-family="Helvetica,sans-Serif" font-size="10.00">+ exitText</text>
+<text text-anchor="start" x="1465.5" y="-318" font-family="Helvetica,sans-Serif" font-size="10.00">+ startText</text>
+<text text-anchor="start" x="1465.5" y="-307" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; player</text>
+<text text-anchor="start" x="1465.5" y="-296" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; audioText</text>
+<text text-anchor="start" x="1465.5" y="-285" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; soundOn</text>
+<polyline fill="none" stroke="black" points="1457.5,-278 1532.5,-278 "/>
+<text text-anchor="start" x="1465.5" y="-266" font-family="Helvetica,sans-Serif" font-size="10.00">+ ExitPress()</text>
+<text text-anchor="start" x="1465.5" y="-255" font-family="Helvetica,sans-Serif" font-size="10.00">+ NoPress()</text>
+<text text-anchor="start" x="1465.5" y="-244" font-family="Helvetica,sans-Serif" font-size="10.00">+ StartLevel()</text>
+<text text-anchor="start" x="1465.5" y="-233" font-family="Helvetica,sans-Serif" font-size="10.00">+ ExitGame()</text>
+<text text-anchor="start" x="1465.5" y="-222" font-family="Helvetica,sans-Serif" font-size="10.00">+ sound()</text>
+<text text-anchor="start" x="1465.5" y="-211" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Start()</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node13 -->
 <g id="edge13" class="edge"><title>Node0&#45;&gt;Node13</title>
-<path fill="none" stroke="midnightblue" d="M1424.02,-604.725C1433.27,-596.02 1441.95,-585.982 1448,-575 1485.81,-506.343 1495.03,-415.386 1496.44,-354.552"/>
+<path fill="none" stroke="midnightblue" d="M1424.02,-604.725C1433.27,-596.02 1441.95,-585.982 1448,-575 1482.53,-512.304 1493.21,-431.011 1495.88,-371.043"/>
 <polygon fill="none" stroke="midnightblue" points="1421.65,-602.146 1416.52,-611.413 1426.31,-607.371 1421.65,-602.146"/>
 </g>
 <!-- Node14 -->
@@ -573,23 +576,24 @@ var sectionId = 'dynsection-0';
 <!-- Node20 -->
 <g id="node21" class="node"><title>Node20</title>
 <g id="a_node21"><a xlink:href="class_sound_manager.html" target="_top" xlink:title="A script to manage all background music and sound effects in the game ">
-<polygon fill="none" stroke="black" points="2253,-231.5 2253,-343.5 2335,-343.5 2335,-231.5 2253,-231.5"/>
-<text text-anchor="middle" x="2294" y="-331.5" font-family="Helvetica,sans-Serif" font-size="10.00">SoundManager</text>
-<polyline fill="none" stroke="black" points="2253,-324.5 2335,-324.5 "/>
-<text text-anchor="start" x="2261" y="-312.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ BGMSource</text>
-<text text-anchor="start" x="2261" y="-301.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SFXSource</text>
-<text text-anchor="start" x="2261" y="-290.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ instance</text>
-<text text-anchor="start" x="2261" y="-279.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; soundEffects</text>
-<polyline fill="none" stroke="black" points="2253,-272.5 2335,-272.5 "/>
-<text text-anchor="start" x="2261" y="-260.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ playBGM()</text>
-<text text-anchor="start" x="2261" y="-249.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ playSFX()</text>
-<text text-anchor="start" x="2261" y="-238.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Awake()</text>
+<polygon fill="none" stroke="black" points="2253,-226 2253,-349 2335,-349 2335,-226 2253,-226"/>
+<text text-anchor="middle" x="2294" y="-337" font-family="Helvetica,sans-Serif" font-size="10.00">SoundManager</text>
+<polyline fill="none" stroke="black" points="2253,-330 2335,-330 "/>
+<text text-anchor="start" x="2261" y="-318" font-family="Helvetica,sans-Serif" font-size="10.00">+ BGMSource</text>
+<text text-anchor="start" x="2261" y="-307" font-family="Helvetica,sans-Serif" font-size="10.00">+ SFXSource</text>
+<text text-anchor="start" x="2261" y="-296" font-family="Helvetica,sans-Serif" font-size="10.00">+ instance</text>
+<text text-anchor="start" x="2261" y="-285" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; soundEffects</text>
+<polyline fill="none" stroke="black" points="2253,-278 2335,-278 "/>
+<text text-anchor="start" x="2261" y="-266" font-family="Helvetica,sans-Serif" font-size="10.00">+ playBGM()</text>
+<text text-anchor="start" x="2261" y="-255" font-family="Helvetica,sans-Serif" font-size="10.00">+ playSFX()</text>
+<text text-anchor="start" x="2261" y="-244" font-family="Helvetica,sans-Serif" font-size="10.00">+ soundOn()</text>
+<text text-anchor="start" x="2261" y="-233" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Awake()</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node20 -->
 <g id="edge20" class="edge"><title>Node0&#45;&gt;Node20</title>
-<path fill="none" stroke="midnightblue" d="M1427.74,-638.817C1605.47,-637.7 2183.43,-629.846 2244,-575 2307.82,-517.219 2308.81,-409.319 2302.35,-343.691"/>
+<path fill="none" stroke="midnightblue" d="M1427.74,-638.817C1605.47,-637.7 2183.43,-629.846 2244,-575 2306.04,-518.829 2308.7,-415.292 2302.87,-349.272"/>
 <polygon fill="none" stroke="midnightblue" points="1427.58,-635.318 1417.6,-638.876 1427.62,-642.318 1427.58,-635.318"/>
 </g>
 <!-- Node21 -->

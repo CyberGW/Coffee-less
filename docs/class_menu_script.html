@@ -76,7 +76,8 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for MenuScript:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_menu_script__inherit__graph.svg" width="122" height="316"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_menu_script__inherit__graph.svg" width="122" height="360"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -93,6 +94,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3ff96c7af5b82f1b2bb09b02ea8a7511"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu_script.html#a3ff96c7af5b82f1b2bb09b02ea8a7511">ExitGame</a> ()</td></tr>
 <tr class="memdesc:a3ff96c7af5b82f1b2bb09b02ea8a7511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes application  <a href="#a3ff96c7af5b82f1b2bb09b02ea8a7511">More...</a><br /></td></tr>
 <tr class="separator:a3ff96c7af5b82f1b2bb09b02ea8a7511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6368dd464ce8d0733989f469ade833c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu_script.html#a6368dd464ce8d0733989f469ade833c9">sound</a> ()</td></tr>
+<tr class="memdesc:a6368dd464ce8d0733989f469ade833c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">If <a class="el" href="class_menu_script.html#a929b95f5ce90db87ade8a064e8f1eedc" title="Reference for current sound situation ">soundOn</a> is <code>true</code>, then turn sound off and update variables and text If <code>false</code>, then turn sound on and update variables and text similarly  <a href="#a6368dd464ce8d0733989f469ade833c9">More...</a><br /></td></tr>
+<tr class="separator:a6368dd464ce8d0733989f469ade833c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -117,6 +121,12 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a822f3c98d278c33423748667f7875753"><td class="memItemLeft" align="right" valign="top"><a id="a822f3c98d278c33423748667f7875753"></a>
 GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>player</b></td></tr>
 <tr class="separator:a822f3c98d278c33423748667f7875753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07fc8d6ff11b3d908dc032a95f01b074"><td class="memItemLeft" align="right" valign="top"><a id="a07fc8d6ff11b3d908dc032a95f01b074"></a>
+Text&#160;</td><td class="memItemRight" valign="bottom"><b>audioText</b></td></tr>
+<tr class="separator:a07fc8d6ff11b3d908dc032a95f01b074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a929b95f5ce90db87ade8a064e8f1eedc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_menu_script.html#a929b95f5ce90db87ade8a064e8f1eedc">soundOn</a></td></tr>
+<tr class="memdesc:a929b95f5ce90db87ade8a064e8f1eedc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference for current sound situation  <a href="#a929b95f5ce90db87ade8a064e8f1eedc">More...</a><br /></td></tr>
+<tr class="separator:a929b95f5ce90db87ade8a064e8f1eedc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Script to handle the main menu </p>
@@ -199,6 +209,33 @@ GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>player</b></td>
 </div><div class="memdoc">
 
 <p>When "no" is selected on quitMenu disable quitMenu and reenable start and exit buttons on mainMenu </p>
+
+</div>
+</div>
+<a id="a6368dd464ce8d0733989f469ade833c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6368dd464ce8d0733989f469ade833c9">&#9670;&nbsp;</a></span>sound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MenuScript.sound </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If <a class="el" href="class_menu_script.html#a929b95f5ce90db87ade8a064e8f1eedc" title="Reference for current sound situation ">soundOn</a> is <code>true</code>, then turn sound off and update variables and text If <code>false</code>, then turn sound on and update variables and text similarly </p>
 
 </div>
 </div>
@@ -286,6 +323,30 @@ GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>player</b></td>
 </div><div class="memdoc">
 
 <p>Separate canvas asking if user is sure they want to quit </p>
+
+</div>
+</div>
+<a id="a929b95f5ce90db87ade8a064e8f1eedc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a929b95f5ce90db87ade8a064e8f1eedc">&#9670;&nbsp;</a></span>soundOn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MenuScript.soundOn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reference for current sound situation </p>
 
 </div>
 </div>

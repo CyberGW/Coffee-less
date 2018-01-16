@@ -120,6 +120,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
+        type: 2}
+      propertyPath: dialogue.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4704459060425080, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
       propertyPath: m_LocalPosition.x
       value: 9.777672
@@ -159,7 +164,8 @@ Prefab:
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.data[0]
-      value: Hi I'm Hannah. I'm also going to join you on this journey.
+      value: Hi I'm Hannah. I'm also going to join you on this journey. I'm from Constantine
+        college.
       objectReference: {fileID: 0}
     - target: {fileID: 212996946334501392, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
@@ -167,6 +173,17 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 01e5f8961ab8d7c44be5510d27d58549,
         type: 3}
+    - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
+        type: 2}
+      propertyPath: dialogue.Array.data[1]
+      value: That means I have much higher luck stats than you, so I can land more
+        critical hits.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
+        type: 2}
+      propertyPath: dialogue.Array.data[2]
+      value: The less said about my defence though, the better.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
   m_IsPrefabParent: 0

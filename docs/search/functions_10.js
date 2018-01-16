@@ -12,6 +12,8 @@ var searchData=
   ['showdialogue',['showDialogue',['../class_dialogue_script.html#ae71a2a83f77c3401681cb6ec7f8b47b6',1,'DialogueScript']]],
   ['showline',['showLine',['../class_dialogue_script.html#a5a14b8c27afb68f3df14604e86982995',1,'DialogueScript']]],
   ['showplayermenu',['showPlayerMenu',['../class_battle_buttons.html#a60883c560f6d8baf80df4104230e9175',1,'BattleButtons']]],
+  ['sound',['sound',['../class_menu_script.html#a6368dd464ce8d0733989f469ade833c9',1,'MenuScript']]],
+  ['soundon',['soundOn',['../class_sound_manager.html#a9c006fe80702defc96289c139c0aa217',1,'SoundManager']]],
   ['special1',['special1',['../class_main_battle.html#af07e8602e4c524a4803ab5f20aff30ad',1,'MainBattle']]],
   ['special2',['special2',['../class_main_battle.html#ae469cabaeab438d23b8306191ce18461',1,'MainBattle']]],
   ['standardattack',['standardAttack',['../class_main_battle.html#a7e1ab667b7ab20e3d76d49e26fbd58d2',1,'MainBattle']]],

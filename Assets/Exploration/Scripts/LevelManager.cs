@@ -51,7 +51,7 @@ public class LevelManager : MonoBehaviour {
 				new MagicAttack ("gave asbestos poisoning to", "Use asbestos to damage with power 15", 3, 15),
 				(Texture2D) Resources.Load("Character5", typeof(Texture2D)));
 			playerDesc = "You got a new team member, Josh! He's from Derwent and has very high defence" +
-				"but low speed. His specials can raise his attack or give asbestos poision to the enemy";
+				" but low speed. His specials can raise his attack or give asbestos poison to the enemy";
 			break;
 		case (3):
 			newPlayer = new Player ("Lucy", 5, 100, 13, 18, 15, 15, 23, 18, 0, null,
