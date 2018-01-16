@@ -242,7 +242,7 @@ MonoBehaviour:
   canRunAway: 0
   name: Physics Student
   sprite: {fileID: 2800000, guid: 821e8ebdea2121547a73101a289aeef3, type: 3}
-  level: 0
+  level: 10
   health: 100
   attack: 30
   defence: 15
