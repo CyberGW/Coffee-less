@@ -195,7 +195,7 @@ MonoBehaviour:
   battleMoney: 0
   battleItem: 0
   canRunAway: 0
-  name: Random Kid
+  name: Geek
   sprite: {fileID: 2800000, guid: 0f68722fa6b3ebb4093e4c8d9a5969f7, type: 3}
   level: 20
   health: 100
@@ -575,7 +575,7 @@ Prefab:
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4704459060425080, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
       propertyPath: m_LocalPosition.x
@@ -622,17 +622,29 @@ Prefab:
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.data[0]
-      value: I've not read enough books to know how to use magic yet...
+      value: I'm afraid I can't let you past. And no, I'm not going to transform into
+        a monster either.
       objectReference: {fileID: 0}
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.data[1]
-      value: But I sure am strong from lifting all of them!
+      value: I just don't like you waltzing around like you're the BNOC around here.
+        So I'm gonna put a stop to it.
       objectReference: {fileID: 0}
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: createBattle
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
+        type: 2}
+      propertyPath: dialogue.Array.data[2]
+      value: And I may not know magic, but I'll tell you what I am...
+      objectReference: {fileID: 0}
+    - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
+        type: 2}
+      propertyPath: dialogue.Array.data[3]
+      value: GYM LAD!!!!!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
@@ -657,7 +669,7 @@ MonoBehaviour:
   battleItem: 0
   canRunAway: 0
   name: Student
-  sprite: {fileID: 2800000, guid: 54132e496b1ddbd489b4010dadaa64bc, type: 3}
+  sprite: {fileID: 2800000, guid: 20634dfe19f03ff4bb590dfe09b31ca8, type: 3}
   level: 15
   health: 100
   attack: 32

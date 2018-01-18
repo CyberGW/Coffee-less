@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Menus/MainMenu/mainmenu1.unity
+- path: Assets/Exploration/Scenes/Library-Ground.unity
   isLoaded: 1
   isActive: 1
