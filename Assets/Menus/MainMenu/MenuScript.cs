@@ -61,9 +61,23 @@ public class MenuScript : MonoBehaviour {
 	}
 
 	/// <summary>
-	/// Start the game from the initial level
+	/// Start the game from the initial level, setting up the initial global data
 	/// </summary>
 	public void StartLevel(){
+		
+		//Setup global data to initial values
+		PlayerData.instance.data = new DataManager (
+			new Player ("George", 1, 100, 5, 5, 5, 5, 5, 5, 0, null,
+				new MagicAttack ("hi-jump kicked", "Kick with power 15", 3, 15),
+				new RaiseDefence ("buffed up against", "Increase your defence by 10%", 2, 0.1f),
+				(Texture2D)Resources.Load ("Character1", typeof(Texture2D))));
+		PlayerData.instance.data.addPlayer (new Player ("Hannah", 1, 100, 5, 3, 5, 5, 15, 5, 0, null,
+				new IncreaseMoney ("stole money from", "Increase money returns by 50%", 2, 0.5f),
+				new MagicAttack ("threw wine battles at", "Throw wine bottles with damage 15", 2, 15),
+				(Texture2D) Resources.Load("Character2", typeof(Texture2D))));
+		GlobalFunctions.instance.currentLevel = 0;
+		GlobalFunctions.instance.objectsActive = new Dictionary<string, bool> ();
+
 		SoundManager.instance.playSFX ("interact");
 		player.SetActive (true);
 		SceneChanger.instance.loadLevel ("CS-Jail", new Vector2 (0, 0));

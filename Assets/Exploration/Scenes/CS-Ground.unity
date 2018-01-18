@@ -474,7 +474,7 @@ MonoBehaviour:
   sprite: {fileID: 2800000, guid: b719094e8d564a74d9c4d09098f3cb3a, type: 3}
   level: 4
   health: 100
-  attack: 1
+  attack: 500
   defence: 1
   maximumMagic: 0
   luck: 1

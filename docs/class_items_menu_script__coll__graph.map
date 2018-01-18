@@ -1,0 +1,11 @@
+<map id="ItemsMenuScript" name="ItemsMenuScript">
+<area shape="rect" id="node2" href="$class_mono_behaviour.html" title="{MonoBehaviour\n||}" alt="" coords="124,645,235,723"/>
+<area shape="rect" id="node3" href="$class_item.html" title="Abstract class for items that can be equipped to a player, increasing some of their stats ..." alt="" coords="397,160,500,267"/>
+<area shape="rect" id="node7" href="$class_player.html" title="Defines a playable character for use in battle scenes" alt="" coords="595,344,745,495"/>
+<area shape="rect" id="node16" href="$class_data_manager.html" title="An object to store all player data including players, items and money and provide useful functions ..." alt="" coords="467,587,590,781"/>
+<area shape="rect" id="node8" href="$class_character.html" title="Base abstract class for Enemy and Player to inherit from. Defines all shared variables, their constructor and their setters and getters " alt="" coords="967,1345,1093,1584"/>
+<area shape="rect" id="node10" href="$class_special_move.html" title="Special move abstract base class that expands upon CharacterMove, adding magic properties ..." alt="" coords="1030,1147,1161,1268"/>
+<area shape="rect" id="node11" href="$class_character_move.html" title="Astract base class for character moves " alt="" coords="1135,983,1250,1090"/>
+<area shape="rect" id="node12" href="$class_battle_manager.html" title="Holds current Player and Enemy objects in battle and provides functions for MainBattle and other obje..." alt="" coords="1214,557,1369,811"/>
+<area shape="rect" id="node13" href="$class_enemy.html" title="Defines an AI controller enemy to fight in battle scenes" alt="" coords="985,1633,1075,1711"/>
+</map>

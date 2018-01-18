@@ -257,9 +257,9 @@ public class MainBattle : MonoBehaviour {
 	}
 
 	/// <summary>
-	/// Checks if player lost.
+	/// Checks if player lost. If so and no player's left return to main menu, reactivating the player so the menu script can find it.
+	/// If so and player's left, open switch player menu. Otherwise pass.
 	/// </summary>
-	/// <returns><c>true</c>, if player has fainted, <c>false</c> otherwise.</returns>
 	private IEnumerator checkIfPlayerLost() {
 		if (manager.playerFainted()) {
 			yield return null;
@@ -267,6 +267,8 @@ public class MainBattle : MonoBehaviour {
 			if (PlayerData.instance.data.playersAlive() == 0) {
 				textBox.text = "All players have fainted! Game Over.";
 				yield return new WaitForSeconds (2);
+				GlobalFunctions.instance.player.SetActive (true); //Make player active so it can be found again in main menu
+				SoundManager.instance.playBGM(GlobalFunctions.instance.previousBGM);
 				SceneChanger.instance.loadLevel ("mainmenu1");
 			} else {
 				playerDied = true;

@@ -93,13 +93,14 @@ public class PlayerMovement : MonoBehaviour {
 	/// </summary>
 	private void explorationMenu() {
 		//Make sure menu can't be opened while dialogue box is on screen
-		if (GameObject.Find ("DialogueBox") == null) {
+		if (GameObject.Find ("DialogueBox") == null 
+			&& GameObject.Find("Fader") == null) {  //Or when changing scene
 			if (SceneChanger.instance.menuOpen) {
 				Debug.Log ("Close");
 				SceneChanger.instance.menuOpen = false;
 				setCanMove (true);
 				UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync (SceneManager.GetSceneByName ("GameMenu").buildIndex);
-			} else {
+			} else if (GameObject.Find("MenuCanvas") == null) { //Double check menu isn't already open before displayings
 				SceneChanger.instance.menuOpen = true;
 				SceneChanger.instance.menuScene = SceneManager.GetActiveScene ().name;
 				SceneManager.LoadScene ("GameMenu", LoadSceneMode.Additive);

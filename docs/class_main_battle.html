@@ -145,7 +145,7 @@ If they have, exp is given and shown on screen, before saving player data, addin
 <tr class="memdesc:a955f305966c8000cd511bc64ebbce315"><td class="mdescLeft">&#160;</td><td class="mdescRight">A helper function for <a class="el" href="class_main_battle.html#aafecb33944f3ff97ba34e0ef6ae304a4" title="Updates the saved and displayed exp ">updateExp</a> that performs an exp increase within a single level interval. Updates text display if player levels up  <a href="#a955f305966c8000cd511bc64ebbce315">More...</a><br /></td></tr>
 <tr class="separator:a955f305966c8000cd511bc64ebbce315"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa467f0994839837c4e5a020dae5e121"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_battle.html#afa467f0994839837c4e5a020dae5e121">checkIfPlayerLost</a> ()</td></tr>
-<tr class="memdesc:afa467f0994839837c4e5a020dae5e121"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if player lost.  <a href="#afa467f0994839837c4e5a020dae5e121">More...</a><br /></td></tr>
+<tr class="memdesc:afa467f0994839837c4e5a020dae5e121"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if player lost. If so and no player's left return to main menu, reactivating the player so the menu script can find it. If so and player's left, open switch player menu. Otherwise pass.  <a href="#afa467f0994839837c4e5a020dae5e121">More...</a><br /></td></tr>
 <tr class="separator:afa467f0994839837c4e5a020dae5e121"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6f2f777af563a0d967a7e2586e42220"><td class="memItemLeft" align="right" valign="top"><a id="ae6f2f777af563a0d967a7e2586e42220"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setButtonsInteractable</b> (bool val)</td></tr>
@@ -267,8 +267,7 @@ AudioClip&#160;</td><td class="memItemRight" valign="bottom"><b>victory</b></td>
 </table>
 </div><div class="memdoc">
 
-<p>Checks if player lost. </p>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code>, if player has fainted, <code>false</code> otherwise.</dd></dl>
+<p>Checks if player lost. If so and no player's left return to main menu, reactivating the player so the menu script can find it. If so and player's left, open switch player menu. Otherwise pass. </p>
 
 </div>
 </div>

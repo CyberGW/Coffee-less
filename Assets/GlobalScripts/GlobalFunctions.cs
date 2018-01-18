@@ -22,11 +22,11 @@ public class GlobalFunctions : MonoBehaviour {
 	[System.NonSerialized]
 	public bool canRunAway;
 	/// <summary>Refers to the player object so it can be set active or inactive</summary>
-	private GameObject player;
+	public GameObject player;
 	/// <summary>Refers to the scene a battle was initiated from so it can be returned to afterwards</summary>
 	private string previousScene;
 	/// <summary>Refers to the music playing before the battle was initiated so it can be resumed afterwards</summary>
-	private AudioClip previousBGM;
+	public AudioClip previousBGM;
 	/// <summary>
 	/// Stores an objects unique ID and whether they should be active or not, as to determine whether to display
 	/// it </summary>

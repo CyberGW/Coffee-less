@@ -78,7 +78,8 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for GlobalFunctions:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_global_functions__inherit__graph.svg" width="127" height="448"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_global_functions__inherit__graph.svg" width="127" height="448"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -123,6 +124,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a2a50bf2f76d72a0bc093270b16996de4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_global_functions.html#a2a50bf2f76d72a0bc093270b16996de4">canRunAway</a></td></tr>
 <tr class="memdesc:a2a50bf2f76d72a0bc093270b16996de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds whether a battle to be started can be run from or not <a href="#a2a50bf2f76d72a0bc093270b16996de4">More...</a><br /></td></tr>
 <tr class="separator:a2a50bf2f76d72a0bc093270b16996de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a145def136ae9191fd9038ade621515a8"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_global_functions.html#a145def136ae9191fd9038ade621515a8">player</a></td></tr>
+<tr class="memdesc:a145def136ae9191fd9038ade621515a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refers to the player object so it can be set active or inactive <a href="#a145def136ae9191fd9038ade621515a8">More...</a><br /></td></tr>
+<tr class="separator:a145def136ae9191fd9038ade621515a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5afda23535aea00491d653b993006417"><td class="memItemLeft" align="right" valign="top">AudioClip&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_global_functions.html#a5afda23535aea00491d653b993006417">previousBGM</a></td></tr>
+<tr class="memdesc:a5afda23535aea00491d653b993006417"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refers to the music playing before the battle was initiated so it can be resumed afterwards <a href="#a5afda23535aea00491d653b993006417">More...</a><br /></td></tr>
+<tr class="separator:a5afda23535aea00491d653b993006417"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23e7a1977974f6229fce6848033a1b7f"><td class="memItemLeft" align="right" valign="top">IDictionary&lt; string, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_global_functions.html#a23e7a1977974f6229fce6848033a1b7f">objectsActive</a></td></tr>
 <tr class="memdesc:a23e7a1977974f6229fce6848033a1b7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores an objects unique ID and whether they should be active or not, as to determine whether to display it  <a href="#a23e7a1977974f6229fce6848033a1b7f">More...</a><br /></td></tr>
 <tr class="separator:a23e7a1977974f6229fce6848033a1b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,15 +163,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a1572a933876865657214462889de131a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_item.html">Item</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_global_functions.html#a1572a933876865657214462889de131a">item</a></td></tr>
 <tr class="memdesc:a1572a933876865657214462889de131a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds an item for the battle scene to load from <a href="#a1572a933876865657214462889de131a">More...</a><br /></td></tr>
 <tr class="separator:a1572a933876865657214462889de131a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a145def136ae9191fd9038ade621515a8"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_global_functions.html#a145def136ae9191fd9038ade621515a8">player</a></td></tr>
-<tr class="memdesc:a145def136ae9191fd9038ade621515a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refers to the player object so it can be set active or inactive <a href="#a145def136ae9191fd9038ade621515a8">More...</a><br /></td></tr>
-<tr class="separator:a145def136ae9191fd9038ade621515a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb39da732dff62760cc29eb1729eefa3"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_global_functions.html#acb39da732dff62760cc29eb1729eefa3">previousScene</a></td></tr>
 <tr class="memdesc:acb39da732dff62760cc29eb1729eefa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refers to the scene a battle was initiated from so it can be returned to afterwards <a href="#acb39da732dff62760cc29eb1729eefa3">More...</a><br /></td></tr>
 <tr class="separator:acb39da732dff62760cc29eb1729eefa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5afda23535aea00491d653b993006417"><td class="memItemLeft" align="right" valign="top">AudioClip&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_global_functions.html#a5afda23535aea00491d653b993006417">previousBGM</a></td></tr>
-<tr class="memdesc:a5afda23535aea00491d653b993006417"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refers to the music playing before the battle was initiated so it can be resumed afterwards <a href="#a5afda23535aea00491d653b993006417">More...</a><br /></td></tr>
-<tr class="separator:a5afda23535aea00491d653b993006417"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides functions and variables to be accessed by any game object to allow data to be passed between scenes </p>
@@ -464,19 +465,11 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">GameObject GlobalFunctions.player</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Refers to the player object so it can be set active or inactive</p>
@@ -488,19 +481,11 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">AudioClip GlobalFunctions.previousBGM</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Refers to the music playing before the battle was initiated so it can be resumed afterwards</p>

@@ -1,0 +1,10 @@
+<map id="LevelManager" name="LevelManager">
+<area shape="rect" id="node2" href="$class_mono_behaviour.html" title="{MonoBehaviour\n||}" alt="" coords="134,601,245,678"/>
+<area shape="rect" id="node6" href="$class_character.html" title="Base abstract class for Enemy and Player to inherit from. Defines all shared variables, their constructor and their setters and getters " alt="" coords="593,248,719,487"/>
+<area shape="rect" id="node8" href="$class_special_move.html" title="Special move abstract base class that expands upon CharacterMove, adding magic properties ..." alt="" coords="405,1264,536,1385"/>
+<area shape="rect" id="node9" href="$class_character_move.html" title="Astract base class for character moves " alt="" coords="556,1108,671,1215"/>
+<area shape="rect" id="node10" href="$class_battle_manager.html" title="Holds current Player and Enemy objects in battle and provides functions for MainBattle and other obje..." alt="" coords="803,792,957,1045"/>
+<area shape="rect" id="node14" href="$class_item.html" title="Abstract class for items that can be equipped to a player, increasing some of their stats ..." alt="" coords="466,314,569,421"/>
+<area shape="rect" id="node5" href="$class_player.html" title="Defines a playable character for use in battle scenes" alt="" coords="531,564,680,715"/>
+<area shape="rect" id="node11" href="$class_enemy.html" title="Defines an AI controller enemy to fight in battle scenes" alt="" coords="966,601,1055,678"/>
+</map>
