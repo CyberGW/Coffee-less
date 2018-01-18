@@ -1,11 +1,11 @@
 <map id="PlayerData" name="PlayerData">
-<area shape="rect" id="node2" href="$class_mono_behaviour.html" title="{MonoBehaviour\n||}" alt="" coords="145,645,256,723"/>
-<area shape="rect" id="node3" href="$class_data_manager.html" title="{DataManager\n|+ Players\l+ Alive\l+ Items\l+ Money\l|+ DataManager()\l+ getFirstPlayer()\l+ addPlayer()\l+ swapPlayers()\l+ addItem()\l}" alt="" coords="281,594,403,774"/>
-<area shape="rect" id="node6" href="$class_player.html" title="Defines a playable character for use in battle scenes" alt="" coords="679,344,829,495"/>
-<area shape="rect" id="node7" href="$class_character.html" title="Base abstract class for Enemy and Player to inherit from. Defines all shared variables, their constructor and their setters and getters " alt="" coords="523,1331,649,1555"/>
-<area shape="rect" id="node9" href="$class_special_move.html" title="Special move abstract base class that expands upon CharacterMove, adding magic properties ..." alt="" coords="418,1132,549,1253"/>
-<area shape="rect" id="node11" href="$class_battle_manager.html" title="{BattleManager\n|+ Player\l+ Enemy\l+ WasCriticalHit\l|+ BattleManager()\l+ playerFirst()\l+ switchPlayers()\l+ isCriticalHit()\l+ ranAway()\l+ damageCalculation()\l+ enemyMove()\l+ enemySpecialMove()\l+ battleWon()\l+ playerFainted()\l&#45; characterFainted()\l}" alt="" coords="877,557,1031,811"/>
-<area shape="rect" id="node12" href="$class_enemy.html" title="Defines an AI controller enemy to fight in battle scenes" alt="" coords="541,1604,631,1681"/>
-<area shape="rect" id="node10" href="$class_character_move.html" title="Astract base class for character moves " alt="" coords="770,976,885,1083"/>
-<area shape="rect" id="node14" href="$class_item.html" title="{Item\n|+ Name\l+ Desc\l|+ applyBuffs()\l+ revertBuffs()\l}" alt="" coords="727,160,829,267"/>
+<area shape="rect" id="node2" href="$class_mono_behaviour.html" title="{MonoBehaviour\n||}" alt="" coords="191,645,301,723"/>
+<area shape="rect" id="node3" href="$class_data_manager.html" title="An object to store all player data including players, items and money and provide useful functions ..." alt="" coords="43,587,166,781"/>
+<area shape="rect" id="node4" href="$class_item.html" title="Abstract class for items that can be equipped to a player, increasing some of their stats ..." alt="" coords="32,160,135,267"/>
+<area shape="rect" id="node7" href="$class_player.html" title="Defines a playable character for use in battle scenes" alt="" coords="251,344,401,495"/>
+<area shape="rect" id="node8" href="$class_character.html" title="Base abstract class for Enemy and Player to inherit from. Defines all shared variables, their constructor and their setters and getters " alt="" coords="544,1331,671,1569"/>
+<area shape="rect" id="node9" href="$class_special_move.html" title="Special move abstract base class that expands upon CharacterMove, adding magic properties ..." alt="" coords="673,1132,803,1253"/>
+<area shape="rect" id="node10" href="$class_character_move.html" title="Astract base class for character moves " alt="" coords="509,976,623,1083"/>
+<area shape="rect" id="node11" href="$class_battle_manager.html" title="Holds current Player and Enemy objects in battle and provides functions for MainBattle and other obje..." alt="" coords="401,557,555,811"/>
+<area shape="rect" id="node12" href="$class_enemy.html" title="Defines an AI controller enemy to fight in battle scenes" alt="" coords="356,1619,445,1696"/>
 </map>

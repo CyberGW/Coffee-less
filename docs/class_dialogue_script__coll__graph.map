@@ -1,4 +1,13 @@
 <map id="DialogueScript" name="DialogueScript">
-<area shape="rect" id="node2" href="$class_mono_behaviour.html" title="{MonoBehaviour\n||}" alt="" coords="5,5,116,83"/>
-<area shape="rect" id="node6" href="$class_player_movement.html" title="{PlayerMovement\n||+ move()\l+ setCanMove()\l&#45; Start()\l&#45; FixedUpdate()\l&#45; walkAnimation()\l&#45; setIdle()\l}" alt="" coords="371,160,494,311"/>
+<area shape="rect" id="node5" href="$class_object_interaction.html" title="A component to add to collider relating to an object that can interact with the player by pressing th..." alt="" coords="1230,2160,1367,2281"/>
+<area shape="rect" id="node2" href="$class_mono_behaviour.html" title="{MonoBehaviour\n||}" alt="" coords="959,1454,1070,1531"/>
+<area shape="rect" id="node7" href="$class_global_functions.html" title="Provides functions and variables to be accessed by any game object to allow data to be passed between..." alt="" coords="550,1925,666,2090"/>
+<area shape="rect" id="node21" href="$class_player_movement.html" title="A script to control the movement and animations of the player" alt="" coords="1414,1675,1554,1855"/>
+<area shape="rect" id="node9" href="$class_item.html" title="Abstract class for items that can be equipped to a player, increasing some of their stats ..." alt="" coords="205,160,307,267"/>
+<area shape="rect" id="node11" href="$class_character.html" title="Base abstract class for Enemy and Player to inherit from. Defines all shared variables, their constructor and their setters and getters " alt="" coords="557,1373,683,1612"/>
+<area shape="rect" id="node13" href="$class_special_move.html" title="Special move abstract base class that expands upon CharacterMove, adding magic properties ..." alt="" coords="441,1175,572,1296"/>
+<area shape="rect" id="node14" href="$class_character_move.html" title="Astract base class for character moves " alt="" coords="591,976,705,1083"/>
+<area shape="rect" id="node15" href="$class_battle_manager.html" title="Holds current Player and Enemy objects in battle and provides functions for MainBattle and other obje..." alt="" coords="764,557,919,811"/>
+<area shape="rect" id="node17" href="$class_player.html" title="Defines a playable character for use in battle scenes" alt="" coords="644,344,793,495"/>
+<area shape="rect" id="node10" href="$class_enemy.html" title="Defines an AI controller enemy to fight in battle scenes" alt="" coords="633,1726,722,1803"/>
 </map>

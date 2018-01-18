@@ -229,12 +229,12 @@
 <g id="edge5" class="edge"><title>Node6&#45;&gt;Node5</title>
 <path fill="none" stroke="#404040" d="M652.792,-303.808C645.366,-292.603 636.265,-279.793 627,-269 617.424,-257.844 606.43,-246.588 595.619,-236.207"/>
 <polygon fill="none" stroke="#404040" points="595.345,-235.948 588.235,-234.741 586.616,-227.714 593.725,-228.921 595.345,-235.948"/>
-<text text-anchor="middle" x="667" y="-272" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;previousBGM</text>
+<text text-anchor="middle" x="668.5" y="-272" font-family="Helvetica,sans-Serif" font-size="10.00"> +previousBGM</text>
 </g>
 <!-- Node7&#45;&gt;Node5 -->
 <g id="edge6" class="edge"><title>Node7&#45;&gt;Node5</title>
-<path fill="none" stroke="#404040" d="M905.74,-1443.38C926.071,-1413.94 949,-1371.44 949,-1329.5 949,-1329.5 949,-1329.5 949,-795.5 949,-558.812 924.081,-467.615 759,-298 714.385,-252.16 646.228,-222.599 598.437,-206.195"/>
-<polygon fill="none" stroke="#404040" points="598.138,-206.095 591.182,-207.996 586.752,-202.306 593.709,-200.405 598.138,-206.095"/>
+<path fill="none" stroke="#404040" d="M905.74,-1443.38C926.071,-1413.94 949,-1371.44 949,-1329.5 949,-1329.5 949,-1329.5 949,-795.5 949,-558.812 922.133,-469.489 759,-298 714.685,-251.415 645.951,-221.887 597.956,-205.697"/>
+<polygon fill="none" stroke="#404040" points="597.939,-205.691 590.993,-207.629 586.533,-201.962 593.479,-200.025 597.939,-205.691"/>
 <text text-anchor="middle" x="961.5" y="-794" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;item</text>
 </g>
 <!-- Node16 -->
@@ -271,9 +271,9 @@
 </g>
 <!-- Node8&#45;&gt;Node5 -->
 <g id="edge9" class="edge"><title>Node8&#45;&gt;Node5</title>
-<path fill="none" stroke="#404040" d="M290.661,-303.814C301.187,-291.814 314.654,-278.393 329,-269 378.272,-236.738 442.513,-215.3 487.706,-202.997"/>
-<polygon fill="none" stroke="#404040" points="487.74,-202.988 492.517,-197.585 499.341,-199.916 494.564,-205.319 487.74,-202.988"/>
-<text text-anchor="middle" x="345.5" y="-272" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;player</text>
+<path fill="none" stroke="#404040" d="M289.319,-303.744C299.267,-291.731 312.091,-278.318 326,-269 375.839,-235.611 441.55,-214.264 487.553,-202.289"/>
+<polygon fill="none" stroke="#404040" points="487.753,-202.239 492.592,-196.892 499.389,-199.302 494.55,-204.649 487.753,-202.239"/>
+<text text-anchor="middle" x="344" y="-272" font-family="Helvetica,sans-Serif" font-size="10.00"> +player</text>
 </g>
 <!-- Node9 -->
 <g id="node8" class="node"><title>Node9</title>

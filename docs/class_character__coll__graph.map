@@ -1,8 +1,8 @@
 <map id="Character" name="Character">
-<area shape="rect" id="node5" href="$class_character_move.html" title="Astract base class for character moves " alt="" coords="447,1079,561,1185"/>
-<area shape="rect" id="node7" href="$class_enemy.html" title="Defines an AI controller enemy to fight in battle scenes" alt="" coords="450,571,539,649"/>
-<area shape="rect" id="node9" href="$class_player.html" title="Defines a playable character for use in battle scenes" alt="" coords="276,535,425,685"/>
-<area shape="rect" id="node4" href="$class_special_move.html" title="Special move abstract base class that expands upon CharacterMove, adding magic properties ..." alt="" coords="533,1235,664,1356"/>
-<area shape="rect" id="node6" href="$class_battle_manager.html" title="{BattleManager\n|+ Player\l+ Enemy\l+ WasCriticalHit\l|+ BattleManager()\l+ playerFirst()\l+ switchPlayers()\l+ isCriticalHit()\l+ ranAway()\l+ damageCalculation()\l+ enemyMove()\l+ enemySpecialMove()\l+ battleWon()\l+ playerFainted()\l&#45; characterFainted()\l}" alt="" coords="347,763,501,1016"/>
-<area shape="rect" id="node10" href="$class_item.html" title="{Item\n|+ Name\l+ Desc\l|+ applyBuffs()\l+ revertBuffs()\l}" alt="" coords="155,307,258,413"/>
+<area shape="rect" id="node5" href="$class_character_move.html" title="Astract base class for character moves " alt="" coords="273,1108,387,1215"/>
+<area shape="rect" id="node7" href="$class_enemy.html" title="Defines an AI controller enemy to fight in battle scenes" alt="" coords="268,601,357,678"/>
+<area shape="rect" id="node9" href="$class_player.html" title="Defines a playable character for use in battle scenes" alt="" coords="503,564,653,715"/>
+<area shape="rect" id="node4" href="$class_special_move.html" title="Special move abstract base class that expands upon CharacterMove, adding magic properties ..." alt="" coords="159,1264,290,1385"/>
+<area shape="rect" id="node6" href="$class_battle_manager.html" title="Holds current Player and Enemy objects in battle and provides functions for MainBattle and other obje..." alt="" coords="367,792,522,1045"/>
+<area shape="rect" id="node10" href="$class_item.html" title="Abstract class for items that can be equipped to a player, increasing some of their stats ..." alt="" coords="629,314,732,421"/>
 </map>

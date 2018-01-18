@@ -17,8 +17,8 @@
 <polyline fill="none" stroke="black" points="109.5,-52.5 191.5,-52.5 "/>
 <text text-anchor="start" x="117.5" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ playBGM()</text>
 <text text-anchor="start" x="117.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ playSFX()</text>
-<text text-anchor="start" x="117.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Awake()</text>
-<text text-anchor="start" x="117.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Update()</text>
+<text text-anchor="start" x="117.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ soundOn()</text>
+<text text-anchor="start" x="117.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; Awake()</text>
 </g>
 <!-- Node2&#45;&gt;Node2 -->
 <g id="edge2" class="edge"><title>Node2&#45;&gt;Node2</title>

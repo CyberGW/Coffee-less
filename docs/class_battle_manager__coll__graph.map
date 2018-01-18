@@ -1,8 +1,8 @@
 <map id="BattleManager" name="BattleManager">
-<area shape="rect" id="node7" href="$class_character_move.html" title="Astract base class for character moves " alt="" coords="445,573,560,680"/>
-<area shape="rect" id="node4" href="$class_character.html" title="Base abstract class for Enemy and Player to inherit from. Defines all shared variables, their constructor and their setters and getters " alt="" coords="346,961,473,1185"/>
-<area shape="rect" id="node6" href="$class_special_move.html" title="Special move abstract base class that expands upon CharacterMove, adding magic properties ..." alt="" coords="444,763,575,884"/>
-<area shape="rect" id="node10" href="$class_item.html" title="{Item\n|+ Name\l+ Desc\l|+ applyBuffs()\l+ revertBuffs()\l}" alt="" coords="737,437,839,544"/>
-<area shape="rect" id="node3" href="$class_enemy.html" title="Defines an AI controller enemy to fight in battle scenes" alt="" coords="139,1271,229,1349"/>
-<area shape="rect" id="node9" href="$class_player.html" title="Defines a playable character for use in battle scenes" alt="" coords="485,1235,635,1385"/>
+<area shape="rect" id="node7" href="$class_character_move.html" title="Astract base class for character moves " alt="" coords="305,573,419,680"/>
+<area shape="rect" id="node4" href="$class_character.html" title="Base abstract class for Enemy and Player to inherit from. Defines all shared variables, their constructor and their setters and getters " alt="" coords="380,961,507,1200"/>
+<area shape="rect" id="node6" href="$class_special_move.html" title="Special move abstract base class that expands upon CharacterMove, adding magic properties ..." alt="" coords="166,763,297,884"/>
+<area shape="rect" id="node11" href="$class_item.html" title="Abstract class for items that can be equipped to a player, increasing some of their stats ..." alt="" coords="5,437,108,544"/>
+<area shape="rect" id="node3" href="$class_enemy.html" title="Defines an AI controller enemy to fight in battle scenes" alt="" coords="644,1286,733,1363"/>
+<area shape="rect" id="node10" href="$class_player.html" title="Defines a playable character for use in battle scenes" alt="" coords="435,1249,585,1400"/>
 </map>

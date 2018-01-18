@@ -152,8 +152,8 @@
 </g>
 <!-- Node5&#45;&gt;Node6 -->
 <g id="edge9" class="edge"><title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="#404040" d="M415.751,-1770.97C462.66,-1768.13 579.949,-1758.13 672,-1726 724.494,-1707.68 769,-1702.6 769,-1647 769,-1647 769,-1647 769,-964 769,-783.357 765.01,-570.849 762.666,-461.567"/>
-<polygon fill="none" stroke="#404040" points="762.662,-461.397 758.533,-455.485 762.403,-449.4 766.532,-455.312 762.662,-461.397"/>
+<path fill="none" stroke="#404040" d="M415.751,-1770.97C462.66,-1768.13 579.949,-1758.13 672,-1726 724.494,-1707.68 769,-1702.6 769,-1647 769,-1647 769,-1647 769,-1033 769,-825.764 764.813,-581.074 762.497,-461.575"/>
+<polygon fill="none" stroke="#404040" points="762.493,-461.363 758.377,-455.442 762.259,-449.365 766.375,-455.286 762.493,-461.363"/>
 <text text-anchor="middle" x="804" y="-1037" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;previousScene</text>
 <text text-anchor="middle" x="804" y="-1026" font-family="Helvetica,sans-Serif" font-size="10.00">+levelOrder</text>
 </g>
@@ -281,9 +281,9 @@
 </g>
 <!-- Node5&#45;&gt;Node21 -->
 <g id="edge44" class="edge"><title>Node5&#45;&gt;Node21</title>
-<path fill="none" stroke="#404040" d="M415.546,-1771.52C511.516,-1768.71 911,-1750.81 911,-1647 911,-1647 911,-1647 911,-1135 911,-843.927 959.024,-767.197 1079,-502 1084.54,-489.764 1091.16,-477.246 1098.09,-465.202"/>
+<path fill="none" stroke="#404040" d="M415.706,-1771.55C512.419,-1768.9 915,-1751.57 915,-1647 915,-1647 915,-1647 915,-1135 915,-844.378 959.21,-766.786 1079,-502 1084.54,-489.764 1091.16,-477.246 1098.09,-465.202"/>
 <polygon fill="none" stroke="#404040" points="1098.15,-465.098 1097.75,-457.898 1104.24,-454.758 1104.64,-461.958 1098.15,-465.098"/>
-<text text-anchor="middle" x="938.5" y="-1031.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;lastMove</text>
+<text text-anchor="middle" x="942.5" y="-1031.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;lastMove</text>
 </g>
 <!-- Node6&#45;&gt;Node2 -->
 <g id="edge4" class="edge"><title>Node6&#45;&gt;Node2</title>
@@ -308,9 +308,9 @@
 </g>
 <!-- Node7&#45;&gt;Node6 -->
 <g id="edge6" class="edge"><title>Node7&#45;&gt;Node6</title>
-<path fill="none" stroke="#404040" d="M650.088,-507.99C645.56,-496.303 643.612,-483.08 651,-473 664.864,-454.083 681.606,-466.261 706.73,-454.085"/>
-<polygon fill="none" stroke="#404040" points="706.896,-453.985 709.988,-447.47 717.191,-447.819 714.099,-454.333 706.896,-453.985"/>
-<text text-anchor="middle" x="683" y="-476" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;previousBGM</text>
+<path fill="none" stroke="#404040" d="M648.668,-507.716C643.782,-496.114 641.573,-483.031 649,-473 663.466,-453.463 680.84,-466.539 706.824,-454.026"/>
+<polygon fill="none" stroke="#404040" points="706.898,-453.982 710.015,-447.48 717.216,-447.856 714.099,-454.359 706.898,-453.982"/>
+<text text-anchor="middle" x="682.5" y="-476" font-family="Helvetica,sans-Serif" font-size="10.00"> +previousBGM</text>
 </g>
 <!-- Node8&#45;&gt;Node6 -->
 <g id="edge7" class="edge"><title>Node8&#45;&gt;Node6</title>
@@ -352,14 +352,14 @@
 </g>
 <!-- Node9&#45;&gt;Node6 -->
 <g id="edge10" class="edge"><title>Node9&#45;&gt;Node6</title>
-<path fill="none" stroke="#404040" d="M476.401,-507.983C486.105,-495.089 499.386,-480.865 515,-473 588.635,-435.911 628.681,-490.84 706.616,-454.411"/>
-<polygon fill="none" stroke="#404040" points="706.66,-454.389 710.187,-448.099 717.349,-448.935 713.822,-455.225 706.66,-454.389"/>
-<text text-anchor="middle" x="531.5" y="-476" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;player</text>
+<path fill="none" stroke="#404040" d="M475.157,-507.993C484.261,-495.102 496.853,-480.876 512,-473 586.277,-434.376 627.387,-491.236 706.465,-454.475"/>
+<polygon fill="none" stroke="#404040" points="706.655,-454.379 710.191,-448.094 717.352,-448.941 713.816,-455.225 706.655,-454.379"/>
+<text text-anchor="middle" x="530" y="-476" font-family="Helvetica,sans-Serif" font-size="10.00"> +player</text>
 </g>
 <!-- Node9&#45;&gt;Node20 -->
 <g id="edge39" class="edge"><title>Node9&#45;&gt;Node20</title>
-<path fill="none" stroke="#404040" d="M473.08,-507.784C496.225,-464.12 545.708,-378.298 605,-320 700.102,-226.492 833.803,-144.515 910.51,-101.185"/>
-<polygon fill="none" stroke="#404040" points="910.936,-100.946 914.212,-94.522 921.402,-95.0755 918.126,-101.499 910.936,-100.946"/>
+<path fill="none" stroke="#404040" d="M473.021,-507.723C496.084,-463.976 545.458,-378.042 605,-320 700.373,-227.03 833.696,-145.008 910.32,-101.494"/>
+<polygon fill="none" stroke="#404040" points="910.75,-101.252 914.011,-94.8202 921.202,-95.3569 917.941,-101.788 910.75,-101.252"/>
 <text text-anchor="middle" x="666" y="-294" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;dialogueBox</text>
 </g>
 <!-- Node10 -->
@@ -414,8 +414,8 @@
 </g>
 <!-- Node12&#45;&gt;Node6 -->
 <g id="edge33" class="edge"><title>Node12&#45;&gt;Node6</title>
-<path fill="none" stroke="#404040" d="M361.792,-1640.94C407.816,-1627.96 546.845,-1586.13 571,-1548 591.85,-1515.09 610,-1185.83 610,-1137 610,-1137 610,-1137 610,-815 610,-675.659 591.183,-636.389 628,-502 631.834,-488.005 631.733,-482.145 643,-473 663.82,-456.102 679.393,-468.258 706.992,-454.137"/>
-<polygon fill="none" stroke="#404040" points="706.996,-454.135 710.08,-447.616 717.283,-447.956 714.199,-454.475 706.996,-454.135"/>
+<path fill="none" stroke="#404040" d="M361.792,-1640.94C407.816,-1627.96 546.845,-1586.13 571,-1548 591.85,-1515.09 610,-1185.83 610,-1137 610,-1137 610,-1137 610,-815 610,-675.659 594.955,-637.366 628,-502 631.35,-488.278 630.251,-482.163 641,-473 661.99,-455.107 678.405,-468.347 706.752,-454.22"/>
+<polygon fill="none" stroke="#404040" points="706.972,-454.09 710.103,-447.594 717.303,-447.986 714.172,-454.482 706.972,-454.09"/>
 <text text-anchor="middle" x="640.5" y="-968" font-family="Helvetica,sans-Serif" font-size="10.00"> +currentLevel</text>
 <text text-anchor="middle" x="640.5" y="-957" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;money</text>
 </g>
