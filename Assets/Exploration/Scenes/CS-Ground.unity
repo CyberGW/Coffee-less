@@ -408,7 +408,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1344385287322598, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
       propertyPath: m_Name
-      value: Character (1)
+      value: Colin
       objectReference: {fileID: 0}
     - target: {fileID: 61449539767269810, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
@@ -474,7 +474,7 @@ MonoBehaviour:
   sprite: {fileID: 2800000, guid: b719094e8d564a74d9c4d09098f3cb3a, type: 3}
   level: 4
   health: 100
-  attack: 500
+  attack: 2
   defence: 1
   maximumMagic: 0
   luck: 1
